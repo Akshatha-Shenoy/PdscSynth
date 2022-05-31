@@ -1,0 +1,16 @@
+PDSC: Verifying ./Benchmarks_qe/fig4_ref_ref.smt2
+Namespace(file='./Benchmarks_qe/fig4_ref_ref.smt2', log=False, msat=False, property=None, qe=True, sygus=False)
+1 SMT queries performed.
+Proved by invariant:
+And(abs_h_0,
+    abs_h_1,
+    x0_eq_x1,
+    Or(count_0_1, count_1_0),
+    Or(Not(count_0_1), count_0_0))
+Pre-processing time:	0.051987 
+Solver time:	0.039778
+Total time:	0.091765
+Iteration count:	1
+Predicate count:	7
+Total time taken : 0.091827
+Number of predicates guessed: 0.0

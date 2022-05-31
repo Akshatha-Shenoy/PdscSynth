@@ -1,0 +1,101 @@
+PDSC: Verifying ./Benchmarks_msat/sum_to_n_error.smt2
+Namespace(file='./Benchmarks_msat/sum_to_n_error.smt2', log=False, msat=True, property=None, qe=False, sygus=False)
+In if ladder True
+Counter-example trace:
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_eq_n_1, 
+n_gt_0_1, 
+i0_eq_1, 
+i1_eq_2, 
+sum0_eq_sum1, 
+n0_eq_n1, ]
+--->[2]
+
+[i_eq_n_0, 
+n_gt_0_0, 
+i_eq_n_1, 
+n_gt_0_1, 
+i1_eq_2, 
+n0_eq_n1, ]
+--->[2]
+
+
+Counter-example trace:
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_eq_n_1, 
+n_gt_0_1, 
+i0_eq_1, 
+i1_eq_2, 
+sum0_eq_sum1, 
+n0_eq_n1, ]
+--->[0]
+
+[i_eq_n_0, 
+n_gt_0_0, 
+i_eq_n_1, 
+n_gt_0_1, 
+i1_eq_2, 
+n0_eq_n1, ]
+--->[0]
+
+
+2 SMT queries performed.
+before complete_trace: [
+i_lt_n_0, 
+n_gt_0_0, 
+i_eq_n_1, 
+n_gt_0_1, 
+i0_eq_1, 
+i1_eq_2, 
+sum0_eq_sum1, 
+n0_eq_n1, ]
+--->[0]
+
+[i_eq_n_0, 
+n_gt_0_0, 
+i_eq_n_1, 
+n_gt_0_1, 
+i1_eq_2, 
+n0_eq_n1, ]
+--->[0]
+
+
+after complete_trace [
+i_lt_n_0, 
+n_gt_0_0, 
+i_eq_n_1, 
+n_gt_0_1, 
+i0_eq_1, 
+i1_eq_2, 
+sum0_eq_sum1, 
+n0_eq_n1, ]
+--->[0]
+
+[i_eq_n_0, 
+n_gt_0_0, 
+i_eq_n_1, 
+n_gt_0_1, 
+i1_eq_2, 
+n0_eq_n1, ]
+--->[-1]
+
+
+-----------------------------------check_spur-------------------------------
+final init cond And(And(n_0 > 0, sum_0 == 0),
+    And(n_1 > 0, sum_1 == 0),
+    And(1 == i_0, 2 == i_1, n_0 == n_1))
+Initial concrete state  {'n_1': 2, 'n_gt_0_1': True, 'i_lt_n_1': False, 'i_eq_n_1': True, 'n_gt_0_0': True, 'i_lt_n_0': True, 'i_eq_n_0': False, 'n0_eq_n1': True, 'sum0_eq_sum1': True, 'i1_eq_2': True, 'i0_eq_1': True, 'n_0': 2, 'i_1': 2, 'i_0': 1, 'sum_1': 0, 'sum_0': 0}
+Next concrete state {'i_0': 2, 'sum_0': 1, 'sum_1': 0, 'n_1': 2, 'i_1': 2, 'n_0': 2}
+Trace is not spurious
+Real cex. Program Unsafe.
+Pre-processing time:	0.058459 
+Solver time:	0.790914
+Total time:	0.849373
+Iteration count:	2
+Predicate count:	10
+Total time taken : 0.849442
+Number of predicates guessed: 0.0

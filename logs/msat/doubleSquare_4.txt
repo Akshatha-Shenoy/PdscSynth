@@ -1,0 +1,1893 @@
+PDSC: Verifying ./Benchmarks_msat/doubleSquare_4.smt2
+Namespace(file='./Benchmarks_msat/doubleSquare_4.smt2', log=False, msat=True, property=None, qe=False, sygus=False)
+In if ladder True
+Counter-example trace:
+[y_gteq_0_0, 
+z_gteq_0_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_h_1, 
+y0_eq_y1, 
+x0_eq_x1, 
+x0_gt_0, 
+z1_eq_2z0, ]
+--->[2]
+
+[y_gteq_0_0, 
+z_gteq_0_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_h_1, 
+y0_eq_y1, 
+x0_eq_x1, 
+x0_gt_0, ]
+--->[2]
+
+[y_gteq_0_0, 
+z_gteq_0_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_end_1, 
+abs_h_1, 
+z0_eq_z1, 
+x0_eq_x1, 
+x0_gt_0, 
+z1_eq_2z0, ]
+--->[2]
+
+[y_gteq_0_0, 
+z_gteq_0_0, 
+abs_end_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_end_1, 
+abs_h_1, 
+z0_eq_z1, 
+x0_eq_x1, 
+x0_gt_0, 
+z1_eq_2z0, ]
+--->[2]
+
+
+Counter-example trace:
+[y_gteq_0_0, 
+z_gteq_0_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_h_1, 
+y0_eq_y1, 
+x0_eq_x1, 
+x0_gt_0, 
+z1_eq_2z0, ]
+--->[2]
+
+[y_gteq_0_0, 
+z_gteq_0_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_h_1, 
+y0_eq_y1, 
+x0_eq_x1, 
+x0_gt_0, ]
+--->[2]
+
+[y_gteq_0_0, 
+z_gteq_0_0, 
+abs_end_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_h_1, 
+x0_eq_x1, 
+x0_gt_0, ]
+--->[2]
+
+[y_gteq_0_0, 
+z_gteq_0_0, 
+abs_end_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_end_1, 
+abs_h_1, 
+x0_eq_x1, 
+x0_gt_0, ]
+--->[0]
+
+
+Counter-example trace:
+[y_gteq_0_0, 
+z_gteq_0_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_h_1, 
+y0_eq_y1, 
+x0_eq_x1, 
+x0_gt_0, 
+z1_eq_2z0, ]
+--->[2]
+
+[y_gteq_0_0, 
+z_gteq_0_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_h_1, 
+y0_eq_y1, 
+x0_eq_x1, 
+x0_gt_0, ]
+--->[2]
+
+[y_gteq_0_0, 
+z_gteq_0_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_end_1, 
+abs_h_1, 
+z0_eq_z1, 
+x0_eq_x1, 
+x0_gt_0, 
+z1_eq_2z0, ]
+--->[0]
+
+[y_gteq_0_0, 
+z_gteq_0_0, 
+abs_end_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_end_1, 
+abs_h_1, 
+z0_eq_z1, 
+x0_eq_x1, 
+x0_gt_0, 
+z1_eq_2z0, ]
+--->[0]
+
+
+Counter-example trace:
+[y_gteq_0_0, 
+z_gteq_0_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_h_1, 
+y0_eq_y1, 
+x0_eq_x1, 
+x0_gt_0, 
+z1_eq_2z0, ]
+--->[2]
+
+[y_gteq_0_0, 
+z_gteq_0_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_h_1, 
+y0_eq_y1, 
+x0_eq_x1, 
+x0_gt_0, ]
+--->[0]
+
+[y_gteq_0_0, 
+z_gteq_0_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_h_1, 
+x0_eq_x1, 
+x0_gt_0, ]
+--->[2]
+
+[y_gteq_0_0, 
+z_gteq_0_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_end_1, 
+abs_h_1, 
+z0_eq_z1, 
+x0_eq_x1, 
+x0_gt_0, 
+z1_eq_2z0, ]
+--->[0]
+
+
+Counter-example trace:
+[y_gteq_0_0, 
+z_gteq_0_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_h_1, 
+y0_eq_y1, 
+x0_eq_x1, 
+x0_gt_0, 
+z1_eq_2z0, ]
+--->[2]
+
+[y_gteq_0_0, 
+z_gteq_0_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_h_1, 
+y0_eq_y1, 
+x0_eq_x1, 
+x0_gt_0, ]
+--->[0]
+
+[y_gteq_0_0, 
+z_gteq_0_0, 
+abs_end_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_h_1, 
+x0_eq_x1, 
+x0_gt_0, ]
+--->[1]
+
+[y_gteq_0_0, 
+z_gteq_0_0, 
+abs_end_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_end_1, 
+abs_h_1, 
+x0_eq_x1, 
+x0_gt_0, ]
+--->[0]
+
+
+Counter-example trace:
+[y_gteq_0_0, 
+z_gteq_0_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_h_1, 
+y0_eq_y1, 
+x0_eq_x1, 
+x0_gt_0, 
+z1_eq_2z0, ]
+--->[2]
+
+[y_gteq_0_0, 
+z_gteq_0_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_h_1, 
+y0_eq_y1, 
+x0_eq_x1, 
+x0_gt_0, ]
+--->[1]
+
+[y_gteq_0_0, 
+z_gteq_0_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_h_1, 
+x0_eq_x1, 
+x0_gt_0, ]
+--->[0]
+
+[y_gteq_0_0, 
+z_gteq_0_0, 
+abs_end_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_h_1, 
+x0_eq_x1, 
+x0_gt_0, ]
+--->[0]
+
+
+Counter-example trace:
+[y_gteq_0_0, 
+z_gteq_0_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_h_1, 
+y0_eq_y1, 
+x0_eq_x1, 
+x0_gt_0, 
+z1_eq_2z0, ]
+--->[2]
+
+[y_gteq_0_0, 
+z_gteq_0_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_h_1, 
+y0_eq_y1, 
+x0_eq_x1, 
+x0_gt_0, ]
+--->[1]
+
+[y_gteq_0_0, 
+z_gteq_0_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_h_1, 
+x0_eq_x1, 
+x0_gt_0, 
+y1_eq_2y0_x, ]
+--->[2]
+
+[y_gteq_0_0, 
+z_gteq_0_0, 
+abs_end_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_h_1, 
+x0_eq_x1, 
+x0_gt_0, ]
+--->[0]
+
+
+Counter-example trace:
+[y_gteq_0_0, 
+z_gteq_0_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_h_1, 
+y0_eq_y1, 
+x0_eq_x1, 
+x0_gt_0, 
+z1_eq_2z0, ]
+--->[2]
+
+[y_gteq_0_0, 
+z_gteq_0_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_h_1, 
+y0_eq_y1, 
+x0_eq_x1, 
+x0_gt_0, ]
+--->[1]
+
+[y_gteq_0_0, 
+z_gteq_0_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_h_1, 
+x0_eq_x1, 
+x0_gt_0, 
+y1_eq_2y0_x, ]
+--->[0]
+
+[y_gteq_0_0, 
+z_gteq_0_0, 
+abs_end_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_h_1, 
+x0_eq_x1, 
+x0_gt_0, ]
+--->[0]
+
+
+Counter-example trace:
+[y_gteq_0_0, 
+z_gteq_0_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_h_1, 
+y0_eq_y1, 
+x0_eq_x1, 
+x0_gt_0, 
+z1_eq_2z0, ]
+--->[2]
+
+[y_gteq_0_0, 
+z_gteq_0_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_h_1, 
+y0_eq_y1, 
+x0_eq_x1, 
+x0_gt_0, ]
+--->[1]
+
+[y_gteq_0_0, 
+z_gteq_0_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_end_1, 
+abs_h_1, 
+y0_eq_y1, 
+x0_eq_x1, 
+x0_gt_0, ]
+--->[2]
+
+[y_gteq_0_0, 
+z_gteq_0_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_end_1, 
+abs_h_1, 
+z0_eq_z1, 
+x0_eq_x1, 
+x0_gt_0, 
+z1_eq_2z0, ]
+--->[0]
+
+
+Counter-example trace:
+[y_gteq_0_0, 
+z_gteq_0_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_h_1, 
+y0_eq_y1, 
+x0_eq_x1, 
+x0_gt_0, 
+z1_eq_2z0, ]
+--->[2]
+
+[y_gteq_0_0, 
+z_gteq_0_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_h_1, 
+y0_eq_y1, 
+x0_eq_x1, 
+x0_gt_0, ]
+--->[1]
+
+[y_gteq_0_0, 
+z_gteq_0_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_end_1, 
+abs_h_1, 
+y0_eq_y1, 
+x0_eq_x1, 
+x0_gt_0, ]
+--->[0]
+
+[y_gteq_0_0, 
+z_gteq_0_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_end_1, 
+abs_h_1, 
+z0_eq_z1, 
+x0_eq_x1, 
+x0_gt_0, 
+z1_eq_2z0, ]
+--->[0]
+
+
+Counter-example trace:
+[y_gteq_0_0, 
+z_gteq_0_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_h_1, 
+y0_eq_y1, 
+x0_eq_x1, 
+x0_gt_0, 
+z1_eq_2z0, ]
+--->[0]
+
+[y_gteq_0_0, 
+z_gteq_0_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_h_1, 
+x0_eq_x1, 
+x0_gt_0, ]
+--->[1]
+
+[y_gteq_0_0, 
+z_gteq_0_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_h_1, 
+y0_eq_y1, 
+x0_eq_x1, 
+x0_gt_0, ]
+--->[0]
+
+
+Counter-example trace:
+[y_gteq_0_0, 
+z_gteq_0_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_h_1, 
+y0_eq_y1, 
+x0_eq_x1, 
+x0_gt_0, 
+z1_eq_2z0, ]
+--->[1]
+
+[y_gteq_0_0, 
+z_gteq_0_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_h_1, 
+x0_eq_x1, 
+x0_gt_0, 
+z1_eq_2z0_1, ]
+--->[2]
+
+[y_gteq_0_0, 
+z_gteq_0_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_h_1, 
+x0_eq_x1, 
+x0_gt_0, 
+z1_eq_2z0, ]
+--->[2]
+
+[y_gteq_0_0, 
+z_gteq_0_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_h_1, 
+x0_eq_x1, 
+x0_gt_0, ]
+--->[0]
+
+
+Counter-example trace:
+[y_gteq_0_0, 
+z_gteq_0_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_h_1, 
+y0_eq_y1, 
+x0_eq_x1, 
+x0_gt_0, 
+z1_eq_2z0, ]
+--->[1]
+
+[y_gteq_0_0, 
+z_gteq_0_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_h_1, 
+x0_eq_x1, 
+x0_gt_0, 
+z1_eq_2z0_1, ]
+--->[2]
+
+[y_gteq_0_0, 
+z_gteq_0_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_h_1, 
+x0_eq_x1, 
+x0_gt_0, 
+z1_eq_2z0, 
+y1_eq_2y0_x, ]
+--->[2]
+
+[y_gteq_0_0, 
+z_gteq_0_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_h_1, 
+x0_eq_x1, 
+x0_gt_0, ]
+--->[0]
+
+
+Counter-example trace:
+[y_gteq_0_0, 
+z_gteq_0_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_h_1, 
+y0_eq_y1, 
+x0_eq_x1, 
+x0_gt_0, 
+z1_eq_2z0, ]
+--->[1]
+
+[y_gteq_0_0, 
+z_gteq_0_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_h_1, 
+x0_eq_x1, 
+x0_gt_0, 
+z1_eq_2z0_1, ]
+--->[2]
+
+[y_gteq_0_0, 
+z_gteq_0_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_h_1, 
+x0_eq_x1, 
+x0_gt_0, 
+z1_eq_2z0, 
+y1_eq_2y0_x, ]
+--->[0]
+
+[y_gteq_0_0, 
+z_gteq_0_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_h_1, 
+x0_eq_x1, 
+x0_gt_0, ]
+--->[0]
+
+
+Counter-example trace:
+[y_gteq_0_0, 
+z_gteq_0_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_h_1, 
+y0_eq_y1, 
+x0_eq_x1, 
+x0_gt_0, 
+z1_eq_2z0, ]
+--->[1]
+
+[y_gteq_0_0, 
+z_gteq_0_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_h_1, 
+x0_eq_x1, 
+x0_gt_0, 
+z1_eq_2z0_1, ]
+--->[2]
+
+[y_gteq_0_0, 
+z_gteq_0_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_h_1, 
+x0_eq_x1, 
+x0_gt_0, 
+z1_eq_2z0, ]
+--->[0]
+
+[y_gteq_0_0, 
+z_gteq_0_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_h_1, 
+y0_eq_y1, 
+x0_eq_x1, 
+x0_gt_0, ]
+--->[0]
+
+
+Counter-example trace:
+[y_gteq_0_0, 
+z_gteq_0_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_h_1, 
+y0_eq_y1, 
+x0_eq_x1, 
+x0_gt_0, 
+z1_eq_2z0, ]
+--->[1]
+
+[y_gteq_0_0, 
+z_gteq_0_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_h_1, 
+z0_eq_z1, 
+x0_eq_x1, 
+x0_gt_0, 
+z1_eq_2z0_1, ]
+--->[2]
+
+[y_gteq_0_0, 
+z_gteq_0_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_h_1, 
+z0_eq_z1, 
+x0_eq_x1, 
+x0_gt_0, 
+z1_eq_2z0, ]
+--->[2]
+
+[y_gteq_0_0, 
+z_gteq_0_0, 
+abs_end_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_end_1, 
+abs_h_1, 
+z0_eq_z1, 
+x0_eq_x1, 
+x0_gt_0, 
+z1_eq_2z0, ]
+--->[0]
+
+
+Counter-example trace:
+[y_gteq_0_0, 
+z_gteq_0_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_h_1, 
+y0_eq_y1, 
+x0_eq_x1, 
+x0_gt_0, 
+z1_eq_2z0, ]
+--->[1]
+
+[y_gteq_0_0, 
+z_gteq_0_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_h_1, 
+z0_eq_z1, 
+x0_eq_x1, 
+x0_gt_0, 
+z1_eq_2z0_1, ]
+--->[2]
+
+[y_gteq_0_0, 
+z_gteq_0_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_h_1, 
+z0_eq_z1, 
+x0_eq_x1, 
+x0_gt_0, 
+z1_eq_2z0, 
+y1_eq_2y0_x, ]
+--->[2]
+
+[y_gteq_0_0, 
+z_gteq_0_0, 
+abs_end_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_end_1, 
+abs_h_1, 
+z0_eq_z1, 
+x0_eq_x1, 
+x0_gt_0, 
+z1_eq_2z0, ]
+--->[0]
+
+
+Counter-example trace:
+[y_gteq_0_0, 
+z_gteq_0_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_h_1, 
+y0_eq_y1, 
+x0_eq_x1, 
+x0_gt_0, 
+z1_eq_2z0, ]
+--->[1]
+
+[y_gteq_0_0, 
+z_gteq_0_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_h_1, 
+z0_eq_z1, 
+x0_eq_x1, 
+x0_gt_0, 
+z1_eq_2z0_1, 
+y1_eq_2y0_x, ]
+--->[2]
+
+[y_gteq_0_0, 
+z_gteq_0_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_h_1, 
+z0_eq_z1, 
+x0_eq_x1, 
+x0_gt_0, 
+z1_eq_2z0, ]
+--->[0]
+
+[y_gteq_0_0, 
+z_gteq_0_0, 
+abs_end_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_h_1, 
+z0_eq_z1, 
+x0_eq_x1, 
+x0_gt_0, 
+z1_eq_2z0, ]
+--->[2]
+
+[y_gteq_0_0, 
+z_gteq_0_0, 
+abs_end_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_end_1, 
+abs_h_1, 
+z0_eq_z1, 
+x0_eq_x1, 
+x0_gt_0, 
+z1_eq_2z0, ]
+--->[0]
+
+
+Counter-example trace:
+[y_gteq_0_0, 
+z_gteq_0_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_h_1, 
+y0_eq_y1, 
+x0_eq_x1, 
+x0_gt_0, 
+z1_eq_2z0, ]
+--->[1]
+
+[y_gteq_0_0, 
+z_gteq_0_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_h_1, 
+z0_eq_z1, 
+x0_eq_x1, 
+x0_gt_0, 
+z1_eq_2z0_1, ]
+--->[2]
+
+[y_gteq_0_0, 
+z_gteq_0_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_h_1, 
+z0_eq_z1, 
+x0_eq_x1, 
+x0_gt_0, 
+z1_eq_2z0, ]
+--->[0]
+
+[y_gteq_0_0, 
+z_gteq_0_0, 
+abs_end_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_h_1, 
+z0_eq_z1, 
+x0_eq_x1, 
+x0_gt_0, 
+z1_eq_2z0, ]
+--->[1]
+
+[y_gteq_0_0, 
+z_gteq_0_0, 
+abs_end_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_end_1, 
+abs_h_1, 
+z0_eq_z1, 
+x0_eq_x1, 
+x0_gt_0, 
+z1_eq_2z0, ]
+--->[0]
+
+
+Counter-example trace:
+[y_gteq_0_0, 
+z_gteq_0_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_h_1, 
+y0_eq_y1, 
+x0_eq_x1, 
+x0_gt_0, 
+z1_eq_2z0, ]
+--->[1]
+
+[y_gteq_0_0, 
+z_gteq_0_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_h_1, 
+z0_eq_z1, 
+x0_eq_x1, 
+x0_gt_0, 
+z1_eq_2z0_1, ]
+--->[2]
+
+[y_gteq_0_0, 
+z_gteq_0_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_h_1, 
+z0_eq_z1, 
+x0_eq_x1, 
+x0_gt_0, 
+z1_eq_2z0, ]
+--->[1]
+
+[y_gteq_0_0, 
+z_gteq_0_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_end_1, 
+abs_h_1, 
+z0_eq_z1, 
+x0_eq_x1, 
+x0_gt_0, 
+z1_eq_2z0, ]
+--->[0]
+
+
+Counter-example trace:
+[y_gteq_0_0, 
+z_gteq_0_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_h_1, 
+y0_eq_y1, 
+x0_eq_x1, 
+x0_gt_0, 
+z1_eq_2z0, ]
+--->[1]
+
+[y_gteq_0_0, 
+z_gteq_0_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_h_1, 
+z0_eq_z1, 
+x0_eq_x1, 
+x0_gt_0, 
+z1_eq_2z0_1, ]
+--->[0]
+
+[y_gteq_0_0, 
+z_gteq_0_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_h_1, 
+y0_eq_y1, 
+x0_eq_x1, 
+x0_gt_0, ]
+--->[0]
+
+
+Counter-example trace:
+[y_gteq_0_0, 
+z_gteq_0_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_h_1, 
+y0_eq_y1, 
+x0_eq_x1, 
+x0_gt_0, 
+z1_eq_2z0, ]
+--->[1]
+
+[y_gteq_0_0, 
+z_gteq_0_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_h_1, 
+z0_eq_z1, 
+x0_eq_x1, 
+x0_gt_0, 
+z1_eq_2z0_1, ]
+--->[1]
+
+[y_gteq_0_0, 
+z_gteq_0_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_h_1, 
+x0_eq_x1, 
+x0_gt_0, ]
+--->[0]
+
+
+22 SMT queries performed.
+before complete_trace: [y_gteq_0_0, 
+z_gteq_0_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_h_1, 
+y0_eq_y1, 
+x0_eq_x1, 
+x0_gt_0, 
+z1_eq_2z0, ]
+--->[1]
+
+[y_gteq_0_0, 
+z_gteq_0_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_h_1, 
+z0_eq_z1, 
+x0_eq_x1, 
+x0_gt_0, 
+z1_eq_2z0_1, ]
+--->[1]
+
+[y_gteq_0_0, 
+z_gteq_0_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_h_1, 
+x0_eq_x1, 
+x0_gt_0, ]
+--->[0]
+
+
+after complete_trace [y_gteq_0_0, 
+z_gteq_0_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_h_1, 
+y0_eq_y1, 
+x0_eq_x1, 
+x0_gt_0, 
+z1_eq_2z0, ]
+--->[1]
+
+[y_gteq_0_0, 
+z_gteq_0_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_h_1, 
+z0_eq_z1, 
+x0_eq_x1, 
+x0_gt_0, 
+z1_eq_2z0_1, ]
+--->[1]
+
+[y_gteq_0_0, 
+z_gteq_0_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_h_1, 
+x0_eq_x1, 
+x0_gt_0, ]
+--->[1]
+
+[y_gteq_0_0, 
+z_gteq_0_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_h_1, 
+y0_eq_y1, 
+x0_eq_x1, 
+x0_gt_0, ]
+--->[1]
+
+[y_gteq_0_0, 
+z_gteq_0_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_end_1, 
+abs_h_1, 
+y0_eq_y1, 
+x0_eq_x1, 
+x0_gt_0, ]
+--->[0]
+
+[y_gteq_0_0, 
+z_gteq_0_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_end_1, 
+abs_h_1, 
+z0_eq_z1, 
+x0_eq_x1, 
+x0_gt_0, 
+z1_eq_2z0, ]
+--->[0]
+
+[y_gteq_0_0, 
+z_gteq_0_0, 
+abs_end_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_end_1, 
+abs_h_1, 
+z0_eq_z1, 
+x0_eq_x1, 
+x0_gt_0, 
+z1_eq_2z0, ]
+--->[-1]
+
+
+-----------------------------------check_spur-------------------------------
+final init cond And(And(z_0 == If(1 == h_0, 2*x_0, x_0),
+        x_0 > 0,
+        y_0 == 0,
+        0 == end_0),
+    And(z_1 == If(1 == h_1, 2*x_1, x_1),
+        x_1 > 0,
+        y_1 == 0,
+        0 == end_1),
+    And(h_1 == 1, h_0 == 0, x_0 == x_1))
+Initial concrete state  {'x_1': 1, 'h_1': 1, 'abs_h_1': True, 'abs_end_1': False, 'z_gteq_0_1': True, 'y_gteq_0_1': True, 'abs_h_0': False, 'abs_end_0': False, 'z_gteq_0_0': True, 'y_gteq_0_0': True, 'y1_eq_2y0_x': False, 'z1_eq_2z0_1': False, 'z1_eq_2z0': True, 'x0_gt_0': True, 'x0_eq_x1': True, 'y0_eq_y1': True, 'z0_eq_z1': False, 'h_0': 0, 'end_1': 0, 'y_1': 0, 'z_1': 2, 'end_0': 0, 'y_0': 0, 'z_0': 1, 'x_0': 1}
+Next concrete state {'y_1': 1, 'z_1': 1, 'end_1': 0, 'x_1': 1, 'end_0': 0, 'h_0': 0, 'x_0': 1, 'y_0': 0, 'z_0': 1, 'h_1': 1}
+Writing an smt file to be run using mathsat
+Checking output from mathsat 5
+hi
+paren_dict {20: 31, 9: 33, 7: 35, 43: 55, 63: 73, 87: 99, 81: 101, 130: 140, 124: 142, 165: 176, 195: 205, 211: 217, 207: 223, 191: 225, 184: 227, 244: 254, 260: 270, 280: 286, 276: 292, 298: 304, 294: 310, 272: 312, 256: 314, 240: 316, 235: 320, 333: 343, 349: 359, 369: 375, 365: 381, 387: 393, 383: 399, 361: 401, 345: 403, 329: 405, 322: 407, 229: 409, 178: 411, 159: 413, 144: 415, 118: 417, 103: 419, 75: 421, 57: 423, 37: 425, 1: 427}
+aux_vars_first_occ_dict {'.def_572 ': 11}
+aux_vars_dict {'.def_572 ': '( <= 2 z_1 ) '}
+subs1 ( <= 2 z_1 ) 
+remove lets from formula
+subs2 ( <= 2 z_1 ) 
+subs1 ( <= 2 z_1 ) 
+remove lets from formula
+subs2 ( <= 2 z_1 ) 
+subs1 ( <= 2 z_1 ) 
+remove lets from formula
+subs2 ( <= 2 z_1 ) 
+aux_vars_subs_dict  {'.def_572 ': '( <= 2 z_1 ) '}
+{20: 31, 9: 33, 7: 35, 43: 55, 63: 73, 87: 99, 81: 101, 130: 140, 124: 142, 165: 176, 195: 205, 211: 217, 207: 223, 191: 225, 184: 227, 244: 254, 260: 270, 280: 286, 276: 292, 298: 304, 294: 310, 272: 312, 256: 314, 240: 316, 235: 320, 333: 343, 349: 359, 369: 375, 365: 381, 387: 393, 383: 399, 361: 401, 345: 403, 329: 405, 322: 407, 229: 409, 178: 411, 159: 413, 144: 415, 118: 417, 103: 419, 75: 421, 57: 423, 37: 425, 1: 427}
+remove lets from formula
+final_formula  ( and ( = end_1 0 ) ( and ( = h_1 1 ) ( and ( not ( = end_0 1 ) ) ( and .def_572 ( and ( not ( = h_0 1 ) ) ( and .def_572 ( and ( <= 1 z_0 ) ( and ( <= 0 ( + ( * 2 z_0 ) ( * ( - 1 ) z_1 ) ) ) ( and ( <= ( + ( * 2 x_0 ) ( + ( * 2 y_0 ) ( + ( * ( - 2 ) x_1 ) ( * ( - 1 ) y_1 ) ) ) ) 0 ) ( <= 0 ( + ( * 2 x_0 ) ( + ( * 2 y_0 ) ( + ( * ( - 2 ) x_1 ) ( * ( - 1 ) y_1 ) ) ) ) ) ) ) ) ) ) ) ) ) ) 
+[' ( and ( = end_1 0 ) ( and ( = h_1 1 ) ( and ( not ( = end_0 1 ) ) ( and ( <= 2 z_1 ) ( and ( not ( = h_0 1 ) ) ( and ( <= 2 z_1 ) ( and ( <= 1 z_0 ) ( and ( <= 0 ( + ( * 2 z_0 ) ( * ( - 1 ) z_1 ) ) ) ( and ( <= ( + ( * 2 x_0 ) ( + ( * 2 y_0 ) ( + ( * ( - 2 ) x_1 ) ( * ( - 1 ) y_1 ) ) ) ) 0 ) ( <= 0 ( + ( * 2 x_0 ) ( + ( * 2 y_0 ) ( + ( * ( - 2 ) x_1 ) ( * ( - 1 ) y_1 ) ) ) ) ) ) ) ) ) ) ) ) ) ) ']
+hi
+paren_dict {20: 36, 9: 38, 7: 40, 54: 70, 48: 72, 113: 127, 107: 129, 137: 152, 172: 187, 166: 189, 245: 251, 241: 261, 267: 273, 263: 283, 237: 285, 225: 287, 218: 289, 316: 322, 312: 332, 338: 344, 334: 354, 308: 356, 296: 358, 291: 362, 212: 364, 206: 366, 191: 368, 160: 370, 154: 372, 131: 374, 101: 376, 95: 378, 80: 380, 74: 382, 42: 384, 1: 386}
+aux_vars_first_occ_dict {'.def_264 ': 11}
+aux_vars_dict {'.def_264 ': '( = endpppp_1 1 ) '}
+subs1 ( = endpppp_1 1 ) 
+remove lets from formula
+subs2 ( = endpppp_1 1 ) 
+subs1 ( = endpppp_1 1 ) 
+remove lets from formula
+subs2 ( = endpppp_1 1 ) 
+subs1 ( = endpppp_1 1 ) 
+remove lets from formula
+subs2 ( = endpppp_1 1 ) 
+aux_vars_subs_dict  {'.def_264 ': '( = endpppp_1 1 ) '}
+{20: 36, 9: 38, 7: 40, 54: 70, 48: 72, 113: 127, 107: 129, 137: 152, 172: 187, 166: 189, 245: 251, 241: 261, 267: 273, 263: 283, 237: 285, 225: 287, 218: 289, 316: 322, 312: 332, 338: 344, 334: 354, 308: 356, 296: 358, 291: 362, 212: 364, 206: 366, 191: 368, 160: 370, 154: 372, 131: 374, 101: 376, 95: 378, 80: 380, 74: 382, 42: 384, 1: 386}
+remove lets from formula
+final_formula  ( and ( not ( = endpppp_0 1 ) ) ( not ( and .def_264 ( not ( and ( not ( = hpppp_0 1 ) ) ( and ( <= 1 zpppp_0 ) ( not ( and ( not ( <= 2 zpppp_0 ) ) ( and .def_264 ( not ( and ( <= 0 ( + ypppp_1 ( + ( * ( - 2 ) ypppp_0 ) ( * ( - 2 ) xpppp_0 ) ) ) ) ( <= ( + ypppp_1 ( + ( * ( - 2 ) ypppp_0 ) ( * ( - 2 ) xpppp_0 ) ) ) 0 ) ) ) ) ) ) ) ) ) ) ) ) 
+[' ( and ( not ( = endpppp_0 1 ) ) ( not ( and ( = endpppp_1 1 ) ( not ( and ( not ( = hpppp_0 1 ) ) ( and ( <= 1 zpppp_0 ) ( not ( and ( not ( <= 2 zpppp_0 ) ) ( and ( = endpppp_1 1 ) ( not ( and ( <= 0 ( + ypppp_1 ( + ( * ( - 2 ) ypppp_0 ) ( * ( - 2 ) xpppp_0 ) ) ) ) ( <= ( + ypppp_1 ( + ( * ( - 2 ) ypppp_0 ) ( * ( - 2 ) xpppp_0 ) ) ) 0 ) ) ) ) ) ) ) ) ) ) ) ) ']
+hi
+paren_dict {20: 37, 9: 39, 7: 41, 82: 97, 76: 99, 107: 124, 144: 160, 138: 162, 200: 215, 221: 227, 217: 238, 196: 240, 191: 244, 257: 272, 278: 284, 274: 295, 253: 297, 246: 299, 185: 301, 179: 303, 164: 305, 132: 307, 126: 309, 101: 311, 70: 313, 64: 315, 49: 317, 43: 319, 1: 321}
+aux_vars_first_occ_dict {'.def_755 ': 11}
+aux_vars_dict {'.def_755 ': '( = endppppp_1 1 ) '}
+subs1 ( = endppppp_1 1 ) 
+remove lets from formula
+subs2 ( = endppppp_1 1 ) 
+subs1 ( = endppppp_1 1 ) 
+remove lets from formula
+subs2 ( = endppppp_1 1 ) 
+subs1 ( = endppppp_1 1 ) 
+remove lets from formula
+subs2 ( = endppppp_1 1 ) 
+aux_vars_subs_dict  {'.def_755 ': '( = endppppp_1 1 ) '}
+{20: 37, 9: 39, 7: 41, 82: 97, 76: 99, 107: 124, 144: 160, 138: 162, 200: 215, 221: 227, 217: 238, 196: 240, 191: 244, 257: 272, 278: 284, 274: 295, 253: 297, 246: 299, 185: 301, 179: 303, 164: 305, 132: 307, 126: 309, 101: 311, 70: 313, 64: 315, 49: 317, 43: 319, 1: 321}
+remove lets from formula
+final_formula  ( not ( and .def_755 ( not ( and ( not ( = hppppp_0 1 ) ) ( and ( = endppppp_0 0 ) ( not ( and ( not ( <= 1 zppppp_0 ) ) ( and .def_755 ( not ( and ( <= ( + ( * 2 yppppp_0 ) ( * ( - 1 ) yppppp_1 ) ) 0 ) ( <= 0 ( + ( * 2 yppppp_0 ) ( * ( - 1 ) yppppp_1 ) ) ) ) ) ) ) ) ) ) ) ) ) 
+[' ( not ( and ( = endppppp_1 1 ) ( not ( and ( not ( = hppppp_0 1 ) ) ( and ( = endppppp_0 0 ) ( not ( and ( not ( <= 1 zppppp_0 ) ) ( and ( = endppppp_1 1 ) ( not ( and ( <= ( + ( * 2 yppppp_0 ) ( * ( - 1 ) yppppp_1 ) ) 0 ) ( <= 0 ( + ( * 2 yppppp_0 ) ( * ( - 1 ) yppppp_1 ) ) ) ) ) ) ) ) ) ) ) ) ) ']
+hi
+paren_dict {20: 38, 9: 40, 7: 42, 71: 89, 118: 143, 145: 170, 112: 172, 106: 174, 91: 176, 65: 178, 50: 180, 44: 182, 1: 184}
+aux_vars_first_occ_dict {'.def_458 ': 11}
+aux_vars_dict {'.def_458 ': '( = endpppppp_1 1 ) '}
+subs1 ( = endpppppp_1 1 ) 
+remove lets from formula
+subs2 ( = endpppppp_1 1 ) 
+subs1 ( = endpppppp_1 1 ) 
+remove lets from formula
+subs2 ( = endpppppp_1 1 ) 
+subs1 ( = endpppppp_1 1 ) 
+remove lets from formula
+subs2 ( = endpppppp_1 1 ) 
+aux_vars_subs_dict  {'.def_458 ': '( = endpppppp_1 1 ) '}
+{20: 38, 9: 40, 7: 42, 71: 89, 118: 143, 145: 170, 112: 172, 106: 174, 91: 176, 65: 178, 50: 180, 44: 182, 1: 184}
+remove lets from formula
+final_formula  ( not ( and .def_458 ( and ( = endpppppp_0 1 ) ( and .def_458 ( not ( and ( <= ypppppp_0 ypppppp_1 ) ( <= ypppppp_1 ypppppp_0 ) ) ) ) ) ) ) 
+[' ( not ( and ( = endpppppp_1 1 ) ( and ( = endpppppp_0 1 ) ( and ( = endpppppp_1 1 ) ( not ( and ( <= ypppppp_0 ypppppp_1 ) ( <= ypppppp_1 ypppppp_0 ) ) ) ) ) ) ) ']
+new_pred_smt_format ['(declare-rel pred_0_synth_msat_1 (Int Int Int Int Int))\n (rule (=>  ( =  ( +  ( * 2 (rel x 0)  )  ( +  ( * 2 (rel y 0)  )  ( +  ( *  ( - 2  ) (rel x 1)  )  ( *  ( - 1  ) (rel y 1)  )  )  )  ) 0  ) (pred_0_synth_msat_1 z y x h end)))']
+['(declare-rel pred_0_synth_msat_1 (Int Int Int Int Int))\n (rule (=>  ( =  ( +  ( * 2 (rel x 0)  )  ( +  ( * 2 (rel y 0)  )  ( +  ( *  ( - 2  ) (rel x 1)  )  ( *  ( - 1  ) (rel y 1)  )  )  )  ) 0  ) (pred_0_synth_msat_1 z y x h end)))']
+Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
+Pre-processing time:	0.107378 
+Solver time:	7.631195
+Total time:	7.738573
+Iteration count:	22
+Predicate count:	15
+Successfully added new predicate to input file. !
+PDSC: Verifying ./Benchmarks_msat/doubleSquare_4.smt2
+Namespace(file='./Benchmarks_msat/doubleSquare_4.smt2', log=False, msat=True, property=None, qe=False, sygus=False)
+In if ladder True
+Counter-example trace:
+[y_gteq_0_0, 
+z_gteq_0_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_h_1, 
+y0_eq_y1, 
+x0_eq_x1, 
+x0_gt_0, 
+z1_eq_2z0, 
+pred_0_synth_msat_1, ]
+--->[2]
+
+[y_gteq_0_0, 
+z_gteq_0_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_h_1, 
+y0_eq_y1, 
+x0_eq_x1, 
+x0_gt_0, ]
+--->[2]
+
+[y_gteq_0_0, 
+z_gteq_0_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_end_1, 
+abs_h_1, 
+x0_eq_x1, 
+x0_gt_0, ]
+--->[2]
+
+[y_gteq_0_0, 
+z_gteq_0_0, 
+abs_end_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_end_1, 
+abs_h_1, 
+x0_eq_x1, 
+x0_gt_0, 
+y1_eq_2y0_x, ]
+--->[2]
+
+
+Counter-example trace:
+[y_gteq_0_0, 
+z_gteq_0_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_h_1, 
+y0_eq_y1, 
+x0_eq_x1, 
+x0_gt_0, 
+z1_eq_2z0, 
+pred_0_synth_msat_1, ]
+--->[2]
+
+[y_gteq_0_0, 
+z_gteq_0_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_h_1, 
+y0_eq_y1, 
+x0_eq_x1, 
+x0_gt_0, ]
+--->[2]
+
+[y_gteq_0_0, 
+z_gteq_0_0, 
+abs_end_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_h_1, 
+z0_eq_z1, 
+x0_eq_x1, 
+x0_gt_0, 
+z1_eq_2z0, ]
+--->[2]
+
+[y_gteq_0_0, 
+z_gteq_0_0, 
+abs_end_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_end_1, 
+abs_h_1, 
+z0_eq_z1, 
+x0_eq_x1, 
+x0_gt_0, 
+z1_eq_2z0, ]
+--->[0]
+
+
+Counter-example trace:
+[y_gteq_0_0, 
+z_gteq_0_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_h_1, 
+y0_eq_y1, 
+x0_eq_x1, 
+x0_gt_0, 
+z1_eq_2z0, 
+pred_0_synth_msat_1, ]
+--->[2]
+
+[y_gteq_0_0, 
+z_gteq_0_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_h_1, 
+y0_eq_y1, 
+x0_eq_x1, 
+x0_gt_0, ]
+--->[2]
+
+[y_gteq_0_0, 
+z_gteq_0_0, 
+abs_end_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_h_1, 
+z0_eq_z1, 
+x0_eq_x1, 
+x0_gt_0, 
+z1_eq_2z0, ]
+--->[1]
+
+[y_gteq_0_0, 
+z_gteq_0_0, 
+abs_end_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_end_1, 
+abs_h_1, 
+z0_eq_z1, 
+x0_eq_x1, 
+x0_gt_0, 
+z1_eq_2z0, ]
+--->[0]
+
+
+Counter-example trace:
+[y_gteq_0_0, 
+z_gteq_0_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_h_1, 
+y0_eq_y1, 
+x0_eq_x1, 
+x0_gt_0, 
+z1_eq_2z0, 
+pred_0_synth_msat_1, ]
+--->[2]
+
+[y_gteq_0_0, 
+z_gteq_0_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_h_1, 
+y0_eq_y1, 
+x0_eq_x1, 
+x0_gt_0, ]
+--->[0]
+
+[y_gteq_0_0, 
+z_gteq_0_0, 
+abs_end_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_h_1, 
+x0_eq_x1, 
+x0_gt_0, ]
+--->[2]
+
+[y_gteq_0_0, 
+z_gteq_0_0, 
+abs_end_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_h_1, 
+z0_eq_z1, 
+x0_eq_x1, 
+x0_gt_0, 
+z1_eq_2z0, ]
+--->[0]
+
+
+Counter-example trace:
+[y_gteq_0_0, 
+z_gteq_0_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_h_1, 
+y0_eq_y1, 
+x0_eq_x1, 
+x0_gt_0, 
+z1_eq_2z0, 
+pred_0_synth_msat_1, ]
+--->[2]
+
+[y_gteq_0_0, 
+z_gteq_0_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_h_1, 
+y0_eq_y1, 
+x0_eq_x1, 
+x0_gt_0, ]
+--->[0]
+
+[y_gteq_0_0, 
+z_gteq_0_0, 
+abs_end_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_h_1, 
+x0_eq_x1, 
+x0_gt_0, ]
+--->[1]
+
+[y_gteq_0_0, 
+z_gteq_0_0, 
+abs_end_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_end_1, 
+abs_h_1, 
+x0_eq_x1, 
+x0_gt_0, ]
+--->[0]
+
+
+Counter-example trace:
+[y_gteq_0_0, 
+z_gteq_0_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_h_1, 
+y0_eq_y1, 
+x0_eq_x1, 
+x0_gt_0, 
+z1_eq_2z0, 
+pred_0_synth_msat_1, ]
+--->[2]
+
+[y_gteq_0_0, 
+z_gteq_0_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_h_1, 
+y0_eq_y1, 
+x0_eq_x1, 
+x0_gt_0, ]
+--->[1]
+
+[y_gteq_0_0, 
+z_gteq_0_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_h_1, 
+z0_eq_z1, 
+x0_eq_x1, 
+x0_gt_0, 
+z1_eq_2z0, ]
+--->[2]
+
+[y_gteq_0_0, 
+z_gteq_0_0, 
+abs_end_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_end_1, 
+abs_h_1, 
+z0_eq_z1, 
+x0_eq_x1, 
+x0_gt_0, 
+z1_eq_2z0, ]
+--->[0]
+
+
+Counter-example trace:
+[y_gteq_0_0, 
+z_gteq_0_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_h_1, 
+y0_eq_y1, 
+x0_eq_x1, 
+x0_gt_0, 
+z1_eq_2z0, 
+pred_0_synth_msat_1, ]
+--->[2]
+
+[y_gteq_0_0, 
+z_gteq_0_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_h_1, 
+y0_eq_y1, 
+x0_eq_x1, 
+x0_gt_0, ]
+--->[1]
+
+[y_gteq_0_0, 
+z_gteq_0_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_h_1, 
+z0_eq_z1, 
+x0_eq_x1, 
+x0_gt_0, 
+z1_eq_2z0, ]
+--->[0]
+
+[y_gteq_0_0, 
+z_gteq_0_0, 
+abs_end_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_h_1, 
+z0_eq_z1, 
+x0_eq_x1, 
+x0_gt_0, 
+z1_eq_2z0, ]
+--->[0]
+
+
+Counter-example trace:
+[y_gteq_0_0, 
+z_gteq_0_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_h_1, 
+y0_eq_y1, 
+x0_eq_x1, 
+x0_gt_0, 
+z1_eq_2z0, 
+pred_0_synth_msat_1, ]
+--->[2]
+
+[y_gteq_0_0, 
+z_gteq_0_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_h_1, 
+y0_eq_y1, 
+x0_eq_x1, 
+x0_gt_0, ]
+--->[1]
+
+[y_gteq_0_0, 
+z_gteq_0_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_h_1, 
+x0_eq_x1, 
+x0_gt_0, ]
+--->[2]
+
+[y_gteq_0_0, 
+z_gteq_0_0, 
+abs_end_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_h_1, 
+x0_eq_x1, 
+x0_gt_0, ]
+--->[0]
+
+
+Counter-example trace:
+[y_gteq_0_0, 
+z_gteq_0_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_h_1, 
+y0_eq_y1, 
+x0_eq_x1, 
+x0_gt_0, 
+z1_eq_2z0, 
+pred_0_synth_msat_1, ]
+--->[2]
+
+[y_gteq_0_0, 
+z_gteq_0_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_h_1, 
+y0_eq_y1, 
+x0_eq_x1, 
+x0_gt_0, ]
+--->[1]
+
+[y_gteq_0_0, 
+z_gteq_0_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_h_1, 
+x0_eq_x1, 
+x0_gt_0, 
+pred_0_synth_msat_1, ]
+--->[2]
+
+[y_gteq_0_0, 
+z_gteq_0_0, 
+abs_end_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_h_1, 
+z0_eq_z1, 
+x0_eq_x1, 
+x0_gt_0, 
+z1_eq_2z0, ]
+--->[0]
+
+
+Counter-example trace:
+[y_gteq_0_0, 
+z_gteq_0_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_h_1, 
+y0_eq_y1, 
+x0_eq_x1, 
+x0_gt_0, 
+z1_eq_2z0, 
+pred_0_synth_msat_1, ]
+--->[2]
+
+[y_gteq_0_0, 
+z_gteq_0_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_h_1, 
+y0_eq_y1, 
+x0_eq_x1, 
+x0_gt_0, ]
+--->[1]
+
+[y_gteq_0_0, 
+z_gteq_0_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_end_1, 
+abs_h_1, 
+y0_eq_y1, 
+x0_eq_x1, 
+x0_gt_0, ]
+--->[2]
+
+[y_gteq_0_0, 
+z_gteq_0_0, 
+abs_end_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_end_1, 
+abs_h_1, 
+x0_eq_x1, 
+x0_gt_0, ]
+--->[0]
+
+
+Counter-example trace:
+[y_gteq_0_0, 
+z_gteq_0_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_h_1, 
+y0_eq_y1, 
+x0_eq_x1, 
+x0_gt_0, 
+z1_eq_2z0, 
+pred_0_synth_msat_1, ]
+--->[2]
+
+[y_gteq_0_0, 
+z_gteq_0_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_h_1, 
+y0_eq_y1, 
+x0_eq_x1, 
+x0_gt_0, ]
+--->[1]
+
+[y_gteq_0_0, 
+z_gteq_0_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_end_1, 
+abs_h_1, 
+y0_eq_y1, 
+x0_eq_x1, 
+x0_gt_0, ]
+--->[0]
+
+[y_gteq_0_0, 
+z_gteq_0_0, 
+abs_end_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_end_1, 
+abs_h_1, 
+x0_eq_x1, 
+x0_gt_0, ]
+--->[0]
+
+
+Counter-example trace:
+[y_gteq_0_0, 
+z_gteq_0_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_h_1, 
+y0_eq_y1, 
+x0_eq_x1, 
+x0_gt_0, 
+z1_eq_2z0, 
+pred_0_synth_msat_1, ]
+--->[0]
+
+[y_gteq_0_0, 
+z_gteq_0_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_h_1, 
+x0_eq_x1, 
+x0_gt_0, ]
+--->[0]
+
+[y_gteq_0_0, 
+z_gteq_0_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_h_1, 
+y0_eq_y1, 
+x0_eq_x1, 
+x0_gt_0, ]
+--->[0]
+
+
+Counter-example trace:
+[y_gteq_0_0, 
+z_gteq_0_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_h_1, 
+y0_eq_y1, 
+x0_eq_x1, 
+x0_gt_0, 
+z1_eq_2z0, 
+pred_0_synth_msat_1, ]
+--->[0]
+
+[y_gteq_0_0, 
+z_gteq_0_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_h_1, 
+x0_eq_x1, 
+x0_gt_0, ]
+--->[1]
+
+[y_gteq_0_0, 
+z_gteq_0_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_h_1, 
+y0_eq_y1, 
+x0_eq_x1, 
+x0_gt_0, ]
+--->[0]
+
+
+Counter-example trace:
+[y_gteq_0_0, 
+z_gteq_0_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_h_1, 
+y0_eq_y1, 
+x0_eq_x1, 
+x0_gt_0, 
+z1_eq_2z0, 
+pred_0_synth_msat_1, ]
+--->[1]
+
+[y_gteq_0_0, 
+z_gteq_0_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_h_1, 
+x0_eq_x1, 
+x0_gt_0, 
+z1_eq_2z0_1, 
+y1_eq_2y0_x, ]
+--->[2]
+
+[y_gteq_0_0, 
+z_gteq_0_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_h_1, 
+x0_eq_x1, 
+x0_gt_0, 
+z1_eq_2z0, 
+pred_0_synth_msat_1, ]
+--->[2]
+
+[y_gteq_0_0, 
+z_gteq_0_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_h_1, 
+x0_eq_x1, 
+x0_gt_0, ]
+--->[0]
+
+
+Counter-example trace:
+[y_gteq_0_0, 
+z_gteq_0_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_h_1, 
+y0_eq_y1, 
+x0_eq_x1, 
+x0_gt_0, 
+z1_eq_2z0, 
+pred_0_synth_msat_1, ]
+--->[1]
+
+[y_gteq_0_0, 
+z_gteq_0_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_h_1, 
+x0_eq_x1, 
+x0_gt_0, 
+z1_eq_2z0_1, 
+y1_eq_2y0_x, ]
+--->[2]
+
+[y_gteq_0_0, 
+z_gteq_0_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_h_1, 
+x0_eq_x1, 
+x0_gt_0, 
+z1_eq_2z0, 
+pred_0_synth_msat_1, ]
+--->[0]
+
+[y_gteq_0_0, 
+z_gteq_0_0, 
+y_gteq_0_1, 
+z_gteq_0_1, 
+abs_h_1, 
+y0_eq_y1, 
+x0_eq_x1, 
+x0_gt_0, ]
+--->[0]
+
+
+16 SMT queries performed.
+Proved by invariant:
+And(Or(y_gteq_0_1, Not(x0_gt_0)),
+    Not(abs_h_0),
+    Or(z0_eq_z1, Not(abs_end_1), Not(z1_eq_2z0)),
+    Or(Not(abs_end_1), Not(z1_eq_2z0_1)),
+    z_gteq_0_1,
+    abs_h_1,
+    z_gteq_0_0,
+    Or(z1_eq_2z0, abs_h_0, y1_eq_2y0_x, Not(x0_gt_0)),
+    Or(z1_eq_2z0, abs_h_0, Not(y0_eq_y1), Not(x0_gt_0)),
+    Or(abs_end_1, Not(abs_end_0)),
+    Or(y0_eq_y1, Not(abs_end_0), Not(abs_end_1)),
+    x0_eq_x1,
+    x0_gt_0,
+    Or(y_gteq_0_0, Not(abs_end_0)),
+    Or(z1_eq_2z0, z1_eq_2z0_1),
+    Or(Not(abs_end_1), abs_end_0),
+    Or(abs_end_1, pred_0_synth_msat_1, Not(z1_eq_2z0)))
+Pre-processing time:	0.127771 
+Solver time:	6.771116
+Total time:	6.898887
+Iteration count:	16
+Predicate count:	16
+Start next refinement loop: False
+
+
+
+Total time taken : 14.637687
+Number of predicates guessed: 1.0

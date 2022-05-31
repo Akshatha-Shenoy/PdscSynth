@@ -1,0 +1,921 @@
+PDSC: Verifying ./Benchmarks_qe/subsume_2.smt2
+Namespace(file='./Benchmarks_qe/subsume_2.smt2', log=False, msat=False, property=None, qe=True, sygus=False)
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[abs_h_0, 
+count_0_0, 
+count_0_1, 
+x0_eq_x1, ]
+--->[2]
+
+[abs_h_0, 
+count_1_0, 
+count_1_1, ]
+--->[2]
+
+
+Blocking composition assignment 2 for state
+ [abs_h_0, 
+count_0_0, 
+count_0_1, 
+x0_eq_x1, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[abs_h_0, 
+count_0_0, 
+count_0_1, 
+x0_eq_x1, ]
+--->[0]
+
+[abs_h_0, 
+count_1_0, 
+count_0_1, ]
+--->[2]
+
+[abs_h_0, 
+count_1_0, 
+count_1_1, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [abs_h_0, 
+count_1_0, 
+count_0_1, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[abs_h_0, 
+count_0_0, 
+count_0_1, 
+x0_eq_x1, ]
+--->[0]
+
+[abs_h_0, 
+count_1_0, 
+count_0_1, ]
+--->[1]
+
+[abs_h_0, 
+count_1_0, 
+count_1_1, ]
+--->[0]
+
+
+Blocking composition assignment 0 for state
+ [abs_h_0, 
+count_0_0, 
+count_0_1, 
+x0_eq_x1, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[abs_h_0, 
+count_0_0, 
+count_0_1, 
+x0_eq_x1, ]
+--->[1]
+
+[abs_h_0, 
+count_0_0, 
+count_1_1, ]
+--->[2]
+
+[abs_h_0, 
+count_1_0, 
+count_1_1, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [abs_h_0, 
+count_0_0, 
+count_1_1, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[abs_h_0, 
+count_0_0, 
+count_0_1, 
+x0_eq_x1, ]
+--->[1]
+
+[abs_h_0, 
+count_0_0, 
+count_1_1, ]
+--->[0]
+
+[abs_h_0, 
+count_1_0, 
+count_1_1, ]
+--->[0]
+
+
+5 SMT queries performed.
+after complete_trace [abs_h_0, 
+count_0_0, 
+count_0_1, 
+x0_eq_x1, ]
+--->[1]
+
+[abs_h_0, 
+count_0_0, 
+count_1_1, ]
+--->[0]
+
+[abs_h_0, 
+count_1_0, 
+count_1_1, ]
+--->[-1]
+
+
+------------------------check_spuriousness-------------------------------
+SEARCHING A CONCRETE CEX TRACE FROM ABOVE ABSTRACT CEX: 
+--------------------------------------------------
+Initial concrete state :  {'count_1_1': False, 'count_0_1': True, 'abs_h_1': False, 'count_1_0': False, 'count_0_0': True, 'abs_h_0': True, 'x0_eq_x1': True, 'h_1': 0, 'h_0': 1, 'x_1': 0, 'x_0': 0, 'count_1': 0, 'count_0': 0}
+
+
+
+Next concrete state :  {'count_1': 1, 'x_1': 8, 'count_0': 0, 'h_0': 1, 'x_0': 0, 'h_1': 0}
+
+
+
+Next concrete state :  {'count_0': 1, 'x_0': 8, 'count_1': 1, 'h_1': 0, 'x_1': 8, 'h_0': 1}
+
+
+
+Is the trace spurious?  True
+Discovering predicate from a_src, a_tgt, c_src, c_tgt to eliminate spurious trace
+----------------------pred_disc-------------------
+Running quantifier elimination: 
+New predicate is  (let ((a!1 (or (not (= 0 (mod xU0 7))) (not (= 8 xU1)))))
+
+(let ((a!2 (and (or (not (= xU0 1009)) (not (= 1 xU1)))
+
+                (not (= xU0 xU1))
+
+                (or (= 0 (mod xU0 7))
+
+                    (= xU0 1009)
+
+                    (not (= xU0 383))
+
+                    (not (= 1 xU1)))
+
+                a!1)))
+
+  (not a!2)))
+
+Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
+Pre-processing time:	0.04957 
+Solver time:	2.661886
+Total time:	2.711456
+Iteration count:	5
+Predicate count:	7
+Successfully added new predicate to input file. !
+PDSC: Verifying ./Benchmarks_qe/subsume_2.smt2
+Namespace(file='./Benchmarks_qe/subsume_2.smt2', log=False, msat=False, property=None, qe=True, sygus=False)
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[abs_h_0, 
+count_0_0, 
+count_0_1, 
+x0_eq_x1, ]
+--->[2]
+
+[abs_h_0, 
+count_1_0, 
+count_1_1, 
+p_synth_1, ]
+--->[2]
+
+
+Blocking composition assignment 2 for state
+ [abs_h_0, 
+count_0_0, 
+count_0_1, 
+x0_eq_x1, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[abs_h_0, 
+count_0_0, 
+count_0_1, 
+x0_eq_x1, ]
+--->[0]
+
+[abs_h_0, 
+count_1_0, 
+count_0_1, 
+x0_eq_x1, ]
+--->[2]
+
+[abs_h_0, 
+count_1_0, 
+count_1_1, 
+p_synth_1, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [abs_h_0, 
+count_1_0, 
+count_0_1, 
+x0_eq_x1, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[abs_h_0, 
+count_0_0, 
+count_0_1, 
+x0_eq_x1, ]
+--->[0]
+
+[abs_h_0, 
+count_1_0, 
+count_0_1, 
+p_synth_1, ]
+--->[2]
+
+[abs_h_0, 
+count_1_0, 
+count_1_1, 
+p_synth_1, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [abs_h_0, 
+count_1_0, 
+count_0_1, 
+p_synth_1, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[abs_h_0, 
+count_0_0, 
+count_0_1, 
+x0_eq_x1, ]
+--->[0]
+
+[abs_h_0, 
+count_1_0, 
+count_0_1, 
+p_synth_1, ]
+--->[1]
+
+[abs_h_0, 
+count_1_0, 
+count_1_1, 
+p_synth_1, ]
+--->[0]
+
+
+Blocking composition assignment 0 for state
+ [abs_h_0, 
+count_0_0, 
+count_0_1, 
+x0_eq_x1, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[abs_h_0, 
+count_0_0, 
+count_0_1, 
+x0_eq_x1, ]
+--->[1]
+
+[abs_h_0, 
+count_0_0, 
+count_1_1, 
+p_synth_1, ]
+--->[2]
+
+[abs_h_0, 
+count_1_0, 
+count_1_1, 
+p_synth_1, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [abs_h_0, 
+count_0_0, 
+count_1_1, 
+p_synth_1, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[abs_h_0, 
+count_0_0, 
+count_0_1, 
+x0_eq_x1, ]
+--->[1]
+
+[abs_h_0, 
+count_0_0, 
+count_1_1, 
+p_synth_1, ]
+--->[0]
+
+[abs_h_0, 
+count_1_0, 
+count_1_1, 
+p_synth_1, ]
+--->[0]
+
+
+6 SMT queries performed.
+after complete_trace [abs_h_0, 
+count_0_0, 
+count_0_1, 
+x0_eq_x1, ]
+--->[1]
+
+[abs_h_0, 
+count_0_0, 
+count_1_1, 
+p_synth_1, ]
+--->[0]
+
+[abs_h_0, 
+count_1_0, 
+count_1_1, 
+p_synth_1, ]
+--->[-1]
+
+
+------------------------check_spuriousness-------------------------------
+SEARCHING A CONCRETE CEX TRACE FROM ABOVE ABSTRACT CEX: 
+--------------------------------------------------
+Initial concrete state :  {'count_1_1': False, 'count_0_1': True, 'abs_h_1': False, 'count_1_0': False, 'count_0_0': True, 'abs_h_0': True, 'p_synth_1': False, 'x0_eq_x1': True, 'h_1': 0, 'h_0': 1, 'x_1': 0, 'x_0': 0, 'count_1': 0, 'count_0': 0}
+
+
+
+Next concrete state :  {'count_1': 1, 'x_1': 8, 'count_0': 0, 'h_0': 1, 'x_0': 0, 'h_1': 0}
+
+
+
+Is the trace spurious?  True
+Discovering predicate from a_src, a_tgt, c_src, c_tgt to eliminate spurious trace
+----------------------pred_disc-------------------
+Running quantifier elimination: 
+New predicate is  (let ((a!1 (and (= xU0 xU1)
+
+                (not (= xU0 (mod xU1 7)))
+
+                (or (not (= xU0 1009)) (= 0 (mod xU1 7)))
+
+                (not (= 0 (mod xU1 7))))))
+
+  (not a!1))
+
+Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
+Pre-processing time:	0.079391 
+Solver time:	3.131791
+Total time:	3.2111820000000004
+Iteration count:	6
+Predicate count:	8
+Successfully added new predicate to input file. !
+Start next refinement loop: True
+
+
+
+PDSC: Verifying ./Benchmarks_qe/subsume_2.smt2
+Namespace(file='./Benchmarks_qe/subsume_2.smt2', log=False, msat=False, property=None, qe=True, sygus=False)
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[abs_h_0, 
+count_0_0, 
+count_0_1, 
+x0_eq_x1, 
+p_synth_2, ]
+--->[2]
+
+[abs_h_0, 
+count_1_0, 
+count_1_1, 
+p_synth_1, ]
+--->[2]
+
+
+Blocking composition assignment 2 for state
+ [abs_h_0, 
+count_0_0, 
+count_0_1, 
+x0_eq_x1, 
+p_synth_2, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[abs_h_0, 
+count_0_0, 
+count_0_1, 
+x0_eq_x1, 
+p_synth_2, ]
+--->[0]
+
+[abs_h_0, 
+count_1_0, 
+count_0_1, 
+p_synth_1, ]
+--->[2]
+
+[abs_h_0, 
+count_1_0, 
+count_1_1, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [abs_h_0, 
+count_1_0, 
+count_0_1, 
+p_synth_1, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[abs_h_0, 
+count_0_0, 
+count_0_1, 
+x0_eq_x1, 
+p_synth_2, ]
+--->[0]
+
+[abs_h_0, 
+count_1_0, 
+count_0_1, 
+p_synth_1, ]
+--->[1]
+
+[abs_h_0, 
+count_1_0, 
+count_1_1, 
+p_synth_1, ]
+--->[0]
+
+
+Blocking composition assignment 0 for state
+ [abs_h_0, 
+count_0_0, 
+count_0_1, 
+x0_eq_x1, 
+p_synth_2, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[abs_h_0, 
+count_0_0, 
+count_0_1, 
+x0_eq_x1, ]
+--->[2]
+
+[abs_h_0, 
+count_1_0, 
+count_1_1, 
+x0_eq_x1, ]
+--->[2]
+
+[abs_h_0, 
+count_1_0, 
+count_1_1, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [abs_h_0, 
+count_1_0, 
+count_1_1, 
+x0_eq_x1, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[abs_h_0, 
+count_0_0, 
+count_0_1, 
+x0_eq_x1, ]
+--->[2]
+
+[abs_h_0, 
+count_1_0, 
+count_1_1, 
+x0_eq_x1, ]
+--->[2]
+
+[abs_h_0, 
+count_1_0, 
+count_1_1, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [abs_h_0, 
+count_0_0, 
+count_0_1, 
+x0_eq_x1, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[abs_h_0, 
+count_0_0, 
+count_0_1, 
+x0_eq_x1, ]
+--->[0]
+
+[abs_h_0, 
+count_1_0, 
+count_0_1, 
+p_synth_1, ]
+--->[0]
+
+
+Blocking composition assignment 0 for state
+ [abs_h_0, 
+count_0_0, 
+count_0_1, 
+x0_eq_x1, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[abs_h_0, 
+count_0_0, 
+count_0_1, 
+x0_eq_x1, ]
+--->[1]
+
+[abs_h_0, 
+count_0_0, 
+count_1_1, 
+x0_eq_x1, ]
+--->[2]
+
+[abs_h_0, 
+count_1_0, 
+count_1_1, 
+x0_eq_x1, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [abs_h_0, 
+count_0_0, 
+count_1_1, 
+x0_eq_x1, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[abs_h_0, 
+count_0_0, 
+count_0_1, 
+x0_eq_x1, ]
+--->[1]
+
+[abs_h_0, 
+count_0_0, 
+count_1_1, 
+x0_eq_x1, ]
+--->[0]
+
+[abs_h_0, 
+count_1_0, 
+count_1_1, 
+x0_eq_x1, ]
+--->[0]
+
+
+8 SMT queries performed.
+after complete_trace [abs_h_0, 
+count_0_0, 
+count_0_1, 
+x0_eq_x1, ]
+--->[1]
+
+[abs_h_0, 
+count_0_0, 
+count_1_1, 
+x0_eq_x1, ]
+--->[0]
+
+[abs_h_0, 
+count_1_0, 
+count_1_1, 
+x0_eq_x1, ]
+--->[2]
+
+[abs_h_0, 
+count_1_0, 
+count_1_1, ]
+--->[-1]
+
+
+------------------------check_spuriousness-------------------------------
+SEARCHING A CONCRETE CEX TRACE FROM ABOVE ABSTRACT CEX: 
+--------------------------------------------------
+Initial concrete state :  {'x_1': 1009, 'count_1_1': False, 'count_0_1': True, 'abs_h_1': False, 'count_1_0': False, 'count_0_0': True, 'abs_h_0': True, 'p_synth_2': False, 'p_synth_1': False, 'x0_eq_x1': True, 'h_1': 0, 'h_0': 1, 'x_0': 1009, 'count_1': 0, 'count_0': 0}
+
+
+
+Next concrete state :  {'count_1': 1, 'x_1': 1, 'count_0': 0, 'h_0': 1, 'x_0': 1009, 'h_1': 0}
+
+
+
+Is the trace spurious?  True
+Discovering predicate from a_src, a_tgt, c_src, c_tgt to eliminate spurious trace
+----------------------pred_disc-------------------
+Running quantifier elimination: 
+New predicate is  (let ((a!1 (and (= xU0 xU1)
+
+                (not (= 0 (mod xU1 7)))
+
+                (or (= 0 (mod xU1 7)) (= xU0 (mod xU1 7))))))
+
+  (not a!1))
+
+Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
+Pre-processing time:	0.10412 
+Solver time:	4.046762
+Total time:	4.150882
+Iteration count:	8
+Predicate count:	9
+Successfully added new predicate to input file. !
+Start next refinement loop: True
+
+
+
+PDSC: Verifying ./Benchmarks_qe/subsume_2.smt2
+Namespace(file='./Benchmarks_qe/subsume_2.smt2', log=False, msat=False, property=None, qe=True, sygus=False)
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[abs_h_0, 
+count_0_0, 
+count_0_1, 
+x0_eq_x1, 
+p_synth_2, ]
+--->[2]
+
+[abs_h_0, 
+count_1_0, 
+count_1_1, 
+p_synth_1, ]
+--->[2]
+
+
+Blocking composition assignment 2 for state
+ [abs_h_0, 
+count_0_0, 
+count_0_1, 
+x0_eq_x1, 
+p_synth_2, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[abs_h_0, 
+count_0_0, 
+count_0_1, 
+x0_eq_x1, 
+p_synth_2, ]
+--->[0]
+
+[abs_h_0, 
+count_1_0, 
+count_0_1, 
+p_synth_1, ]
+--->[2]
+
+[abs_h_0, 
+count_1_0, 
+count_1_1, 
+p_synth_1, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [abs_h_0, 
+count_1_0, 
+count_0_1, 
+p_synth_1, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[abs_h_0, 
+count_0_0, 
+count_0_1, 
+x0_eq_x1, 
+p_synth_2, ]
+--->[0]
+
+[abs_h_0, 
+count_1_0, 
+count_0_1, 
+p_synth_1, ]
+--->[1]
+
+[abs_h_0, 
+count_1_0, 
+count_1_1, 
+p_synth_1, ]
+--->[0]
+
+
+Blocking composition assignment 0 for state
+ [abs_h_0, 
+count_0_0, 
+count_0_1, 
+x0_eq_x1, 
+p_synth_2, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[abs_h_0, 
+count_0_0, 
+count_0_1, 
+x0_eq_x1, 
+p_synth_2, ]
+--->[1]
+
+[abs_h_0, 
+count_0_0, 
+count_1_1, 
+p_synth_1, ]
+--->[2]
+
+[abs_h_0, 
+count_1_0, 
+count_1_1, 
+p_synth_1, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [abs_h_0, 
+count_0_0, 
+count_1_1, 
+p_synth_1, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[abs_h_0, 
+count_0_0, 
+count_0_1, 
+x0_eq_x1, ]
+--->[2]
+
+[abs_h_0, 
+count_1_0, 
+count_1_1, 
+x0_eq_x1, 
+p_synth_2, ]
+--->[2]
+
+[abs_h_0, 
+count_1_0, 
+count_1_1, 
+p_synth_1, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [abs_h_0, 
+count_1_0, 
+count_1_1, 
+x0_eq_x1, 
+p_synth_2, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[abs_h_0, 
+count_0_0, 
+count_0_1, 
+x0_eq_x1, 
+p_synth_2, ]
+--->[1]
+
+[abs_h_0, 
+count_0_0, 
+count_1_1, 
+p_synth_1, ]
+--->[0]
+
+[abs_h_0, 
+count_1_0, 
+count_1_1, 
+p_synth_1, ]
+--->[0]
+
+
+6 SMT queries performed.
+after complete_trace [abs_h_0, 
+count_0_0, 
+count_0_1, 
+x0_eq_x1, 
+p_synth_2, ]
+--->[1]
+
+[abs_h_0, 
+count_0_0, 
+count_1_1, 
+p_synth_1, ]
+--->[0]
+
+[abs_h_0, 
+count_1_0, 
+count_1_1, 
+p_synth_1, ]
+--->[-1]
+
+
+------------------------check_spuriousness-------------------------------
+SEARCHING A CONCRETE CEX TRACE FROM ABOVE ABSTRACT CEX: 
+--------------------------------------------------
+Initial concrete state :  {'x_1': 1007, 'count_1_1': False, 'count_0_1': True, 'abs_h_1': False, 'count_1_0': False, 'count_0_0': True, 'abs_h_0': True, 'p_synth_3': False, 'p_synth_2': True, 'p_synth_1': False, 'x0_eq_x1': True, 'h_1': 0, 'h_0': 1, 'x_0': 1007, 'count_1': 0, 'count_0': 0}
+
+
+
+Next concrete state :  {'count_1': 1, 'x_1': 6, 'count_0': 0, 'h_0': 1, 'x_0': 1007, 'h_1': 0}
+
+
+
+Next concrete state :  {'count_0': 1, 'x_0': 1007, 'count_1': 1, 'h_1': 0, 'x_1': 6, 'h_0': 1}
+
+
+
+Is the trace spurious?  False
+Real cex. Program is unsafe.
+Start next refinement loop: False
+
+
+
+Total time taken : 10.955309
+Number of predicates guessed: 3.0
