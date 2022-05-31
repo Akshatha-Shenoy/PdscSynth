@@ -1,6 +1,0 @@
-[0m[[0m[33mwarn[0m] [0m[0mthere was one deprecation warning; re-run with -deprecation for details[0m
-[0m[[0m[33mwarn[0m] [0m[0mthere were 7 unchecked warnings; re-run with -unchecked for details[0m
-[0m[[0m[33mwarn[0m] [0m[0mthere were 9 inliner warnings; re-run with -Yinline-warnings for details[0m
-[0m[[0m[33mwarn[0m] [0m[0mthree warnings found[0m
-[0m[[0m[0minfo[0m] [0m[0m/home/akshatha/Downloads/eldarica-master/target/scala-2.11/src_managed/main/parser/horn/Parser.java: Some input files use unchecked or unsafe operations.[0m
-[0m[[0m[0minfo[0m] [0m[0m/home/akshatha/Downloads/eldarica-master/target/scala-2.11/src_managed/main/parser/horn/Parser.java: Recompile with -Xlint:unchecked for details.[0m

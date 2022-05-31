@@ -1,6 +1,0 @@
-unsat
-(let ((.def_17 (= count_1 0))) (and .def_17 (and (= count_0 0) (and .def_17 (and (not (= count_0 2)) (and .def_17 (<= l_0 l_1)))))))
-(let ((.def_271 (<= countp_1 1))) (let ((.def_272 (<= 1 countp_1))) (and (= countp_0 0) (and (not (= countp_0 2)) (and .def_271 (and .def_272 (and (and .def_271 .def_272) (<= (+ hp_1 (+ (* (- 1) lp_1) lp_0)) 0))))))))
-(and (= countpp_0 0) (and (not (= countpp_0 2)) (not (and (= countpp_1 2) (not (<= lpp_0 lpp_1))))))
-(and (<= countppp_0 1) (and (<= 1 countppp_0) (not (and (= countppp_1 2) (not (<= 0 (+ hppp_0 (+ (* (- 1) lppp_0) lppp_1))))))))
-(not (and (= countpppp_1 2) (not (<= lpppp_0 lpppp_1))))
