@@ -1,0 +1,1683 @@
+PDSC: Verifying ./Benchmarks_qe/sum-pc.smt2
+Namespace(file='./Benchmarks_qe/sum-pc.smt2', log=False, msat=False, property=None, qe=True, sygus=False)
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[pc_eq_0_0, 
+pc_eq_0_1, 
+y0_eq_y1, 
+i0_eq_i1, 
+max0_eq_max1, ]
+--->[2]
+
+[
+pc_eq_1_0, 
+pc_eq_0_1, 
+y0_eq_y1, 
+i0_eq_i1, 
+max0_eq_max1, ]
+--->[2]
+
+[
+pc_eq_1_1, 
+i_eq_max_1, 
+max0_eq_max1, ]
+--->[2]
+
+[
+i_eq_max_0, 
+i_eq_max_1, 
+i0_eq_i1, 
+max0_eq_max1, ]
+--->[2]
+
+
+Blocking composition assignment 2 for state
+ [
+pc_eq_1_1, 
+i_eq_max_1, 
+max0_eq_max1, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[pc_eq_0_0, 
+pc_eq_0_1, 
+y0_eq_y1, 
+i0_eq_i1, 
+max0_eq_max1, ]
+--->[2]
+
+[
+pc_eq_1_0, 
+pc_eq_0_1, 
+y0_eq_y1, 
+i0_eq_i1, 
+max0_eq_max1, ]
+--->[2]
+
+[
+pc_eq_1_1, 
+i_eq_max_1, 
+max0_eq_max1, ]
+--->[0]
+
+[
+i_eq_max_0, 
+pc_eq_1_1, 
+i_eq_max_1, 
+i0_eq_i1, 
+max0_eq_max1, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [
+pc_eq_1_0, 
+pc_eq_0_1, 
+y0_eq_y1, 
+i0_eq_i1, 
+max0_eq_max1, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[pc_eq_0_0, 
+pc_eq_0_1, 
+y0_eq_y1, 
+i0_eq_i1, 
+max0_eq_max1, ]
+--->[2]
+
+[
+pc_eq_1_0, 
+pc_eq_0_1, 
+y0_eq_y1, 
+i0_eq_i1, 
+max0_eq_max1, ]
+--->[0]
+
+[
+pc_eq_0_1, 
+y0_eq_y1, 
+i0_eq_i1, 
+max0_eq_max1, ]
+--->[2]
+
+[
+pc_eq_1_1, 
+i_eq_max_1, 
+max0_eq_max1, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [
+pc_eq_0_1, 
+y0_eq_y1, 
+i0_eq_i1, 
+max0_eq_max1, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[pc_eq_0_0, 
+pc_eq_0_1, 
+y0_eq_y1, 
+i0_eq_i1, 
+max0_eq_max1, ]
+--->[2]
+
+[pc_eq_0_0, 
+pc_eq_1_1, 
+y0_eq_y1, 
+i0_eq_i1, 
+max0_eq_max1, ]
+--->[2]
+
+[
+pc_eq_1_0, 
+i_eq_max_0, 
+y0_eq_y1, 
+max0_eq_max1, ]
+--->[2]
+
+[
+i_eq_max_0, 
+i_eq_max_1, 
+i0_eq_i1, 
+max0_eq_max1, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [
+pc_eq_1_0, 
+i_eq_max_0, 
+y0_eq_y1, 
+max0_eq_max1, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[pc_eq_0_0, 
+pc_eq_0_1, 
+y0_eq_y1, 
+i0_eq_i1, 
+max0_eq_max1, ]
+--->[2]
+
+[pc_eq_0_0, 
+pc_eq_1_1, 
+y0_eq_y1, 
+i0_eq_i1, 
+max0_eq_max1, ]
+--->[2]
+
+[
+pc_eq_1_0, 
+i_eq_max_0, 
+max0_eq_max1, ]
+--->[2]
+
+[
+i_eq_max_0, 
+i_eq_max_1, 
+i0_eq_i1, 
+max0_eq_max1, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [
+pc_eq_1_0, 
+i_eq_max_0, 
+max0_eq_max1, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[pc_eq_0_0, 
+pc_eq_0_1, 
+y0_eq_y1, 
+i0_eq_i1, 
+max0_eq_max1, ]
+--->[2]
+
+[pc_eq_0_0, 
+pc_eq_1_1, 
+y0_eq_y1, 
+i0_eq_i1, 
+max0_eq_max1, ]
+--->[2]
+
+[
+pc_eq_1_0, 
+i_eq_max_0, 
+max0_eq_max1, ]
+--->[1]
+
+[
+pc_eq_1_0, 
+i_eq_max_0, 
+i_eq_max_1, 
+i0_eq_i1, 
+max0_eq_max1, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [pc_eq_0_0, 
+pc_eq_1_1, 
+y0_eq_y1, 
+i0_eq_i1, 
+max0_eq_max1, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[pc_eq_0_0, 
+pc_eq_0_1, 
+y0_eq_y1, 
+i0_eq_i1, 
+max0_eq_max1, ]
+--->[2]
+
+[pc_eq_0_0, 
+pc_eq_1_1, 
+y0_eq_y1, 
+i0_eq_i1, 
+max0_eq_max1, ]
+--->[0]
+
+[pc_eq_0_0, 
+pc_eq_1_1, 
+max0_eq_max1, ]
+--->[2]
+
+[
+pc_eq_1_0, 
+i_eq_max_0, 
+max0_eq_max1, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [pc_eq_0_0, 
+pc_eq_1_1, 
+max0_eq_max1, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[pc_eq_0_0, 
+pc_eq_0_1, 
+y0_eq_y1, 
+i0_eq_i1, 
+max0_eq_max1, ]
+--->[2]
+
+[pc_eq_0_0, 
+pc_eq_1_1, 
+y0_eq_y1, 
+i0_eq_i1, 
+max0_eq_max1, ]
+--->[0]
+
+[pc_eq_0_0, 
+pc_eq_1_1, 
+y0_eq_y1, 
+max0_eq_max1, ]
+--->[2]
+
+[
+pc_eq_1_0, 
+i_eq_max_0, 
+max0_eq_max1, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [pc_eq_0_0, 
+pc_eq_1_1, 
+y0_eq_y1, 
+max0_eq_max1, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[pc_eq_0_0, 
+pc_eq_0_1, 
+y0_eq_y1, 
+i0_eq_i1, 
+max0_eq_max1, ]
+--->[2]
+
+[pc_eq_0_0, 
+pc_eq_1_1, 
+y0_eq_y1, 
+i0_eq_i1, 
+max0_eq_max1, ]
+--->[0]
+
+[
+pc_eq_1_0, 
+i_eq_max_0, 
+pc_eq_1_1, 
+max0_eq_max1, ]
+--->[2]
+
+[
+pc_eq_1_0, 
+i_eq_max_0, 
+max0_eq_max1, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [
+pc_eq_1_0, 
+i_eq_max_0, 
+pc_eq_1_1, 
+max0_eq_max1, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[pc_eq_0_0, 
+pc_eq_0_1, 
+y0_eq_y1, 
+i0_eq_i1, 
+max0_eq_max1, ]
+--->[2]
+
+[pc_eq_0_0, 
+pc_eq_1_1, 
+y0_eq_y1, 
+i0_eq_i1, 
+max0_eq_max1, ]
+--->[0]
+
+[
+pc_eq_1_0, 
+i_eq_max_0, 
+pc_eq_1_1, 
+max0_eq_max1, ]
+--->[1]
+
+[
+pc_eq_1_0, 
+i_eq_max_0, 
+max0_eq_max1, ]
+--->[0]
+
+
+Blocking composition assignment 0 for state
+ [pc_eq_0_0, 
+pc_eq_1_1, 
+y0_eq_y1, 
+i0_eq_i1, 
+max0_eq_max1, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[pc_eq_0_0, 
+pc_eq_0_1, 
+y0_eq_y1, 
+i0_eq_i1, 
+max0_eq_max1, ]
+--->[2]
+
+[pc_eq_0_0, 
+pc_eq_1_1, 
+y0_eq_y1, 
+i0_eq_i1, 
+max0_eq_max1, ]
+--->[1]
+
+[pc_eq_0_0, 
+y0_eq_y1, 
+i0_eq_i1, 
+max0_eq_max1, ]
+--->[2]
+
+[
+pc_eq_1_0, 
+i_eq_max_0, 
+max0_eq_max1, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [pc_eq_0_0, 
+y0_eq_y1, 
+i0_eq_i1, 
+max0_eq_max1, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[pc_eq_0_0, 
+pc_eq_0_1, 
+y0_eq_y1, 
+i0_eq_i1, 
+max0_eq_max1, ]
+--->[2]
+
+[pc_eq_0_0, 
+pc_eq_1_1, 
+y0_eq_y1, 
+i0_eq_i1, 
+max0_eq_max1, ]
+--->[1]
+
+[pc_eq_0_0, 
+y0_eq_y1, 
+i0_eq_i1, 
+max0_eq_max1, ]
+--->[0]
+
+[
+pc_eq_1_0, 
+i_eq_max_0, 
+max0_eq_max1, ]
+--->[0]
+
+
+Blocking composition assignment 0 for state
+ [pc_eq_0_0, 
+y0_eq_y1, 
+i0_eq_i1, 
+max0_eq_max1, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[pc_eq_0_0, 
+pc_eq_0_1, 
+y0_eq_y1, 
+i0_eq_i1, 
+max0_eq_max1, ]
+--->[2]
+
+[
+pc_eq_1_0, 
+pc_eq_0_1, 
+y0_eq_y1, 
+i0_eq_i1, 
+max0_eq_max1, ]
+--->[0]
+
+[
+pc_eq_0_1, 
+y0_eq_y1, 
+i0_eq_i1, 
+max0_eq_max1, ]
+--->[0]
+
+[
+pc_eq_0_1, 
+max0_eq_max1, ]
+--->[2]
+
+[
+pc_eq_1_1, 
+i_eq_max_1, 
+max0_eq_max1, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [
+pc_eq_0_1, 
+max0_eq_max1, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[pc_eq_0_0, 
+pc_eq_0_1, 
+y0_eq_y1, 
+i0_eq_i1, 
+max0_eq_max1, ]
+--->[2]
+
+[
+pc_eq_1_0, 
+pc_eq_1_1, 
+y0_eq_y1, 
+i0_eq_i1, 
+max0_eq_max1, ]
+--->[2]
+
+[
+y0_eq_y1, 
+i0_eq_i1, 
+max0_eq_max1, ]
+--->[2]
+
+[
+i_eq_max_0, 
+y0_eq_y1, 
+max0_eq_max1, ]
+--->[2]
+
+[
+i_eq_max_0, 
+i_eq_max_1, 
+i0_eq_i1, 
+max0_eq_max1, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [
+i_eq_max_0, 
+y0_eq_y1, 
+max0_eq_max1, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[pc_eq_0_0, 
+pc_eq_0_1, 
+y0_eq_y1, 
+i0_eq_i1, 
+max0_eq_max1, ]
+--->[2]
+
+[
+pc_eq_1_0, 
+pc_eq_0_1, 
+y0_eq_y1, 
+i0_eq_i1, 
+max0_eq_max1, ]
+--->[0]
+
+[
+pc_eq_0_1, 
+y0_eq_y1, 
+i0_eq_i1, 
+max0_eq_max1, ]
+--->[0]
+
+[
+i_eq_max_0, 
+pc_eq_0_1, 
+max0_eq_max1, ]
+--->[2]
+
+[
+i_eq_max_0, 
+pc_eq_1_1, 
+i_eq_max_1, 
+i0_eq_i1, 
+max0_eq_max1, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [
+i_eq_max_0, 
+pc_eq_0_1, 
+max0_eq_max1, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[pc_eq_0_0, 
+pc_eq_0_1, 
+y0_eq_y1, 
+i0_eq_i1, 
+max0_eq_max1, ]
+--->[2]
+
+[
+pc_eq_1_0, 
+pc_eq_1_1, 
+y0_eq_y1, 
+i0_eq_i1, 
+max0_eq_max1, ]
+--->[2]
+
+[
+y0_eq_y1, 
+i0_eq_i1, 
+max0_eq_max1, ]
+--->[2]
+
+[
+i_eq_max_0, 
+y0_eq_y1, 
+max0_eq_max1, ]
+--->[1]
+
+[
+i_eq_max_0, 
+i_eq_max_1, 
+i0_eq_i1, 
+max0_eq_max1, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [
+y0_eq_y1, 
+i0_eq_i1, 
+max0_eq_max1, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[pc_eq_0_0, 
+pc_eq_0_1, 
+y0_eq_y1, 
+i0_eq_i1, 
+max0_eq_max1, ]
+--->[2]
+
+[
+pc_eq_1_0, 
+pc_eq_1_1, 
+y0_eq_y1, 
+i0_eq_i1, 
+max0_eq_max1, ]
+--->[2]
+
+[
+y0_eq_y1, 
+i0_eq_i1, 
+max0_eq_max1, ]
+--->[0]
+
+[
+i_eq_max_0, 
+y0_eq_y1, 
+max0_eq_max1, ]
+--->[0]
+
+
+Blocking composition assignment 0 for state
+ [
+y0_eq_y1, 
+i0_eq_i1, 
+max0_eq_max1, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[pc_eq_0_0, 
+pc_eq_0_1, 
+y0_eq_y1, 
+i0_eq_i1, 
+max0_eq_max1, ]
+--->[2]
+
+[pc_eq_0_0, 
+pc_eq_1_1, 
+y0_eq_y1, 
+i0_eq_i1, 
+max0_eq_max1, ]
+--->[1]
+
+[pc_eq_0_0, 
+y0_eq_y1, 
+i0_eq_i1, 
+max0_eq_max1, ]
+--->[1]
+
+[pc_eq_0_0, 
+max0_eq_max1, ]
+--->[2]
+
+[
+pc_eq_1_0, 
+i_eq_max_0, 
+max0_eq_max1, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [pc_eq_0_0, 
+max0_eq_max1, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[pc_eq_0_0, 
+pc_eq_0_1, 
+y0_eq_y1, 
+i0_eq_i1, 
+max0_eq_max1, ]
+--->[2]
+
+[
+pc_eq_1_0, 
+pc_eq_0_1, 
+y0_eq_y1, 
+i0_eq_i1, 
+max0_eq_max1, ]
+--->[0]
+
+[
+pc_eq_0_1, 
+y0_eq_y1, 
+i0_eq_i1, 
+max0_eq_max1, ]
+--->[0]
+
+[
+pc_eq_0_1, 
+y0_eq_y1, 
+max0_eq_max1, ]
+--->[2]
+
+[
+pc_eq_1_1, 
+i_eq_max_1, 
+max0_eq_max1, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [
+pc_eq_0_1, 
+y0_eq_y1, 
+max0_eq_max1, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[pc_eq_0_0, 
+pc_eq_0_1, 
+y0_eq_y1, 
+i0_eq_i1, 
+max0_eq_max1, ]
+--->[2]
+
+[
+pc_eq_1_0, 
+pc_eq_1_1, 
+y0_eq_y1, 
+i0_eq_i1, 
+max0_eq_max1, ]
+--->[2]
+
+[
+y0_eq_y1, 
+i0_eq_i1, 
+max0_eq_max1, ]
+--->[1]
+
+[
+i_eq_max_1, 
+max0_eq_max1, ]
+--->[2]
+
+[
+i_eq_max_0, 
+i_eq_max_1, 
+i0_eq_i1, 
+max0_eq_max1, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [
+i_eq_max_1, 
+max0_eq_max1, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[pc_eq_0_0, 
+pc_eq_0_1, 
+y0_eq_y1, 
+i0_eq_i1, 
+max0_eq_max1, ]
+--->[2]
+
+[
+pc_eq_1_0, 
+pc_eq_1_1, 
+y0_eq_y1, 
+i0_eq_i1, 
+max0_eq_max1, ]
+--->[2]
+
+[
+y0_eq_y1, 
+i0_eq_i1, 
+max0_eq_max1, ]
+--->[1]
+
+[
+i_eq_max_1, 
+max0_eq_max1, ]
+--->[0]
+
+[
+i_eq_max_0, 
+i_eq_max_1, 
+i0_eq_i1, 
+max0_eq_max1, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [
+pc_eq_1_0, 
+pc_eq_1_1, 
+y0_eq_y1, 
+i0_eq_i1, 
+max0_eq_max1, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[pc_eq_0_0, 
+pc_eq_0_1, 
+y0_eq_y1, 
+i0_eq_i1, 
+max0_eq_max1, ]
+--->[2]
+
+[
+pc_eq_1_0, 
+pc_eq_1_1, 
+y0_eq_y1, 
+i0_eq_i1, 
+max0_eq_max1, ]
+--->[0]
+
+[
+pc_eq_1_1, 
+y0_eq_y1, 
+i0_eq_i1, 
+max0_eq_max1, ]
+--->[2]
+
+[
+y0_eq_y1, 
+i0_eq_i1, 
+max0_eq_max1, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [
+pc_eq_1_1, 
+y0_eq_y1, 
+i0_eq_i1, 
+max0_eq_max1, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[pc_eq_0_0, 
+pc_eq_0_1, 
+y0_eq_y1, 
+i0_eq_i1, 
+max0_eq_max1, ]
+--->[2]
+
+[
+pc_eq_1_0, 
+pc_eq_0_1, 
+y0_eq_y1, 
+i0_eq_i1, 
+max0_eq_max1, ]
+--->[0]
+
+[
+pc_eq_0_1, 
+y0_eq_y1, 
+i0_eq_i1, 
+max0_eq_max1, ]
+--->[0]
+
+[
+i_eq_max_0, 
+pc_eq_0_1, 
+y0_eq_y1, 
+max0_eq_max1, ]
+--->[2]
+
+[
+i_eq_max_0, 
+pc_eq_1_1, 
+i_eq_max_1, 
+i0_eq_i1, 
+max0_eq_max1, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [
+i_eq_max_0, 
+pc_eq_0_1, 
+y0_eq_y1, 
+max0_eq_max1, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[pc_eq_0_0, 
+pc_eq_0_1, 
+y0_eq_y1, 
+i0_eq_i1, 
+max0_eq_max1, ]
+--->[2]
+
+[
+pc_eq_1_0, 
+pc_eq_1_1, 
+y0_eq_y1, 
+i0_eq_i1, 
+max0_eq_max1, ]
+--->[0]
+
+[
+pc_eq_1_1, 
+y0_eq_y1, 
+i0_eq_i1, 
+max0_eq_max1, ]
+--->[0]
+
+[
+pc_eq_1_1, 
+max0_eq_max1, ]
+--->[2]
+
+[
+i_eq_max_0, 
+y0_eq_y1, 
+max0_eq_max1, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [
+pc_eq_1_1, 
+max0_eq_max1, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[pc_eq_0_0, 
+pc_eq_0_1, 
+y0_eq_y1, 
+i0_eq_i1, 
+max0_eq_max1, ]
+--->[2]
+
+[
+pc_eq_1_0, 
+pc_eq_1_1, 
+y0_eq_y1, 
+i0_eq_i1, 
+max0_eq_max1, ]
+--->[0]
+
+[
+pc_eq_1_1, 
+y0_eq_y1, 
+i0_eq_i1, 
+max0_eq_max1, ]
+--->[0]
+
+[
+pc_eq_1_1, 
+y0_eq_y1, 
+max0_eq_max1, ]
+--->[2]
+
+[
+y0_eq_y1, 
+i0_eq_i1, 
+max0_eq_max1, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [
+pc_eq_1_1, 
+y0_eq_y1, 
+max0_eq_max1, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[pc_eq_0_0, 
+pc_eq_0_1, 
+y0_eq_y1, 
+i0_eq_i1, 
+max0_eq_max1, ]
+--->[2]
+
+[pc_eq_0_0, 
+pc_eq_1_1, 
+y0_eq_y1, 
+i0_eq_i1, 
+max0_eq_max1, ]
+--->[1]
+
+[pc_eq_0_0, 
+y0_eq_y1, 
+i0_eq_i1, 
+max0_eq_max1, ]
+--->[1]
+
+[pc_eq_0_0, 
+max0_eq_max1, ]
+--->[0]
+
+[
+pc_eq_1_0, 
+i_eq_max_0, 
+max0_eq_max1, ]
+--->[0]
+
+
+Blocking composition assignment 0 for state
+ [pc_eq_0_0, 
+max0_eq_max1, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[pc_eq_0_0, 
+pc_eq_0_1, 
+y0_eq_y1, 
+i0_eq_i1, 
+max0_eq_max1, ]
+--->[2]
+
+[pc_eq_0_0, 
+pc_eq_1_1, 
+y0_eq_y1, 
+i0_eq_i1, 
+max0_eq_max1, ]
+--->[1]
+
+[pc_eq_0_0, 
+y0_eq_y1, 
+i0_eq_i1, 
+max0_eq_max1, ]
+--->[1]
+
+[pc_eq_0_0, 
+y0_eq_y1, 
+max0_eq_max1, ]
+--->[2]
+
+[
+pc_eq_1_0, 
+i_eq_max_0, 
+max0_eq_max1, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [pc_eq_0_0, 
+y0_eq_y1, 
+max0_eq_max1, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[pc_eq_0_0, 
+pc_eq_0_1, 
+y0_eq_y1, 
+i0_eq_i1, 
+max0_eq_max1, ]
+--->[2]
+
+[pc_eq_0_0, 
+pc_eq_1_1, 
+y0_eq_y1, 
+i0_eq_i1, 
+max0_eq_max1, ]
+--->[1]
+
+[pc_eq_0_0, 
+y0_eq_y1, 
+i0_eq_i1, 
+max0_eq_max1, ]
+--->[1]
+
+[pc_eq_0_0, 
+i_eq_max_1, 
+max0_eq_max1, ]
+--->[2]
+
+[
+pc_eq_1_0, 
+i_eq_max_0, 
+i_eq_max_1, 
+i0_eq_i1, 
+max0_eq_max1, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [pc_eq_0_0, 
+i_eq_max_1, 
+max0_eq_max1, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[pc_eq_0_0, 
+pc_eq_0_1, 
+y0_eq_y1, 
+i0_eq_i1, 
+max0_eq_max1, ]
+--->[2]
+
+[
+pc_eq_1_0, 
+pc_eq_0_1, 
+y0_eq_y1, 
+i0_eq_i1, 
+max0_eq_max1, ]
+--->[0]
+
+[
+pc_eq_0_1, 
+y0_eq_y1, 
+i0_eq_i1, 
+max0_eq_max1, ]
+--->[0]
+
+[
+i_eq_max_0, 
+pc_eq_0_1, 
+max0_eq_max1, ]
+--->[1]
+
+[
+i_eq_max_0, 
+pc_eq_1_1, 
+i_eq_max_1, 
+i0_eq_i1, 
+max0_eq_max1, ]
+--->[0]
+
+
+Blocking composition assignment 0 for state
+ [
+pc_eq_0_1, 
+y0_eq_y1, 
+i0_eq_i1, 
+max0_eq_max1, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[pc_eq_0_0, 
+pc_eq_0_1, 
+y0_eq_y1, 
+i0_eq_i1, 
+max0_eq_max1, ]
+--->[2]
+
+[
+pc_eq_1_0, 
+pc_eq_0_1, 
+y0_eq_y1, 
+i0_eq_i1, 
+max0_eq_max1, ]
+--->[0]
+
+[
+pc_eq_0_1, 
+y0_eq_y1, 
+i0_eq_i1, 
+max0_eq_max1, ]
+--->[1]
+
+[
+pc_eq_1_1, 
+i_eq_max_1, 
+max0_eq_max1, ]
+--->[0]
+
+
+Blocking composition assignment 0 for state
+ [
+pc_eq_1_0, 
+pc_eq_0_1, 
+y0_eq_y1, 
+i0_eq_i1, 
+max0_eq_max1, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[pc_eq_0_0, 
+pc_eq_0_1, 
+y0_eq_y1, 
+i0_eq_i1, 
+max0_eq_max1, ]
+--->[2]
+
+[
+pc_eq_1_0, 
+pc_eq_0_1, 
+y0_eq_y1, 
+i0_eq_i1, 
+max0_eq_max1, ]
+--->[1]
+
+[
+pc_eq_1_0, 
+pc_eq_1_1, 
+i_eq_max_1, 
+max0_eq_max1, ]
+--->[2]
+
+[
+i_eq_max_1, 
+max0_eq_max1, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [
+pc_eq_1_0, 
+pc_eq_1_1, 
+i_eq_max_1, 
+max0_eq_max1, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[pc_eq_0_0, 
+pc_eq_0_1, 
+y0_eq_y1, 
+i0_eq_i1, 
+max0_eq_max1, ]
+--->[2]
+
+[
+pc_eq_1_0, 
+pc_eq_0_1, 
+y0_eq_y1, 
+i0_eq_i1, 
+max0_eq_max1, ]
+--->[1]
+
+[
+pc_eq_1_0, 
+pc_eq_0_1, 
+max0_eq_max1, ]
+--->[2]
+
+[
+pc_eq_0_1, 
+y0_eq_y1, 
+i0_eq_i1, 
+max0_eq_max1, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [
+pc_eq_1_0, 
+pc_eq_0_1, 
+max0_eq_max1, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[pc_eq_0_0, 
+pc_eq_0_1, 
+y0_eq_y1, 
+i0_eq_i1, 
+max0_eq_max1, ]
+--->[2]
+
+[
+pc_eq_1_0, 
+pc_eq_0_1, 
+y0_eq_y1, 
+i0_eq_i1, 
+max0_eq_max1, ]
+--->[1]
+
+[
+pc_eq_1_0, 
+pc_eq_0_1, 
+y0_eq_y1, 
+max0_eq_max1, ]
+--->[2]
+
+[
+pc_eq_1_1, 
+i_eq_max_1, 
+max0_eq_max1, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [
+pc_eq_1_0, 
+pc_eq_0_1, 
+y0_eq_y1, 
+max0_eq_max1, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[pc_eq_0_0, 
+pc_eq_0_1, 
+y0_eq_y1, 
+i0_eq_i1, 
+max0_eq_max1, ]
+--->[2]
+
+[
+pc_eq_1_0, 
+pc_eq_0_1, 
+y0_eq_y1, 
+i0_eq_i1, 
+max0_eq_max1, ]
+--->[1]
+
+[
+pc_eq_1_0, 
+pc_eq_1_1, 
+i_eq_max_1, 
+max0_eq_max1, ]
+--->[0]
+
+[
+pc_eq_1_1, 
+i_eq_max_1, 
+max0_eq_max1, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [pc_eq_0_0, 
+pc_eq_0_1, 
+y0_eq_y1, 
+i0_eq_i1, 
+max0_eq_max1, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[pc_eq_0_0, 
+pc_eq_0_1, 
+y0_eq_y1, 
+i0_eq_i1, 
+max0_eq_max1, ]
+--->[0]
+
+[
+pc_eq_1_0, 
+i_eq_max_0, 
+pc_eq_0_1, 
+max0_eq_max1, ]
+--->[2]
+
+[
+i_eq_max_0, 
+pc_eq_1_1, 
+i_eq_max_1, 
+i0_eq_i1, 
+max0_eq_max1, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [
+pc_eq_1_0, 
+i_eq_max_0, 
+pc_eq_0_1, 
+max0_eq_max1, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[pc_eq_0_0, 
+pc_eq_0_1, 
+y0_eq_y1, 
+i0_eq_i1, 
+max0_eq_max1, ]
+--->[0]
+
+[
+pc_eq_1_0, 
+i_eq_max_0, 
+pc_eq_0_1, 
+y0_eq_y1, 
+max0_eq_max1, ]
+--->[2]
+
+[
+i_eq_max_0, 
+pc_eq_1_1, 
+i_eq_max_1, 
+i0_eq_i1, 
+max0_eq_max1, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [
+pc_eq_1_0, 
+i_eq_max_0, 
+pc_eq_0_1, 
+y0_eq_y1, 
+max0_eq_max1, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[pc_eq_0_0, 
+pc_eq_0_1, 
+y0_eq_y1, 
+i0_eq_i1, 
+max0_eq_max1, ]
+--->[0]
+
+[
+pc_eq_1_0, 
+i_eq_max_0, 
+pc_eq_0_1, 
+max0_eq_max1, ]
+--->[1]
+
+[
+pc_eq_1_0, 
+i_eq_max_0, 
+pc_eq_1_1, 
+i_eq_max_1, 
+i0_eq_i1, 
+max0_eq_max1, ]
+--->[0]
+
+
+Blocking composition assignment 0 for state
+ [pc_eq_0_0, 
+pc_eq_0_1, 
+y0_eq_y1, 
+i0_eq_i1, 
+max0_eq_max1, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[pc_eq_0_0, 
+pc_eq_0_1, 
+y0_eq_y1, 
+i0_eq_i1, 
+max0_eq_max1, ]
+--->[1]
+
+[pc_eq_0_0, 
+pc_eq_1_1, 
+i_eq_max_1, 
+y0_eq_y1, 
+max0_eq_max1, ]
+--->[2]
+
+[
+pc_eq_1_0, 
+i_eq_max_0, 
+i_eq_max_1, 
+i0_eq_i1, 
+max0_eq_max1, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [pc_eq_0_0, 
+pc_eq_1_1, 
+i_eq_max_1, 
+y0_eq_y1, 
+max0_eq_max1, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[pc_eq_0_0, 
+pc_eq_0_1, 
+y0_eq_y1, 
+i0_eq_i1, 
+max0_eq_max1, ]
+--->[1]
+
+[pc_eq_0_0, 
+pc_eq_1_1, 
+i_eq_max_1, 
+y0_eq_y1, 
+max0_eq_max1, ]
+--->[0]
+
+[
+pc_eq_1_0, 
+pc_eq_1_1, 
+i_eq_max_1, 
+max0_eq_max1, ]
+--->[0]
+
+
+39 SMT queries performed.
+after complete_trace [pc_eq_0_0, 
+pc_eq_0_1, 
+y0_eq_y1, 
+i0_eq_i1, 
+max0_eq_max1, ]
+--->[1]
+
+[pc_eq_0_0, 
+pc_eq_1_1, 
+i_eq_max_1, 
+y0_eq_y1, 
+max0_eq_max1, ]
+--->[0]
+
+[
+pc_eq_1_0, 
+pc_eq_1_1, 
+i_eq_max_1, 
+max0_eq_max1, ]
+--->[0]
+
+[
+pc_eq_1_1, 
+i_eq_max_1, 
+max0_eq_max1, ]
+--->[0]
+
+[
+i_eq_max_0, 
+pc_eq_1_1, 
+i_eq_max_1, 
+i0_eq_i1, 
+max0_eq_max1, ]
+--->[-1]
+
+
+------------------------check_spuriousness-------------------------------
+SEARCHING A CONCRETE CEX TRACE FROM ABOVE ABSTRACT CEX: 
+--------------------------------------------------
+Initial concrete state :  {'h_0': 1, 'max_1': 2, 'h_1': 1, 'pc_1': 0, 'pc_0': 0, 'i_eq_max_1': False, 'pc_eq_1_1': False, 'pc_eq_0_1': True, 'i_eq_max_0': False, 'pc_eq_1_0': False, 'pc_eq_0_0': True, 'max0_eq_max1': True, 'i0_eq_i1': True, 'y0_eq_y1': True, 'max_0': 2, 'v_1': 0, 'y_1': 0, 'i_1': 0, 'v_0': 0, 'y_0': 0, 'i_0': 0}
+
+
+
+Next concrete state :  {'y_1': 0, 'i_1': 1, 'h_1': 1, 'v_1': 0, 'max_1': 2, 'pc_0': 0, 'v_0': 0, 'y_0': 0, 'i_0': 0, 'h_0': 1, 'max_0': 2, 'pc_1': 1}
+
+
+
+Is the trace spurious?  True
+Discovering predicate from a_src, a_tgt, c_src, c_tgt to eliminate spurious trace
+----------------------pred_disc-------------------
+Running quantifier elimination: 
+New predicate is  (not (and (= yU0 (* 2 yU1)) (= yU0 yU1)))
+
+Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
+Pre-processing time:	0.090218 
+Solver time:	10.092791
+Total time:	10.183009
+Iteration count:	39
+Predicate count:	9
+Successfully added new predicate to input file. !
+PDSC: Verifying ./Benchmarks_qe/sum-pc.smt2
+Namespace(file='./Benchmarks_qe/sum-pc.smt2', log=False, msat=False, property=None, qe=True, sygus=False)
+1 SMT queries performed.
+Proved by invariant:
+And(y0_eq_y1, max0_eq_max1, p_synth_1)
+Pre-processing time:	0.102083 
+Solver time:	0.08509
+Total time:	0.18717299999999998
+Iteration count:	1
+Predicate count:	10
+Start next refinement loop: False
+
+
+
+Total time taken : 10.370455
+Number of predicates guessed: 1.0

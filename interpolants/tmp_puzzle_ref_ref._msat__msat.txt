@@ -1,0 +1,5 @@
+unsat
+(and (not (= end_1 1)) (and (not (= end_0 1)) (and (= n_0 n_1) (not (= ct_0 1)))))
+(not (and (= endp_1 1) (not (and (not (= endp_0 1)) (and (= np_0 0) (not (= ctp_0 1)))))))
+(not (and (= endpp_1 1) (not (and (= npp_0 0) (not (= ctpp_0 1))))))
+(not (and (= ctppp_0 1) (= endppp_1 1)))

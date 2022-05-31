@@ -1,0 +1,137 @@
+PDSC: Verifying ./Benchmarks_qe/squareSum.smt2
+Namespace(file='./Benchmarks_qe/squareSum.smt2', log=False, msat=False, property=None, qe=True, sygus=False)
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[a_lt_b_0, 
+a_gt_0_0, 
+a_lt_b_1, 
+a_gt_0_1, 
+a0_lt_a1, 
+b0_gt_b1, 
+c0_eq_c1, ]
+--->[2]
+
+[a_lt_b_0, 
+a_gt_0_0, 
+a_gt_0_1, 
+a0_lt_a1, 
+b0_gt_b1, 
+c0_lt_c1, ]
+--->[2]
+
+[
+a_gt_0_0, 
+a_gt_0_1, 
+a0_eq_a1, 
+b0_gt_b1, 
+c0_lt_c1, ]
+--->[2]
+
+
+Blocking composition assignment 2 for state
+ [a_lt_b_0, 
+a_gt_0_0, 
+a_gt_0_1, 
+a0_lt_a1, 
+b0_gt_b1, 
+c0_lt_c1, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[a_lt_b_0, 
+a_gt_0_0, 
+a_lt_b_1, 
+a_gt_0_1, 
+a0_lt_a1, 
+b0_gt_b1, 
+c0_eq_c1, ]
+--->[2]
+
+[a_lt_b_0, 
+a_gt_0_0, 
+a_gt_0_1, 
+a0_lt_a1, 
+b0_gt_b1, 
+c0_lt_c1, ]
+--->[0]
+
+[
+a_gt_0_0, 
+a_gt_0_1, 
+a0_eq_a1, 
+b0_gt_b1, 
+c0_lt_c1, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [a_lt_b_0, 
+a_gt_0_0, 
+a_lt_b_1, 
+a_gt_0_1, 
+a0_lt_a1, 
+b0_gt_b1, 
+c0_eq_c1, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[a_lt_b_0, 
+a_gt_0_0, 
+a_lt_b_1, 
+a_gt_0_1, 
+a0_lt_a1, 
+b0_gt_b1, 
+c0_eq_c1, ]
+--->[0]
+
+[a_lt_b_0, 
+a_gt_0_0, 
+a_lt_b_1, 
+a_gt_0_1, 
+a0_lt_a1, 
+b0_gt_b1, ]
+--->[2]
+
+[a_lt_b_0, 
+a_gt_0_0, 
+a_gt_0_1, 
+a0_lt_a1, 
+b0_gt_b1, 
+c0_lt_c1, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [a_lt_b_0, 
+a_gt_0_0, 
+a_lt_b_1, 
+a_gt_0_1, 
+a0_lt_a1, 
+b0_gt_b1, ]
+
+
+4 SMT queries performed.
+Proved by invariant:
+And(a_gt_0_0,
+    a_gt_0_1,
+    b0_gt_b1,
+    Not(c0_lt_c1),
+    Or(Not(a0_lt_a1), a_lt_b_1),
+    Or(Not(a_lt_b_1), a_lt_b_0),
+    Or(Not(a_lt_b_1), a0_lt_a1, a0_eq_a1),
+    Or(Not(c0_eq_c1), a0_lt_a1))
+Pre-processing time:	0.059846 
+Solver time:	0.483052
+Total time:	0.542898
+Iteration count:	4
+Predicate count:	9
+Total time taken : 0.542974
+Number of predicates guessed: 0.0

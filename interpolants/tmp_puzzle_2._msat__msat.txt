@@ -1,0 +1,7 @@
+unsat
+(let ((.def_21 (= n_0 n_1))) (let ((.def_24 (= h_0 1))) (let ((.def_81 (not (= h_1 1)))) (let ((.def_623 (not (= ct_0 1)))) (and .def_24 (and (not (= end_1 1)) (and .def_81 (and (not (= end_0 1)) (and .def_81 (and .def_24 (and (and .def_21 .def_623) (and .def_21 (and .def_81 (and .def_623 (and .def_21 (<= ct_1 0))))))))))))))))
+(let ((.def_148 (not (= hp_1 1)))) (let ((.def_650 (= hp_0 1))) (let ((.def_653 (= np_0 0))) (let ((.def_655 (not (= ctp_0 1)))) (and .def_650 (and (not (= endp_0 1)) (and .def_148 (and .def_650 (or (and .def_653 .def_655) (and (not .def_653) (and (not (= endp_1 1)) (and .def_148 (and .def_655 (and (= np_1 (to_int (* (/ 1 10) (to_real np_0)))) (<= ctp_1 1)))))))))))))))
+(let ((.def_688 (= hpp_0 1))) (let ((.def_691 (= npp_0 0))) (let ((.def_693 (not (= ctpp_0 1)))) (and .def_688 (and (not (= endpp_0 1)) (and .def_688 (or (and .def_691 .def_693) (and (not .def_691) (and (not (= hpp_1 1)) (and .def_693 (not (and (= 0 (to_int (* (/ 1 10) (to_real npp_0)))) (not (and (= npp_1 (to_int (* (/ 1 10) (to_real npp_0)))) (<= ctpp_1 1)))))))))))))))
+(let ((.def_239 (= hppp_0 1))) (let ((.def_240 (= nppp_0 0))) (let ((.def_730 (not (= ctppp_0 1)))) (and .def_239 (and (not (= endppp_0 1)) (and .def_239 (or (and .def_240 .def_730) (and (not .def_240) (and .def_730 (not (and (= 0 (to_int (* (/ 1 10) (to_real nppp_0)))) (not (<= ctppp_1 1)))))))))))))
+(and (= hpppp_0 1) (not (and (= ctpppp_0 1) (or (= endpppp_0 1) (and (= npppp_0 0) (not (<= ctpppp_1 1)))))))
+(not (and (= endppppp_0 1) (and (not (<= ctppppp_1 1)) (= ctppppp_0 1))))

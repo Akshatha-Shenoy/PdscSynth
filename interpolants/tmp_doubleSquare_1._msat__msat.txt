@@ -1,0 +1,10 @@
+unsat
+(let ((.def_28 (= h_1 1))) (let ((.def_763 (<= 2 z_1))) (and (= end_1 0) (and .def_28 (and .def_763 (and (not (= end_0 1)) (and (<= 1 z_0) (and (not (= h_0 1)) (and .def_763 (and (<= (+ (* 2 x_0) (+ (* 2 y_0) (+ (* (- 2) x_1) (* (- 1) y_1)))) 0) (and .def_28 (<= 0 (+ (* 2 z_0) (* (- 1) z_1))))))))))))))
+(and (not (= endp_0 1)) (and (<= 1 zp_0) (and (= endp_1 0) (and (not (= hp_0 1)) (and (<= 1 zp_1) (and (= hp_1 1) (and (<= (+ zp_1 (* (- 2) zp_0)) (- 1)) (<= 0 (+ xp_1 (+ yp_1 (+ (* (- 2) yp_0) (* (- 2) xp_0))))))))))))
+(and (not (= endpp_0 1)) (and (<= 1 zpp_0) (and (not (= hpp_0 1)) (and (= endpp_1 0) (and (= hpp_1 1) (and (<= (+ zpp_1 (* (- 2) zpp_0)) (- 2)) (<= 0 (+ ypp_1 (+ (* (- 2) ypp_0) (* (- 2) xpp_0))))))))))
+(and (not (= endppp_0 1)) (and (<= 1 zppp_0) (and (not (= hppp_0 1)) (or (<= 2 zppp_0) (and (= endppp_1 1) (<= 0 (+ yppp_1 (+ (* (- 2) yppp_0) (* (- 2) xppp_0)))))))))
+(and (not (= endpppp_0 1)) (and (<= 1 zpppp_0) (and (not (= hpppp_0 1)) (or (<= 2 zpppp_0) (and (= endpppp_1 1) (<= 0 (+ ypppp_1 (+ (* (- 2) ypppp_0) (* (- 2) xpppp_0)))))))))
+(and (not (= endppppp_0 1)) (and (<= 1 zppppp_0) (and (not (= hppppp_0 1)) (or (<= 2 zppppp_0) (and (= endppppp_1 1) (<= 0 (+ yppppp_1 (+ (* (- 2) yppppp_0) (* (- 2) xppppp_0)))))))))
+(not (and (not (= endpppppp_1 0)) (and (= endpppppp_1 1) (not (and (not (= endpppppp_0 1)) (and (<= 1 zpppppp_0) (and (not (= hpppppp_0 1)) (or (<= 2 zpppppp_0) (<= 0 (+ ypppppp_1 (+ (* (- 2) ypppppp_0) (* (- 2) xpppppp_0))))))))))))
+(not (and (not (= endppppppp_1 0)) (and (= endppppppp_1 1) (not (and (= endppppppp_0 0) (and (not (= hppppppp_0 1)) (or (<= 1 zppppppp_0) (<= (+ (* 2 yppppppp_0) (* (- 1) yppppppp_1)) 0))))))))
+(not (and (not (= endpppppppp_1 0)) (and (= endpppppppp_1 1) (and (not (= endpppppppp_0 0)) (not (<= ypppppppp_0 ypppppppp_1))))))

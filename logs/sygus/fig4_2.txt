@@ -1,0 +1,383 @@
+PDSC: Verifying ./Benchmarks_sygus/fig4_2.smt2
+Namespace(file='./Benchmarks_sygus/fig4_2.smt2', log=False, msat=False, property=None, qe=False, sygus=True)
+Exploring new composition...
+
+
+Current composition gives an abstract counter-example trace:
+[abs_h_0, 
+count_0_0, 
+count_0_1, 
+x0_eq_x1, ]
+--->[2]
+
+[abs_h_0, 
+count_1_0, 
+count_1_1, ]
+--->[2]
+
+
+Blocking composition assignment 2 for state
+ [abs_h_0, 
+count_0_0, 
+count_0_1, 
+x0_eq_x1, ]
+
+
+Exploring new composition...
+
+
+Current composition gives an abstract counter-example trace:
+[abs_h_0, 
+count_0_0, 
+count_0_1, 
+x0_eq_x1, ]
+--->[0]
+
+[abs_h_0, 
+count_1_0, 
+count_0_1, ]
+--->[2]
+
+[abs_h_0, 
+count_1_0, 
+count_1_1, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [abs_h_0, 
+count_1_0, 
+count_0_1, ]
+
+
+Exploring new composition...
+
+
+Current composition gives an abstract counter-example trace:
+[abs_h_0, 
+count_0_0, 
+count_0_1, 
+x0_eq_x1, ]
+--->[0]
+
+[abs_h_0, 
+count_1_0, 
+count_0_1, ]
+--->[1]
+
+[abs_h_0, 
+count_1_0, 
+count_1_1, ]
+--->[0]
+
+
+Blocking composition assignment 0 for state
+ [abs_h_0, 
+count_0_0, 
+count_0_1, 
+x0_eq_x1, ]
+
+
+Exploring new composition...
+
+
+Current composition gives an abstract counter-example trace:
+[abs_h_0, 
+count_0_0, 
+count_0_1, 
+x0_eq_x1, ]
+--->[1]
+
+[abs_h_0, 
+count_0_0, 
+count_1_1, ]
+--->[2]
+
+[abs_h_0, 
+count_1_0, 
+count_1_1, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [abs_h_0, 
+count_0_0, 
+count_1_1, ]
+
+
+Exploring new composition...
+
+
+Current composition gives an abstract counter-example trace:
+[abs_h_0, 
+count_0_0, 
+count_0_1, 
+x0_eq_x1, ]
+--->[1]
+
+[abs_h_0, 
+count_0_0, 
+count_1_1, 
+x0_eq_x1, ]
+--->[2]
+
+[abs_h_0, 
+count_1_0, 
+count_1_1, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [abs_h_0, 
+count_0_0, 
+count_1_1, 
+x0_eq_x1, ]
+
+
+Exploring new composition...
+
+
+Current composition gives an abstract counter-example trace:
+[abs_h_0, 
+count_0_0, 
+count_0_1, 
+x0_eq_x1, ]
+--->[1]
+
+[abs_h_0, 
+count_0_0, 
+count_1_1, ]
+--->[0]
+
+[abs_h_0, 
+count_1_0, 
+count_1_1, ]
+--->[0]
+
+
+6 SMT queries performed.
+-----------------check_spuriousness-------------------------------
+
+
+
+SEARCHING A CONCRETE CEX TRACE FROM ABOVE ABSTRACT CEX: 
+--------------------------------------------------
+Initial State {'count_1_1': False, 'count_0_1': True, 'abs_h_1': False, 'count_1_0': False, 'count_0_0': True, 'abs_h_0': True, 'x0_eq_x1': True, 'h_1': 0, 'h_0': 1, 'x_1': 0, 'x_0': 0, 'count_1': 0, 'count_0': 0}
+
+
+Next concrete state : {'count_1': 1, 'h_1': 0, 'count_0': 0, 'h_0': 1, 'x_0': 0, 'x_1': 42}
+
+
+Next concrete state : {'count_0': 1, 'h_0': 1, 'count_1': 1, 'h_1': 0, 'x_1': 42, 'x_0': 42}
+
+
+
+
+
+Is the abstract trace spurious? True
+---------------pred_disc--------------
+Discover predicate using a_src, a_tgt, c_src, c_tgt to eliminate the spurious cex.. 
+
+
+
+
+
+
+
+
+
+
+
+
+new predicate is (define-fun p ((x_1 Int) (h_1 Int) (count_0 Int) (h_0 Int) (x_0 Int) (count_1 Int)) Bool (= x_1 (- 42 x_0)))
+
+Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
+Pre-processing time:	0.056494 
+Solver time:	2.978488
+Total time:	3.034982
+Iteration count:	6
+Predicate count:	7
+Successfully added new predicate to input file. !
+PDSC: Verifying ./Benchmarks_sygus/fig4_2.smt2
+Namespace(file='./Benchmarks_sygus/fig4_2.smt2', log=False, msat=False, property=None, qe=False, sygus=True)
+Exploring new composition...
+
+
+Current composition gives an abstract counter-example trace:
+[abs_h_0, 
+count_0_0, 
+count_0_1, 
+x0_eq_x1, ]
+--->[2]
+
+[abs_h_0, 
+count_1_0, 
+count_1_1, ]
+--->[2]
+
+
+Blocking composition assignment 2 for state
+ [abs_h_0, 
+count_0_0, 
+count_0_1, 
+x0_eq_x1, ]
+
+
+Exploring new composition...
+
+
+Current composition gives an abstract counter-example trace:
+[abs_h_0, 
+count_0_0, 
+count_0_1, 
+x0_eq_x1, 
+p_synth_1, ]
+--->[2]
+
+[abs_h_0, 
+count_1_0, 
+count_1_1, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [abs_h_0, 
+count_0_0, 
+count_0_1, 
+x0_eq_x1, 
+p_synth_1, ]
+
+
+Exploring new composition...
+
+
+Current composition gives an abstract counter-example trace:
+[abs_h_0, 
+count_0_0, 
+count_0_1, 
+x0_eq_x1, ]
+--->[0]
+
+[abs_h_0, 
+count_1_0, 
+count_0_1, 
+p_synth_1, ]
+--->[2]
+
+[abs_h_0, 
+count_1_0, 
+count_1_1, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [abs_h_0, 
+count_1_0, 
+count_0_1, 
+p_synth_1, ]
+
+
+Exploring new composition...
+
+
+Current composition gives an abstract counter-example trace:
+[abs_h_0, 
+count_0_0, 
+count_0_1, 
+x0_eq_x1, ]
+--->[0]
+
+[abs_h_0, 
+count_1_0, 
+count_0_1, 
+p_synth_1, ]
+--->[1]
+
+[abs_h_0, 
+count_1_0, 
+count_1_1, ]
+--->[0]
+
+
+Blocking composition assignment 0 for state
+ [abs_h_0, 
+count_0_0, 
+count_0_1, 
+x0_eq_x1, ]
+
+
+Exploring new composition...
+
+
+Current composition gives an abstract counter-example trace:
+[abs_h_0, 
+count_0_0, 
+count_0_1, 
+x0_eq_x1, ]
+--->[1]
+
+[abs_h_0, 
+count_0_0, 
+count_1_1, ]
+--->[2]
+
+[abs_h_0, 
+count_1_0, 
+count_1_1, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [abs_h_0, 
+count_0_0, 
+count_1_1, ]
+
+
+Exploring new composition...
+
+
+Current composition gives an abstract counter-example trace:
+[abs_h_0, 
+count_0_0, 
+count_0_1, 
+x0_eq_x1, ]
+--->[1]
+
+[abs_h_0, 
+count_0_0, 
+count_1_1, ]
+--->[0]
+
+[abs_h_0, 
+count_1_0, 
+count_1_1, ]
+--->[0]
+
+
+6 SMT queries performed.
+-----------------check_spuriousness-------------------------------
+
+
+
+SEARCHING A CONCRETE CEX TRACE FROM ABOVE ABSTRACT CEX: 
+--------------------------------------------------
+Initial State {'x_1': 22, 'count_1_1': False, 'count_0_1': True, 'abs_h_1': False, 'count_1_0': False, 'count_0_0': True, 'abs_h_0': True, 'p_synth_1': False, 'x0_eq_x1': True, 'h_1': 0, 'h_0': 1, 'x_0': 22, 'count_1': 0, 'count_0': 0}
+
+
+Next concrete state : {'count_1': 1, 'h_1': 0, 'count_0': 0, 'h_0': 1, 'x_0': 22, 'x_1': 42}
+
+
+Next concrete state : {'count_0': 1, 'h_0': 1, 'count_1': 1, 'h_1': 0, 'x_1': 42, 'x_0': 20}
+
+
+
+
+
+Is the abstract trace spurious? False
+Real cex. Program is unsafe.
+Start next refinement loop: False
+
+
+
+Total time taken : 3.683838
+Number of predicates guessed: 1.0
