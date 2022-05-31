@@ -1,0 +1,4 @@
+unsat
+(and (= h_1 1) (and (= h_0 1) (and (not (= count_1 1)) (and (= x_0 x_1) (not (= count_0 1))))))
+(and (= hp_0 1) (not (and (not (= xp_1 1)) (and (not (= xp_1 8)) (and (= countp_1 1) (not (and (not (= countp_0 1)) (and (not (= 0 (+ xp_0 (* (- 7) (to_int (* (/ 1 7) (to_real xp_0))))))) (and (not (= xp_0 1009)) (and (not (= xp_0 383)) (= xp_1 xp_0)))))))))))
+(not (and (not (= xpp_1 1)) (and (not (= xpp_1 8)) (and (= countpp_1 1) (and (= countpp_0 1) (not (= xpp_0 xpp_1)))))))
