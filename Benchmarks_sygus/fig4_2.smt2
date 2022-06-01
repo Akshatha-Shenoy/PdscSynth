@@ -47,6 +47,7 @@
 
 
 
+
 (declare-rel p_synth_1 (Int Int Int))
  (rule (=>  (= (rel x 1)  (- 42 (rel x 0))) (p_synth_1 x h count)))
 (query End)

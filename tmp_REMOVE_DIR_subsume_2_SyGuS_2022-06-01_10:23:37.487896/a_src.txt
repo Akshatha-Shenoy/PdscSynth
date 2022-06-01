@@ -1,0 +1,7 @@
+(and (not (= x_0 x_1))
+     (= h_0 1)
+     (= count_0 0)
+     (not (= count_0 1))
+     (not (= h_1 1))
+     (not (= count_1 0))
+     (= count_1 1))

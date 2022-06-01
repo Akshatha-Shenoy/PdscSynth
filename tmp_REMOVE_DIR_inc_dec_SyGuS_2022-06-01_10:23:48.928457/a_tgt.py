@@ -1,0 +1,28 @@
+from z3 import *
+h_1 = Int('h_1')
+l_0 = Int('l_0')
+count_0 = Int('count_0')
+h_0 = Int('h_0')
+count_1 = Int('count_1')
+l_1 = Int('l_1')
+
+l0_eq_l1=Bool('l0_eq_l1')
+count0_eq_2=Bool('count0_eq_2')
+count1_eq_2=Bool('count1_eq_2')
+p_synth_1=Bool('p_synth_1')
+count_eq_0_0=Bool('count_eq_0_0')
+h_gt_0_0=Bool('h_gt_0_0')
+count_eq_0_1=Bool('count_eq_0_1')
+h_gt_0_1=Bool('h_gt_0_1')
+
+l0_eq_l1 = ((l_0 == l_1))
+count0_eq_2 = ((count_0 == 2))
+count1_eq_2 = ((count_1 == 2))
+p_synth_1 = ((h_1 == l_1 - l_0))
+count_eq_0_0 = ((count_0 == 0))
+h_gt_0_0 = ((h_0 > 0))
+count_eq_0_1 = ((count_1 == 0))
+h_gt_0_1 = ((h_1 > 0))
+
+a=simplify(And(And(l0_eq_l1 == False,    count0_eq_2 == True,    count1_eq_2 == True,    p_synth_1 == False,    count_eq_0_0 == False,    h_gt_0_0 == True,    count_eq_0_1 == False,    h_gt_0_1 == True)))
+print(a.sexpr())

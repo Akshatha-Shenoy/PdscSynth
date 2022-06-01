@@ -1,0 +1,8 @@
+(and (not (= xp_0 xp_1))
+     (not (= xp_1 8))
+     (<= 42 xp_1)
+     (not (= xp_1 42))
+     (= hp_0 1)
+     (not (= countp_0 0))
+     (= hp_1 1)
+     (not (= countp_1 0)))

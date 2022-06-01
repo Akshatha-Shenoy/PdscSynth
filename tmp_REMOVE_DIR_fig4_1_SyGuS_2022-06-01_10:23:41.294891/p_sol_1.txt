@@ -1,0 +1,2 @@
+unsat
+(define-fun p ((x_1 Int) (h_1 Int) (count_0 Int) (h_0 Int) (x_0 Int) (count_1 Int)) Bool (= x_1 (- 42 x_0)))

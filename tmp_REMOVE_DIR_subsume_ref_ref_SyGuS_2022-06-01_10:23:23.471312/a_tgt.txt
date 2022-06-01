@@ -1,0 +1,10 @@
+And(And(x0_eq_x1p == False,
+        p_synth_1p == False,
+        p_synth_2p == False,
+        p_synth_3p == False,
+        p_synth_4p == True,
+        p_synth_5p == True,
+        abs_h_0p == True,
+        count_0_0p == False,
+        abs_h_1p == True,
+        count_0_1p == False))

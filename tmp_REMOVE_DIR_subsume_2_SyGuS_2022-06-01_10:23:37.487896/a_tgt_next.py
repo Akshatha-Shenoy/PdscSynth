@@ -1,0 +1,4 @@
+from z3 import *
+x0_eq_x1, abs_h_0, count_0_0, count_1_0, abs_h_1, count_0_1, count_1_1, x0_eq_x1p, abs_h_0p, count_0_0p, count_1_0p, abs_h_1p, count_0_1p, count_1_1p = Bools('x0_eq_x1 abs_h_0 count_0_0 count_1_0 abs_h_1 count_0_1 count_1_1 x0_eq_x1p abs_h_0p count_0_0p count_1_0p abs_h_1p count_0_1p count_1_1p')
+formula = And(And(x0_eq_x1 == False,abs_h_0 == True,count_0_0 == False,count_1_0 == True,abs_h_1 == False,count_0_1 == False,count_1_1 == True))
+print(substitute(formula, (x0_eq_x1,x0_eq_x1p), (abs_h_0,abs_h_0p), (count_0_0,count_0_0p), (count_1_0,count_1_0p), (abs_h_1,abs_h_1p), (count_0_1,count_0_1p), (count_1_1,count_1_1p)))

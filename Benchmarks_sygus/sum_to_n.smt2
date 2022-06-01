@@ -46,6 +46,7 @@
 
 
 
+
 (declare-rel p_synth_1 (Int Int Int))
  (rule (=>  (= (rel n 0) 1 ) (p_synth_1 i n sum)))
 (declare-rel p_synth_2 (Int Int Int))
@@ -82,8 +83,4 @@
  (rule (=>  (= (rel i 1) 1 ) (p_synth_17 i n sum)))
 (declare-rel p_synth_18 (Int Int Int))
  (rule (=>  (= (rel n 0)  (* 2 (rel i 1))) (p_synth_18 i n sum)))
-(declare-rel p_synth_19 (Int Int Int))
- (rule (=>  (= (rel i 1) 2 ) (p_synth_19 i n sum)))
-(declare-rel p_synth_20 (Int Int Int))
- (rule (=>  (= (rel n 0)  (* 3 (rel i 0))) (p_synth_20 i n sum)))
 (query End)
