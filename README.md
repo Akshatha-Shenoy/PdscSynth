@@ -4,9 +4,9 @@ PdscSynth
 
 PdscSynth is a tool designed on top of PDSC (https://bitbucket.org/sharonsh/pdsc/src/master/), corresponding to the work presented in our FMCAD 2022 submission (paper ID 103).
 
-To individually run each benchmark from command prompt, follow the next section. To run all the benchmarks at once, see [here](#to-run-all-benchmarks-at-once-using-sygus-qe-and-msat/).
+To individually run each benchmark from command prompt, follow the next section. To run all the benchmarks at once, see [here](#refining-using-mathsat5).
 
-a. Running a benchmark:
+a. Running a benchmark
 ------------------------------------
 
 Description of the PdscSynth directory
@@ -40,7 +40,7 @@ Command to execute a benchmark
 To run the tool on input files, execute
 > timeout 5m python3 pdsc_synth.py -[qe/msat/sygus] -f ./Benchmarks_[qe/msat/sygus]/[INPUT_FILENAME].smt2
 
-Options explained:
+Options explained
 -------------------
 1. sygus : The option sygus as the name suggests refers to the SyGuS technique aided by CVC 1.8 to obtain predicates. 
    For example: To execute inc_dec on pdsc_synth using SyGuS, execute
@@ -53,7 +53,7 @@ Options explained:
 3. msat : Refers to the use of Mathsat5.6.6 to obtain sequence interpolants. To run pdsc_synth with mathsat in refinement loop, execute
     > timeout 5m python3 pdsc_synth.py -msat -f ./Benchmarks/inc_dec.smt2
 
- Output:
+ Output
 ------------
 1. Unsafe : The program outputs that the program is not safe, concrete counter example, number of predicates added.
 2. Safe : The program outputs that the program is safe, an invariant, number of predicates added. 
@@ -64,8 +64,8 @@ After the tool has run, the input file can be inspected to see the predicates th
 
 There are some intermediate folders that are generated, with names starting with "tmp_REMOVE_DIR_", consisting of intermediate files produced during a run of the tool. These folders may be deleted after the tool is run.
 
-b. To run all benchmarks at once using SyGuS, QE and MSAT
-------------------------------------------------------
+To run all benchmarks at once using SyGuS, QE and MSAT
+---------------------------------------------------------
 We can run all benchmarks at once using run_benchmarks.py with the refinement technique i.e.sygus, qe and msat given as an argument, the results are respectively stored in sygus_output.txt, qe_output.txt and msat_output.txt. Each line in these files consists of benchmark_name, time taken by the tool, whether the tool reports the benchmark safe or unsafe and the number of refinement predicates added by PdscSynth. If PdscSynth times out on the benchmark, TIMEOUT is mentioned next to the benchmark_name.
 >python3  run_benchmarks.py -[sygus/qe/msat]
 
@@ -83,7 +83,7 @@ c. Comparison with LLREVE
 
 We run the benchmarks that check for program equivalence on the LLREVE tool. 
 
-To run using LLREVE:
+To run using LLREVE
 --------------------
 Two C files are generated for each benchmark, which encodes the two programs for which equivalence is checked. These files are present in folder named by the benchmark in the LLREVE_Input directory. We store the output of LLREVE in an SMT2 file in LLREVE_Output directory.
 > ./llreve  ./LLREVE_Input/[INPUT_FILENAME]/[INPUT_FILENAME].c ./LLREVE_Input/[INPUT_FILENAME]/[INPUT_FILENAME]_2.c > ./LLREVE_Output/[INPUT_FILENAME]/[INPUT_FILENAME]_llreve.smt2 
@@ -108,7 +108,7 @@ Note that there is only one doubleSquare version to be run on LLREVE as all vari
 
 The folder "eldarica" consists of files necessary to run Eldarica solver.
 
-LLREVE Output:
+LLREVE Output
 -----------------
 z3 4.8.9 and Eldarica 2.0.8, when given the .smt2 file created by llreve, may either timeout, or can produce one of the following results:
 
@@ -117,7 +117,7 @@ z3 4.8.9 and Eldarica 2.0.8, when given the .smt2 file created by llreve, may ei
 3. a model - if the programs are equivalent and z3 is able to obtain the model (shown as the time taken, in seconds, in the table)
 
 
-Contact us:
+Contact us
 -----------
 
 In case any clarification is needed, please do write to us:
