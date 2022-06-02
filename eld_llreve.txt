@@ -1,0 +1,15 @@
+puzzle_1, 0:00:01.515507, unsat
+subsume_2, 0:00:01.367367, unsat
+puzzle_ref_ref, 0:00:02.368966, sat
+doubleSquare, TIMEOUT
+fig4_2, 0:00:01.079040, unsat
+sum_to_n, 0:00:01.661428, sat
+subsume_ref_ref, 0:00:01.222827, sat
+puzzle_2, 0:00:01.973616, unsat
+fig4_1, 0:00:01.127816, unsat
+sum_pc, TIMEOUT
+subsume_1, 0:00:01.280218, unsat
+fig4_ref_ref, 0:00:01.038072, sat
+halfSquare, 0:00:16.654945, unsat
+inc_dec, 0:00:01.163122, unsat
+sum_to_n_error, 0:00:01.647042, unsat

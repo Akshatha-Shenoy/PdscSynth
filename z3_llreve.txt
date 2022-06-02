@@ -1,0 +1,15 @@
+puzzle_1, 0:00:00.011009, unsat
+subsume_2, 0:00:00.009157, unsat
+puzzle_ref_ref, 0:00:00.052049, model
+doubleSquare, 0:01:00.010095, model
+fig4_2, 0:00:00.008149, unsat
+sum_to_n, 0:00:00.033333, model
+subsume_ref_ref, 0:00:00.006734, model
+puzzle_2, 0:00:00.019651, unsat
+fig4_1, 0:00:00.008020, unsat
+sum_pc, 0:00:00.012225, unknown
+subsume_1, 0:00:00.010529, unsat
+fig4_ref_ref, 0:00:00.006404, model
+halfSquare, 0:00:00.008925, unknown
+inc_dec, 0:00:00.004940, unknown
+sum_to_n_error, 0:00:00.008521, unsat
