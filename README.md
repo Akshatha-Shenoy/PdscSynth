@@ -4,8 +4,7 @@ PdscSynth
 
 PdscSynth is a tool designed on top of PDSC (https://bitbucket.org/sharonsh/pdsc/src/master/), corresponding to the work presented in our FMCAD 2022 submission (paper ID 103).
 
-To individually run each benchmark from command prompt, follow the next section. To run all the benchmarks at once, see [here](#2-to-run-all-benchmarks-at-once-using-sygus-qe-and-msat).
-
+To individually run each benchmark from command prompt, see [here](#running-a-benchmark). To run all the benchmarks at once, see [here](#to-run-all-benchmarks-at-once-using-sygus-qe-and-msat).
 
 Description of the PdscSynth directory
 ---------------------------------------
@@ -26,7 +25,7 @@ The input smt files are present in "Benchmarks_qe" directory. Each of these file
 
 In the "qe" folder of "Output" directory, we have given all the benchmarks that have been appended by the predicates discovered by our tool, should the reviewers wish to take a look at the final output. The predicates synthesised by PdscSynth have the substring  "_synth_" in predicate names, and can be found at the bottom of each file.
 
-3.Refining using MathSAT5
+3. Refining using MathSAT5
 --------------------------
 The input smt files are present in "Benchmarks_msat" directory. Each of these files consists of a code that declares variables, specifies the pre- and post-conditions, transition relations and a section specifying the proof language (given as a set of input predicates at the bottom of the file). When the tool is run, the newly discovered predicates are appended to the bottom of the file.
 
