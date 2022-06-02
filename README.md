@@ -118,13 +118,17 @@ ii. "unsat" - which means the input programs are not equivalent (shown as the ti
 iii. a model - if the programs are equivalent and z3 is able to obtain the model (shown as the time taken, in seconds, in the table)
 
 
+Dependencies
+-------------
+PdscSynth uses Z3 4.8.9 with Python3 bindings which can be downloaded [here](#https://github.com/Z3Prover/z3) and Eldarica 2.0.8, MathSAT 5.6.6, CVC4 1.8, LLREVE which is present is included the package.
+
 Contact us
 -----------
 
 In case any clarification is needed, please do write to us:
 
-Akshatha Shenoy (akshathabshenoy@gmail.com)
-Kumar Madhukar (madhukar.k.singh@gmail.com)
+1. Akshatha Shenoy (akshathabshenoy@gmail.com)
+2. Kumar Madhukar (madhukar.k.singh@gmail.com)
 
 
 
