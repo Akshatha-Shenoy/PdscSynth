@@ -55,9 +55,9 @@ iii. msat : Refers to the use of Mathsat5.6.6 to obtain sequence interpolants. T
 
 6. Output
 ------------
-i. Unsafe : The tool outputs that the program is not safe, concrete counter example, number of predicates added.
-ii. Safe : The tool outputs that the program is safe, an invariant, number of predicates added. 
-iii. Timeout: The tool times out on the input program.
+1. Unsafe : The tool outputs that the program is not safe, concrete counter example, number of predicates added.
+2. Safe : The tool outputs that the program is safe, an invariant, number of predicates added. 
+3. Timeout: The tool times out on the input program.
 
 The predicates discovered during refinement will be appended to the input file. Synthesised predicates have substring  "_synth_" in predicate names. Although the tool modifies the input file by appending these predicates, please note that any predicate that has "_synth_" in its name gets removed automatically when the tool is run.
 
