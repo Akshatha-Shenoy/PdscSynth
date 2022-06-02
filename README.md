@@ -4,9 +4,7 @@ PdscSynth
 
 PdscSynth is a tool designed on top of PDSC (https://bitbucket.org/sharonsh/pdsc/src/master/), corresponding to the work presented in our FMCAD 2022 submission (paper ID 103).
 
-To individually run each benchmark from command prompt, follow the next section. To run all the benchmarks at once, jump to the last section (<a href="https://github.com/Akshatha-Shenoy/PdscSynth#to-run-all-benchmarks-at-once-using-sygus-qe-and-msat/"> see here</a>).
-
-
+To individually run each benchmark from command prompt, follow the next section. To run all the benchmarks at once, see <a href="#to-run-all-benchmarks-at-once-using-sygus-qe-and-msat/">here</a>.
 
 a. Running a benchmark:
 ------------------------------------
