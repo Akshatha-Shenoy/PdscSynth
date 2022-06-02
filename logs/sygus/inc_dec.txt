@@ -615,9 +615,9 @@ Discover predicate using a_src, a_tgt, c_src, c_tgt to eliminate the spurious ce
 new predicate is (define-fun p ((h_1 Int) (l_0 Int) (count_0 Int) (h_0 Int) (count_1 Int) (l_1 Int)) Bool (= h_1 (- l_1 l_0)))
 
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.047179 
-Solver time:	3.004109
-Total time:	3.051288
+Pre-processing time:	0.046379 
+Solver time:	2.947755
+Total time:	2.994134
 Iteration count:	17
 Predicate count:	7
 Successfully added new predicate to input file. !
@@ -1222,9 +1222,9 @@ Discover predicate using a_src, a_tgt, c_src, c_tgt to eliminate the spurious ce
 new predicate is (define-fun p ((h_1 Int) (l_0 Int) (count_0 Int) (h_0 Int) (count_1 Int) (l_1 Int)) Bool (= l_0 (+ h_0 l_1)))
 
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.050559 
-Solver time:	3.487708
-Total time:	3.538267
+Pre-processing time:	0.057636 
+Solver time:	3.396394
+Total time:	3.45403
 Iteration count:	16
 Predicate count:	8
 Successfully added new predicate to input file. !
@@ -1521,14 +1521,14 @@ And(h_gt_0_0,
     Or(l0_eq_l1, Not(count0_eq_2), Not(count_eq_0_1)),
     Or(p_synth_1, count1_eq_2, count_eq_0_1),
     Or(Not(count1_eq_2), l0_eq_l1))
-Pre-processing time:	0.057985 
-Solver time:	0.847595
-Total time:	0.9055799999999999
+Pre-processing time:	0.059519 
+Solver time:	0.806641
+Total time:	0.86616
 Iteration count:	9
 Predicate count:	9
 Start next refinement loop: False
 
 
 
-Total time taken : 7.495576
+Total time taken : 7.314748
 Number of predicates guessed: 2.0

@@ -1,2 +1,0 @@
-unsat
-(define-fun p ((h_1 Int) (h_0 Int) (i_0 Int) (max_0 Int) (y_0 Int) (i_1 Int) (y_1 Int) (v_0 Int) (v_1 Int) (max_1 Int)) Bool (= h_1 (+ i_0 1)))

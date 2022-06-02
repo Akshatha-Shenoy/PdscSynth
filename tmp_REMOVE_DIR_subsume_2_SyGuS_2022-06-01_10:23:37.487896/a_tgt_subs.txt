@@ -1,7 +1,0 @@
-(and (not (= xp_0 xp_1))
-     (= hp_0 1)
-     (not (= countp_0 0))
-     (= countp_0 1)
-     (not (= hp_1 1))
-     (not (= countp_1 0))
-     (= countp_1 1))

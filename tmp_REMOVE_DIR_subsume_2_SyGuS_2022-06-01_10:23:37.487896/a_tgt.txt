@@ -1,7 +1,0 @@
-And(And(x0_eq_x1p == False,
-        abs_h_0p == True,
-        count_0_0p == False,
-        count_1_0p == True,
-        abs_h_1p == False,
-        count_0_1p == False,
-        count_1_1p == True))

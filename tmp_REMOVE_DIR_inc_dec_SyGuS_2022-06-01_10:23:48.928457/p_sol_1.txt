@@ -1,2 +1,0 @@
-unsat
-(define-fun p ((h_1 Int) (l_0 Int) (count_0 Int) (h_0 Int) (count_1 Int) (l_1 Int)) Bool (= h_1 (- l_1 l_0)))

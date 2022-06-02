@@ -1,4 +1,0 @@
-from z3 import *
-l0_eq_l1, count0_eq_2, count1_eq_2, p_synth_1, count_eq_0_0, h_gt_0_0, count_eq_0_1, h_gt_0_1, l0_eq_l1p, count0_eq_2p, count1_eq_2p, p_synth_1p, count_eq_0_0p, h_gt_0_0p, count_eq_0_1p, h_gt_0_1p = Bools('l0_eq_l1 count0_eq_2 count1_eq_2 p_synth_1 count_eq_0_0 h_gt_0_0 count_eq_0_1 h_gt_0_1 l0_eq_l1p count0_eq_2p count1_eq_2p p_synth_1p count_eq_0_0p h_gt_0_0p count_eq_0_1p h_gt_0_1p')
-formula = And(And(l0_eq_l1 == False,count0_eq_2 == True,count1_eq_2 == True,p_synth_1 == False,count_eq_0_0 == False,h_gt_0_0 == True,count_eq_0_1 == False,h_gt_0_1 == True))
-print(substitute(formula, (l0_eq_l1,l0_eq_l1p), (count0_eq_2,count0_eq_2p), (count1_eq_2,count1_eq_2p), (p_synth_1,p_synth_1p), (count_eq_0_0,count_eq_0_0p), (h_gt_0_0,h_gt_0_0p), (count_eq_0_1,count_eq_0_1p), (h_gt_0_1,h_gt_0_1p)))

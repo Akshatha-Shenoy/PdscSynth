@@ -1,2 +1,0 @@
-unsat
-(define-fun p ((x_1 Int) (h_1 Int) (h_0 Int) (x_0 Int) (end_0 Int) (z_0 Int) (y_0 Int) (y_1 Int) (z_1 Int) (end_1 Int)) Bool (= x_1 h_1))

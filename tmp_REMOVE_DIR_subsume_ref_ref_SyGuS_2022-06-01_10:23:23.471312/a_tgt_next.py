@@ -1,4 +1,0 @@
-from z3 import *
-x0_eq_x1, p_synth_1, p_synth_2, p_synth_3, p_synth_4, p_synth_5, abs_h_0, count_0_0, abs_h_1, count_0_1, x0_eq_x1p, p_synth_1p, p_synth_2p, p_synth_3p, p_synth_4p, p_synth_5p, abs_h_0p, count_0_0p, abs_h_1p, count_0_1p = Bools('x0_eq_x1 p_synth_1 p_synth_2 p_synth_3 p_synth_4 p_synth_5 abs_h_0 count_0_0 abs_h_1 count_0_1 x0_eq_x1p p_synth_1p p_synth_2p p_synth_3p p_synth_4p p_synth_5p abs_h_0p count_0_0p abs_h_1p count_0_1p')
-formula = And(And(x0_eq_x1 == False,p_synth_1 == False,p_synth_2 == False,p_synth_3 == False,p_synth_4 == True,p_synth_5 == True,abs_h_0 == True,count_0_0 == False,abs_h_1 == True,count_0_1 == False))
-print(substitute(formula, (x0_eq_x1,x0_eq_x1p), (p_synth_1,p_synth_1p), (p_synth_2,p_synth_2p), (p_synth_3,p_synth_3p), (p_synth_4,p_synth_4p), (p_synth_5,p_synth_5p), (abs_h_0,abs_h_0p), (count_0_0,count_0_0p), (abs_h_1,abs_h_1p), (count_0_1,count_0_1p)))

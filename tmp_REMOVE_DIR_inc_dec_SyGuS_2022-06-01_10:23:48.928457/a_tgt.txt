@@ -1,8 +1,0 @@
-And(And(l0_eq_l1p == False,
-        count0_eq_2p == True,
-        count1_eq_2p == True,
-        p_synth_1p == False,
-        count_eq_0_0p == False,
-        h_gt_0_0p == True,
-        count_eq_0_1p == False,
-        h_gt_0_1p == True))

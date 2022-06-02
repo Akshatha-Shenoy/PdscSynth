@@ -1,9 +1,0 @@
-(let ((a!1 (not (= hp_1 (+ lp_1 (* (- 1) lp_0))))))
-  (and (not (= lp_0 lp_1))
-       (= countp_0 2)
-       (= countp_1 2)
-       a!1
-       (not (= countp_0 0))
-       (not (<= hp_0 0))
-       (not (= countp_1 0))
-       (not (<= hp_1 0))))

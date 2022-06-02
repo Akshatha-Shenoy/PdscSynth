@@ -2,7 +2,7 @@
 PdscSynth
 ---------
 
-PdscSynth is a tool designed on top of PDSC, corresponding to the work presented in our FMCAD 2022 submission (paper ID 103).
+PdscSynth is a tool designed on top of PDSC(https://bitbucket.org/sharonsh/pdsc/src/master/), corresponding to the work presented in our FMCAD 2022 submission (paper ID 103).
 
 To individually run each benchmark from command prompt, follow the next section.
 

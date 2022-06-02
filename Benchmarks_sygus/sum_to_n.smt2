@@ -47,6 +47,7 @@
 
 
 
+
 (declare-rel p_synth_1 (Int Int Int))
  (rule (=>  (= (rel n 0) 1 ) (p_synth_1 i n sum)))
 (declare-rel p_synth_2 (Int Int Int))
