@@ -6,7 +6,7 @@ PdscSynth is a tool designed on top of PDSC (https://bitbucket.org/sharonsh/pdsc
 
 To individually run each benchmark from command prompt, follow the next section. To run all the benchmarks at once, see [here](#to-run-all-benchmarks-at-once-using-sygus-qe-and-msat).
 
-a. Running a benchmark
+1. Running a benchmark
 ------------------------------------
 
 Description of the PdscSynth directory
@@ -64,7 +64,7 @@ After the tool has run, the input file can be inspected to see the predicates th
 
 There are some intermediate folders that are generated, with names starting with "tmp_REMOVE_DIR_", consisting of intermediate files produced during a run of the tool. These folders may be deleted after the tool is run.
 
-To run all benchmarks at once using SyGuS, QE and MSAT
+2. To run all benchmarks at once using SyGuS, QE and MSAT
 ---------------------------------------------------------
 We can run all benchmarks at once using run_benchmarks.py with the refinement technique i.e.sygus, qe and msat given as an argument, the results are respectively stored in sygus_output.txt, qe_output.txt and msat_output.txt. Each line in these files consists of benchmark_name, time taken by the tool, whether the tool reports the benchmark safe or unsafe and the number of refinement predicates added by PdscSynth. If PdscSynth times out on the benchmark, TIMEOUT is mentioned next to the benchmark_name.
 >python3  run_benchmarks.py -[sygus/qe/msat]
@@ -77,7 +77,7 @@ The result is in sygus_output.txt.
 The motivating example doubleSquare requires 4 non-trivial predicates to be discovered.  The folder "doubleSquareVariants" consists of all variants of doubleSquare where (non-empty) subsets of these 4 predicates are not supplied and hence need to be discovered by the tool. These additional benchmarks are not mentioned in the paper, but we created them to get a number of examples of varying difficulty and to understand what kind of predicates may be easy/difficult to find.
 These variants may be run similarly, like any other benchmark. We have run all of them using all the three options with PdscSynth -- the msat option works for all of them; qe works for two of them; sygus was unable to get any. The predicates discovered by these options for each file can be found appended to the file, in the three subfolder - msat, qe, and sygus.
 
-c. Comparison with LLREVE
+3. Comparison with LLREVE
 -----------------------------
 "LLREVE_Input" is the directory that consists of necessary files to run LLREVE on our benchmarks. To run LLREVE, follow section b of this README file. This folder consists of subfolders for each benchmark (except squareSum, as it is not a program equivalence checking problem, and hence cannot be run on LLREVE). 
 
