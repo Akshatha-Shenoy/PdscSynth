@@ -91,7 +91,7 @@ Comparison with LLREVE
 
 We run the benchmarks that check for program equivalence on the LLREVE tool. The following sections describe how to run LLREVE and interpret its output. To run all the benchmarks at once with LLREVE, see [here](#run-all-benchmarks-on-llreve-at-once). 
 
-To run using LLREVE
+To run using LLR&Ecirc;VE
 --------------------
 Two C files are generated for each benchmark, which encodes the two programs for which equivalence is checked. These files are present in folder named by the benchmark in the LLREVE_Input directory. We store the output of LLREVE in an SMT2 file in LLREVE_Output directory.
 > ./llreve  ./LLREVE_Input/[INPUT_FILENAME]/[INPUT_FILENAME].c ./LLREVE_Input/[INPUT_FILENAME]/[INPUT_FILENAME]_2.c > ./LLREVE_Output/[INPUT_FILENAME]/[INPUT_FILENAME]_llreve.smt2 
