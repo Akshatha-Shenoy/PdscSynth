@@ -91,7 +91,7 @@ Comparison with LLREVE
 
 We run the benchmarks that check for program equivalence on the LLREVE tool. 
 
-1. To run using LLREVE
+2.1 To run using LLREVE
 --------------------
 Two C files are generated for each benchmark, which encodes the two programs for which equivalence is checked. These files are present in folder named by the benchmark in the LLREVE_Input directory. We store the output of LLREVE in an SMT2 file in LLREVE_Output directory.
 > ./llreve  ./LLREVE_Input/[INPUT_FILENAME]/[INPUT_FILENAME].c ./LLREVE_Input/[INPUT_FILENAME]/[INPUT_FILENAME]_2.c > ./LLREVE_Output/[INPUT_FILENAME]/[INPUT_FILENAME]_llreve.smt2 
@@ -116,7 +116,7 @@ Note that there is only one doubleSquare version to be run on LLREVE as all vari
 
 The folder "eldarica" consists of files necessary to run Eldarica solver.
 
-2. LLREVE Output
+2.2 LLREVE Output
 -----------------
 z3 4.8.9 and Eldarica 2.0.8, when given the .smt2 file created by llreve, may either timeout, or can produce one of the following results:
 
@@ -124,7 +124,7 @@ z3 4.8.9 and Eldarica 2.0.8, when given the .smt2 file created by llreve, may ei
 2. "unsat" - which means the input programs are not equivalent (shown as the time taken, in seconds, in the table).
 3. a model - if the programs are equivalent and z3 is able to obtain the model (shown as the time taken, in seconds, in the table).
 
-3. Run all benchmarks on LLREVE at once
+2.3 Run all benchmarks on LLREVE at once
 ---------------------------------------
 We can run all benchmarks at once using run_llreve.py on z3 and Eldarica i.e.z3 and eld given as an argument, the results are respectively stored in z3_output.txt and eld_output.txt. Each line in these files consists of benchmark_name, time taken by the tool and  either "unknown", "unsat" or "model" as explained in the previous section. If LLREVE times out on the benchmark, "TIMEOUT" is mentioned next to the benchmark_name.
 >python3  run_llreve.py -[z3/eld]
