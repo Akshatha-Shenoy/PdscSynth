@@ -6,9 +6,16 @@ PdscSynth is a tool designed on top of PDSC (https://bitbucket.org/sharonsh/pdsc
 
 To individually run each benchmark from command prompt, see [here](#running-a-benchmark). To run all the benchmarks at once, see [here](#to-run-all-benchmarks-at-once-using-sygus-qe-and-msat).To compare the results with LLREVE, see [here](#comparison-with-llreve).
 
+Dependencies
+-------------
+PdscSynth uses Python (python3), and Z3 4.8.9 (with Python bindings) which can be obtained and built as specified [here](https://github.com/Z3Prover/z3). PdscSynth also uses CVC4-1.8 and MathSAT5 5.6.6, the binaries of which are included in this repository.
+
+The executables for LLREVE (version 68cb958c1c02177fa0db1965a8afd879a97c2fc4) and Eldarica (v2.0.8)  have also been included in this repository.
+
 Description of the PdscSynth directory
 ---------------------------------------
 This repository has a README file and a license file. There are 3 techniques used to refine predicates, namely SyGuS, Quantifier Elimination and Interpolation using MathSAT5. These techniques are abbreviated as sygus, qe, and msat respectively in our tool. There is a logs folder consisting of traces printed upon running the tool on benchmarks using each of the techniques, which are stored seperately in respective subdirs. 
+
 
 Running a benchmark
 ------------------------------------
@@ -131,10 +138,6 @@ LLREVE_logs folder contains files with benchmarks
 
 z3_llreve_log.txt and eld_llreve_log.txt are intermediate files generated to dump output of a particular benchmark on z3 and eld with LLREVE respectively.
 
-
-Dependencies
--------------
-PdscSynth uses Z3 4.8.9 with Python3 bindings which can be downloaded [here](https://github.com/Z3Prover/z3) and Eldarica 2.0.8, MathSAT 5.6.6, CVC4 1.8, LLREVE(68cb958c1c02177fa0db1965a8afd879a97c2fc4) which are included the package.
 
 Contact us
 -----------
