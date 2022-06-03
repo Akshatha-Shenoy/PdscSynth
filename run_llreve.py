@@ -57,7 +57,7 @@ def main():
                     output = '\n'.join(output)
                     output = str(benchmark) + ", " + str(total_time) + "," + " unsat" + "\n"
                     fd_z3.write(output)
-            elif lines.find("model"):
+            elif lines.find("model") != -1:
                     output = fd_z3.readlines()
                     output = '\n'.join(output)
                     output = output + str(benchmark) + ", " + str(total_time) +", model" + "\n"
