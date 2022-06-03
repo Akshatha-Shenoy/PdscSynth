@@ -4,7 +4,7 @@ PdscSynth
 
 PdscSynth is a tool designed on top of PDSC (https://bitbucket.org/sharonsh/pdsc/src/master/), corresponding to the work presented in our FMCAD 2022 submission (paper ID 103).
 
-To individually run each benchmark from command prompt, see [here](#running-a-benchmark). To run all the benchmarks at once, see [here](#to-run-all-benchmarks-at-once-using-sygus-qe-and-msat).
+To individually run each benchmark from command prompt, see [here](#running-a-benchmark). To run all the benchmarks at once, see [here](#to-run-all-benchmarks-at-once-using-sygus-qe-and-msat).To compare the results with LLREVE, see [here](#comparison-with-llreve).
 
 Description of the PdscSynth directory
 ---------------------------------------
@@ -113,14 +113,28 @@ The folder "eldarica" consists of files necessary to run Eldarica solver.
 -----------------
 z3 4.8.9 and Eldarica 2.0.8, when given the .smt2 file created by llreve, may either timeout, or can produce one of the following results:
 
-i. "unknown"- which means the programs are equivalent but cannot be proven by LLREVE (shown as 'unknown' in the table in the paper)
-ii. "unsat" - which means the input programs are not equivalent (shown as the time taken, in seconds, in the table)
-iii. a model - if the programs are equivalent and z3 is able to obtain the model (shown as the time taken, in seconds, in the table)
+1. "unknown"- which means the programs are equivalent but cannot be proven by LLREVE (shown as 'unknown' in the table in the paper).
+2. "unsat" - which means the input programs are not equivalent (shown as the time taken, in seconds, in the table).
+3. a model - if the programs are equivalent and z3 is able to obtain the model (shown as the time taken, in seconds, in the table).
+
+3. Run all benchmarks on LLREVE at once
+---------------------------------------
+We can run all benchmarks at once using run_llreve.py on z3 and Eldarica i.e.z3 and eld given as an argument, the results are respectively stored in z3_output.txt and eld_output.txt. Each line in these files consists of benchmark_name, time taken by the tool and  either "unknown", "unsat" or "model" as explained in the previous section. If LLREVE times out on the benchmark, "TIMEOUT" is mentioned next to the benchmark_name.
+>python3  run_llreve.py -[z3/eld]
+
+Example: To run all benchmarks on z3,
+>python3 run_llreve.py -z3
+
+The result is in z3_output.txt. 
+
+LLREVE_logs folder contains files with benchmarks
+
+z3_llreve_log.txt and eld_llreve_log.txt are intermediate files generated to dump output of a particular benchmark on z3 and eld with LLREVE respectively.
 
 
 Dependencies
 -------------
-PdscSynth uses Z3 4.8.9 with Python3 bindings which can be downloaded [here](#https://github.com/Z3Prover/z3) and Eldarica 2.0.8, MathSAT 5.6.6, CVC4 1.8, LLREVE which is present is included the package.
+PdscSynth uses Z3 4.8.9 with Python3 bindings which can be downloaded [here](https://github.com/Z3Prover/z3) and Eldarica 2.0.8, MathSAT 5.6.6, CVC4 1.8, LLREVE which are included the package.
 
 Contact us
 -----------
