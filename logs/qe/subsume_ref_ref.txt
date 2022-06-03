@@ -212,9 +212,9 @@ New predicate is  (let ((a!1 (and (= xU0 xU1) (or (= 0 (mod xU0 7)) (= xU0 1009)
   (not a!1))
 
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.045527 
-Solver time:	2.347881
-Total time:	2.393408
+Pre-processing time:	0.047023 
+Solver time:	2.474147
+Total time:	2.5211699999999997
 Iteration count:	6
 Predicate count:	5
 Successfully added new predicate to input file. !
@@ -227,14 +227,14 @@ And(abs_h_0,
     x0_eq_x1,
     Or(Not(p_synth_1), count_0_1),
     Or(Not(p_synth_1), count_0_0))
-Pre-processing time:	0.05866 
-Solver time:	0.043414
-Total time:	0.102074
+Pre-processing time:	0.068817 
+Solver time:	0.049602
+Total time:	0.118419
 Iteration count:	1
 Predicate count:	6
 Start next refinement loop: False
 
 
 
-Total time taken : 2.495735
+Total time taken : 2.639956
 Number of predicates guessed: 1.0

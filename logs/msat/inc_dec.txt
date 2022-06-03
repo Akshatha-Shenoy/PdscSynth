@@ -534,9 +534,9 @@ final_formula  ( and ( = countp_0 0 ) ( and ( not ( = countp_0 2 ) ) ( and .def_
 new_pred_smt_format ['(declare-rel pred_0_synth_msat_1 (Int Int Int))\n (rule (=>  ( =  ( + (rel h 1)  ( +  ( *  ( - 1  ) (rel l 1)  ) (rel l 0)  )  ) 0  ) (pred_0_synth_msat_1 l h count)))']
 ['(declare-rel pred_0_synth_msat_1 (Int Int Int))\n (rule (=>  ( =  ( + (rel h 1)  ( +  ( *  ( - 1  ) (rel l 1)  ) (rel l 0)  )  ) 0  ) (pred_0_synth_msat_1 l h count)))']
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.04556 
-Solver time:	2.251407
-Total time:	2.296967
+Pre-processing time:	0.046216 
+Solver time:	2.277945
+Total time:	2.3241609999999997
 Iteration count:	17
 Predicate count:	7
 Successfully added new predicate to input file. !
@@ -1067,9 +1067,9 @@ final_formula  ( and ( = countp_0 0 ) ( and ( not ( = countp_0 2 ) ) ( and .def_
 new_pred_smt_format ['(declare-rel pred_0_synth_msat_2 (Int Int Int))\n (rule (=>  ( <= (rel l 0) (rel l 1)  ) (pred_0_synth_msat_2 l h count)))']
 ['(declare-rel pred_0_synth_msat_2 (Int Int Int))\n (rule (=>  ( <= (rel l 0) (rel l 1)  ) (pred_0_synth_msat_2 l h count)))']
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.053938 
-Solver time:	2.696184
-Total time:	2.750122
+Pre-processing time:	0.056582 
+Solver time:	2.736041
+Total time:	2.7926230000000003
 Iteration count:	16
 Predicate count:	8
 Successfully added new predicate to input file. !
@@ -1683,9 +1683,9 @@ final_formula  ( and ( = countp_0 0 ) ( and ( not ( = countp_0 2 ) ) ( and .def_
 new_pred_smt_format ['(declare-rel pred_0_synth_msat_3 (Int Int Int))\n (rule (=>  ( = 0  ( + (rel h 0)  ( +  ( *  ( - 1  ) (rel l 0)  ) (rel l 1)  )  )  ) (pred_0_synth_msat_3 l h count)))']
 ['(declare-rel pred_0_synth_msat_3 (Int Int Int))\n (rule (=>  ( = 0  ( + (rel h 0)  ( +  ( *  ( - 1  ) (rel l 0)  ) (rel l 1)  )  )  ) (pred_0_synth_msat_3 l h count)))']
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.057385 
-Solver time:	3.561853
-Total time:	3.619238
+Pre-processing time:	0.060053 
+Solver time:	3.106969
+Total time:	3.167022
 Iteration count:	18
 Predicate count:	9
 Successfully added new predicate to input file. !
@@ -1964,14 +1964,14 @@ And(Or(Not(count_eq_0_0), pred_0_synth_msat_2),
     Or(Not(count_eq_0_1), pred_0_synth_msat_3, l0_eq_l1),
     Or(pred_0_synth_msat_1, count1_eq_2, count_eq_0_1),
     Or(Not(count1_eq_2), l0_eq_l1))
-Pre-processing time:	0.066807 
-Solver time:	1.77425
-Total time:	1.8410570000000002
+Pre-processing time:	0.068142 
+Solver time:	1.883623
+Total time:	1.951765
 Iteration count:	11
 Predicate count:	10
 Start next refinement loop: False
 
 
 
-Total time taken : 10.507932
+Total time taken : 10.236136
 Number of predicates guessed: 3.0

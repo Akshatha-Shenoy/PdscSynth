@@ -80,10 +80,4 @@
 
 
 
-(declare-rel pred_0_synth_msat_1 (Int Int Int Int Int))
- (rule (=>  ( =  ( + (rel x 0)  ( +  ( *  ( - 1  ) (rel i 0)  )  ( +  ( *  ( - 1  ) (rel max 1)  ) (rel i 1)  )  )  )  ( - 1  )  ) (pred_0_synth_msat_1 max x i y pc)))
-(declare-rel pred_0_synth_msat_2 (Int Int Int Int Int))
- (rule (=>  ( <= (rel i 0) (rel x 0)  ) (pred_0_synth_msat_2 max x i y pc)))
-(declare-rel pred_1_synth_msat_2 (Int Int Int Int Int))
- (rule (=>  ( < i x  ) (pred_1_synth_msat_2 max x i y pc)))
 (query End)

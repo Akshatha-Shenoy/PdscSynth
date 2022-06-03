@@ -1390,9 +1390,9 @@ Running quantifier elimination:
 New predicate is  (not (and (= zU0 1) (= zU1 (* 2 zU0))))
 
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.144021 
-Solver time:	12.193515
-Total time:	12.337536
+Pre-processing time:	0.109365 
+Solver time:	8.712367
+Total time:	8.821732
 Iteration count:	22
 Predicate count:	15
 Successfully added new predicate to input file. !
@@ -3222,9 +3222,9 @@ Running quantifier elimination:
 New predicate is  (not (and (= zU0 1) (>= yU0 1)))
 
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.16065 
-Solver time:	15.268777
-Total time:	15.429427
+Pre-processing time:	0.123036 
+Solver time:	11.3683
+Total time:	11.491336
 Iteration count:	30
 Predicate count:	16
 Successfully added new predicate to input file. !
@@ -4960,9 +4960,9 @@ New predicate is  (let ((a!1 (not (= zU1 (+ 1 (* 2 zU0)))))
   (not a!3)))
 
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.177434 
-Solver time:	15.516064
-Total time:	15.693498
+Pre-processing time:	0.129066 
+Solver time:	11.185984
+Total time:	11.31505
 Iteration count:	28
 Predicate count:	17
 Successfully added new predicate to input file. !
@@ -6869,9 +6869,9 @@ Running quantifier elimination:
 New predicate is  (not (and (= zU0 0) (= 1 zU1)))
 
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.276491 
-Solver time:	22.08985
-Total time:	22.366341
+Pre-processing time:	0.181543 
+Solver time:	15.743561
+Total time:	15.925104
 Iteration count:	30
 Predicate count:	18
 Successfully added new predicate to input file. !
@@ -9203,9 +9203,9 @@ New predicate is  (let ((a!1 (or (<= zU1 0) (= zU1 (+ 1 (* 2 zU0))))))
   (not (and (= 2 zU0) a!1 (>= zU1 0))))
 
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.275928 
-Solver time:	27.836919
-Total time:	28.112847000000002
+Pre-processing time:	0.19338 
+Solver time:	19.642313
+Total time:	19.835693000000003
 Iteration count:	37
 Predicate count:	19
 Successfully added new predicate to input file. !
@@ -11583,9 +11583,9 @@ Running quantifier elimination:
 New predicate is  (not (and (<= zU0 0) (= 0 endU0) (>= zU0 0)))
 
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.302304 
-Solver time:	32.453476
-Total time:	32.75578
+Pre-processing time:	0.218917 
+Solver time:	23.662287
+Total time:	23.881204
 Iteration count:	37
 Predicate count:	20
 Successfully added new predicate to input file. !
@@ -14417,9 +14417,9 @@ New predicate is  (let ((a!1 (and (>= yU0 0) (>= yU1 0) (not (= (* 2 yU0) yU1)) 
   (not a!1))
 
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.317141 
-Solver time:	40.641454
-Total time:	40.958595
+Pre-processing time:	0.224935 
+Solver time:	28.132284
+Total time:	28.357218999999997
 Iteration count:	44
 Predicate count:	21
 Successfully added new predicate to input file. !
@@ -19652,9 +19652,9 @@ Running quantifier elimination:
 New predicate is  (not (and (>= zU0 1) (not (= zU0 1)) (>= yU0 1)))
 
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.354406 
-Solver time:	92.271918
-Total time:	92.626324
+Pre-processing time:	0.24826 
+Solver time:	63.654012
+Total time:	63.902272
 Iteration count:	77
 Predicate count:	22
 Successfully added new predicate to input file. !
@@ -21797,14 +21797,14 @@ And(y_gteq_0_1,
     Or(Not(y0_eq_y1), Not(p_synth_2)),
     Or(z1_eq_2z0_1, z1_eq_2z0),
     Or(z1_eq_2z0_1, Not(p_synth_7)))
-Pre-processing time:	0.381395 
-Solver time:	21.703519
-Total time:	22.084914
+Pre-processing time:	0.263935 
+Solver time:	14.798158
+Total time:	15.062093
 Iteration count:	33
 Predicate count:	23
 Start next refinement loop: False
 
 
 
-Total time taken : 282.367467
+Total time taken : 198.59333
 Number of predicates guessed: 8.0

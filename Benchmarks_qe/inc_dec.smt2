@@ -43,13 +43,4 @@
 
 
 
-
-(declare-rel p_synth_1 (Int Int Int))
- (rule (=>   (= (rel count 1) 1 )  (p_synth_1 l h count)))
-(declare-rel p_synth_2 (Int Int Int))
- (rule (=>   (and  (not  (<= (rel h 1) 0 ) )  (not  (= (rel l 0)  (+ (rel l 1)  (*  (- 1 ) (rel h 1) ) ) ) )  (not  (= (rel l 0) (rel l 1) ) ) ) (p_synth_2 l h count)))
-(declare-rel p_synth_3 (Int Int Int))
- (rule (=>   (= (rel count 0) 1 )  (p_synth_3 l h count)))
-(declare-rel p_synth_4 (Int Int Int))
- (rule (=>   (and  (not  (= (rel l 0) (rel l 1) ) )  (not  (<= (rel h 0) 0 ) )  (not  (=  (+ (rel l 0)  (*  (- 1 ) (rel h 0) ) ) (rel l 1) ) ) ) (p_synth_4 l h count)))
 (query End)

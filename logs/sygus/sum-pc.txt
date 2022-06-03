@@ -1638,9 +1638,9 @@ Discover predicate using a_src, a_tgt, c_src, c_tgt to eliminate the spurious ce
 new predicate is (define-fun p ((h_1 Int) (h_0 Int) (i_0 Int) (max_0 Int) (y_0 Int) (i_1 Int) (y_1 Int) (v_0 Int) (v_1 Int) (max_1 Int)) Bool (< i_0 h_1))
 
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.093137 
-Solver time:	9.259982
-Total time:	9.353119000000001
+Pre-processing time:	0.094716 
+Solver time:	9.659569
+Total time:	9.754285
 Iteration count:	39
 Predicate count:	9
 Successfully added new predicate to input file. !
@@ -3589,9 +3589,9 @@ Discover predicate using a_src, a_tgt, c_src, c_tgt to eliminate the spurious ce
 new predicate is (define-fun p ((h_1 Int) (h_0 Int) (i_0 Int) (max_0 Int) (y_0 Int) (i_1 Int) (y_1 Int) (v_0 Int) (v_1 Int) (max_1 Int)) Bool (= y_0 v_1))
 
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.096987 
-Solver time:	12.042235
-Total time:	12.139222
+Pre-processing time:	0.098883 
+Solver time:	11.951047
+Total time:	12.049930000000002
 Iteration count:	46
 Predicate count:	10
 Successfully added new predicate to input file. !
@@ -5345,9 +5345,9 @@ Discover predicate using a_src, a_tgt, c_src, c_tgt to eliminate the spurious ce
 new predicate is (define-fun p ((h_1 Int) (h_0 Int) (i_0 Int) (max_0 Int) (y_0 Int) (i_1 Int) (y_1 Int) (v_0 Int) (v_1 Int) (max_1 Int)) Bool (= h_1 (+ i_0 1)))
 
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.101212 
-Solver time:	14.517249
-Total time:	14.618461
+Pre-processing time:	0.105549 
+Solver time:	15.190428
+Total time:	15.295977
 Iteration count:	38
 Predicate count:	11
 Successfully added new predicate to input file. !
@@ -7566,9 +7566,9 @@ Discover predicate using a_src, a_tgt, c_src, c_tgt to eliminate the spurious ce
 new predicate is (define-fun p ((h_1 Int) (h_0 Int) (i_0 Int) (max_0 Int) (y_0 Int) (i_1 Int) (y_1 Int) (v_0 Int) (v_1 Int) (max_1 Int)) Bool (= h_1 h_0))
 
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.109863 
-Solver time:	17.702527
-Total time:	17.81239
+Pre-processing time:	0.121095 
+Solver time:	17.778615
+Total time:	17.89971
 Iteration count:	45
 Predicate count:	12
 Successfully added new predicate to input file. !
@@ -9671,9 +9671,9 @@ Discover predicate using a_src, a_tgt, c_src, c_tgt to eliminate the spurious ce
 new predicate is (define-fun p ((h_1 Int) (h_0 Int) (i_0 Int) (max_0 Int) (y_0 Int) (i_1 Int) (y_1 Int) (v_0 Int) (v_1 Int) (max_1 Int)) Bool (= h_1 (+ h_1 y_0)))
 
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.12438 
-Solver time:	19.301261
-Total time:	19.425641
+Pre-processing time:	0.121563 
+Solver time:	19.122175
+Total time:	19.243737999999997
 Iteration count:	43
 Predicate count:	13
 Successfully added new predicate to input file. !
@@ -9686,14 +9686,14 @@ Namespace(file='./Benchmarks_sygus/sum-pc.smt2', log=False, msat=False, property
 1 SMT queries performed.
 Proved by invariant:
 And(y0_eq_y1, max0_eq_max1, p_synth_5)
-Pre-processing time:	0.147427 
-Solver time:	0.059277
-Total time:	0.206704
+Pre-processing time:	0.133028 
+Solver time:	0.047055
+Total time:	0.180083
 Iteration count:	1
 Predicate count:	14
 Start next refinement loop: False
 
 
 
-Total time taken : 73.556594
+Total time taken : 74.424784
 Number of predicates guessed: 5.0

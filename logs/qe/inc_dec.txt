@@ -633,9 +633,9 @@ Running quantifier elimination:
 New predicate is  (not (= countU1 1))
 
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.04485 
-Solver time:	3.5473
-Total time:	3.5921499999999997
+Pre-processing time:	0.045086 
+Solver time:	3.732689
+Total time:	3.777775
 Iteration count:	17
 Predicate count:	7
 Successfully added new predicate to input file. !
@@ -1272,9 +1272,9 @@ New predicate is  (let ((a!1 (not (= lU0 (+ lU1 (* (- 1) hU1))))))
   (not (and (not (<= hU1 0)) a!1 (not (= lU0 lU1)))))
 
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.047279 
-Solver time:	3.961883
-Total time:	4.009162
+Pre-processing time:	0.048159 
+Solver time:	4.146947
+Total time:	4.195106
 Iteration count:	16
 Predicate count:	8
 Successfully added new predicate to input file. !
@@ -1917,9 +1917,9 @@ Running quantifier elimination:
 New predicate is  (not (= countU0 1))
 
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.067833 
-Solver time:	4.235877
-Total time:	4.303710000000001
+Pre-processing time:	0.066068 
+Solver time:	4.363175
+Total time:	4.429243
 Iteration count:	15
 Predicate count:	9
 Successfully added new predicate to input file. !
@@ -2592,9 +2592,9 @@ New predicate is  (let ((a!1 (not (= (+ lU0 (* (- 1) hU0)) lU1))))
   (not (and (not (= lU0 lU1)) (not (<= hU0 0)) a!1)))
 
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.06898 
-Solver time:	4.694317
-Total time:	4.763297
+Pre-processing time:	0.080266 
+Solver time:	4.871223
+Total time:	4.951489
 Iteration count:	15
 Predicate count:	10
 Successfully added new predicate to input file. !
@@ -2921,14 +2921,14 @@ And(Or(Not(p_synth_3), Not(p_synth_1)),
     h_gt_0_0,
     Or(Not(p_synth_3), Not(l0_eq_l1)),
     Or(Not(p_synth_1), Not(l0_eq_l1)))
-Pre-processing time:	0.084671 
-Solver time:	0.786031
-Total time:	0.8707020000000001
+Pre-processing time:	0.087997 
+Solver time:	0.831165
+Total time:	0.919162
 Iteration count:	8
 Predicate count:	11
 Start next refinement loop: False
 
 
 
-Total time taken : 17.539831
+Total time taken : 18.273644
 Number of predicates guessed: 4.0

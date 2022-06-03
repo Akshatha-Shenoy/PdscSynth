@@ -388,9 +388,9 @@ Running quantifier elimination:
 New predicate is  (not (and (= nU1 (div nU0 10)) (= nU0 nU1) (not (= nU0 0))))
 
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.107641 
-Solver time:	5.081796
-Total time:	5.189437
+Pre-processing time:	0.068338 
+Solver time:	3.628159
+Total time:	3.696497
 Iteration count:	9
 Predicate count:	10
 Successfully added new predicate to input file. !
@@ -799,9 +799,9 @@ Running quantifier elimination:
 New predicate is  (not (and (= nU0 0) (= nU1 0)))
 
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.121465 
-Solver time:	6.320278
-Total time:	6.441743
+Pre-processing time:	0.096191 
+Solver time:	4.3943
+Total time:	4.4904910000000005
 Iteration count:	10
 Predicate count:	11
 Successfully added new predicate to input file. !
@@ -1896,9 +1896,9 @@ Running quantifier elimination:
 New predicate is  (not (and (= nU1 0) (not (= nU0 nU1))))
 
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.130817 
-Solver time:	17.319661
-Total time:	17.450478
+Pre-processing time:	0.097355 
+Solver time:	11.858793
+Total time:	11.956148
 Iteration count:	27
 Predicate count:	12
 Successfully added new predicate to input file. !
@@ -3078,9 +3078,9 @@ Running quantifier elimination:
 New predicate is  (not (and (= 0 (div nU1 10)) (not (= nU1 0)) (not (= nU0 nU1)) (not (= nU0 0))))
 
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.141767 
-Solver time:	18.509111
-Total time:	18.650878000000002
+Pre-processing time:	0.107432 
+Solver time:	12.665169
+Total time:	12.772601
 Iteration count:	29
 Predicate count:	13
 Successfully added new predicate to input file. !
@@ -4505,9 +4505,9 @@ New predicate is  (let ((a!1 (and (= (div (div nU1 10) 10) 0)
   (not a!1))
 
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.168985 
-Solver time:	23.683063
-Total time:	23.852048
+Pre-processing time:	0.122522 
+Solver time:	16.258716
+Total time:	16.381238
 Iteration count:	35
 Predicate count:	14
 Successfully added new predicate to input file. !
@@ -5958,9 +5958,9 @@ New predicate is  (let ((a!1 (and (= 0 (div nU0 10)) (= nU1 0) (<= (+ (* (- 1) n
   (not a!1))
 
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.195753 
-Solver time:	28.240662
-Total time:	28.436415
+Pre-processing time:	0.137218 
+Solver time:	19.274512
+Total time:	19.411730000000002
 Iteration count:	36
 Predicate count:	15
 Successfully added new predicate to input file. !
@@ -7513,9 +7513,9 @@ New predicate is  (not (and (>= nU0 1)
           (= (div nU0 10) 0)))
 
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.216004 
-Solver time:	32.827008
-Total time:	33.043012
+Pre-processing time:	0.157516 
+Solver time:	22.255295
+Total time:	22.412811
 Iteration count:	38
 Predicate count:	16
 Successfully added new predicate to input file. !
@@ -9168,9 +9168,9 @@ New predicate is  (let ((a!1 (not (= (div (div nU1 10) 10) 0))))
   (not a!2)))
 
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.243563 
-Solver time:	39.597132
-Total time:	39.840695000000004
+Pre-processing time:	0.176133 
+Solver time:	27.750897
+Total time:	27.92703
 Iteration count:	41
 Predicate count:	17
 Successfully added new predicate to input file. !
@@ -10503,5 +10503,5 @@ Start next refinement loop: False
 
 
 
-Total time taken : 195.995838
+Total time taken : 134.768699
 Number of predicates guessed: 8.0

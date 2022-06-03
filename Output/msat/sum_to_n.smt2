@@ -40,6 +40,10 @@
 (declare-rel n0_eq_n1 (Int Int Int))
  (rule (=> (= (rel n 0) (rel n 1)) (n0_eq_n1 i n sum)))
 
+
+
+
+
 (declare-rel pred_0_synth_msat_1 (Int Int Int))
  (rule (=>  ( =  ( - 1  )  ( + (rel n 1)  ( +  ( *  ( - 1  ) (rel i 1)  )  ( + (rel i 0)  ( *  ( - 1  ) (rel n 0)  )  )  )  )  ) (pred_0_synth_msat_1 i n sum)))
 (declare-rel pred_0_synth_msat_2 (Int Int Int))

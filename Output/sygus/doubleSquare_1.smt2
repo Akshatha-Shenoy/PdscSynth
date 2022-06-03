@@ -72,18 +72,7 @@
 ; (rule (=> (= (rel y 1) (* 2 (rel y 0))) (y1_eq_2y0 z y x h end)))
 ;(declare-rel y1_eq_2y0_x (Int Int Int Int Int))
 ;(rule (=> (= (rel y 1) (+ (* 2 (rel y 0)) (rel x 0))) (y1_eq_2y0_x z y x h end)))
-
-
-
-
-
-
-
-
-
-
-
-
+ 
 
 
 
@@ -119,4 +108,6 @@
  (rule (=>  (= (rel x 1) (rel y 1)) (p_synth_8 z y x h end)))
 (declare-rel p_synth_9 (Int Int Int Int Int))
  (rule (=>  (= (rel h 1) (rel z 1)) (p_synth_9 z y x h end)))
+(declare-rel p_synth_10 (Int Int Int Int Int))
+ (rule (=>  (= (rel x 1) 2 ) (p_synth_10 z y x h end)))
 (query End)

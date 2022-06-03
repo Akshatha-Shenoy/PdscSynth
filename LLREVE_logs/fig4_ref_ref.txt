@@ -1,0 +1,13 @@
+sat
+
+(model 
+
+  (define-fun OUT_INV ((x!0 Int) (x!1 Int)) Bool
+
+    (= x!1 x!0))
+
+  (define-fun IN_INV ((x!0 Int) (x!1 Int)) Bool
+
+    (= x!1 x!0))
+
+)

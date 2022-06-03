@@ -78,20 +78,4 @@
 
 
 
-
-
-(declare-rel p_synth_1 (Int Int Int Int Int))
- (rule (=>  (= (rel h 1) (rel z 0)) (p_synth_1 z y x h end)))
-(declare-rel p_synth_2 (Int Int Int Int Int))
- (rule (=>  (= (rel h 1)  (- (rel z 0) (rel h 1))) (p_synth_2 z y x h end)))
-(declare-rel p_synth_3 (Int Int Int Int Int))
- (rule (=>  (= (rel z 0) 3 ) (p_synth_3 z y x h end)))
-(declare-rel p_synth_4 (Int Int Int Int Int))
- (rule (=>  (= (rel x 1) (rel x 1)) (p_synth_4 z y x h end)))
-(declare-rel p_synth_5 (Int Int Int Int Int))
- (rule (=>  (= (rel z 0) 4 ) (p_synth_5 z y x h end)))
-(declare-rel p_synth_6 (Int Int Int Int Int))
- (rule (=>  (= (rel x 1) (rel x 1)) (p_synth_6 z y x h end)))
-(declare-rel p_synth_7 (Int Int Int Int Int))
- (rule (=>  (= (rel z 0) 5 ) (p_synth_7 z y x h end)))
 (query End)

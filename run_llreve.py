@@ -62,9 +62,13 @@ def main():
                     output = '\n'.join(output)
                     output = output + str(benchmark) + ", " + str(total_time) +", model" + "\n"
                     fd_z3.write(output)
+                    fd_log = open("./LLREVE_logs/"+str(benchmark)+".txt","w+")
+                    fd_log.write(lines)
+                    fd_log.close()
             else:
                     output = fd_z3.readlines()
                     output = '\n'.join(output)
+                    
                     output = output + str(benchmark) + ", " +"TIMEOUT" + "\n"
                     fd_z3.write(output)
             fd_z3.close()

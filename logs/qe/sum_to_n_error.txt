@@ -94,5 +94,5 @@ Next concrete state :  {'i_0': 2, 'sum_0': 1, 'sum_1': 0, 'n_1': 2, 'i_1': 2, 'n
 
 Is the trace spurious?  False
 Real cex. Program is unsafe.
-Total time taken : 0.263514
+Total time taken : 0.26763
 Number of predicates guessed: 0.0

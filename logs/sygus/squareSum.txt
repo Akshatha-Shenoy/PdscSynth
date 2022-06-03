@@ -128,10 +128,10 @@ And(a_gt_0_0,
     Or(Not(a_lt_b_1), a_lt_b_0),
     Or(Not(a_lt_b_1), a0_lt_a1, a0_eq_a1),
     Or(Not(c0_eq_c1), a0_lt_a1))
-Pre-processing time:	0.060299 
-Solver time:	0.498744
-Total time:	0.5590430000000001
+Pre-processing time:	0.070146 
+Solver time:	0.473538
+Total time:	0.5436840000000001
 Iteration count:	4
 Predicate count:	9
-Total time taken : 0.559125
+Total time taken : 0.543769
 Number of predicates guessed: 0.0

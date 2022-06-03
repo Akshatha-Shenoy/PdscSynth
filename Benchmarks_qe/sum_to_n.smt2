@@ -45,20 +45,4 @@
 
 
 
-(declare-rel p_synth_1 (Int Int Int))
- (rule (=>   (and  (= (rel i 0) 0 )  (not  (<= (rel i 1) 0 ) )  (not  (= (rel i 0)  (+  (- 1 ) (rel i 1) ) ) ) ) (p_synth_1 i n sum)))
-(declare-rel p_synth_2 (Int Int Int))
- (rule (=>   (and  (= (rel i 0) 0 )  (not  (<= (rel n 0) 0 ) )  (not  (= 1 (rel n 0) ) ) )  (p_synth_2 i n sum)))
-(declare-rel p_synth_3 (Int Int Int))
- (rule (=>   (and  (= (rel i 0)  (+  (- 1 ) (rel i 1) ) )  (>= (rel i 1) 1 )  (not  (= (rel i 0) 0 ) ) )  (p_synth_3 i n sum)))
-(declare-rel p_synth_4 (Int Int Int))
- (rule (=>   (and  (not  (=  (+ (rel sum 0) (rel i 0) ) (rel sum 1) ) )  (>= (rel i 0) 1 )  (not  (= (rel sum 0) (rel sum 1) ) ) ) (p_synth_4 i n sum)))
-(declare-rel p_synth_5 (Int Int Int))
- (rule (=>   (and  (= (rel i 0) 0 )  (=  (+ (rel i 1)  (*  (- 1 ) (rel i 0) ) ) 2 ) ) (p_synth_5 i n sum)))
-(declare-rel p_synth_6 (Int Int Int))
- (rule (=>   (and  (not  (= (rel sum 0)  (+  (- 1 ) (rel sum 1) ) ) )  (not  (= (rel sum 0) (rel sum 1) ) ) ) (p_synth_6 i n sum)))
-(declare-rel p_synth_7 (Int Int Int))
- (rule (=>   (and  (= (rel i 0) 0 )  (<= (rel i 1)  (- 2 ) ) )  (p_synth_7 i n sum)))
-(declare-rel p_synth_8 (Int Int Int))
- (rule (=>   (and  (= (rel i 0) 0 )  (not  (<= (rel i 1)  (- 2 ) ) )  (not  (= (rel i 1) 0 ) )  (not  (>= (rel i 1) 1 ) ) )  (p_synth_8 i n sum)))
 (query End)

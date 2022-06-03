@@ -99,44 +99,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 (declare-rel p_synth_1 (Int Int Int Int Int Int))
  (rule (=>  (< (rel i 0) (rel h 1)) (p_synth_1 max h i y v pc)))
 (declare-rel p_synth_2 (Int Int Int Int Int Int))

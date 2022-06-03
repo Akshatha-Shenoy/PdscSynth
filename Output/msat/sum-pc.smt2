@@ -89,6 +89,13 @@
  (rule (=> (= (rel max 0) (rel max 1)) (max0_eq_max1 max h i y v pc)))
 (rule (=> (= i max) (i_eq_max max h i y v pc)))
 
+
+
+
+
+
+
+
 (declare-rel pred_0_synth_msat_1 (Int Int Int Int Int Int))
  (rule (=>  ( = 1  ( + (rel h 1)  ( *  ( - 1  ) (rel i 1)  )  )  ) (pred_0_synth_msat_1 max h i y v pc)))
 (declare-rel pred_0_synth_msat_2 (Int Int Int Int Int Int))

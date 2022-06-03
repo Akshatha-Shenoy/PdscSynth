@@ -385,9 +385,9 @@ Checking output from mathsat 5
 new_pred_smt_format ['(declare-rel pred_0_synth_msat_1 (Int Int Int Int Int))\n (rule (=>  ( = (rel n 0) 0  ) (pred_0_synth_msat_1 end n m h ct)))']
 ['(declare-rel pred_0_synth_msat_1 (Int Int Int Int Int))\n (rule (=>  ( = (rel n 0) 0  ) (pred_0_synth_msat_1 end n m h ct)))']
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.080518 
-Solver time:	2.864382
-Total time:	2.9449
+Pre-processing time:	0.080418 
+Solver time:	2.887299
+Total time:	2.967717
 Iteration count:	9
 Predicate count:	12
 Successfully added new predicate to input file. !
@@ -415,14 +415,14 @@ And(n0_eq_n1,
        Not(n0_eq_n1)),
     Or(ct_1_0, ct0_eq_ct1),
     Or(Not(ct_1_0), ct_1_1))
-Pre-processing time:	0.080187 
-Solver time:	1.226908
-Total time:	1.3070950000000001
+Pre-processing time:	0.081085 
+Solver time:	1.735541
+Total time:	1.816626
 Iteration count:	1
 Predicate count:	13
 Start next refinement loop: False
 
 
 
-Total time taken : 4.252244
+Total time taken : 4.784578
 Number of predicates guessed: 1.0

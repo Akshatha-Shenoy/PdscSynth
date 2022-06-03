@@ -48,6 +48,4 @@
  (rule (=> (= count 1) (count_1 x h count)))
 
 
-
-
 (query End)

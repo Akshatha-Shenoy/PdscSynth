@@ -644,9 +644,9 @@ final_formula  ( and ( <= 1 z_0 ) ( and ( = end_1 0 ) ( and ( = h_1 1 ) ( and .d
 new_pred_smt_format ['(declare-rel pred_0_synth_msat_1 (Int Int Int Int Int))\n (rule (=>  ( =  ( +  ( * 2 (rel x 0)  )  ( +  ( * 2 (rel y 0)  )  ( +  ( *  ( - 2  ) (rel x 1)  )  ( *  ( - 1  ) (rel y 1)  )  )  )  ) 0  ) (pred_0_synth_msat_1 z y x h end)))']
 ['(declare-rel pred_0_synth_msat_1 (Int Int Int Int Int))\n (rule (=>  ( =  ( +  ( * 2 (rel x 0)  )  ( +  ( * 2 (rel y 0)  )  ( +  ( *  ( - 2  ) (rel x 1)  )  ( *  ( - 1  ) (rel y 1)  )  )  )  ) 0  ) (pred_0_synth_msat_1 z y x h end)))']
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.098211 
-Solver time:	4.45214
-Total time:	4.550351
+Pre-processing time:	0.103103 
+Solver time:	4.033466
+Total time:	4.136569
 Iteration count:	12
 Predicate count:	14
 Successfully added new predicate to input file. !
@@ -1326,9 +1326,9 @@ Checking output from mathsat 5
 new_pred_smt_format ['(declare-rel pred_synth_msat_2 (Int Int Int Int Int))\n (rule (=>  ( <= 1 (rel z 0)  ) (pred_synth_msat_2 z y x h end)))']
 ['(declare-rel pred_synth_msat_2 (Int Int Int Int Int))\n (rule (=>  ( <= 1 (rel z 0)  ) (pred_synth_msat_2 z y x h end)))']
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.117142 
-Solver time:	5.492511
-Total time:	5.609653000000001
+Pre-processing time:	0.115455 
+Solver time:	5.513974
+Total time:	5.629429
 Iteration count:	13
 Predicate count:	15
 Successfully added new predicate to input file. !
@@ -2761,9 +2761,9 @@ final_formula  ( and .def_28 ( and .def_430 ( and ( = end_1 0 ) ( and .def_28 .d
 new_pred_smt_format ['(declare-rel pred_0_synth_msat_3 (Int Int Int Int Int))\n (rule (=>  ( = (rel end 1) 0  ) (pred_0_synth_msat_3 z y x h end)))']
 ['(declare-rel pred_0_synth_msat_3 (Int Int Int Int Int))\n (rule (=>  ( = (rel end 1) 0  ) (pred_0_synth_msat_3 z y x h end)))']
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.120134 
-Solver time:	9.007917
-Total time:	9.128051000000001
+Pre-processing time:	0.118818 
+Solver time:	9.136069
+Total time:	9.254887
 Iteration count:	27
 Predicate count:	16
 Successfully added new predicate to input file. !
@@ -3676,9 +3676,9 @@ final_formula  ( and ( = end_1 0 ) ( and ( = h_1 1 ) ( and .def_509 ( and ( not 
 new_pred_smt_format ['(declare-rel pred_0_synth_msat_4 (Int Int Int Int Int))\n (rule (=>  ( = 0  ( + (rel x 1)  ( + (rel y 1)  ( +  ( *  ( - 2  ) (rel y 0)  )  ( *  ( - 2  ) (rel x 0)  )  )  )  )  ) (pred_0_synth_msat_4 z y x h end)))']
 ['(declare-rel pred_0_synth_msat_4 (Int Int Int Int Int))\n (rule (=>  ( = 0  ( + (rel x 1)  ( + (rel y 1)  ( +  ( *  ( - 2  ) (rel y 0)  )  ( *  ( - 2  ) (rel x 0)  )  )  )  )  ) (pred_0_synth_msat_4 z y x h end)))']
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.124783 
-Solver time:	6.484334
-Total time:	6.6091169999999995
+Pre-processing time:	0.123914 
+Solver time:	7.035668
+Total time:	7.159582
 Iteration count:	15
 Predicate count:	17
 Successfully added new predicate to input file. !
@@ -5123,9 +5123,9 @@ final_formula  ( and .def_28 ( and .def_449 ( and ( = end_1 0 ) ( and .def_28 .d
 new_pred_smt_format ['(declare-rel pred_synth_msat_5 (Int Int Int Int Int))\n (rule (=>  ( <= 2 (rel z 1)  ) (pred_synth_msat_5 z y x h end)))']
 ['(declare-rel pred_synth_msat_5 (Int Int Int Int Int))\n (rule (=>  ( <= 2 (rel z 1)  ) (pred_synth_msat_5 z y x h end)))']
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.14375 
-Solver time:	12.020803
-Total time:	12.164553000000002
+Pre-processing time:	0.142113 
+Solver time:	12.211386
+Total time:	12.353499
 Iteration count:	25
 Predicate count:	18
 Successfully added new predicate to input file. !
@@ -7022,9 +7022,9 @@ final_formula  ( and ( = end_1 0 ) ( and .def_28 ( and .def_600 ( and ( not ( = 
 new_pred_smt_format ['(declare-rel pred_0_synth_msat_6 (Int Int Int Int Int))\n (rule (=>  ( = 0  ( + (rel y 1)  ( +  ( *  ( - 2  ) (rel y 0)  )  ( *  ( - 2  ) (rel x 0)  )  )  )  ) (pred_0_synth_msat_6 z y x h end)))']
 ['(declare-rel pred_0_synth_msat_6 (Int Int Int Int Int))\n (rule (=>  ( = 0  ( + (rel y 1)  ( +  ( *  ( - 2  ) (rel y 0)  )  ( *  ( - 2  ) (rel x 0)  )  )  )  ) (pred_0_synth_msat_6 z y x h end)))']
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.150034 
-Solver time:	17.477424
-Total time:	17.627458
+Pre-processing time:	0.14662 
+Solver time:	17.502624
+Total time:	17.649244
 Iteration count:	29
 Predicate count:	19
 Successfully added new predicate to input file. !
@@ -9490,9 +9490,9 @@ final_formula  ( and ( = end_1 0 ) ( and .def_28 ( and .def_683 ( and ( not ( = 
 new_pred_smt_format ['(declare-rel pred_0_synth_msat_7 (Int Int Int Int Int))\n (rule (=>  ( =  ( + (rel z 1)  ( *  ( - 2  ) (rel z 0)  )  )  ( - 1  )  ) (pred_0_synth_msat_7 z y x h end)))']
 ['(declare-rel pred_0_synth_msat_7 (Int Int Int Int Int))\n (rule (=>  ( =  ( + (rel z 1)  ( *  ( - 2  ) (rel z 0)  )  )  ( - 1  )  ) (pred_0_synth_msat_7 z y x h end)))']
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.294715 
-Solver time:	26.286064
-Total time:	26.580779
+Pre-processing time:	0.160839 
+Solver time:	25.899235
+Total time:	26.060074
 Iteration count:	37
 Predicate count:	20
 Successfully added new predicate to input file. !
@@ -10834,14 +10834,14 @@ And(Or(Not(x0_gt_0),
     Or(Not(pred_synth_msat_2),
        pred_0_synth_msat_7,
        pred_synth_msat_5))
-Pre-processing time:	0.182596 
-Solver time:	16.557457
-Total time:	16.740053
+Pre-processing time:	0.177893 
+Solver time:	16.037054
+Total time:	16.214947000000002
 Iteration count:	22
 Predicate count:	21
 Start next refinement loop: False
 
 
 
-Total time taken : 99.011378
+Total time taken : 98.459493
 Number of predicates guessed: 7.0

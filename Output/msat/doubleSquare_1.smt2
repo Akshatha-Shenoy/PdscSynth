@@ -74,6 +74,10 @@
 ;(rule (=> (= (rel y 1) (+ (* 2 (rel y 0)) (rel x 0))) (y1_eq_2y0_x z y x h end)))
  
 
+
+
+
+
 (declare-rel pred_0_synth_msat_1 (Int Int Int Int Int))
  (rule (=>  ( = (rel end 1) 0  ) (pred_0_synth_msat_1 z y x h end)))
 (declare-rel pred_synth_msat_2 (Int Int Int Int Int))

@@ -55,16 +55,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
 (declare-rel p_synth_1 (Int Int Int Int))
  (rule (=>  (= (rel ct 1) (rel n 0)) (p_synth_1 end n h ct)))
 (declare-rel p_synth_2 (Int Int Int Int))

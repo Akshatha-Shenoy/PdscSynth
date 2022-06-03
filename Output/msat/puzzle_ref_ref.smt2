@@ -48,6 +48,11 @@
   (rule (=> (= (rel ct 0) (rel ct 1)) (ct0_eq_ct1 end n m h ct)))
 
 
+
+
+
+
+
 (declare-rel pred_0_synth_msat_1 (Int Int Int Int Int))
  (rule (=>  ( = (rel n 0) 0  ) (pred_0_synth_msat_1 end n m h ct)))
 (query End)

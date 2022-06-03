@@ -43,47 +43,4 @@
 
 
 
-
-
-
-
-
-(declare-rel p_synth_1 (Int Int Int))
- (rule (=>  (= (rel n 0) 1 ) (p_synth_1 i n sum)))
-(declare-rel p_synth_2 (Int Int Int))
- (rule (=>  (= (rel sum 0)  (- (rel sum 1) (rel i 0))) (p_synth_2 i n sum)))
-(declare-rel p_synth_3 (Int Int Int))
- (rule (=>  (= (rel sum 0)  (- (rel sum 1) 1 )) (p_synth_3 i n sum)))
-(declare-rel p_synth_4 (Int Int Int))
- (rule (=>  (= (rel n 0) 2 ) (p_synth_4 i n sum)))
-(declare-rel p_synth_5 (Int Int Int))
- (rule (=>  (= (rel n 0)  (* 3 (rel i 1))) (p_synth_5 i n sum)))
-(declare-rel p_synth_6 (Int Int Int))
- (rule (=>  (= (rel n 0) 3 ) (p_synth_6 i n sum)))
-(declare-rel p_synth_7 (Int Int Int))
- (rule (=>  (= (rel n 0)  (* 4 (rel i 1))) (p_synth_7 i n sum)))
-(declare-rel p_synth_8 (Int Int Int))
- (rule (=>  (= (rel n 0) 4 ) (p_synth_8 i n sum)))
-(declare-rel p_synth_9 (Int Int Int))
- (rule (=>  (= (rel n 0)  (* 5 (rel i 1))) (p_synth_9 i n sum)))
-(declare-rel p_synth_10 (Int Int Int))
- (rule (=>  (= (rel n 0) 5 ) (p_synth_10 i n sum)))
-(declare-rel p_synth_11 (Int Int Int))
- (rule (=>  (= (rel n 0)  (* 6 (rel i 1))) (p_synth_11 i n sum)))
-(declare-rel p_synth_12 (Int Int Int))
- (rule (=>  (= (rel n 0) 6 ) (p_synth_12 i n sum)))
-(declare-rel p_synth_13 (Int Int Int))
- (rule (=>  (= (rel n 0)  (* 7 (rel i 1))) (p_synth_13 i n sum)))
-(declare-rel p_synth_14 (Int Int Int))
- (rule (=>  (= (rel n 0) 7 ) (p_synth_14 i n sum)))
-(declare-rel p_synth_15 (Int Int Int))
- (rule (=>  (= (rel n 0)  (* 8 (rel i 1))) (p_synth_15 i n sum)))
-(declare-rel p_synth_16 (Int Int Int))
- (rule (=>  (= (rel n 0) 8 ) (p_synth_16 i n sum)))
-(declare-rel p_synth_17 (Int Int Int))
- (rule (=>  (= (rel i 1) 1 ) (p_synth_17 i n sum)))
-(declare-rel p_synth_18 (Int Int Int))
- (rule (=>  (= (rel n 0)  (* 2 (rel i 1))) (p_synth_18 i n sum)))
-(declare-rel p_synth_19 (Int Int Int))
- (rule (=>  (= (rel i 1) 2 ) (p_synth_19 i n sum)))
 (query End)

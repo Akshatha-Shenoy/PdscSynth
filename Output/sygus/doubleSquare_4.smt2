@@ -79,35 +79,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 (declare-rel p_synth_1 (Int Int Int Int Int))
  (rule (=>  (< (rel y 0) (rel h 1)) (p_synth_1 z y x h end)))
 (declare-rel p_synth_2 (Int Int Int Int Int))

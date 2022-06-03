@@ -855,9 +855,9 @@ Discover predicate using a_src, a_tgt, c_src, c_tgt to eliminate the spurious ce
 new predicate is (define-fun p ((n_0 Int) (sum_0 Int) (sum_1 Int) (i_1 Int) (i_0 Int) (n_1 Int)) Bool (= n_0 1))
 
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.058008 
-Solver time:	3.646185
-Total time:	3.704193
+Pre-processing time:	0.0557 
+Solver time:	3.671619
+Total time:	3.727319
 Iteration count:	17
 Predicate count:	10
 Successfully added new predicate to input file. !
@@ -1679,9 +1679,9 @@ Discover predicate using a_src, a_tgt, c_src, c_tgt to eliminate the spurious ce
 new predicate is (define-fun p ((n_0 Int) (sum_0 Int) (sum_1 Int) (i_1 Int) (i_0 Int) (n_1 Int)) Bool (= sum_0 (- sum_1 i_0)))
 
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.055982 
-Solver time:	3.81114
-Total time:	3.867122
+Pre-processing time:	0.05735 
+Solver time:	3.811161
+Total time:	3.868511
 Iteration count:	16
 Predicate count:	11
 Successfully added new predicate to input file. !
@@ -2632,9 +2632,9 @@ Discover predicate using a_src, a_tgt, c_src, c_tgt to eliminate the spurious ce
 new predicate is (define-fun p ((n_0 Int) (sum_0 Int) (sum_1 Int) (i_1 Int) (i_0 Int) (n_1 Int)) Bool (= sum_0 (- sum_1 1)))
 
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.065202 
-Solver time:	5.192894
-Total time:	5.258096
+Pre-processing time:	0.066213 
+Solver time:	5.718576
+Total time:	5.784789
 Iteration count:	18
 Predicate count:	12
 Successfully added new predicate to input file. !
@@ -3536,9 +3536,9 @@ Discover predicate using a_src, a_tgt, c_src, c_tgt to eliminate the spurious ce
 new predicate is (define-fun p ((n_0 Int) (sum_0 Int) (sum_1 Int) (i_1 Int) (i_0 Int) (n_1 Int)) Bool (= n_0 2))
 
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.081231 
-Solver time:	4.459434
-Total time:	4.540665
+Pre-processing time:	0.071704 
+Solver time:	4.470415
+Total time:	4.5421190000000005
 Iteration count:	17
 Predicate count:	13
 Successfully added new predicate to input file. !
@@ -4546,9 +4546,9 @@ Discover predicate using a_src, a_tgt, c_src, c_tgt to eliminate the spurious ce
 new predicate is (define-fun p ((n_0 Int) (sum_0 Int) (sum_1 Int) (i_1 Int) (i_0 Int) (n_1 Int)) Bool (= n_0 (* 3 i_1)))
 
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.073692 
-Solver time:	4.910515
-Total time:	4.9842070000000005
+Pre-processing time:	0.070769 
+Solver time:	4.869059
+Total time:	4.939828
 Iteration count:	19
 Predicate count:	14
 Successfully added new predicate to input file. !
@@ -5822,9 +5822,9 @@ Discover predicate using a_src, a_tgt, c_src, c_tgt to eliminate the spurious ce
 new predicate is (define-fun p ((n_0 Int) (sum_0 Int) (sum_1 Int) (i_1 Int) (i_0 Int) (n_1 Int)) Bool (= n_0 3))
 
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.081315 
-Solver time:	6.105065
-Total time:	6.18638
+Pre-processing time:	0.076909 
+Solver time:	5.984556
+Total time:	6.061465
 Iteration count:	24
 Predicate count:	15
 Successfully added new predicate to input file. !
@@ -6890,9 +6890,9 @@ Discover predicate using a_src, a_tgt, c_src, c_tgt to eliminate the spurious ce
 new predicate is (define-fun p ((n_0 Int) (sum_0 Int) (sum_1 Int) (i_1 Int) (i_0 Int) (n_1 Int)) Bool (= n_0 (* 4 i_1)))
 
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.078328 
-Solver time:	5.714934
-Total time:	5.793262
+Pre-processing time:	0.079884 
+Solver time:	6.22673
+Total time:	6.306614
 Iteration count:	20
 Predicate count:	16
 Successfully added new predicate to input file. !
@@ -8400,9 +8400,9 @@ Discover predicate using a_src, a_tgt, c_src, c_tgt to eliminate the spurious ce
 new predicate is (define-fun p ((n_0 Int) (sum_0 Int) (sum_1 Int) (i_1 Int) (i_0 Int) (n_1 Int)) Bool (= n_0 4))
 
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.085701 
-Solver time:	7.905221
-Total time:	7.990922
+Pre-processing time:	0.084197 
+Solver time:	8.347528
+Total time:	8.431725
 Iteration count:	28
 Predicate count:	17
 Successfully added new predicate to input file. !
@@ -9731,9 +9731,9 @@ Discover predicate using a_src, a_tgt, c_src, c_tgt to eliminate the spurious ce
 new predicate is (define-fun p ((n_0 Int) (sum_0 Int) (sum_1 Int) (i_1 Int) (i_0 Int) (n_1 Int)) Bool (= n_0 (* 5 i_1)))
 
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.101531 
-Solver time:	7.89825
-Total time:	7.999781
+Pre-processing time:	0.088067 
+Solver time:	7.780419
+Total time:	7.868486
 Iteration count:	25
 Predicate count:	18
 Successfully added new predicate to input file. !
@@ -11198,9 +11198,9 @@ Discover predicate using a_src, a_tgt, c_src, c_tgt to eliminate the spurious ce
 new predicate is (define-fun p ((n_0 Int) (sum_0 Int) (sum_1 Int) (i_1 Int) (i_0 Int) (n_1 Int)) Bool (= n_0 5))
 
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.102244 
-Solver time:	8.490539
-Total time:	8.592783
+Pre-processing time:	0.090862 
+Solver time:	8.122191
+Total time:	8.213053
 Iteration count:	27
 Predicate count:	19
 Successfully added new predicate to input file. !
@@ -12265,9 +12265,9 @@ Discover predicate using a_src, a_tgt, c_src, c_tgt to eliminate the spurious ce
 new predicate is (define-fun p ((n_0 Int) (sum_0 Int) (sum_1 Int) (i_1 Int) (i_0 Int) (n_1 Int)) Bool (= n_0 (* 6 i_1)))
 
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.101926 
-Solver time:	7.587554
-Total time:	7.68948
+Pre-processing time:	0.095703 
+Solver time:	7.92022
+Total time:	8.015922999999999
 Iteration count:	20
 Predicate count:	20
 Successfully added new predicate to input file. !
@@ -13601,9 +13601,9 @@ Discover predicate using a_src, a_tgt, c_src, c_tgt to eliminate the spurious ce
 new predicate is (define-fun p ((n_0 Int) (sum_0 Int) (sum_1 Int) (i_1 Int) (i_0 Int) (n_1 Int)) Bool (= n_0 6))
 
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.101005 
-Solver time:	8.787821
-Total time:	8.888826
+Pre-processing time:	0.098497 
+Solver time:	8.544319
+Total time:	8.642816
 Iteration count:	25
 Predicate count:	21
 Successfully added new predicate to input file. !
@@ -15467,9 +15467,9 @@ Discover predicate using a_src, a_tgt, c_src, c_tgt to eliminate the spurious ce
 new predicate is (define-fun p ((n_0 Int) (sum_0 Int) (sum_1 Int) (i_1 Int) (i_0 Int) (n_1 Int)) Bool (= n_0 (* 7 i_1)))
 
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.1029 
-Solver time:	12.162605
-Total time:	12.265505
+Pre-processing time:	0.101791 
+Solver time:	13.217879
+Total time:	13.31967
 Iteration count:	35
 Predicate count:	22
 Successfully added new predicate to input file. !
@@ -17494,9 +17494,9 @@ Discover predicate using a_src, a_tgt, c_src, c_tgt to eliminate the spurious ce
 new predicate is (define-fun p ((n_0 Int) (sum_0 Int) (sum_1 Int) (i_1 Int) (i_0 Int) (n_1 Int)) Bool (= n_0 7))
 
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.113391 
-Solver time:	14.090665
-Total time:	14.204056
+Pre-processing time:	0.105622 
+Solver time:	14.019095
+Total time:	14.124717
 Iteration count:	37
 Predicate count:	23
 Successfully added new predicate to input file. !
@@ -19185,9 +19185,9 @@ Discover predicate using a_src, a_tgt, c_src, c_tgt to eliminate the spurious ce
 new predicate is (define-fun p ((n_0 Int) (sum_0 Int) (sum_1 Int) (i_1 Int) (i_0 Int) (n_1 Int)) Bool (= n_0 (* 8 i_1)))
 
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.109718 
-Solver time:	12.674159
-Total time:	12.783877
+Pre-processing time:	0.10977 
+Solver time:	12.571148
+Total time:	12.680918
 Iteration count:	31
 Predicate count:	24
 Successfully added new predicate to input file. !
@@ -20358,9 +20358,9 @@ Discover predicate using a_src, a_tgt, c_src, c_tgt to eliminate the spurious ce
 new predicate is (define-fun p ((n_0 Int) (sum_0 Int) (sum_1 Int) (i_1 Int) (i_0 Int) (n_1 Int)) Bool (= n_0 8))
 
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.119319 
-Solver time:	9.92959
-Total time:	10.048909
+Pre-processing time:	0.113764 
+Solver time:	10.349363
+Total time:	10.463127
 Iteration count:	22
 Predicate count:	25
 Successfully added new predicate to input file. !
@@ -21326,9 +21326,9 @@ Discover predicate using a_src, a_tgt, c_src, c_tgt to eliminate the spurious ce
 new predicate is (define-fun p ((n_0 Int) (sum_0 Int) (sum_1 Int) (i_1 Int) (i_0 Int) (n_1 Int)) Bool (= i_1 1))
 
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.121783 
-Solver time:	9.887613
-Total time:	10.009396
+Pre-processing time:	0.118357 
+Solver time:	10.353877
+Total time:	10.472234
 Iteration count:	18
 Predicate count:	26
 Successfully added new predicate to input file. !
@@ -27584,9 +27584,9 @@ Discover predicate using a_src, a_tgt, c_src, c_tgt to eliminate the spurious ce
 new predicate is (define-fun p ((n_0 Int) (sum_0 Int) (sum_1 Int) (i_1 Int) (i_0 Int) (n_1 Int)) Bool (= n_0 (* 2 i_1)))
 
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.124827 
-Solver time:	73.678514
-Total time:	73.803341
+Pre-processing time:	0.11704 
+Solver time:	72.824414
+Total time:	72.94145400000001
 Iteration count:	103
 Predicate count:	27
 Successfully added new predicate to input file. !
@@ -35827,9 +35827,9 @@ Discover predicate using a_src, a_tgt, c_src, c_tgt to eliminate the spurious ce
 new predicate is (define-fun p ((n_0 Int) (sum_0 Int) (sum_1 Int) (i_1 Int) (i_0 Int) (n_1 Int)) Bool (= i_1 2))
 
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.140198 
-Solver time:	121.446346
-Total time:	121.586544
+Pre-processing time:	0.133227 
+Solver time:	122.252503
+Total time:	122.38573000000001
 Iteration count:	133
 Predicate count:	28
 Successfully added new predicate to input file. !
@@ -42943,190 +42943,6 @@ p_synth_14, ]
 
 
 Blocking composition assignment 2 for state
- [
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-sum0_eq_sum1, 
-n0_eq_n1, 
-p_synth_13, 
-p_synth_14, 
-p_synth_17, ]
-
-
-Exploring new composition...
-
-
-Current composition gives an abstract counter-example trace:
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i0_eq_0, 
-i1_eq_0, 
-sum0_eq_sum1, 
-n0_eq_n1, 
-p_synth_2, 
-p_synth_14, ]
---->[2]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-sum0_eq_sum1, 
-n0_eq_n1, 
-p_synth_13, 
-p_synth_14, 
-p_synth_17, ]
---->[0]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, 
-p_synth_13, 
-p_synth_14, 
-p_synth_17, ]
---->[2]
-
-[i_eq_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, 
-p_synth_14, 
-p_synth_19, ]
---->[0]
-
-
-Blocking composition assignment 2 for state
- [
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, 
-p_synth_13, 
-p_synth_14, 
-p_synth_17, ]
-
-
-Exploring new composition...
-
-
-Current composition gives an abstract counter-example trace:
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i0_eq_0, 
-i1_eq_0, 
-sum0_eq_sum1, 
-n0_eq_n1, 
-p_synth_2, 
-p_synth_14, ]
---->[2]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-sum0_eq_sum1, 
-n0_eq_n1, 
-p_synth_13, 
-p_synth_14, 
-p_synth_17, ]
---->[0]
-
-[i_eq_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, 
-p_synth_13, 
-p_synth_14, 
-p_synth_17, ]
---->[2]
-
-[i_eq_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, 
-p_synth_14, 
-p_synth_19, ]
---->[0]
-
-
-Blocking composition assignment 2 for state
- [i_eq_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, 
-p_synth_13, 
-p_synth_14, 
-p_synth_17, ]
-
-
-Exploring new composition...
-
-
-Current composition gives an abstract counter-example trace:
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i0_eq_0, 
-i1_eq_0, 
-sum0_eq_sum1, 
-n0_eq_n1, 
-p_synth_2, 
-p_synth_14, ]
---->[2]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-sum0_eq_sum1, 
-n0_eq_n1, 
-p_synth_13, 
-p_synth_14, 
-p_synth_17, ]
---->[0]
-
-[i_eq_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, 
-p_synth_13, 
-p_synth_14, 
-p_synth_17, ]
---->[1]
-
-[i_eq_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, 
-p_synth_14, 
-p_synth_19, ]
---->[0]
-
-
-Blocking composition assignment 0 for state
  [
 i_lt_n_0, 
 n_gt_0_0, 

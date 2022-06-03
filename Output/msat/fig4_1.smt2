@@ -47,5 +47,4 @@
 (declare-rel count_1 (Int Int Int))
  (rule (=> (= count 1) (count_1 x h count)))
 
-
 (query End)

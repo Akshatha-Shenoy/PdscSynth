@@ -150,5 +150,5 @@ Checking output from mathsat 5
    (countpp_1 1) )
 
 Program unsafe due to above concrete counterexample trace.
-Total time taken : 1.031639
+Total time taken : 1.05562
 Number of predicates guessed: 0.0

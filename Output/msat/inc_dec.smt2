@@ -39,6 +39,12 @@
  (rule (=> (= count 0) (count_eq_0 l h count)))
 (declare-rel h_gt_0 (Int Int Int))
  (rule (=> (> h 0) (h_gt_0 l h count)))
+
+
+
+
+
+
 (declare-rel pred_0_synth_msat_1 (Int Int Int))
  (rule (=>  ( =  ( + (rel h 1)  ( +  ( *  ( - 1  ) (rel l 1)  ) (rel l 0)  )  ) 0  ) (pred_0_synth_msat_1 l h count)))
 (declare-rel pred_0_synth_msat_2 (Int Int Int))

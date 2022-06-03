@@ -889,9 +889,9 @@ New predicate is  (let ((a!1 (and (= iU0 0) (not (<= iU1 0)) (not (= iU0 (+ (- 1
   (not a!1))
 
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.055116 
-Solver time:	4.301719
-Total time:	4.356835
+Pre-processing time:	0.056485 
+Solver time:	4.720751
+Total time:	4.777236
 Iteration count:	17
 Predicate count:	10
 Successfully added new predicate to input file. !
@@ -1792,9 +1792,9 @@ Running quantifier elimination:
 New predicate is  (not (and (= iU0 0) (not (<= nU0 0)) (not (= 1 nU0))))
 
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.066757 
-Solver time:	4.76576
-Total time:	4.832517
+Pre-processing time:	0.077742 
+Solver time:	5.0851
+Total time:	5.1628419999999995
 Iteration count:	17
 Predicate count:	11
 Successfully added new predicate to input file. !
@@ -2806,9 +2806,9 @@ Running quantifier elimination:
 New predicate is  (not (and (= iU0 (+ (- 1) iU1)) (>= iU1 1) (not (= iU0 0))))
 
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.075312 
-Solver time:	5.48611
-Total time:	5.561422
+Pre-processing time:	0.082583 
+Solver time:	5.637754
+Total time:	5.720337
 Iteration count:	18
 Predicate count:	12
 Successfully added new predicate to input file. !
@@ -3824,9 +3824,9 @@ New predicate is  (let ((a!1 (and (not (= (+ sumU0 iU0) sumU1)) (>= iU0 1) (not 
   (not a!1))
 
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.090044 
-Solver time:	7.183837
-Total time:	7.273880999999999
+Pre-processing time:	0.098678 
+Solver time:	6.732169
+Total time:	6.8308469999999994
 Iteration count:	18
 Predicate count:	13
 Successfully added new predicate to input file. !
@@ -5688,9 +5688,9 @@ New predicate is  (let ((a!1 (and (= iU0 0) (= (+ iU1 (* (- 1) iU0)) 2))))
   (not a!1))
 
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.104838 
-Solver time:	10.388592
-Total time:	10.49343
+Pre-processing time:	0.104612 
+Solver time:	10.030136
+Total time:	10.134748
 Iteration count:	31
 Predicate count:	14
 Successfully added new predicate to input file. !
@@ -7575,9 +7575,9 @@ New predicate is  (let ((a!1 (and (not (= sumU0 (+ (- 1) sumU1))) (not (= sumU0 
   (not a!1))
 
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.118529 
-Solver time:	11.40771
-Total time:	11.526239
+Pre-processing time:	0.129691 
+Solver time:	11.648547
+Total time:	11.778238
 Iteration count:	31
 Predicate count:	15
 Successfully added new predicate to input file. !
@@ -9840,9 +9840,9 @@ Running quantifier elimination:
 New predicate is  (not (and (= iU0 0) (<= iU1 (- 2))))
 
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.132858 
-Solver time:	14.242373
-Total time:	14.375231000000001
+Pre-processing time:	0.13068 
+Solver time:	13.90036
+Total time:	14.031039999999999
 Iteration count:	36
 Predicate count:	16
 Successfully added new predicate to input file. !
@@ -12241,9 +12241,9 @@ Running quantifier elimination:
 New predicate is  (not (and (= iU0 0) (not (<= iU1 (- 2))) (not (= iU1 0)) (not (>= iU1 1))))
 
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.138947 
-Solver time:	16.713922
-Total time:	16.852869000000002
+Pre-processing time:	0.141474 
+Solver time:	16.571868
+Total time:	16.713341999999997
 Iteration count:	37
 Predicate count:	17
 Successfully added new predicate to input file. !
@@ -13933,14 +13933,14 @@ And(Not(p_synth_7),
     Not(p_synth_8),
     Not(p_synth_1),
     Or(sum0_eq_sum1, i_lt_n_0, Not(n0_eq_n1)))
-Pre-processing time:	0.154222 
-Solver time:	6.492229
-Total time:	6.646451
+Pre-processing time:	0.160222 
+Solver time:	6.653154
+Total time:	6.813376
 Iteration count:	29
 Predicate count:	18
 Start next refinement loop: False
 
 
 
-Total time taken : 81.920427
+Total time taken : 81.963628
 Number of predicates guessed: 8.0

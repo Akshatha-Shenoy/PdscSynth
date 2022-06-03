@@ -92,10 +92,10 @@ Initial concrete state  {'n_1': 2, 'n_gt_0_1': True, 'i_lt_n_1': False, 'i_eq_n_
 Next concrete state {'i_0': 2, 'sum_0': 1, 'sum_1': 0, 'n_1': 2, 'i_1': 2, 'n_0': 2}
 Trace is not spurious
 Real cex. Program Unsafe.
-Pre-processing time:	0.058459 
-Solver time:	0.790914
-Total time:	0.849373
+Pre-processing time:	0.060356 
+Solver time:	0.836246
+Total time:	0.896602
 Iteration count:	2
 Predicate count:	10
-Total time taken : 0.849442
+Total time taken : 0.89668
 Number of predicates guessed: 0.0

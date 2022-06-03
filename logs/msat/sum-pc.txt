@@ -1308,9 +1308,9 @@ final_formula  ( and .def_589 ( or ( <= h_1 i_1 ) ( and ( and ( not ( <= max_1 h
 new_pred_smt_format ['(declare-rel pred_0_synth_msat_1 (Int Int Int Int Int Int))\n (rule (=>  ( = 1  ( + (rel h 1)  ( *  ( - 1  ) (rel i 1)  )  )  ) (pred_0_synth_msat_1 max h i y v pc)))']
 ['(declare-rel pred_0_synth_msat_1 (Int Int Int Int Int Int))\n (rule (=>  ( = 1  ( + (rel h 1)  ( *  ( - 1  ) (rel i 1)  )  )  ) (pred_0_synth_msat_1 max h i y v pc)))']
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.089839 
-Solver time:	8.027455
-Total time:	8.117294
+Pre-processing time:	0.091324 
+Solver time:	8.591742
+Total time:	8.683066
 Iteration count:	39
 Predicate count:	9
 Successfully added new predicate to input file. !
@@ -2419,9 +2419,9 @@ final_formula  ( and .def_355 ( or ( <= h_1 i_1 ) ( and ( and ( not ( <= max_1 h
 new_pred_smt_format ['(declare-rel pred_0_synth_msat_2 (Int Int Int Int Int Int))\n (rule (=>  ( <= (rel h 1) (rel i 1)  ) (pred_0_synth_msat_2 max h i y v pc)))', '(declare-rel pred_1_synth_msat_2 (Int Int Int Int Int Int))\n (rule (=>  ( < h i  ) (pred_1_synth_msat_2 max h i y v pc)))']
 ['(declare-rel pred_0_synth_msat_2 (Int Int Int Int Int Int))\n (rule (=>  ( <= (rel h 1) (rel i 1)  ) (pred_0_synth_msat_2 max h i y v pc)))', '(declare-rel pred_1_synth_msat_2 (Int Int Int Int Int Int))\n (rule (=>  ( < h i  ) (pred_1_synth_msat_2 max h i y v pc)))']
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.103707 
-Solver time:	8.710648
-Total time:	8.814355
+Pre-processing time:	0.100254 
+Solver time:	8.301506
+Total time:	8.40176
 Iteration count:	36
 Predicate count:	10
 Successfully added new predicate to input file. !
@@ -8054,9 +8054,9 @@ final_formula  ( not ( and ( not ( <= 1 ( + hpppppp_0 ( * ( - 1 ) ipppppp_0 ) ) 
 new_pred_smt_format ['(declare-rel pred_0_synth_msat_3 (Int Int Int Int Int Int))\n (rule (=>  ( = 0  ( +  ( * 2 (rel y 0)  )  ( *  ( - 1  ) (rel y 1)  )  )  ) (pred_0_synth_msat_3 max h i y v pc)))']
 ['(declare-rel pred_0_synth_msat_3 (Int Int Int Int Int Int))\n (rule (=>  ( = 0  ( +  ( * 2 (rel y 0)  )  ( *  ( - 1  ) (rel y 1)  )  )  ) (pred_0_synth_msat_3 max h i y v pc)))']
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.115319 
-Solver time:	52.964961
-Total time:	53.08028
+Pre-processing time:	0.113337 
+Solver time:	52.013061
+Total time:	52.126398
 Iteration count:	134
 Predicate count:	13
 Successfully added new predicate to input file. !
@@ -8073,14 +8073,14 @@ And(y0_eq_y1,
     max0_eq_max1,
     pred_0_synth_msat_3,
     Or(pc_eq_0_1, pred_0_synth_msat_2))
-Pre-processing time:	0.128455 
-Solver time:	1.530612
-Total time:	1.659067
+Pre-processing time:	0.127084 
+Solver time:	1.506922
+Total time:	1.634006
 Iteration count:	1
 Predicate count:	14
 Start next refinement loop: False
 
 
 
-Total time taken : 71.671577
+Total time taken : 70.845831
 Number of predicates guessed: 4.0

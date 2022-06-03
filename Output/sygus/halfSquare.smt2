@@ -84,47 +84,12 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 (declare-rel p_synth_1 (Int Int Int Int Int))
  (rule (=>  (= (rel i 0) (rel x 0)) (p_synth_1 max x i y pc)))
 (declare-rel p_synth_2 (Int Int Int Int Int))
  (rule (=>  (= (rel max 0) 2 ) (p_synth_2 max x i y pc)))
 (declare-rel p_synth_3 (Int Int Int Int Int))
  (rule (=>  (< (rel x 1)  (- (rel max 0) (rel i 1))) (p_synth_3 max x i y pc)))
+(declare-rel p_synth_4 (Int Int Int Int Int))
+ (rule (=>  (= (rel x 1) 1 ) (p_synth_4 max x i y pc)))
 (query End)

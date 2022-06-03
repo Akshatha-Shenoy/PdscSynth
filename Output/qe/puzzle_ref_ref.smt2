@@ -53,24 +53,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 (declare-rel p_synth_1 (Int Int Int Int Int))
  (rule (=>   (and  (= (rel n 0) (rel n 1) ) (=  (+  (*  (- 1 ) (rel n 1) )  (div (rel n 0) 10 ) ) 0 ) (not  (= (rel n 0) 0 ) ) ) (p_synth_1 end n m h ct)))
 (declare-rel p_synth_2 (Int Int Int Int Int))

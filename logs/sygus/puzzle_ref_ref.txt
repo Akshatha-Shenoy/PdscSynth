@@ -446,5 +446,5 @@ Discover predicate using a_src, a_tgt, c_src, c_tgt to eliminate the spurious ce
 
 
 No predicate discovered in the grammar. SyGuS technique cannot refine further, unable to prove the program safe/unsafe.
-Total time taken : 3.976396
+Total time taken : 3.523356
 Number of predicates guessed: 0.0

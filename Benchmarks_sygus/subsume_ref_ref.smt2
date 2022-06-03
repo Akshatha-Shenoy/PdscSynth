@@ -54,14 +54,4 @@
 
 
 
-(declare-rel p_synth_1 (Int Int Int))
- (rule (=>  (= (rel x 1) 8 ) (p_synth_1 x h count)))
-(declare-rel p_synth_2 (Int Int Int))
- (rule (=>  (< (rel x 1) 42 ) (p_synth_2 x h count)))
-(declare-rel p_synth_3 (Int Int Int))
- (rule (=>  (= (rel x 1) 42 ) (p_synth_3 x h count)))
-(declare-rel p_synth_4 (Int Int Int))
- (rule (=>  (= (rel x 1) (rel x 1)) (p_synth_4 x h count)))
-(declare-rel p_synth_5 (Int Int Int))
- (rule (=>  (= (rel x 1) (rel x 1)) (p_synth_5 x h count)))
 (query End)

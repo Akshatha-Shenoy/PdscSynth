@@ -50,6 +50,7 @@
 
 
 
+
 (declare-rel pred_0_synth_msat_1 (Int Int Int))
  (rule (=>  ( = (rel count 1) 1  ) (pred_0_synth_msat_1 x h count)))
 (declare-rel pred_0_synth_msat_2 (Int Int Int))
@@ -65,5 +66,5 @@
 (declare-rel pred_0_synth_msat_7 (Int Int Int))
  (rule (=>  ( = (rel x 0) 383  ) (pred_0_synth_msat_7 x h count)))
 (declare-rel p_synth_8 (Int Int Int))
- (rule (=>   (and  (= (rel x 0) (rel x 1) ) (not  (= (rel x 1) 8 ) ) (not  (= (rel x 0) 1 ) ) (not  (= 0  (mod (rel x 1) 7 ) ) ) (not  (= (rel x 1) 383 ) ) (not  (= (rel x 1) 1009 ) ) ) (p_synth_8 x h count)))
+ (rule (=>   (and  (= (rel x 0) (rel x 1) ) (not  (= (rel x 1) 1 ) ) (not  (= 0  (mod (rel x 1) 7 ) ) ) (not  (= (rel x 1) 8 ) ) (not  (= (rel x 1) 383 ) ) (not  (= (rel x 0) 1009 ) ) ) (p_synth_8 x h count)))
 (query End)

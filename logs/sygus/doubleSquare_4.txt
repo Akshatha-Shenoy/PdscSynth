@@ -1327,9 +1327,9 @@ Discover predicate using a_src, a_tgt, c_src, c_tgt to eliminate the spurious ce
 new predicate is (define-fun p ((x_1 Int) (h_1 Int) (h_0 Int) (x_0 Int) (end_0 Int) (z_0 Int) (y_0 Int) (y_1 Int) (z_1 Int) (end_1 Int)) Bool (< y_0 h_1))
 
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.117302 
-Solver time:	8.996509
-Total time:	9.113811
+Pre-processing time:	0.108654 
+Solver time:	7.926833
+Total time:	8.035487
 Iteration count:	22
 Predicate count:	15
 Successfully added new predicate to input file. !
@@ -3229,9 +3229,9 @@ Discover predicate using a_src, a_tgt, c_src, c_tgt to eliminate the spurious ce
 new predicate is (define-fun p ((x_1 Int) (h_1 Int) (h_0 Int) (x_0 Int) (end_0 Int) (z_0 Int) (y_0 Int) (y_1 Int) (z_1 Int) (end_1 Int)) Bool (= h_1 z_0))
 
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.128064 
-Solver time:	17.17689
-Total time:	17.304954
+Pre-processing time:	0.111259 
+Solver time:	15.103092
+Total time:	15.214351
 Iteration count:	29
 Predicate count:	16
 Successfully added new predicate to input file. !
@@ -5235,9 +5235,9 @@ Discover predicate using a_src, a_tgt, c_src, c_tgt to eliminate the spurious ce
 new predicate is (define-fun p ((x_1 Int) (h_1 Int) (h_0 Int) (x_0 Int) (end_0 Int) (z_0 Int) (y_0 Int) (y_1 Int) (z_1 Int) (end_1 Int)) Bool (= end_0 z_1))
 
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.145425 
-Solver time:	16.334646
-Total time:	16.480071
+Pre-processing time:	0.12158 
+Solver time:	14.537924
+Total time:	14.659504
 Iteration count:	30
 Predicate count:	17
 Successfully added new predicate to input file. !
@@ -7221,9 +7221,9 @@ Discover predicate using a_src, a_tgt, c_src, c_tgt to eliminate the spurious ce
 new predicate is (define-fun p ((x_1 Int) (h_1 Int) (h_0 Int) (x_0 Int) (end_0 Int) (z_0 Int) (y_0 Int) (y_1 Int) (z_1 Int) (end_1 Int)) Bool (= y_0 (- y_1 y_0)))
 
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.137993 
-Solver time:	17.953655
-Total time:	18.091648000000003
+Pre-processing time:	0.126815 
+Solver time:	16.31828
+Total time:	16.445095000000002
 Iteration count:	30
 Predicate count:	18
 Successfully added new predicate to input file. !
@@ -8270,14 +8270,14 @@ And(Or(z0_eq_z1,
     Or(Not(y0_eq_y1), abs_end_0, p_synth_1),
     Or(Not(y0_eq_y1), z1_eq_2z0),
     Or(z1_eq_2z0_1, z1_eq_2z0))
-Pre-processing time:	0.154992 
-Solver time:	6.390022
-Total time:	6.545014
+Pre-processing time:	0.135409 
+Solver time:	5.629311
+Total time:	5.7647200000000005
 Iteration count:	18
 Predicate count:	19
 Start next refinement loop: False
 
 
 
-Total time taken : 67.536547
+Total time taken : 60.119974
 Number of predicates guessed: 4.0

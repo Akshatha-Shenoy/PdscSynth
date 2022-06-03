@@ -52,28 +52,4 @@
 
 
 
-(declare-rel p_synth_1 (Int Int Int Int))
- (rule (=>   (and  (= (rel n 1)  (div (rel n 0) 10 ) )  (= (rel n 0) (rel n 1) )  (not  (= (rel n 0) 0 ) ) )  (p_synth_1 end n h ct)))
-(declare-rel p_synth_2 (Int Int Int Int))
- (rule (=>   (and  (= (rel n 0) 0 )  (= (rel n 1) 0 ) )  (p_synth_2 end n h ct)))
-(declare-rel p_synth_3 (Int Int Int Int))
- (rule (=>   (and  (= (rel n 1) 0 )  (not  (= (rel n 0) (rel n 1) ) ) )  (p_synth_3 end n h ct)))
-(declare-rel p_synth_4 (Int Int Int Int))
- (rule (=>   (and  (= 0  (div (rel n 1) 10 ) )  (not  (= (rel n 1) 0 ) )  (not  (= (rel n 0) (rel n 1) ) )  (not  (= (rel n 0) 0 ) ) )  (p_synth_4 end n h ct)))
-(declare-rel p_synth_5 (Int Int Int Int))
- (rule (=>   (and  (=  (div  (div (rel n 1) 10 ) 10 ) 0 ) (not  (=  (div (rel n 1) 10 ) 0 ) ) (= (rel n 0) (rel n 1) ) ) (p_synth_5 end n h ct)))
-(declare-rel p_synth_6 (Int Int Int Int))
- (rule (=>   (and  (= 0  (div (rel n 0) 10 ) )  (= (rel n 1) 0 )  (<=  (+  (*  (- 1 ) (rel n 0) ) (rel n 1) )  (- 1 ) ) ) (p_synth_6 end n h ct)))
-(declare-rel p_synth_7 (Int Int Int Int))
- (rule (=>   (and  (>= (rel n 0) 1 )
-
-           (=  (div (rel n 1) 10 ) 0 )
-
-           (not  (= (rel n 1) 0 ) )
-
-           (not  (= (rel n 0) (rel n 1) ) )
-
-           (=  (div (rel n 0) 10 ) 0 ) )  (p_synth_7 end n h ct)))
-(declare-rel p_synth_8 (Int Int Int Int))
- (rule (=>   (and  (= (rel n 0) (rel n 1) )  (not  (= (rel n 1)  (div (rel n 0) 10 ) ) )  (not  (=  (div  (div (rel n 1) 10 ) 10 ) 0 ) ) ) (p_synth_8 end n h ct)))
 (query End)
