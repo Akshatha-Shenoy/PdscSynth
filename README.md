@@ -89,7 +89,7 @@ Comparison with LLREVE
 -----------------------------
 "LLREVE_Input" is the directory that consists of necessary files to run LLREVE on our benchmarks. To run LLREVE, follow section b of this README file. This folder consists of subfolders for each benchmark (except squareSum, as it is not a program equivalence checking problem, and hence cannot be run on LLREVE). 
 
-We run the benchmarks that check for program equivalence on the LLREVE tool. 
+We run the benchmarks that check for program equivalence on the LLREVE tool. The following sections describe how to run LLREVE and interpret its output. To run all the benchmarks at once with LLREVE, see [here](#run-all-benchmarks-on-llreve-at-once). 
 
 To run using LLREVE
 --------------------
