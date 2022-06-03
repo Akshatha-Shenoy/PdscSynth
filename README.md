@@ -134,7 +134,7 @@ z3_llreve_log.txt and eld_llreve_log.txt are intermediate files generated to dum
 
 Dependencies
 -------------
-PdscSynth uses Z3 4.8.9 with Python3 bindings which can be downloaded [here](https://github.com/Z3Prover/z3) and Eldarica 2.0.8, MathSAT 5.6.6, CVC4 1.8, LLREVE which are included the package.
+PdscSynth uses Z3 4.8.9 with Python3 bindings which can be downloaded [here](https://github.com/Z3Prover/z3) and Eldarica 2.0.8, MathSAT 5.6.6, CVC4 1.8, LLREVE(68cb958c1c02177fa0db1965a8afd879a97c2fc4) which are included the package.
 
 Contact us
 -----------
