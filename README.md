@@ -5,7 +5,7 @@ PdscSynth
 PdscSynth is a tool designed on top of PDSC (https://bitbucket.org/sharonsh/pdsc/src/master/), corresponding to the work presented in our FMCAD 2022 submission (paper ID 103).
 
 To individually run each benchmark from command prompt, see [here](#running-a-benchmark). To run all the benchmarks at once, see [here](#to-run-all-benchmarks-at-once-using-sygus-qe-and-msat).To compare the results with LLR&Ecirc;VE, see [here](#comparison-with-llr%C3%AAve).
-llr%C3%AAve
+
 Dependencies
 -------------
 PdscSynth uses Python (python3), and Z3 4.8.9 (with Python bindings) which can be obtained and built as specified [here](https://github.com/Z3Prover/z3). PdscSynth also uses CVC4-1.8 and MathSAT5 5.6.6, the binaries of which are included in this repository.
