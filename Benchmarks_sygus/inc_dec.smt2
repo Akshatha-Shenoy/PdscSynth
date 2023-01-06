@@ -45,4 +45,9 @@
 
 
 
+
+(declare-rel p_synth_1 (Int Int Int))
+ (rule (=>  (= (rel h 1)  (- (rel l 1) (rel l 0))) (p_synth_1 l h count)))
+(declare-rel p_synth_2 (Int Int Int))
+ (rule (=>  (= (rel l 0)  (+ (rel h 0) (rel l 1))) (p_synth_2 l h count)))
 (query End)

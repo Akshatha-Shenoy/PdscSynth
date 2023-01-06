@@ -1450,14 +1450,9 @@ class DynamicSelfCompositionPDR_msat:
         f.write('\n(get-model)')
         f.close()
         p_sol_filename = 'p_sol_' + str(self.num_new_preds) + '.txt'
-        # print('before run.sh qe.cpp ',self.num_new_preds)
-        cmd1 = "./run.sh qe.cpp " + self.folder_path + filename + " >" + self.folder_path + p_sol_filename
-        # cmd2 ="./query"+str(self.num_new_preds)+" "+"query"+str(self.num_new_preds)+".smt2 >" + filename
-        # cmd = './run.sh query'+str(self.num_new_preds)+'.smt2 >'+ filename
+        # print('before qe ',self.num_new_preds)
+        cmd1 = "./qe " + self.folder_path + filename + " >" + self.folder_path + p_sol_filename
         # print('Running: '+cmd1)
-        '''
-        cmd = './cvc4-1.8-x86_64-linux-opt --sygus-active-gen=enum query'+str(self.num_new_preds)+'.sl >'+ filename
-        '''
         os.system(cmd1)
         p_sol_fd = open(self.folder_path + p_sol_filename, "r")
         # print('writing to file '+p_sol_filename)

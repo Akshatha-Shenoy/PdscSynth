@@ -2172,15 +2172,10 @@ class DynamicSelfCompositionPDR_qe:
             p_sol_filename = 'p_sol_'+str(self.num_new_preds)+'.txt'
 
             print('Running quantifier elimination: ')
-            cmd1 = "./run.sh qe.cpp "+self.folder_path+filename+" >" +self.folder_path+p_sol_filename
-            #cmd2 ="./query"+str(self.num_new_preds)+" "+"query"+str(self.num_new_preds)+".smt2 >" + filename
-            #cmd = './run.sh query'+str(self.num_new_preds)+'.smt2 >'+ filename
-            '''
-            cmd = './cvc4-1.8-x86_64-linux-opt --sygus-active-gen=enum query'+str(self.num_new_preds)+'.sl >'+ filename
-            '''
+            cmd1 = "./qe "+self.folder_path+filename+" >" +self.folder_path+p_sol_filename
             os.system(cmd1)
             #os.system(cmd2)
-            #print('after run.sh qe.cpp')
+            #print('after qe')
 
             p_sol_fd = open(self.folder_path+p_sol_filename,"r")
             #print('writing to file '+p_sol_filename)

@@ -11,7 +11,7 @@ fi
 
 output_bin="${input_file%.*}"
 
-g++ -ggdb -o $output_bin $input_file -lz3
+g++ -I /home/u1913883/z3/src/api -I /home/u1913883/z3/src/api/c++ -ggdb -o $output_bin $input_file -L/home/u1913883/z3/build -lz3
 
 if [ $? -ne 0 ];
 then

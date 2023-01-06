@@ -12,6 +12,10 @@ PdscSynth uses Python (python3), and Z3 4.8.9 (with Python bindings) which can b
 
 The executables for LLR&Ecirc;VE (version 68cb958c1c02177fa0db1965a8afd879a97c2fc4) and Eldarica (v2.0.8)  have also been included in this repository.
 
+Building
+---------
+To build, run the `build-qe.sh` file.
+
 Description of the PdscSynth directory
 ---------------------------------------
 This repository has a README file and a license file. There are 3 techniques used to refine predicates, namely SyGuS, Quantifier Elimination and Interpolation using MathSAT5. These techniques are abbreviated as sygus, qe, and msat respectively in our tool. There is a logs folder consisting of traces printed upon running the tool on benchmarks using each of the techniques, which are stored seperately in respective subdirs. 
