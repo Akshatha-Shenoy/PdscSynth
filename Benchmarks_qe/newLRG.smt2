@@ -76,8 +76,7 @@
  (rule (=> (= 0 h) (abs_h_0 lrg y x h end)))  
 (declare-rel x0_eq_x1 (Int Int Int Int Int))
  (rule (=> (= (rel x 0) (rel x 1)) (x0_eq_x1 lrg y x h end)))
-(declare-rel x0_gt_0 (Int Int Int Int Int))
-(rule (=> (> (rel x 0) 0) (x0_gt_0 lrg y x h end)))
+
 
 
 
