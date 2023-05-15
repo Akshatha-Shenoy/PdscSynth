@@ -855,9 +855,9 @@ Discover predicate using a_src, a_tgt, c_src, c_tgt to eliminate the spurious ce
 new predicate is (define-fun p ((n_0 Int) (sum_0 Int) (sum_1 Int) (i_1 Int) (i_0 Int) (n_1 Int)) Bool (= n_0 1))
 
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.0557 
-Solver time:	3.671619
-Total time:	3.727319
+Pre-processing time:	0.064739 
+Solver time:	3.806101
+Total time:	3.87084
 Iteration count:	17
 Predicate count:	10
 Successfully added new predicate to input file. !
@@ -1679,9 +1679,9 @@ Discover predicate using a_src, a_tgt, c_src, c_tgt to eliminate the spurious ce
 new predicate is (define-fun p ((n_0 Int) (sum_0 Int) (sum_1 Int) (i_1 Int) (i_0 Int) (n_1 Int)) Bool (= sum_0 (- sum_1 i_0)))
 
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.05735 
-Solver time:	3.811161
-Total time:	3.868511
+Pre-processing time:	0.059286 
+Solver time:	3.571046
+Total time:	3.630332
 Iteration count:	16
 Predicate count:	11
 Successfully added new predicate to input file. !
@@ -2632,9 +2632,9 @@ Discover predicate using a_src, a_tgt, c_src, c_tgt to eliminate the spurious ce
 new predicate is (define-fun p ((n_0 Int) (sum_0 Int) (sum_1 Int) (i_1 Int) (i_0 Int) (n_1 Int)) Bool (= sum_0 (- sum_1 1)))
 
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.066213 
-Solver time:	5.718576
-Total time:	5.784789
+Pre-processing time:	0.071211 
+Solver time:	5.781386
+Total time:	5.852597
 Iteration count:	18
 Predicate count:	12
 Successfully added new predicate to input file. !
@@ -3536,9 +3536,9 @@ Discover predicate using a_src, a_tgt, c_src, c_tgt to eliminate the spurious ce
 new predicate is (define-fun p ((n_0 Int) (sum_0 Int) (sum_1 Int) (i_1 Int) (i_0 Int) (n_1 Int)) Bool (= n_0 2))
 
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.071704 
-Solver time:	4.470415
-Total time:	4.5421190000000005
+Pre-processing time:	0.079465 
+Solver time:	4.579553
+Total time:	4.659018
 Iteration count:	17
 Predicate count:	13
 Successfully added new predicate to input file. !
@@ -4546,9 +4546,9 @@ Discover predicate using a_src, a_tgt, c_src, c_tgt to eliminate the spurious ce
 new predicate is (define-fun p ((n_0 Int) (sum_0 Int) (sum_1 Int) (i_1 Int) (i_0 Int) (n_1 Int)) Bool (= n_0 (* 3 i_1)))
 
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.070769 
-Solver time:	4.869059
-Total time:	4.939828
+Pre-processing time:	0.082882 
+Solver time:	5.087954
+Total time:	5.1708359999999995
 Iteration count:	19
 Predicate count:	14
 Successfully added new predicate to input file. !
@@ -5822,9 +5822,9 @@ Discover predicate using a_src, a_tgt, c_src, c_tgt to eliminate the spurious ce
 new predicate is (define-fun p ((n_0 Int) (sum_0 Int) (sum_1 Int) (i_1 Int) (i_0 Int) (n_1 Int)) Bool (= n_0 3))
 
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.076909 
-Solver time:	5.984556
-Total time:	6.061465
+Pre-processing time:	0.085543 
+Solver time:	6.19799
+Total time:	6.283533
 Iteration count:	24
 Predicate count:	15
 Successfully added new predicate to input file. !
@@ -6890,9 +6890,9 @@ Discover predicate using a_src, a_tgt, c_src, c_tgt to eliminate the spurious ce
 new predicate is (define-fun p ((n_0 Int) (sum_0 Int) (sum_1 Int) (i_1 Int) (i_0 Int) (n_1 Int)) Bool (= n_0 (* 4 i_1)))
 
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.079884 
-Solver time:	6.22673
-Total time:	6.306614
+Pre-processing time:	0.088166 
+Solver time:	6.028616
+Total time:	6.116782000000001
 Iteration count:	20
 Predicate count:	16
 Successfully added new predicate to input file. !
@@ -8400,9 +8400,9 @@ Discover predicate using a_src, a_tgt, c_src, c_tgt to eliminate the spurious ce
 new predicate is (define-fun p ((n_0 Int) (sum_0 Int) (sum_1 Int) (i_1 Int) (i_0 Int) (n_1 Int)) Bool (= n_0 4))
 
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.084197 
-Solver time:	8.347528
-Total time:	8.431725
+Pre-processing time:	0.097192 
+Solver time:	8.150176
+Total time:	8.247368
 Iteration count:	28
 Predicate count:	17
 Successfully added new predicate to input file. !
@@ -9731,9 +9731,9 @@ Discover predicate using a_src, a_tgt, c_src, c_tgt to eliminate the spurious ce
 new predicate is (define-fun p ((n_0 Int) (sum_0 Int) (sum_1 Int) (i_1 Int) (i_0 Int) (n_1 Int)) Bool (= n_0 (* 5 i_1)))
 
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.088067 
-Solver time:	7.780419
-Total time:	7.868486
+Pre-processing time:	0.09911 
+Solver time:	7.990489
+Total time:	8.089599
 Iteration count:	25
 Predicate count:	18
 Successfully added new predicate to input file. !
@@ -11198,9 +11198,9 @@ Discover predicate using a_src, a_tgt, c_src, c_tgt to eliminate the spurious ce
 new predicate is (define-fun p ((n_0 Int) (sum_0 Int) (sum_1 Int) (i_1 Int) (i_0 Int) (n_1 Int)) Bool (= n_0 5))
 
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.090862 
-Solver time:	8.122191
-Total time:	8.213053
+Pre-processing time:	0.103608 
+Solver time:	8.746116
+Total time:	8.849724
 Iteration count:	27
 Predicate count:	19
 Successfully added new predicate to input file. !
@@ -12265,9 +12265,9 @@ Discover predicate using a_src, a_tgt, c_src, c_tgt to eliminate the spurious ce
 new predicate is (define-fun p ((n_0 Int) (sum_0 Int) (sum_1 Int) (i_1 Int) (i_0 Int) (n_1 Int)) Bool (= n_0 (* 6 i_1)))
 
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.095703 
-Solver time:	7.92022
-Total time:	8.015922999999999
+Pre-processing time:	0.105175 
+Solver time:	7.811271
+Total time:	7.916446
 Iteration count:	20
 Predicate count:	20
 Successfully added new predicate to input file. !
@@ -13601,9 +13601,9 @@ Discover predicate using a_src, a_tgt, c_src, c_tgt to eliminate the spurious ce
 new predicate is (define-fun p ((n_0 Int) (sum_0 Int) (sum_1 Int) (i_1 Int) (i_0 Int) (n_1 Int)) Bool (= n_0 6))
 
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.098497 
-Solver time:	8.544319
-Total time:	8.642816
+Pre-processing time:	0.114213 
+Solver time:	9.341367
+Total time:	9.45558
 Iteration count:	25
 Predicate count:	21
 Successfully added new predicate to input file. !
@@ -15467,9 +15467,9 @@ Discover predicate using a_src, a_tgt, c_src, c_tgt to eliminate the spurious ce
 new predicate is (define-fun p ((n_0 Int) (sum_0 Int) (sum_1 Int) (i_1 Int) (i_0 Int) (n_1 Int)) Bool (= n_0 (* 7 i_1)))
 
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.101791 
-Solver time:	13.217879
-Total time:	13.31967
+Pre-processing time:	0.126279 
+Solver time:	14.055942
+Total time:	14.182221
 Iteration count:	35
 Predicate count:	22
 Successfully added new predicate to input file. !
@@ -17494,9 +17494,9 @@ Discover predicate using a_src, a_tgt, c_src, c_tgt to eliminate the spurious ce
 new predicate is (define-fun p ((n_0 Int) (sum_0 Int) (sum_1 Int) (i_1 Int) (i_0 Int) (n_1 Int)) Bool (= n_0 7))
 
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.105622 
-Solver time:	14.019095
-Total time:	14.124717
+Pre-processing time:	0.116675 
+Solver time:	15.13699
+Total time:	15.253665000000002
 Iteration count:	37
 Predicate count:	23
 Successfully added new predicate to input file. !
@@ -19185,9 +19185,9 @@ Discover predicate using a_src, a_tgt, c_src, c_tgt to eliminate the spurious ce
 new predicate is (define-fun p ((n_0 Int) (sum_0 Int) (sum_1 Int) (i_1 Int) (i_0 Int) (n_1 Int)) Bool (= n_0 (* 8 i_1)))
 
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.10977 
-Solver time:	12.571148
-Total time:	12.680918
+Pre-processing time:	0.119213 
+Solver time:	13.690488
+Total time:	13.809701
 Iteration count:	31
 Predicate count:	24
 Successfully added new predicate to input file. !
@@ -20358,9 +20358,9 @@ Discover predicate using a_src, a_tgt, c_src, c_tgt to eliminate the spurious ce
 new predicate is (define-fun p ((n_0 Int) (sum_0 Int) (sum_1 Int) (i_1 Int) (i_0 Int) (n_1 Int)) Bool (= n_0 8))
 
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.113764 
-Solver time:	10.349363
-Total time:	10.463127
+Pre-processing time:	0.126654 
+Solver time:	11.557065
+Total time:	11.683719
 Iteration count:	22
 Predicate count:	25
 Successfully added new predicate to input file. !
@@ -21326,9 +21326,9 @@ Discover predicate using a_src, a_tgt, c_src, c_tgt to eliminate the spurious ce
 new predicate is (define-fun p ((n_0 Int) (sum_0 Int) (sum_1 Int) (i_1 Int) (i_0 Int) (n_1 Int)) Bool (= i_1 1))
 
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.118357 
-Solver time:	10.353877
-Total time:	10.472234
+Pre-processing time:	0.128386 
+Solver time:	12.118733
+Total time:	12.247119000000001
 Iteration count:	18
 Predicate count:	26
 Successfully added new predicate to input file. !
@@ -27584,9 +27584,9 @@ Discover predicate using a_src, a_tgt, c_src, c_tgt to eliminate the spurious ce
 new predicate is (define-fun p ((n_0 Int) (sum_0 Int) (sum_1 Int) (i_1 Int) (i_0 Int) (n_1 Int)) Bool (= n_0 (* 2 i_1)))
 
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.11704 
-Solver time:	72.824414
-Total time:	72.94145400000001
+Pre-processing time:	0.166883 
+Solver time:	74.034828
+Total time:	74.201711
 Iteration count:	103
 Predicate count:	27
 Successfully added new predicate to input file. !
@@ -35827,9 +35827,9 @@ Discover predicate using a_src, a_tgt, c_src, c_tgt to eliminate the spurious ce
 new predicate is (define-fun p ((n_0 Int) (sum_0 Int) (sum_1 Int) (i_1 Int) (i_0 Int) (n_1 Int)) Bool (= i_1 2))
 
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.133227 
-Solver time:	122.252503
-Total time:	122.38573000000001
+Pre-processing time:	0.146413 
+Solver time:	132.361253
+Total time:	132.507666
 Iteration count:	133
 Predicate count:	28
 Successfully added new predicate to input file. !
@@ -41705,1256 +41705,5 @@ n_gt_0_1,
 n0_eq_n1, 
 p_synth_14, ]
 --->[0]
-
-
-Blocking composition assignment 2 for state
- [
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, 
-p_synth_14, ]
-
-
-Exploring new composition...
-
-
-Current composition gives an abstract counter-example trace:
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i0_eq_0, 
-i1_eq_0, 
-sum0_eq_sum1, 
-n0_eq_n1, 
-p_synth_2, 
-p_synth_16, ]
---->[2]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-sum0_eq_sum1, 
-n0_eq_n1, 
-p_synth_15, 
-p_synth_16, 
-p_synth_17, ]
---->[2]
-
-[i_eq_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, 
-p_synth_7, 
-p_synth_16, 
-p_synth_19, ]
---->[2]
-
-[i_eq_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, 
-p_synth_16, ]
---->[1]
-
-[i_eq_n_0, 
-n_gt_0_0, 
-i_eq_n_1, 
-n_gt_0_1, 
-n0_eq_n1, 
-p_synth_16, ]
---->[0]
-
-
-Blocking composition assignment 2 for state
- [i_eq_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, 
-p_synth_7, 
-p_synth_16, 
-p_synth_19, ]
-
-
-Exploring new composition...
-
-
-Current composition gives an abstract counter-example trace:
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i0_eq_0, 
-i1_eq_0, 
-sum0_eq_sum1, 
-n0_eq_n1, 
-p_synth_2, 
-p_synth_16, ]
---->[2]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-sum0_eq_sum1, 
-n0_eq_n1, 
-p_synth_15, 
-p_synth_16, 
-p_synth_17, ]
---->[2]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, 
-p_synth_7, 
-p_synth_16, 
-p_synth_19, ]
---->[2]
-
-[i_eq_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, 
-p_synth_16, ]
---->[0]
-
-
-Blocking composition assignment 2 for state
- [
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, 
-p_synth_7, 
-p_synth_16, 
-p_synth_19, ]
-
-
-Exploring new composition...
-
-
-Current composition gives an abstract counter-example trace:
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i0_eq_0, 
-i1_eq_0, 
-sum0_eq_sum1, 
-n0_eq_n1, 
-p_synth_2, 
-p_synth_16, ]
---->[2]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-sum0_eq_sum1, 
-n0_eq_n1, 
-p_synth_15, 
-p_synth_16, 
-p_synth_17, ]
---->[2]
-
-[i_eq_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, 
-p_synth_7, 
-p_synth_16, 
-p_synth_19, ]
---->[1]
-
-[i_eq_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, 
-p_synth_16, ]
---->[0]
-
-
-Blocking composition assignment 2 for state
- [
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-sum0_eq_sum1, 
-n0_eq_n1, 
-p_synth_15, 
-p_synth_16, 
-p_synth_17, ]
-
-
-Exploring new composition...
-
-
-Current composition gives an abstract counter-example trace:
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i0_eq_0, 
-i1_eq_0, 
-sum0_eq_sum1, 
-n0_eq_n1, 
-p_synth_2, 
-p_synth_16, ]
---->[2]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-sum0_eq_sum1, 
-n0_eq_n1, 
-p_synth_15, 
-p_synth_16, 
-p_synth_17, ]
---->[0]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, 
-p_synth_15, 
-p_synth_16, 
-p_synth_17, ]
---->[2]
-
-[i_eq_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, 
-p_synth_7, 
-p_synth_16, 
-p_synth_19, ]
---->[0]
-
-
-Blocking composition assignment 2 for state
- [
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, 
-p_synth_15, 
-p_synth_16, 
-p_synth_17, ]
-
-
-Exploring new composition...
-
-
-Current composition gives an abstract counter-example trace:
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i0_eq_0, 
-i1_eq_0, 
-sum0_eq_sum1, 
-n0_eq_n1, 
-p_synth_2, 
-p_synth_16, ]
---->[2]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-sum0_eq_sum1, 
-n0_eq_n1, 
-p_synth_15, 
-p_synth_16, 
-p_synth_17, ]
---->[0]
-
-[i_eq_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, 
-p_synth_15, 
-p_synth_16, 
-p_synth_17, ]
---->[2]
-
-[i_eq_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, 
-p_synth_7, 
-p_synth_16, 
-p_synth_19, ]
---->[0]
-
-
-Blocking composition assignment 2 for state
- [i_eq_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, 
-p_synth_15, 
-p_synth_16, 
-p_synth_17, ]
-
-
-Exploring new composition...
-
-
-Current composition gives an abstract counter-example trace:
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i0_eq_0, 
-i1_eq_0, 
-sum0_eq_sum1, 
-n0_eq_n1, 
-p_synth_2, 
-p_synth_16, ]
---->[2]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-sum0_eq_sum1, 
-n0_eq_n1, 
-p_synth_15, 
-p_synth_16, 
-p_synth_17, ]
---->[0]
-
-[i_eq_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, 
-p_synth_15, 
-p_synth_16, 
-p_synth_17, ]
---->[1]
-
-[i_eq_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, 
-p_synth_7, 
-p_synth_16, 
-p_synth_19, ]
---->[0]
-
-
-Blocking composition assignment 0 for state
- [
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-sum0_eq_sum1, 
-n0_eq_n1, 
-p_synth_15, 
-p_synth_16, 
-p_synth_17, ]
-
-
-Exploring new composition...
-
-
-Current composition gives an abstract counter-example trace:
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i0_eq_0, 
-i1_eq_0, 
-sum0_eq_sum1, 
-n0_eq_n1, 
-p_synth_2, 
-p_synth_16, ]
---->[2]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-sum0_eq_sum1, 
-n0_eq_n1, 
-p_synth_15, 
-p_synth_16, 
-p_synth_17, ]
---->[1]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, 
-p_synth_3, 
-p_synth_7, 
-p_synth_16, 
-p_synth_19, ]
---->[2]
-
-[i_eq_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, 
-p_synth_16, ]
---->[0]
-
-
-Blocking composition assignment 2 for state
- [
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, 
-p_synth_3, 
-p_synth_7, 
-p_synth_16, 
-p_synth_19, ]
-
-
-Exploring new composition...
-
-
-Current composition gives an abstract counter-example trace:
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i0_eq_0, 
-i1_eq_0, 
-sum0_eq_sum1, 
-n0_eq_n1, 
-p_synth_2, 
-p_synth_16, ]
---->[2]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-sum0_eq_sum1, 
-n0_eq_n1, 
-p_synth_15, 
-p_synth_16, 
-p_synth_17, ]
---->[1]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, 
-p_synth_3, 
-p_synth_7, 
-p_synth_16, 
-p_synth_19, ]
---->[0]
-
-[i_eq_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, 
-p_synth_7, 
-p_synth_16, 
-p_synth_19, ]
---->[0]
-
-
-Blocking composition assignment 0 for state
- [
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, 
-p_synth_3, 
-p_synth_7, 
-p_synth_16, 
-p_synth_19, ]
-
-
-Exploring new composition...
-
-
-Current composition gives an abstract counter-example trace:
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i0_eq_0, 
-i1_eq_0, 
-sum0_eq_sum1, 
-n0_eq_n1, 
-p_synth_2, ]
---->[2]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-sum0_eq_sum1, 
-n0_eq_n1, 
-p_synth_17, ]
---->[1]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, 
-p_synth_2, 
-p_synth_3, 
-p_synth_11, 
-p_synth_19, ]
---->[2]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, 
-p_synth_2, 
-p_synth_7, ]
---->[2]
-
-[i_eq_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, ]
---->[0]
-
-
-Blocking composition assignment 2 for state
- [
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, 
-p_synth_2, 
-p_synth_7, ]
-
-
-Exploring new composition...
-
-
-Current composition gives an abstract counter-example trace:
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i0_eq_0, 
-i1_eq_0, 
-sum0_eq_sum1, 
-n0_eq_n1, 
-p_synth_2, 
-p_synth_16, ]
---->[2]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-sum0_eq_sum1, 
-n0_eq_n1, 
-p_synth_15, 
-p_synth_16, 
-p_synth_17, ]
---->[1]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, 
-p_synth_3, 
-p_synth_7, 
-p_synth_16, 
-p_synth_19, ]
---->[1]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, 
-p_synth_16, ]
---->[0]
-
-[i_eq_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, 
-p_synth_16, ]
---->[0]
-
-
-Blocking composition assignment 0 for state
- [
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, 
-p_synth_16, ]
-
-
-Exploring new composition...
-
-
-Current composition gives an abstract counter-example trace:
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i0_eq_0, 
-i1_eq_0, 
-sum0_eq_sum1, 
-n0_eq_n1, 
-p_synth_2, ]
---->[2]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-sum0_eq_sum1, 
-n0_eq_n1, 
-p_synth_17, ]
---->[1]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, 
-p_synth_3, 
-p_synth_19, ]
---->[1]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, ]
---->[1]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, 
-p_synth_7, ]
---->[2]
-
-[i_eq_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, ]
---->[0]
-
-
-Blocking composition assignment 2 for state
- [
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, 
-p_synth_7, ]
-
-
-Exploring new composition...
-
-
-Current composition gives an abstract counter-example trace:
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i0_eq_0, 
-i1_eq_0, 
-sum0_eq_sum1, 
-n0_eq_n1, 
-p_synth_2, 
-p_synth_14, ]
---->[2]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-sum0_eq_sum1, 
-n0_eq_n1, 
-p_synth_13, 
-p_synth_14, 
-p_synth_17, ]
---->[2]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-sum0_eq_sum1, 
-n0_eq_n1, 
-p_synth_14, 
-p_synth_19, ]
---->[2]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, 
-p_synth_3, 
-p_synth_14, ]
---->[2]
-
-[i_eq_n_0, 
-n_gt_0_0, 
-i_eq_n_1, 
-n_gt_0_1, 
-n0_eq_n1, 
-p_synth_3, 
-p_synth_14, ]
---->[0]
-
-
-Blocking composition assignment 2 for state
- [
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, 
-p_synth_3, 
-p_synth_14, ]
-
-
-Exploring new composition...
-
-
-Current composition gives an abstract counter-example trace:
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i0_eq_0, 
-i1_eq_0, 
-sum0_eq_sum1, 
-n0_eq_n1, 
-p_synth_2, ]
---->[2]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-sum0_eq_sum1, 
-n0_eq_n1, 
-p_synth_17, ]
---->[1]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, 
-p_synth_3, 
-p_synth_15, 
-p_synth_19, ]
---->[0]
-
-[i_eq_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, 
-p_synth_15, 
-p_synth_19, ]
---->[1]
-
-[i_eq_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, ]
---->[0]
-
-
-Blocking composition assignment 0 for state
- [
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, 
-p_synth_3, 
-p_synth_15, 
-p_synth_19, ]
-
-
-Exploring new composition...
-
-
-Current composition gives an abstract counter-example trace:
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i0_eq_0, 
-i1_eq_0, 
-sum0_eq_sum1, 
-n0_eq_n1, 
-p_synth_2, 
-p_synth_14, ]
---->[2]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-sum0_eq_sum1, 
-n0_eq_n1, 
-p_synth_13, 
-p_synth_14, 
-p_synth_17, ]
---->[2]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, 
-p_synth_14, 
-p_synth_19, ]
---->[2]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, 
-p_synth_2, 
-p_synth_14, ]
---->[2]
-
-[i_eq_n_0, 
-n_gt_0_0, 
-i_eq_n_1, 
-n_gt_0_1, 
-n0_eq_n1, 
-p_synth_14, ]
---->[0]
-
-
-Blocking composition assignment 2 for state
- [
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, 
-p_synth_2, 
-p_synth_14, ]
-
-
-Exploring new composition...
-
-
-Current composition gives an abstract counter-example trace:
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i0_eq_0, 
-i1_eq_0, 
-sum0_eq_sum1, 
-n0_eq_n1, 
-p_synth_2, ]
---->[2]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-sum0_eq_sum1, 
-n0_eq_n1, 
-p_synth_17, ]
---->[1]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, 
-p_synth_3, 
-p_synth_11, 
-p_synth_19, ]
---->[2]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, 
-p_synth_3, 
-p_synth_7, ]
---->[2]
-
-[i_eq_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, ]
---->[0]
-
-
-Blocking composition assignment 2 for state
- [
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, 
-p_synth_3, 
-p_synth_7, ]
-
-
-Exploring new composition...
-
-
-Current composition gives an abstract counter-example trace:
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i0_eq_0, 
-i1_eq_0, 
-sum0_eq_sum1, 
-n0_eq_n1, 
-p_synth_2, 
-p_synth_14, ]
---->[2]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-sum0_eq_sum1, 
-n0_eq_n1, 
-p_synth_13, 
-p_synth_14, 
-p_synth_17, ]
---->[2]
-
-[i_eq_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, 
-p_synth_14, 
-p_synth_19, ]
---->[2]
-
-[i_eq_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, 
-p_synth_14, ]
---->[2]
-
-[i_eq_n_0, 
-n_gt_0_0, 
-i_eq_n_1, 
-n_gt_0_1, 
-n0_eq_n1, 
-p_synth_14, ]
---->[0]
-
-
-Blocking composition assignment 2 for state
- [i_eq_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, 
-p_synth_14, ]
-
-
-Exploring new composition...
-
-
-Current composition gives an abstract counter-example trace:
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i0_eq_0, 
-i1_eq_0, 
-sum0_eq_sum1, 
-n0_eq_n1, 
-p_synth_2, 
-p_synth_14, ]
---->[2]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-sum0_eq_sum1, 
-n0_eq_n1, 
-p_synth_13, 
-p_synth_14, 
-p_synth_17, ]
---->[2]
-
-[i_eq_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, 
-p_synth_14, 
-p_synth_19, ]
---->[2]
-
-[i_eq_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-sum0_eq_sum1, 
-n0_eq_n1, 
-p_synth_14, ]
---->[2]
-
-[i_eq_n_0, 
-n_gt_0_0, 
-i_eq_n_1, 
-n_gt_0_1, 
-n0_eq_n1, 
-p_synth_14, ]
---->[0]
-
-
-Blocking composition assignment 2 for state
- [i_eq_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-sum0_eq_sum1, 
-n0_eq_n1, 
-p_synth_14, ]
-
-
-Exploring new composition...
-
-
-Current composition gives an abstract counter-example trace:
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i0_eq_0, 
-i1_eq_0, 
-sum0_eq_sum1, 
-n0_eq_n1, 
-p_synth_2, 
-p_synth_14, ]
---->[2]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-sum0_eq_sum1, 
-n0_eq_n1, 
-p_synth_13, 
-p_synth_14, 
-p_synth_17, ]
---->[2]
-
-[i_eq_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, 
-p_synth_14, 
-p_synth_19, ]
---->[2]
-
-[i_eq_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, 
-p_synth_14, ]
---->[1]
-
-[i_eq_n_0, 
-n_gt_0_0, 
-i_eq_n_1, 
-n_gt_0_1, 
-n0_eq_n1, 
-p_synth_14, ]
---->[0]
-
-
-Blocking composition assignment 2 for state
- [i_eq_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, 
-p_synth_14, 
-p_synth_19, ]
-
-
-Exploring new composition...
-
-
-Current composition gives an abstract counter-example trace:
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i0_eq_0, 
-i1_eq_0, 
-sum0_eq_sum1, 
-n0_eq_n1, 
-p_synth_2, 
-p_synth_14, ]
---->[2]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-sum0_eq_sum1, 
-n0_eq_n1, 
-p_synth_13, 
-p_synth_14, 
-p_synth_17, ]
---->[2]
-
-[i_eq_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, 
-p_synth_14, 
-p_synth_19, ]
---->[1]
-
-[i_eq_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, 
-p_synth_14, ]
---->[0]
-
-
-Blocking composition assignment 2 for state
- [
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-sum0_eq_sum1, 
-n0_eq_n1, 
-p_synth_13, 
-p_synth_14, 
-p_synth_17, ]
-
-
-Exploring new composition...
 
 

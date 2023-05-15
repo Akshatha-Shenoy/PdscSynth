@@ -358,9 +358,9 @@ Discover predicate using a_src, a_tgt, c_src, c_tgt to eliminate the spurious ce
 new predicate is (define-fun p ((x_1 Int) (h_1 Int) (h_0 Int) (x_0 Int) (end_0 Int) (z_0 Int) (y_0 Int) (y_1 Int) (z_1 Int) (end_1 Int)) Bool (< x_1 z_1))
 
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.108572 
-Solver time:	3.022692
-Total time:	3.1312640000000003
+Pre-processing time:	0.079787 
+Solver time:	2.46727
+Total time:	2.547057
 Iteration count:	7
 Predicate count:	12
 Successfully added new predicate to input file. !
@@ -1349,9 +1349,9 @@ Discover predicate using a_src, a_tgt, c_src, c_tgt to eliminate the spurious ce
 new predicate is (define-fun p ((x_1 Int) (h_1 Int) (h_0 Int) (x_0 Int) (end_0 Int) (z_0 Int) (y_0 Int) (y_1 Int) (z_1 Int) (end_1 Int)) Bool (= x_1 z_0))
 
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.089037 
-Solver time:	4.898204
-Total time:	4.987241
+Pre-processing time:	0.085948 
+Solver time:	4.565285
+Total time:	4.651233
 Iteration count:	18
 Predicate count:	13
 Successfully added new predicate to input file. !
@@ -2857,9 +2857,9 @@ Discover predicate using a_src, a_tgt, c_src, c_tgt to eliminate the spurious ce
 new predicate is (define-fun p ((x_1 Int) (h_1 Int) (h_0 Int) (x_0 Int) (end_0 Int) (z_0 Int) (y_0 Int) (y_1 Int) (z_1 Int) (end_1 Int)) Bool (= x_1 h_1))
 
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.103319 
-Solver time:	7.746601
-Total time:	7.84992
+Pre-processing time:	0.097931 
+Solver time:	7.340807
+Total time:	7.438738
 Iteration count:	25
 Predicate count:	14
 Successfully added new predicate to input file. !
@@ -5422,9 +5422,9 @@ Discover predicate using a_src, a_tgt, c_src, c_tgt to eliminate the spurious ce
 new predicate is (define-fun p ((x_1 Int) (h_1 Int) (h_0 Int) (x_0 Int) (end_0 Int) (z_0 Int) (y_0 Int) (y_1 Int) (z_1 Int) (end_1 Int)) Bool (= x_1 (- z_1 x_1)))
 
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.112113 
-Solver time:	13.957168
-Total time:	14.069281
+Pre-processing time:	0.101138 
+Solver time:	13.648731
+Total time:	13.749869
 Iteration count:	42
 Predicate count:	15
 Successfully added new predicate to input file. !
@@ -9189,9 +9189,9 @@ Discover predicate using a_src, a_tgt, c_src, c_tgt to eliminate the spurious ce
 new predicate is (define-fun p ((x_1 Int) (h_1 Int) (h_0 Int) (x_0 Int) (end_0 Int) (z_0 Int) (y_0 Int) (y_1 Int) (z_1 Int) (end_1 Int)) Bool (< y_0 x_1))
 
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.12099 
-Solver time:	25.42558
-Total time:	25.54657
+Pre-processing time:	0.111796 
+Solver time:	25.870315
+Total time:	25.982111000000003
 Iteration count:	56
 Predicate count:	16
 Successfully added new predicate to input file. !
@@ -12677,9 +12677,9 @@ Discover predicate using a_src, a_tgt, c_src, c_tgt to eliminate the spurious ce
 new predicate is (define-fun p ((x_1 Int) (h_1 Int) (h_0 Int) (x_0 Int) (end_0 Int) (z_0 Int) (y_0 Int) (y_1 Int) (z_1 Int) (end_1 Int)) Bool (= y_0 (- y_1 y_0)))
 
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.116331 
-Solver time:	24.355743
-Total time:	24.472074
+Pre-processing time:	0.11842 
+Solver time:	24.470934
+Total time:	24.589354
 Iteration count:	50
 Predicate count:	17
 Successfully added new predicate to input file. !
@@ -16751,9 +16751,9 @@ Discover predicate using a_src, a_tgt, c_src, c_tgt to eliminate the spurious ce
 new predicate is (define-fun p ((x_1 Int) (h_1 Int) (h_0 Int) (x_0 Int) (end_0 Int) (z_0 Int) (y_0 Int) (y_1 Int) (z_1 Int) (end_1 Int)) Bool (= x_1 (- y_1 x_1)))
 
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.125126 
-Solver time:	32.01857
-Total time:	32.143696
+Pre-processing time:	0.132049 
+Solver time:	34.6633
+Total time:	34.795349
 Iteration count:	59
 Predicate count:	18
 Successfully added new predicate to input file. !
@@ -21483,9 +21483,9 @@ Discover predicate using a_src, a_tgt, c_src, c_tgt to eliminate the spurious ce
 new predicate is (define-fun p ((x_1 Int) (h_1 Int) (h_0 Int) (x_0 Int) (end_0 Int) (z_0 Int) (y_0 Int) (y_1 Int) (z_1 Int) (end_1 Int)) Bool (= x_1 y_1))
 
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.141111 
-Solver time:	45.211764
-Total time:	45.352875000000004
+Pre-processing time:	0.159427 
+Solver time:	46.690566
+Total time:	46.849993
 Iteration count:	67
 Predicate count:	19
 Successfully added new predicate to input file. !
@@ -26275,9 +26275,9 @@ Discover predicate using a_src, a_tgt, c_src, c_tgt to eliminate the spurious ce
 new predicate is (define-fun p ((x_1 Int) (h_1 Int) (h_0 Int) (x_0 Int) (end_0 Int) (z_0 Int) (y_0 Int) (y_1 Int) (z_1 Int) (end_1 Int)) Bool (= h_1 z_1))
 
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.145648 
-Solver time:	62.845538
-Total time:	62.991186
+Pre-processing time:	0.157235 
+Solver time:	64.262004
+Total time:	64.419239
 Iteration count:	62
 Predicate count:	20
 Successfully added new predicate to input file. !
@@ -34625,9 +34625,9 @@ Discover predicate using a_src, a_tgt, c_src, c_tgt to eliminate the spurious ce
 new predicate is (define-fun p ((x_1 Int) (h_1 Int) (h_0 Int) (x_0 Int) (end_0 Int) (z_0 Int) (y_0 Int) (y_1 Int) (z_1 Int) (end_1 Int)) Bool (= x_1 2))
 
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.161995 
-Solver time:	121.998947
-Total time:	122.160942
+Pre-processing time:	0.163783 
+Solver time:	124.231636
+Total time:	124.39541899999999
 Iteration count:	102
 Predicate count:	21
 Successfully added new predicate to input file. !

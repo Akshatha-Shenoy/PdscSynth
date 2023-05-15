@@ -92,4 +92,6 @@
 
 
 
+(declare-rel p_synth_1 (Int Int Int Int Int Int))
+ (rule (=>   (and  (= (rel y 0)  (* 2 (rel y 1) ) )  (= (rel y 0) (rel y 1) ) )  (p_synth_1 max h i y v pc)))
 (query End)

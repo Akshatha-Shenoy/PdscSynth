@@ -1659,9 +1659,9 @@ Running quantifier elimination:
 New predicate is  (not (and (= yU0 (* 2 yU1)) (= yU0 yU1)))
 
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.092892 
-Solver time:	10.410076
-Total time:	10.502968000000001
+Pre-processing time:	0.090754 
+Solver time:	9.147005
+Total time:	9.237759
 Iteration count:	39
 Predicate count:	9
 Successfully added new predicate to input file. !
@@ -1670,14 +1670,14 @@ Namespace(file='./Benchmarks_qe/sum-pc.smt2', log=False, msat=False, property=No
 1 SMT queries performed.
 Proved by invariant:
 And(y0_eq_y1, max0_eq_max1, p_synth_1)
-Pre-processing time:	0.110484 
-Solver time:	0.09263
-Total time:	0.20311400000000002
+Pre-processing time:	0.108269 
+Solver time:	0.096847
+Total time:	0.20511600000000002
 Iteration count:	1
 Predicate count:	10
 Start next refinement loop: False
 
 
 
-Total time taken : 10.706354
+Total time taken : 9.443278
 Number of predicates guessed: 1.0

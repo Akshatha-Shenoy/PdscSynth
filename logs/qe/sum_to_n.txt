@@ -884,14 +884,14 @@ Is the trace spurious?  True
 Discovering predicate from a_src, a_tgt, c_src, c_tgt to eliminate spurious trace
 ----------------------pred_disc-------------------
 Running quantifier elimination: 
-New predicate is  (let ((a!1 (and (= iU0 0) (not (<= iU1 0)) (not (= iU0 (+ (- 1) iU1))))))
+New predicate is  (let ((a!1 (and (= iU0 0) (not (= iU0 (+ (- 1) iU1))) (not (<= iU1 0)))))
 
   (not a!1))
 
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.056485 
-Solver time:	4.720751
-Total time:	4.777236
+Pre-processing time:	0.057422 
+Solver time:	3.501685
+Total time:	3.559107
 Iteration count:	17
 Predicate count:	10
 Successfully added new predicate to input file. !
@@ -970,105 +970,6 @@ sum0_eq_sum1,
 n0_eq_n1, ]
 --->[2]
 
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_eq_n_1, 
-n_gt_0_1, 
-n0_eq_n1, ]
---->[2]
-
-[i_eq_n_0, 
-n_gt_0_0, 
-i_eq_n_1, 
-n_gt_0_1, 
-n0_eq_n1, ]
---->[0]
-
-
-Blocking composition assignment 2 for state
- [
-i_lt_n_0, 
-n_gt_0_0, 
-i_eq_n_1, 
-n_gt_0_1, 
-n0_eq_n1, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i0_eq_0, 
-i1_eq_0, 
-sum0_eq_sum1, 
-n0_eq_n1, ]
---->[2]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-sum0_eq_sum1, 
-n0_eq_n1, ]
---->[2]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_eq_n_1, 
-n_gt_0_1, 
-n0_eq_n1, ]
---->[0]
-
-[i_eq_n_0, 
-n_gt_0_0, 
-i_eq_n_1, 
-n_gt_0_1, 
-n0_eq_n1, ]
---->[0]
-
-
-Blocking composition assignment 2 for state
- [
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-sum0_eq_sum1, 
-n0_eq_n1, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i0_eq_0, 
-i1_eq_0, 
-sum0_eq_sum1, 
-n0_eq_n1, ]
---->[2]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-sum0_eq_sum1, 
-n0_eq_n1, ]
---->[0]
-
 [i_eq_n_0, 
 n_gt_0_0, 
 i_lt_n_1, 
@@ -1114,20 +1015,65 @@ i_lt_n_1,
 n_gt_0_1, 
 sum0_eq_sum1, 
 n0_eq_n1, ]
+--->[2]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_eq_n_1, 
+n_gt_0_1, 
+n0_eq_n1, ]
+--->[2]
+
+[i_eq_n_0, 
+n_gt_0_0, 
+i_eq_n_1, 
+n_gt_0_1, 
+n0_eq_n1, ]
 --->[0]
 
+
+Blocking composition assignment 2 for state
+ [
+i_lt_n_0, 
+n_gt_0_0, 
+i_eq_n_1, 
+n_gt_0_1, 
+n0_eq_n1, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
 [
 i_lt_n_0, 
 n_gt_0_0, 
 i_lt_n_1, 
 n_gt_0_1, 
 i0_eq_0, 
-n0_eq_n1, 
-p_synth_1, ]
+i1_eq_0, 
+sum0_eq_sum1, 
+n0_eq_n1, ]
 --->[2]
 
 [
 i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+sum0_eq_sum1, 
+n0_eq_n1, ]
+--->[2]
+
+[i_eq_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+n0_eq_n1, ]
+--->[1]
+
+[i_eq_n_0, 
 n_gt_0_0, 
 i_eq_n_1, 
 n_gt_0_1, 
@@ -1141,9 +1087,8 @@ i_lt_n_0,
 n_gt_0_0, 
 i_lt_n_1, 
 n_gt_0_1, 
-i0_eq_0, 
-n0_eq_n1, 
-p_synth_1, ]
+sum0_eq_sum1, 
+n0_eq_n1, ]
 
 
 Exploring next composition.. 
@@ -1173,13 +1118,6 @@ n0_eq_n1, ]
 [i_eq_n_0, 
 n_gt_0_0, 
 i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, ]
---->[1]
-
-[i_eq_n_0, 
-n_gt_0_0, 
-i_eq_n_1, 
 n_gt_0_1, 
 n0_eq_n1, ]
 --->[0]
@@ -1227,6 +1165,13 @@ n_gt_0_1,
 n0_eq_n1, ]
 --->[0]
 
+[i_eq_n_0, 
+n_gt_0_0, 
+i_eq_n_1, 
+n_gt_0_1, 
+n0_eq_n1, ]
+--->[0]
+
 
 Blocking composition assignment 2 for state
  [
@@ -1265,10 +1210,9 @@ sum0_eq_sum1,
 n0_eq_n1, ]
 --->[2]
 
-[
-i_lt_n_0, 
+[i_eq_n_0, 
 n_gt_0_0, 
-i_eq_n_1, 
+i_lt_n_1, 
 n_gt_0_1, 
 n0_eq_n1, ]
 --->[0]
@@ -1403,22 +1347,23 @@ sum0_eq_sum1,
 n0_eq_n1, ]
 --->[0]
 
-[i_eq_n_0, 
+[
+i_lt_n_0, 
 n_gt_0_0, 
 i_lt_n_1, 
 n_gt_0_1, 
 i1_eq_0, 
 sum0_eq_sum1, 
 n0_eq_n1, ]
---->[2]
+--->[0]
 
 [i_eq_n_0, 
 n_gt_0_0, 
 i_lt_n_1, 
 n_gt_0_1, 
-sum0_eq_sum1, 
+i1_eq_0, 
 n0_eq_n1, ]
---->[1]
+--->[2]
 
 [i_eq_n_0, 
 n_gt_0_0, 
@@ -1434,6 +1379,57 @@ n_gt_0_0,
 i_lt_n_1, 
 n_gt_0_1, 
 i1_eq_0, 
+n0_eq_n1, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i0_eq_0, 
+i1_eq_0, 
+sum0_eq_sum1, 
+n0_eq_n1, ]
+--->[0]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i1_eq_0, 
+sum0_eq_sum1, 
+n0_eq_n1, ]
+--->[0]
+
+[i_eq_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i1_eq_0, 
+n0_eq_n1, ]
+--->[1]
+
+[i_eq_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+n0_eq_n1, ]
+--->[0]
+
+
+Blocking composition assignment 0 for state
+ [
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i1_eq_0, 
 sum0_eq_sum1, 
 n0_eq_n1, ]
 
@@ -1453,7 +1449,8 @@ sum0_eq_sum1,
 n0_eq_n1, ]
 --->[0]
 
-[i_eq_n_0, 
+[
+i_lt_n_0, 
 n_gt_0_0, 
 i_lt_n_1, 
 n_gt_0_1, 
@@ -1462,7 +1459,8 @@ sum0_eq_sum1,
 n0_eq_n1, ]
 --->[1]
 
-[i_eq_n_0, 
+[
+i_lt_n_0, 
 n_gt_0_0, 
 i_lt_n_1, 
 n_gt_0_1, 
@@ -1508,11 +1506,11 @@ sum0_eq_sum1,
 n0_eq_n1, ]
 --->[2]
 
-[
-i_lt_n_0, 
+[i_eq_n_0, 
 n_gt_0_0, 
-i_eq_n_1, 
+i_lt_n_1, 
 n_gt_0_1, 
+i1_eq_0, 
 n0_eq_n1, ]
 --->[0]
 
@@ -1605,19 +1603,126 @@ n_gt_0_0,
 i_lt_n_1, 
 n_gt_0_1, 
 i0_eq_0, 
-n0_eq_n1, ]
+n0_eq_n1, 
+p_synth_1, ]
 --->[2]
 
 [
 i_lt_n_0, 
 n_gt_0_0, 
-i_eq_n_1, 
+i_lt_n_1, 
+n_gt_0_1, 
+sum0_eq_sum1, 
+n0_eq_n1, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i0_eq_0, 
+n0_eq_n1, 
+p_synth_1, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i0_eq_0, 
+i1_eq_0, 
+sum0_eq_sum1, 
+n0_eq_n1, ]
+--->[1]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i0_eq_0, 
+sum0_eq_sum1, 
+n0_eq_n1, ]
+--->[1]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i0_eq_0, 
+n0_eq_n1, ]
+--->[2]
+
+[i_eq_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
 n_gt_0_1, 
 n0_eq_n1, ]
 --->[0]
 
 
 Blocking composition assignment 2 for state
+ [
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i0_eq_0, 
+n0_eq_n1, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i0_eq_0, 
+i1_eq_0, 
+sum0_eq_sum1, 
+n0_eq_n1, ]
+--->[1]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i0_eq_0, 
+sum0_eq_sum1, 
+n0_eq_n1, ]
+--->[1]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i0_eq_0, 
+n0_eq_n1, ]
+--->[0]
+
+[i_eq_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+n0_eq_n1, ]
+--->[0]
+
+
+Blocking composition assignment 0 for state
  [
 i_lt_n_0, 
 n_gt_0_0, 
@@ -1726,7 +1831,7 @@ n0_eq_n1, ]
 --->[0]
 
 
-17 SMT queries performed.
+19 SMT queries performed.
 after complete_trace [
 i_lt_n_0, 
 n_gt_0_0, 
@@ -1792,10 +1897,10 @@ Running quantifier elimination:
 New predicate is  (not (and (= iU0 0) (not (<= nU0 0)) (not (= 1 nU0))))
 
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.077742 
-Solver time:	5.0851
-Total time:	5.1628419999999995
-Iteration count:	17
+Pre-processing time:	0.069278 
+Solver time:	4.242818
+Total time:	4.3120959999999995
+Iteration count:	19
 Predicate count:	11
 Successfully added new predicate to input file. !
 Start next refinement loop: True
@@ -1977,6 +2082,311 @@ sum0_eq_sum1,
 n0_eq_n1, ]
 --->[2]
 
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_eq_n_1, 
+n_gt_0_1, 
+n0_eq_n1, ]
+--->[0]
+
+[i_eq_n_0, 
+n_gt_0_0, 
+i_eq_n_1, 
+n_gt_0_1, 
+n0_eq_n1, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+sum0_eq_sum1, 
+n0_eq_n1, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i0_eq_0, 
+i1_eq_0, 
+sum0_eq_sum1, 
+n0_eq_n1, 
+p_synth_2, ]
+--->[2]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+sum0_eq_sum1, 
+n0_eq_n1, ]
+--->[0]
+
+[i_eq_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+n0_eq_n1, ]
+--->[1]
+
+[i_eq_n_0, 
+n_gt_0_0, 
+i_eq_n_1, 
+n_gt_0_1, 
+n0_eq_n1, ]
+--->[0]
+
+
+Blocking composition assignment 0 for state
+ [
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+sum0_eq_sum1, 
+n0_eq_n1, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i0_eq_0, 
+i1_eq_0, 
+sum0_eq_sum1, 
+n0_eq_n1, 
+p_synth_2, ]
+--->[2]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+sum0_eq_sum1, 
+n0_eq_n1, ]
+--->[1]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_eq_n_1, 
+n_gt_0_1, 
+n0_eq_n1, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i0_eq_0, 
+i1_eq_0, 
+sum0_eq_sum1, 
+n0_eq_n1, 
+p_synth_2, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i0_eq_0, 
+i1_eq_0, 
+sum0_eq_sum1, 
+n0_eq_n1, 
+p_synth_2, ]
+--->[0]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i1_eq_0, 
+sum0_eq_sum1, 
+n0_eq_n1, ]
+--->[2]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_eq_n_1, 
+n_gt_0_1, 
+n0_eq_n1, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i1_eq_0, 
+sum0_eq_sum1, 
+n0_eq_n1, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i0_eq_0, 
+i1_eq_0, 
+sum0_eq_sum1, 
+n0_eq_n1, 
+p_synth_2, ]
+--->[0]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i1_eq_0, 
+sum0_eq_sum1, 
+n0_eq_n1, ]
+--->[0]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i1_eq_0, 
+n0_eq_n1, ]
+--->[2]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+sum0_eq_sum1, 
+n0_eq_n1, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i1_eq_0, 
+n0_eq_n1, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i0_eq_0, 
+i1_eq_0, 
+sum0_eq_sum1, 
+n0_eq_n1, 
+p_synth_2, ]
+--->[0]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i1_eq_0, 
+sum0_eq_sum1, 
+n0_eq_n1, ]
+--->[0]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i0_eq_0, 
+i1_eq_0, 
+n0_eq_n1, ]
+--->[2]
+
+[i_eq_n_0, 
+n_gt_0_0, 
+i_eq_n_1, 
+n_gt_0_1, 
+n0_eq_n1, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i0_eq_0, 
+i1_eq_0, 
+n0_eq_n1, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i0_eq_0, 
+i1_eq_0, 
+sum0_eq_sum1, 
+n0_eq_n1, 
+p_synth_2, ]
+--->[0]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i1_eq_0, 
+sum0_eq_sum1, 
+n0_eq_n1, ]
+--->[0]
+
 [i_eq_n_0, 
 n_gt_0_0, 
 i_lt_n_1, 
@@ -2016,39 +2426,41 @@ i1_eq_0,
 sum0_eq_sum1, 
 n0_eq_n1, 
 p_synth_2, ]
---->[2]
+--->[0]
 
 [
 i_lt_n_0, 
 n_gt_0_0, 
 i_lt_n_1, 
 n_gt_0_1, 
+i1_eq_0, 
 sum0_eq_sum1, 
-n0_eq_n1, ]
---->[2]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_eq_n_1, 
-n_gt_0_1, 
 n0_eq_n1, ]
 --->[0]
 
 [i_eq_n_0, 
 n_gt_0_0, 
-i_eq_n_1, 
+i_lt_n_1, 
+n_gt_0_1, 
+i1_eq_0, 
+n0_eq_n1, ]
+--->[1]
+
+[i_eq_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
 n_gt_0_1, 
 n0_eq_n1, ]
 --->[0]
 
 
-Blocking composition assignment 2 for state
+Blocking composition assignment 0 for state
  [
 i_lt_n_0, 
 n_gt_0_0, 
 i_lt_n_1, 
 n_gt_0_1, 
+i1_eq_0, 
 sum0_eq_sum1, 
 n0_eq_n1, ]
 
@@ -2067,7 +2479,17 @@ i1_eq_0,
 sum0_eq_sum1, 
 n0_eq_n1, 
 p_synth_2, ]
---->[2]
+--->[0]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i1_eq_0, 
+sum0_eq_sum1, 
+n0_eq_n1, ]
+--->[1]
 
 [
 i_lt_n_0, 
@@ -2077,6 +2499,144 @@ n_gt_0_1,
 sum0_eq_sum1, 
 n0_eq_n1, ]
 --->[0]
+
+
+Blocking composition assignment 0 for state
+ [
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i0_eq_0, 
+i1_eq_0, 
+sum0_eq_sum1, 
+n0_eq_n1, 
+p_synth_2, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i0_eq_0, 
+i1_eq_0, 
+sum0_eq_sum1, 
+n0_eq_n1, 
+p_synth_2, ]
+--->[1]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i0_eq_0, 
+sum0_eq_sum1, 
+n0_eq_n1, 
+p_synth_2, ]
+--->[2]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_eq_n_1, 
+n_gt_0_1, 
+n0_eq_n1, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i0_eq_0, 
+sum0_eq_sum1, 
+n0_eq_n1, 
+p_synth_2, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i0_eq_0, 
+i1_eq_0, 
+sum0_eq_sum1, 
+n0_eq_n1, 
+p_synth_2, ]
+--->[1]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i0_eq_0, 
+sum0_eq_sum1, 
+n0_eq_n1, 
+p_synth_2, ]
+--->[0]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+sum0_eq_sum1, 
+n0_eq_n1, ]
+--->[0]
+
+
+Blocking composition assignment 0 for state
+ [
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i0_eq_0, 
+sum0_eq_sum1, 
+n0_eq_n1, 
+p_synth_2, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i0_eq_0, 
+i1_eq_0, 
+sum0_eq_sum1, 
+n0_eq_n1, 
+p_synth_2, ]
+--->[1]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i0_eq_0, 
+sum0_eq_sum1, 
+n0_eq_n1, 
+p_synth_2, ]
+--->[1]
 
 [
 i_lt_n_0, 
@@ -2092,8 +2652,9 @@ p_synth_2, ]
 [
 i_lt_n_0, 
 n_gt_0_0, 
-i_eq_n_1, 
+i_lt_n_1, 
 n_gt_0_1, 
+sum0_eq_sum1, 
 n0_eq_n1, ]
 --->[0]
 
@@ -2124,458 +2685,6 @@ i1_eq_0,
 sum0_eq_sum1, 
 n0_eq_n1, 
 p_synth_2, ]
---->[2]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-sum0_eq_sum1, 
-n0_eq_n1, ]
---->[0]
-
-[i_eq_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, ]
---->[1]
-
-[i_eq_n_0, 
-n_gt_0_0, 
-i_eq_n_1, 
-n_gt_0_1, 
-n0_eq_n1, ]
---->[0]
-
-
-Blocking composition assignment 0 for state
- [
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-sum0_eq_sum1, 
-n0_eq_n1, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i0_eq_0, 
-i1_eq_0, 
-sum0_eq_sum1, 
-n0_eq_n1, 
-p_synth_2, ]
---->[2]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-sum0_eq_sum1, 
-n0_eq_n1, ]
---->[1]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_eq_n_1, 
-n_gt_0_1, 
-n0_eq_n1, ]
---->[0]
-
-
-Blocking composition assignment 2 for state
- [
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i0_eq_0, 
-i1_eq_0, 
-sum0_eq_sum1, 
-n0_eq_n1, 
-p_synth_2, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i0_eq_0, 
-i1_eq_0, 
-sum0_eq_sum1, 
-n0_eq_n1, 
-p_synth_2, ]
---->[0]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i1_eq_0, 
-sum0_eq_sum1, 
-n0_eq_n1, ]
---->[2]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_eq_n_1, 
-n_gt_0_1, 
-n0_eq_n1, ]
---->[0]
-
-
-Blocking composition assignment 2 for state
- [
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i1_eq_0, 
-sum0_eq_sum1, 
-n0_eq_n1, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i0_eq_0, 
-i1_eq_0, 
-sum0_eq_sum1, 
-n0_eq_n1, 
-p_synth_2, ]
---->[0]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i1_eq_0, 
-sum0_eq_sum1, 
-n0_eq_n1, ]
---->[0]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i1_eq_0, 
-n0_eq_n1, ]
---->[2]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-sum0_eq_sum1, 
-n0_eq_n1, ]
---->[0]
-
-
-Blocking composition assignment 2 for state
- [
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i1_eq_0, 
-n0_eq_n1, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i0_eq_0, 
-i1_eq_0, 
-sum0_eq_sum1, 
-n0_eq_n1, 
-p_synth_2, ]
---->[0]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i1_eq_0, 
-sum0_eq_sum1, 
-n0_eq_n1, ]
---->[0]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i0_eq_0, 
-i1_eq_0, 
-n0_eq_n1, ]
---->[2]
-
-[i_eq_n_0, 
-n_gt_0_0, 
-i_eq_n_1, 
-n_gt_0_1, 
-n0_eq_n1, ]
---->[0]
-
-
-Blocking composition assignment 2 for state
- [
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i0_eq_0, 
-i1_eq_0, 
-n0_eq_n1, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i0_eq_0, 
-i1_eq_0, 
-sum0_eq_sum1, 
-n0_eq_n1, 
-p_synth_2, ]
---->[0]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i1_eq_0, 
-sum0_eq_sum1, 
-n0_eq_n1, ]
---->[0]
-
-[i_eq_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i1_eq_0, 
-n0_eq_n1, ]
---->[1]
-
-[i_eq_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, ]
---->[0]
-
-
-Blocking composition assignment 0 for state
- [
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i1_eq_0, 
-sum0_eq_sum1, 
-n0_eq_n1, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i0_eq_0, 
-i1_eq_0, 
-sum0_eq_sum1, 
-n0_eq_n1, 
-p_synth_2, ]
---->[0]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i1_eq_0, 
-sum0_eq_sum1, 
-n0_eq_n1, ]
---->[1]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-sum0_eq_sum1, 
-n0_eq_n1, ]
---->[0]
-
-
-Blocking composition assignment 0 for state
- [
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i0_eq_0, 
-i1_eq_0, 
-sum0_eq_sum1, 
-n0_eq_n1, 
-p_synth_2, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i0_eq_0, 
-i1_eq_0, 
-sum0_eq_sum1, 
-n0_eq_n1, 
-p_synth_2, ]
---->[1]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i0_eq_0, 
-sum0_eq_sum1, 
-n0_eq_n1, 
-p_synth_2, ]
---->[2]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_eq_n_1, 
-n_gt_0_1, 
-n0_eq_n1, ]
---->[0]
-
-
-Blocking composition assignment 2 for state
- [
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i0_eq_0, 
-sum0_eq_sum1, 
-n0_eq_n1, 
-p_synth_2, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i0_eq_0, 
-i1_eq_0, 
-sum0_eq_sum1, 
-n0_eq_n1, 
-p_synth_2, ]
---->[1]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i0_eq_0, 
-sum0_eq_sum1, 
-n0_eq_n1, 
-p_synth_2, ]
---->[0]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-sum0_eq_sum1, 
-n0_eq_n1, ]
---->[0]
-
-
-Blocking composition assignment 0 for state
- [
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i0_eq_0, 
-sum0_eq_sum1, 
-n0_eq_n1, 
-p_synth_2, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i0_eq_0, 
-i1_eq_0, 
-sum0_eq_sum1, 
-n0_eq_n1, 
-p_synth_2, ]
 --->[1]
 
 [
@@ -2602,8 +2711,9 @@ p_synth_2, ]
 [
 i_lt_n_0, 
 n_gt_0_0, 
-i_eq_n_1, 
+i_lt_n_1, 
 n_gt_0_1, 
+sum0_eq_sum1, 
 n0_eq_n1, ]
 --->[0]
 
@@ -2803,12 +2913,12 @@ Is the trace spurious?  True
 Discovering predicate from a_src, a_tgt, c_src, c_tgt to eliminate spurious trace
 ----------------------pred_disc-------------------
 Running quantifier elimination: 
-New predicate is  (not (and (= iU0 (+ (- 1) iU1)) (>= iU1 1) (not (= iU0 0))))
+New predicate is  (not (and (= iU0 (+ (- 1) iU1)) (>= iU0 1)))
 
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.082583 
-Solver time:	5.637754
-Total time:	5.720337
+Pre-processing time:	0.09113 
+Solver time:	4.666437
+Total time:	4.757567
 Iteration count:	18
 Predicate count:	12
 Successfully added new predicate to input file. !
@@ -3087,58 +3197,6 @@ n0_eq_n1, ]
 [
 i_lt_n_0, 
 n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i1_eq_0, 
-n0_eq_n1, ]
---->[2]
-
-[i_eq_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, ]
---->[0]
-
-
-Blocking composition assignment 2 for state
- [
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i1_eq_0, 
-n0_eq_n1, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i0_eq_0, 
-i1_eq_0, 
-sum0_eq_sum1, 
-n0_eq_n1, 
-p_synth_2, ]
---->[2]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-sum0_eq_sum1, 
-n0_eq_n1, ]
---->[1]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
 i_eq_n_1, 
 n_gt_0_1, 
 n0_eq_n1, 
@@ -3260,6 +3318,59 @@ i_lt_n_1,
 n_gt_0_1, 
 i1_eq_0, 
 sum0_eq_sum1, 
+n0_eq_n1, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i0_eq_0, 
+i1_eq_0, 
+sum0_eq_sum1, 
+n0_eq_n1, 
+p_synth_2, ]
+--->[0]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i1_eq_0, 
+sum0_eq_sum1, 
+n0_eq_n1, ]
+--->[0]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i1_eq_0, 
+n0_eq_n1, ]
+--->[2]
+
+[i_eq_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+n0_eq_n1, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i1_eq_0, 
 n0_eq_n1, ]
 
 
@@ -3554,69 +3665,11 @@ p_synth_2, ]
 [
 i_lt_n_0, 
 n_gt_0_0, 
-i_eq_n_1, 
-n_gt_0_1, 
-n0_eq_n1, 
-p_synth_3, ]
---->[0]
-
-
-Blocking composition assignment 2 for state
- [
-i_lt_n_0, 
-n_gt_0_0, 
 i_lt_n_1, 
 n_gt_0_1, 
-i0_eq_0, 
-n0_eq_n1, 
-p_synth_2, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i0_eq_0, 
 i1_eq_0, 
 sum0_eq_sum1, 
-n0_eq_n1, 
-p_synth_2, ]
---->[1]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i0_eq_0, 
-sum0_eq_sum1, 
-n0_eq_n1, 
-p_synth_2, ]
---->[1]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_eq_n_1, 
-n_gt_0_1, 
-i0_eq_0, 
-n0_eq_n1, 
-p_synth_1, 
-p_synth_2, ]
---->[2]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_eq_n_1, 
-n_gt_0_1, 
-n0_eq_n1, 
-p_synth_3, ]
+n0_eq_n1, ]
 --->[0]
 
 
@@ -3624,11 +3677,10 @@ Blocking composition assignment 2 for state
  [
 i_lt_n_0, 
 n_gt_0_0, 
-i_eq_n_1, 
+i_lt_n_1, 
 n_gt_0_1, 
 i0_eq_0, 
 n0_eq_n1, 
-p_synth_1, 
 p_synth_2, ]
 
 
@@ -3685,6 +3737,66 @@ Blocking composition assignment 2 for state
 i_lt_n_0, 
 n_gt_0_0, 
 i_lt_n_1, 
+n_gt_0_1, 
+i0_eq_0, 
+n0_eq_n1, 
+p_synth_1, 
+p_synth_2, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i0_eq_0, 
+i1_eq_0, 
+sum0_eq_sum1, 
+n0_eq_n1, 
+p_synth_2, ]
+--->[1]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i0_eq_0, 
+sum0_eq_sum1, 
+n0_eq_n1, 
+p_synth_2, ]
+--->[1]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_eq_n_1, 
+n_gt_0_1, 
+i0_eq_0, 
+n0_eq_n1, 
+p_synth_1, 
+p_synth_2, ]
+--->[2]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_eq_n_1, 
+n_gt_0_1, 
+n0_eq_n1, 
+p_synth_3, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [
+i_lt_n_0, 
+n_gt_0_0, 
+i_eq_n_1, 
 n_gt_0_1, 
 i0_eq_0, 
 n0_eq_n1, 
@@ -3819,14 +3931,14 @@ Is the trace spurious?  True
 Discovering predicate from a_src, a_tgt, c_src, c_tgt to eliminate spurious trace
 ----------------------pred_disc-------------------
 Running quantifier elimination: 
-New predicate is  (let ((a!1 (and (not (= (+ sumU0 iU0) sumU1)) (>= iU0 1) (not (= sumU0 sumU1)))))
+New predicate is  (let ((a!1 (and (>= iU0 1) (not (= sumU0 sumU1)) (not (= (+ sumU0 iU0) sumU1)))))
 
   (not a!1))
 
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.098678 
-Solver time:	6.732169
-Total time:	6.8308469999999994
+Pre-processing time:	0.086406 
+Solver time:	5.941662
+Total time:	6.028068
 Iteration count:	18
 Predicate count:	13
 Successfully added new predicate to input file. !
@@ -3861,59 +3973,6 @@ sum0_eq_sum1,
 n0_eq_n1, ]
 --->[2]
 
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, 
-p_synth_4, ]
---->[2]
-
-[i_eq_n_0, 
-n_gt_0_0, 
-i_eq_n_1, 
-n_gt_0_1, 
-n0_eq_n1, 
-p_synth_4, ]
---->[2]
-
-
-Blocking composition assignment 2 for state
- [
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, 
-p_synth_4, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i0_eq_0, 
-i1_eq_0, 
-sum0_eq_sum1, 
-n0_eq_n1, 
-p_synth_2, ]
---->[2]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-sum0_eq_sum1, 
-n0_eq_n1, ]
---->[2]
-
 [i_eq_n_0, 
 n_gt_0_0, 
 i_lt_n_1, 
@@ -3928,7 +3987,7 @@ i_eq_n_1,
 n_gt_0_1, 
 n0_eq_n1, 
 p_synth_4, ]
---->[0]
+--->[2]
 
 
 Blocking composition assignment 2 for state
@@ -3938,57 +3997,6 @@ i_lt_n_1,
 n_gt_0_1, 
 n0_eq_n1, 
 p_synth_4, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i0_eq_0, 
-i1_eq_0, 
-sum0_eq_sum1, 
-n0_eq_n1, 
-p_synth_2, ]
---->[2]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-sum0_eq_sum1, 
-n0_eq_n1, ]
---->[2]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, ]
---->[2]
-
-[i_eq_n_0, 
-n_gt_0_0, 
-i_eq_n_1, 
-n_gt_0_1, 
-n0_eq_n1, 
-p_synth_4, ]
---->[0]
-
-
-Blocking composition assignment 2 for state
- [
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, ]
 
 
 Exploring next composition.. 
@@ -4069,6 +4077,57 @@ sum0_eq_sum1,
 n0_eq_n1, ]
 --->[2]
 
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+n0_eq_n1, ]
+--->[2]
+
+[i_eq_n_0, 
+n_gt_0_0, 
+i_eq_n_1, 
+n_gt_0_1, 
+n0_eq_n1, 
+p_synth_4, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+n0_eq_n1, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i0_eq_0, 
+i1_eq_0, 
+sum0_eq_sum1, 
+n0_eq_n1, 
+p_synth_2, ]
+--->[2]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+sum0_eq_sum1, 
+n0_eq_n1, ]
+--->[2]
+
 [i_eq_n_0, 
 n_gt_0_0, 
 i_lt_n_1, 
@@ -4138,6 +4197,59 @@ i_lt_n_1,
 n_gt_0_1, 
 sum0_eq_sum1, 
 n0_eq_n1, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i0_eq_0, 
+i1_eq_0, 
+sum0_eq_sum1, 
+n0_eq_n1, 
+p_synth_2, ]
+--->[2]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+sum0_eq_sum1, 
+n0_eq_n1, ]
+--->[1]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+n0_eq_n1, 
+p_synth_4, ]
+--->[2]
+
+[i_eq_n_0, 
+n_gt_0_0, 
+i_eq_n_1, 
+n_gt_0_1, 
+n0_eq_n1, 
+p_synth_4, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+n0_eq_n1, 
+p_synth_4, ]
 
 
 Exploring next composition.. 
@@ -4342,255 +4454,6 @@ i_lt_n_0,
 n_gt_0_0, 
 i_lt_n_1, 
 n_gt_0_1, 
-n0_eq_n1, ]
---->[0]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i0_eq_0, 
-n0_eq_n1, ]
---->[2]
-
-[i_eq_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, 
-p_synth_4, ]
---->[0]
-
-
-Blocking composition assignment 2 for state
- [
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i0_eq_0, 
-n0_eq_n1, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i0_eq_0, 
-i1_eq_0, 
-sum0_eq_sum1, 
-n0_eq_n1, 
-p_synth_2, ]
---->[2]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-sum0_eq_sum1, 
-n0_eq_n1, ]
---->[1]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, 
-p_synth_4, ]
---->[1]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i1_eq_0, 
-sum0_eq_sum1, 
-n0_eq_n1, ]
---->[2]
-
-[i_eq_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, 
-p_synth_4, ]
---->[0]
-
-
-Blocking composition assignment 2 for state
- [
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i1_eq_0, 
-sum0_eq_sum1, 
-n0_eq_n1, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i0_eq_0, 
-i1_eq_0, 
-sum0_eq_sum1, 
-n0_eq_n1, 
-p_synth_2, ]
---->[2]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-sum0_eq_sum1, 
-n0_eq_n1, ]
---->[1]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, ]
---->[0]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i0_eq_0, 
-sum0_eq_sum1, 
-n0_eq_n1, ]
---->[2]
-
-[i_eq_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, 
-p_synth_4, ]
---->[0]
-
-
-Blocking composition assignment 2 for state
- [
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i0_eq_0, 
-sum0_eq_sum1, 
-n0_eq_n1, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i0_eq_0, 
-i1_eq_0, 
-sum0_eq_sum1, 
-n0_eq_n1, 
-p_synth_2, ]
---->[2]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-sum0_eq_sum1, 
-n0_eq_n1, ]
---->[1]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, ]
---->[0]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i0_eq_0, 
-n0_eq_n1, ]
---->[0]
-
-[i_eq_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, 
-p_synth_4, ]
---->[0]
-
-
-Blocking composition assignment 0 for state
- [
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i0_eq_0, 
-n0_eq_n1, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i0_eq_0, 
-i1_eq_0, 
-sum0_eq_sum1, 
-n0_eq_n1, 
-p_synth_2, ]
---->[2]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-sum0_eq_sum1, 
-n0_eq_n1, ]
---->[1]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
 i1_eq_0, 
 n0_eq_n1, 
 p_synth_4, ]
@@ -4604,68 +4467,6 @@ i1_eq_0,
 n0_eq_n1, 
 p_synth_4, ]
 --->[1]
-
-[i_eq_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, 
-p_synth_4, ]
---->[0]
-
-
-Blocking composition assignment 0 for state
- [
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i1_eq_0, 
-n0_eq_n1, 
-p_synth_4, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i0_eq_0, 
-i1_eq_0, 
-sum0_eq_sum1, 
-n0_eq_n1, 
-p_synth_2, ]
---->[2]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-sum0_eq_sum1, 
-n0_eq_n1, ]
---->[1]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i1_eq_0, 
-n0_eq_n1, ]
---->[2]
-
-[i_eq_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-sum0_eq_sum1, 
-n0_eq_n1, ]
---->[2]
 
 [i_eq_n_0, 
 n_gt_0_0, 
@@ -4676,12 +4477,75 @@ p_synth_4, ]
 --->[0]
 
 
-Blocking composition assignment 2 for state
- [i_eq_n_0, 
+Blocking composition assignment 0 for state
+ [
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i1_eq_0, 
+n0_eq_n1, 
+p_synth_4, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i0_eq_0, 
+i1_eq_0, 
+sum0_eq_sum1, 
+n0_eq_n1, 
+p_synth_2, ]
+--->[2]
+
+[
+i_lt_n_0, 
 n_gt_0_0, 
 i_lt_n_1, 
 n_gt_0_1, 
 sum0_eq_sum1, 
+n0_eq_n1, ]
+--->[1]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+n0_eq_n1, ]
+--->[0]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i0_eq_0, 
+n0_eq_n1, ]
+--->[2]
+
+[i_eq_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+n0_eq_n1, 
+p_synth_4, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i0_eq_0, 
 n0_eq_n1, ]
 
 
@@ -4715,17 +4579,18 @@ i_lt_n_0,
 n_gt_0_0, 
 i_lt_n_1, 
 n_gt_0_1, 
-i1_eq_0, 
 n0_eq_n1, ]
---->[2]
+--->[0]
 
-[i_eq_n_0, 
+[
+i_lt_n_0, 
 n_gt_0_0, 
 i_lt_n_1, 
 n_gt_0_1, 
+i0_eq_0, 
 sum0_eq_sum1, 
 n0_eq_n1, ]
---->[1]
+--->[2]
 
 [i_eq_n_0, 
 n_gt_0_0, 
@@ -4743,7 +4608,8 @@ i_lt_n_0,
 n_gt_0_0, 
 i_lt_n_1, 
 n_gt_0_1, 
-i1_eq_0, 
+i0_eq_0, 
+sum0_eq_sum1, 
 n0_eq_n1, ]
 
 
@@ -4780,65 +4646,12 @@ n_gt_0_1,
 n0_eq_n1, ]
 --->[0]
 
-[i_eq_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-sum0_eq_sum1, 
-n0_eq_n1, ]
---->[0]
-
-
-Blocking composition assignment 0 for state
- [
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
 [
 i_lt_n_0, 
 n_gt_0_0, 
 i_lt_n_1, 
 n_gt_0_1, 
 i0_eq_0, 
-i1_eq_0, 
-sum0_eq_sum1, 
-n0_eq_n1, 
-p_synth_2, ]
---->[2]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-sum0_eq_sum1, 
-n0_eq_n1, ]
---->[1]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i1_eq_0, 
-n0_eq_n1, ]
---->[0]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i1_eq_0, 
-sum0_eq_sum1, 
 n0_eq_n1, ]
 --->[0]
 
@@ -4846,7 +4659,6 @@ n0_eq_n1, ]
 n_gt_0_0, 
 i_lt_n_1, 
 n_gt_0_1, 
-i1_eq_0, 
 n0_eq_n1, 
 p_synth_4, ]
 --->[0]
@@ -4858,132 +4670,7 @@ i_lt_n_0,
 n_gt_0_0, 
 i_lt_n_1, 
 n_gt_0_1, 
-i1_eq_0, 
-sum0_eq_sum1, 
-n0_eq_n1, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
 i0_eq_0, 
-i1_eq_0, 
-sum0_eq_sum1, 
-n0_eq_n1, 
-p_synth_2, ]
---->[2]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-sum0_eq_sum1, 
-n0_eq_n1, ]
---->[1]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i1_eq_0, 
-n0_eq_n1, ]
---->[0]
-
-[i_eq_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i1_eq_0, 
-sum0_eq_sum1, 
-n0_eq_n1, ]
---->[2]
-
-[i_eq_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-sum0_eq_sum1, 
-n0_eq_n1, ]
---->[0]
-
-
-Blocking composition assignment 2 for state
- [i_eq_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i1_eq_0, 
-sum0_eq_sum1, 
-n0_eq_n1, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i0_eq_0, 
-i1_eq_0, 
-sum0_eq_sum1, 
-n0_eq_n1, 
-p_synth_2, ]
---->[2]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-sum0_eq_sum1, 
-n0_eq_n1, ]
---->[1]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i1_eq_0, 
-n0_eq_n1, ]
---->[0]
-
-[i_eq_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i1_eq_0, 
-sum0_eq_sum1, 
-n0_eq_n1, ]
---->[1]
-
-[i_eq_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-sum0_eq_sum1, 
-n0_eq_n1, ]
---->[0]
-
-
-Blocking composition assignment 0 for state
- [
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i1_eq_0, 
 n0_eq_n1, ]
 
 
@@ -5077,6 +4764,100 @@ n_gt_0_1,
 i1_eq_0, 
 sum0_eq_sum1, 
 n0_eq_n1, ]
+--->[2]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+n0_eq_n1, 
+p_synth_4, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i1_eq_0, 
+sum0_eq_sum1, 
+n0_eq_n1, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i0_eq_0, 
+i1_eq_0, 
+sum0_eq_sum1, 
+n0_eq_n1, 
+p_synth_2, ]
+--->[0]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i1_eq_0, 
+sum0_eq_sum1, 
+n0_eq_n1, ]
+--->[0]
+
+[i_eq_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i1_eq_0, 
+n0_eq_n1, 
+p_synth_4, ]
+--->[0]
+
+
+Blocking composition assignment 0 for state
+ [
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i1_eq_0, 
+sum0_eq_sum1, 
+n0_eq_n1, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i0_eq_0, 
+i1_eq_0, 
+sum0_eq_sum1, 
+n0_eq_n1, 
+p_synth_2, ]
+--->[0]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i1_eq_0, 
+sum0_eq_sum1, 
+n0_eq_n1, ]
 --->[1]
 
 [
@@ -5242,6 +5023,7 @@ i_lt_n_0,
 n_gt_0_0, 
 i_lt_n_1, 
 n_gt_0_1, 
+i1_eq_0, 
 sum0_eq_sum1, 
 n0_eq_n1, ]
 --->[0]
@@ -5365,66 +5147,6 @@ n0_eq_n1, ]
 
 
 Blocking composition assignment 2 for state
- [
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i0_eq_0, 
-n0_eq_n1, 
-p_synth_1, 
-p_synth_2, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i0_eq_0, 
-i1_eq_0, 
-sum0_eq_sum1, 
-n0_eq_n1, 
-p_synth_2, ]
---->[1]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i0_eq_0, 
-sum0_eq_sum1, 
-n0_eq_n1, 
-p_synth_2, ]
---->[1]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i0_eq_0, 
-n0_eq_n1, 
-p_synth_1, 
-p_synth_2, ]
---->[0]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, 
-p_synth_4, ]
---->[0]
-
-
-Blocking composition assignment 0 for state
  [
 i_lt_n_0, 
 n_gt_0_0, 
@@ -5527,66 +5249,6 @@ p_synth_2, ]
 [
 i_lt_n_0, 
 n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i0_eq_0, 
-i1_eq_0, 
-n0_eq_n1, 
-p_synth_2, ]
---->[2]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, 
-p_synth_4, ]
---->[0]
-
-
-Blocking composition assignment 2 for state
- [
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i0_eq_0, 
-i1_eq_0, 
-n0_eq_n1, 
-p_synth_2, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i0_eq_0, 
-i1_eq_0, 
-sum0_eq_sum1, 
-n0_eq_n1, 
-p_synth_2, ]
---->[1]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i0_eq_0, 
-sum0_eq_sum1, 
-n0_eq_n1, 
-p_synth_2, ]
---->[1]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
 i_eq_n_1, 
 n_gt_0_1, 
 i0_eq_0, 
@@ -5606,7 +5268,7 @@ p_synth_4, ]
 --->[0]
 
 
-31 SMT queries performed.
+24 SMT queries performed.
 after complete_trace [
 i_lt_n_0, 
 n_gt_0_0, 
@@ -5683,15 +5345,15 @@ Is the trace spurious?  True
 Discovering predicate from a_src, a_tgt, c_src, c_tgt to eliminate spurious trace
 ----------------------pred_disc-------------------
 Running quantifier elimination: 
-New predicate is  (let ((a!1 (and (= iU0 0) (= (+ iU1 (* (- 1) iU0)) 2))))
+New predicate is  (let ((a!1 (and (= iU0 0) (= (+ (* (- 1) iU0) iU1) 2))))
 
   (not a!1))
 
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.104612 
-Solver time:	10.030136
-Total time:	10.134748
-Iteration count:	31
+Pre-processing time:	0.116621 
+Solver time:	8.01063
+Total time:	8.127251000000001
+Iteration count:	24
 Predicate count:	14
 Successfully added new predicate to input file. !
 Start next refinement loop: True
@@ -5725,6 +5387,110 @@ sum0_eq_sum1,
 n0_eq_n1, ]
 --->[2]
 
+[i_eq_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i1_eq_0, 
+n0_eq_n1, 
+p_synth_4, ]
+--->[2]
+
+[i_eq_n_0, 
+n_gt_0_0, 
+i_eq_n_1, 
+n_gt_0_1, 
+n0_eq_n1, 
+p_synth_4, ]
+--->[2]
+
+
+Blocking composition assignment 2 for state
+ [i_eq_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i1_eq_0, 
+n0_eq_n1, 
+p_synth_4, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i0_eq_0, 
+i1_eq_0, 
+sum0_eq_sum1, 
+n0_eq_n1, 
+p_synth_2, ]
+--->[2]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+sum0_eq_sum1, 
+n0_eq_n1, ]
+--->[2]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+n0_eq_n1, ]
+--->[2]
+
+[i_eq_n_0, 
+n_gt_0_0, 
+i_eq_n_1, 
+n_gt_0_1, 
+n0_eq_n1, 
+p_synth_4, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+n0_eq_n1, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i0_eq_0, 
+i1_eq_0, 
+sum0_eq_sum1, 
+n0_eq_n1, 
+p_synth_2, ]
+--->[2]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+sum0_eq_sum1, 
+n0_eq_n1, ]
+--->[2]
+
 [
 i_lt_n_0, 
 n_gt_0_0, 
@@ -5740,7 +5506,7 @@ i_eq_n_1,
 n_gt_0_1, 
 n0_eq_n1, 
 p_synth_4, ]
---->[2]
+--->[0]
 
 
 Blocking composition assignment 2 for state
@@ -5782,15 +5548,124 @@ n0_eq_n1, ]
 n_gt_0_0, 
 i_lt_n_1, 
 n_gt_0_1, 
+i1_eq_0, 
+n0_eq_n1, 
+p_synth_4, ]
+--->[1]
+
+[i_eq_n_0, 
+n_gt_0_0, 
+i_eq_n_1, 
+n_gt_0_1, 
+n0_eq_n1, 
+p_synth_4, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+sum0_eq_sum1, 
+n0_eq_n1, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i0_eq_0, 
+i1_eq_0, 
+sum0_eq_sum1, 
+n0_eq_n1, 
+p_synth_2, ]
+--->[2]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+sum0_eq_sum1, 
+n0_eq_n1, ]
+--->[0]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i0_eq_0, 
+n0_eq_n1, ]
+--->[2]
+
+[i_eq_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i1_eq_0, 
+n0_eq_n1, 
+p_synth_4, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i0_eq_0, 
+n0_eq_n1, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i0_eq_0, 
+i1_eq_0, 
+sum0_eq_sum1, 
+n0_eq_n1, 
+p_synth_2, ]
+--->[2]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+sum0_eq_sum1, 
+n0_eq_n1, ]
+--->[0]
+
+[i_eq_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
 n0_eq_n1, 
 p_synth_4, ]
 --->[2]
 
 [i_eq_n_0, 
 n_gt_0_0, 
-i_eq_n_1, 
+i_lt_n_1, 
 n_gt_0_1, 
-n0_eq_n1, ]
+i1_eq_0, 
+n0_eq_n1, 
+p_synth_4, ]
 --->[0]
 
 
@@ -5826,58 +5701,7 @@ i_lt_n_1,
 n_gt_0_1, 
 sum0_eq_sum1, 
 n0_eq_n1, ]
---->[2]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, ]
---->[2]
-
-[i_eq_n_0, 
-n_gt_0_0, 
-i_eq_n_1, 
-n_gt_0_1, 
-n0_eq_n1, 
-p_synth_4, ]
 --->[0]
-
-
-Blocking composition assignment 2 for state
- [
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i0_eq_0, 
-i1_eq_0, 
-sum0_eq_sum1, 
-n0_eq_n1, 
-p_synth_2, ]
---->[2]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-sum0_eq_sum1, 
-n0_eq_n1, ]
---->[2]
 
 [i_eq_n_0, 
 n_gt_0_0, 
@@ -5896,50 +5720,6 @@ p_synth_4, ]
 --->[0]
 
 
-Blocking composition assignment 2 for state
- [
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-sum0_eq_sum1, 
-n0_eq_n1, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i0_eq_0, 
-i1_eq_0, 
-sum0_eq_sum1, 
-n0_eq_n1, 
-p_synth_2, ]
---->[2]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-sum0_eq_sum1, 
-n0_eq_n1, ]
---->[0]
-
-[i_eq_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, 
-p_synth_4, ]
---->[0]
-
-
 Blocking composition assignment 0 for state
  [
 i_lt_n_0, 
@@ -6088,99 +5868,30 @@ i_lt_n_0,
 n_gt_0_0, 
 i_lt_n_1, 
 n_gt_0_1, 
+i1_eq_0, 
 n0_eq_n1, 
 p_synth_4, ]
---->[1]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i1_eq_0, 
-sum0_eq_sum1, 
-n0_eq_n1, ]
---->[2]
+--->[0]
 
 [i_eq_n_0, 
 n_gt_0_0, 
 i_lt_n_1, 
 n_gt_0_1, 
+i1_eq_0, 
 n0_eq_n1, 
 p_synth_4, ]
 --->[0]
 
 
-Blocking composition assignment 2 for state
+Blocking composition assignment 0 for state
  [
 i_lt_n_0, 
 n_gt_0_0, 
 i_lt_n_1, 
 n_gt_0_1, 
 i1_eq_0, 
-sum0_eq_sum1, 
-n0_eq_n1, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i0_eq_0, 
-i1_eq_0, 
-sum0_eq_sum1, 
-n0_eq_n1, 
-p_synth_2, ]
---->[2]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-sum0_eq_sum1, 
-n0_eq_n1, ]
---->[1]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, ]
---->[0]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i0_eq_0, 
-n0_eq_n1, ]
---->[2]
-
-[i_eq_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
 n0_eq_n1, 
 p_synth_4, ]
---->[0]
-
-
-Blocking composition assignment 2 for state
- [
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i0_eq_0, 
-n0_eq_n1, ]
 
 
 Exploring next composition.. 
@@ -6241,6 +5952,70 @@ n_gt_0_0,
 i_lt_n_1, 
 n_gt_0_1, 
 i0_eq_0, 
+n0_eq_n1, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i0_eq_0, 
+i1_eq_0, 
+sum0_eq_sum1, 
+n0_eq_n1, 
+p_synth_2, ]
+--->[2]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+sum0_eq_sum1, 
+n0_eq_n1, ]
+--->[1]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+n0_eq_n1, ]
+--->[0]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i0_eq_0, 
+sum0_eq_sum1, 
+n0_eq_n1, ]
+--->[2]
+
+[i_eq_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i1_eq_0, 
+n0_eq_n1, 
+p_synth_4, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i0_eq_0, 
+sum0_eq_sum1, 
 n0_eq_n1, ]
 
 
@@ -6339,197 +6114,8 @@ n_gt_0_0,
 i_lt_n_1, 
 n_gt_0_1, 
 i1_eq_0, 
-n0_eq_n1, 
-p_synth_4, ]
---->[0]
-
-[i_eq_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i1_eq_0, 
-n0_eq_n1, 
-p_synth_4, ]
---->[2]
-
-[i_eq_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, 
-p_synth_4, ]
---->[0]
-
-
-Blocking composition assignment 2 for state
- [i_eq_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i1_eq_0, 
-n0_eq_n1, 
-p_synth_4, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i0_eq_0, 
-i1_eq_0, 
-sum0_eq_sum1, 
-n0_eq_n1, 
-p_synth_2, ]
---->[2]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-sum0_eq_sum1, 
-n0_eq_n1, ]
---->[1]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, ]
---->[0]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i0_eq_0, 
-sum0_eq_sum1, 
 n0_eq_n1, ]
 --->[2]
-
-[i_eq_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, 
-p_synth_4, ]
---->[0]
-
-
-Blocking composition assignment 2 for state
- [
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i0_eq_0, 
-sum0_eq_sum1, 
-n0_eq_n1, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i0_eq_0, 
-i1_eq_0, 
-sum0_eq_sum1, 
-n0_eq_n1, 
-p_synth_2, ]
---->[2]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-sum0_eq_sum1, 
-n0_eq_n1, ]
---->[1]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i1_eq_0, 
-n0_eq_n1, 
-p_synth_4, ]
---->[0]
-
-[i_eq_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i1_eq_0, 
-n0_eq_n1, 
-p_synth_4, ]
---->[1]
-
-[i_eq_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, 
-p_synth_4, ]
---->[0]
-
-
-Blocking composition assignment 0 for state
- [
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i1_eq_0, 
-n0_eq_n1, 
-p_synth_4, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i0_eq_0, 
-i1_eq_0, 
-sum0_eq_sum1, 
-n0_eq_n1, 
-p_synth_2, ]
---->[2]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-sum0_eq_sum1, 
-n0_eq_n1, ]
---->[1]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, ]
---->[0]
 
 [i_eq_n_0, 
 n_gt_0_0, 
@@ -6587,8 +6173,9 @@ i_lt_n_0,
 n_gt_0_0, 
 i_lt_n_1, 
 n_gt_0_1, 
+i1_eq_0, 
 n0_eq_n1, ]
---->[0]
+--->[2]
 
 [i_eq_n_0, 
 n_gt_0_0, 
@@ -6600,10 +6187,63 @@ n0_eq_n1, ]
 
 [i_eq_n_0, 
 n_gt_0_0, 
-i_eq_n_1, 
+i_lt_n_1, 
 n_gt_0_1, 
+i1_eq_0, 
 n0_eq_n1, 
 p_synth_4, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i1_eq_0, 
+n0_eq_n1, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i0_eq_0, 
+i1_eq_0, 
+sum0_eq_sum1, 
+n0_eq_n1, 
+p_synth_2, ]
+--->[2]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+sum0_eq_sum1, 
+n0_eq_n1, ]
+--->[1]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+n0_eq_n1, ]
+--->[0]
+
+[i_eq_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+sum0_eq_sum1, 
+n0_eq_n1, ]
 --->[0]
 
 
@@ -6648,14 +6288,24 @@ i_lt_n_1,
 n_gt_0_1, 
 i1_eq_0, 
 n0_eq_n1, ]
+--->[0]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i1_eq_0, 
+sum0_eq_sum1, 
+n0_eq_n1, ]
 --->[2]
 
 [i_eq_n_0, 
 n_gt_0_0, 
 i_lt_n_1, 
 n_gt_0_1, 
-sum0_eq_sum1, 
-n0_eq_n1, ]
+n0_eq_n1, 
+p_synth_4, ]
 --->[0]
 
 
@@ -6666,6 +6316,7 @@ n_gt_0_0,
 i_lt_n_1, 
 n_gt_0_1, 
 i1_eq_0, 
+sum0_eq_sum1, 
 n0_eq_n1, ]
 
 
@@ -6717,8 +6368,7 @@ n0_eq_n1, ]
 n_gt_0_0, 
 i_eq_n_1, 
 n_gt_0_1, 
-n0_eq_n1, 
-p_synth_4, ]
+n0_eq_n1, ]
 --->[0]
 
 
@@ -6792,136 +6442,6 @@ i_lt_n_1,
 n_gt_0_1, 
 i1_eq_0, 
 sum0_eq_sum1, 
-n0_eq_n1, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i0_eq_0, 
-i1_eq_0, 
-sum0_eq_sum1, 
-n0_eq_n1, 
-p_synth_2, ]
---->[2]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-sum0_eq_sum1, 
-n0_eq_n1, ]
---->[1]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, 
-p_synth_4, ]
---->[1]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i1_eq_0, 
-sum0_eq_sum1, 
-n0_eq_n1, ]
---->[0]
-
-[i_eq_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i1_eq_0, 
-n0_eq_n1, 
-p_synth_4, ]
---->[0]
-
-
-Blocking composition assignment 0 for state
- [
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i1_eq_0, 
-sum0_eq_sum1, 
-n0_eq_n1, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i0_eq_0, 
-i1_eq_0, 
-sum0_eq_sum1, 
-n0_eq_n1, 
-p_synth_2, ]
---->[2]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-sum0_eq_sum1, 
-n0_eq_n1, ]
---->[1]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i1_eq_0, 
-n0_eq_n1, ]
---->[0]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i0_eq_0, 
-i1_eq_0, 
-n0_eq_n1, ]
---->[0]
-
-[i_eq_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i1_eq_0, 
-n0_eq_n1, 
-p_synth_4, ]
---->[0]
-
-
-Blocking composition assignment 0 for state
- [
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i0_eq_0, 
-i1_eq_0, 
 n0_eq_n1, ]
 
 
@@ -7077,6 +6597,53 @@ n_gt_0_1,
 i1_eq_0, 
 sum0_eq_sum1, 
 n0_eq_n1, ]
+--->[0]
+
+[i_eq_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i1_eq_0, 
+n0_eq_n1, 
+p_synth_4, ]
+--->[0]
+
+
+Blocking composition assignment 0 for state
+ [
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i1_eq_0, 
+sum0_eq_sum1, 
+n0_eq_n1, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i0_eq_0, 
+i1_eq_0, 
+sum0_eq_sum1, 
+n0_eq_n1, 
+p_synth_2, ]
+--->[0]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i1_eq_0, 
+sum0_eq_sum1, 
+n0_eq_n1, ]
 --->[1]
 
 [
@@ -7240,11 +6807,11 @@ p_synth_2, ]
 [
 i_lt_n_0, 
 n_gt_0_0, 
-i_lt_n_1, 
+i_eq_n_1, 
 n_gt_0_1, 
-i1_eq_0, 
-sum0_eq_sum1, 
-n0_eq_n1, ]
+n0_eq_n1, 
+p_synth_3, 
+p_synth_4, ]
 --->[0]
 
 
@@ -7319,64 +6886,6 @@ n0_eq_n1,
 p_synth_1, 
 p_synth_2, 
 p_synth_5, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i0_eq_0, 
-i1_eq_0, 
-sum0_eq_sum1, 
-n0_eq_n1, 
-p_synth_2, ]
---->[1]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i0_eq_0, 
-sum0_eq_sum1, 
-n0_eq_n1, 
-p_synth_2, ]
---->[1]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i0_eq_0, 
-n0_eq_n1, 
-p_synth_2, ]
---->[0]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, 
-p_synth_4, ]
---->[0]
-
-
-Blocking composition assignment 0 for state
- [
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i0_eq_0, 
-n0_eq_n1, 
-p_synth_2, ]
 
 
 Exploring next composition.. 
@@ -7440,6 +6949,124 @@ n0_eq_n1,
 p_synth_1, 
 p_synth_2, 
 p_synth_5, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i0_eq_0, 
+i1_eq_0, 
+sum0_eq_sum1, 
+n0_eq_n1, 
+p_synth_2, ]
+--->[1]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i0_eq_0, 
+sum0_eq_sum1, 
+n0_eq_n1, 
+p_synth_2, ]
+--->[1]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i0_eq_0, 
+n0_eq_n1, 
+p_synth_2, ]
+--->[0]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+n0_eq_n1, 
+p_synth_4, ]
+--->[0]
+
+
+Blocking composition assignment 0 for state
+ [
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i0_eq_0, 
+n0_eq_n1, 
+p_synth_2, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i0_eq_0, 
+i1_eq_0, 
+sum0_eq_sum1, 
+n0_eq_n1, 
+p_synth_2, ]
+--->[1]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i0_eq_0, 
+sum0_eq_sum1, 
+n0_eq_n1, 
+p_synth_2, ]
+--->[1]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i0_eq_0, 
+i1_eq_0, 
+n0_eq_n1, 
+p_synth_2, ]
+--->[2]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+n0_eq_n1, 
+p_synth_4, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i0_eq_0, 
+i1_eq_0, 
+n0_eq_n1, 
+p_synth_2, ]
 
 
 Exploring next composition.. 
@@ -7570,14 +7197,16 @@ Is the trace spurious?  True
 Discovering predicate from a_src, a_tgt, c_src, c_tgt to eliminate spurious trace
 ----------------------pred_disc-------------------
 Running quantifier elimination: 
-New predicate is  (let ((a!1 (and (not (= sumU0 (+ (- 1) sumU1))) (not (= sumU0 sumU1)))))
+New predicate is  (let ((a!1 (not (<= (+ (* (- 1) sumU1) sumU0) (- 1)))))
 
-  (not a!1))
+(let ((a!2 (or a!1 (<= (+ (* (- 1) sumU1) sumU0) (- 2)))))
+
+  (not (and (not (= sumU0 sumU1)) a!2))))
 
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.129691 
-Solver time:	11.648547
-Total time:	11.778238
+Pre-processing time:	0.121996 
+Solver time:	10.822667
+Total time:	10.944662999999998
 Iteration count:	31
 Predicate count:	15
 Successfully added new predicate to input file. !
@@ -7612,7 +7241,8 @@ sum0_eq_sum1,
 n0_eq_n1, ]
 --->[2]
 
-[i_eq_n_0, 
+[
+i_lt_n_0, 
 n_gt_0_0, 
 i_lt_n_1, 
 n_gt_0_1, 
@@ -7629,6 +7259,111 @@ n0_eq_n1,
 p_synth_4, 
 p_synth_6, ]
 --->[2]
+
+
+Blocking composition assignment 2 for state
+ [
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+n0_eq_n1, 
+p_synth_4, 
+p_synth_6, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i0_eq_0, 
+i1_eq_0, 
+sum0_eq_sum1, 
+n0_eq_n1, 
+p_synth_2, ]
+--->[2]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+sum0_eq_sum1, 
+n0_eq_n1, ]
+--->[2]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+n0_eq_n1, ]
+--->[2]
+
+[i_eq_n_0, 
+n_gt_0_0, 
+i_eq_n_1, 
+n_gt_0_1, 
+n0_eq_n1, 
+p_synth_4, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+n0_eq_n1, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i0_eq_0, 
+i1_eq_0, 
+sum0_eq_sum1, 
+n0_eq_n1, 
+p_synth_2, ]
+--->[2]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+sum0_eq_sum1, 
+n0_eq_n1, ]
+--->[2]
+
+[i_eq_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+n0_eq_n1, 
+p_synth_4, 
+p_synth_6, ]
+--->[2]
+
+[i_eq_n_0, 
+n_gt_0_0, 
+i_eq_n_1, 
+n_gt_0_1, 
+n0_eq_n1, 
+p_synth_4, ]
+--->[0]
 
 
 Blocking composition assignment 2 for state
@@ -7666,6 +7401,60 @@ sum0_eq_sum1,
 n0_eq_n1, ]
 --->[2]
 
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+n0_eq_n1, 
+p_synth_6, ]
+--->[2]
+
+[i_eq_n_0, 
+n_gt_0_0, 
+i_eq_n_1, 
+n_gt_0_1, 
+n0_eq_n1, 
+p_synth_4, 
+p_synth_6, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+n0_eq_n1, 
+p_synth_6, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i0_eq_0, 
+i1_eq_0, 
+sum0_eq_sum1, 
+n0_eq_n1, 
+p_synth_2, ]
+--->[2]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+sum0_eq_sum1, 
+n0_eq_n1, ]
+--->[2]
+
 [i_eq_n_0, 
 n_gt_0_0, 
 i_lt_n_1, 
@@ -7680,8 +7469,7 @@ n_gt_0_0,
 i_eq_n_1, 
 n_gt_0_1, 
 n0_eq_n1, 
-p_synth_4, 
-p_synth_6, ]
+p_synth_4, ]
 --->[0]
 
 
@@ -7773,62 +7561,6 @@ n_gt_0_1,
 n0_eq_n1, 
 p_synth_4, 
 p_synth_6, ]
---->[2]
-
-[i_eq_n_0, 
-n_gt_0_0, 
-i_eq_n_1, 
-n_gt_0_1, 
-n0_eq_n1, 
-p_synth_4, 
-p_synth_6, ]
---->[0]
-
-
-Blocking composition assignment 2 for state
- [
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, 
-p_synth_4, 
-p_synth_6, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i0_eq_0, 
-i1_eq_0, 
-sum0_eq_sum1, 
-n0_eq_n1, 
-p_synth_2, ]
---->[2]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-sum0_eq_sum1, 
-n0_eq_n1, ]
---->[1]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, 
-p_synth_4, 
-p_synth_6, ]
 --->[0]
 
 [i_eq_n_0, 
@@ -7849,60 +7581,6 @@ i_lt_n_1,
 n_gt_0_1, 
 n0_eq_n1, 
 p_synth_4, 
-p_synth_6, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i0_eq_0, 
-i1_eq_0, 
-sum0_eq_sum1, 
-n0_eq_n1, 
-p_synth_2, ]
---->[2]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-sum0_eq_sum1, 
-n0_eq_n1, ]
---->[1]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, 
-p_synth_6, ]
---->[2]
-
-[i_eq_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, 
-p_synth_4, 
-p_synth_6, ]
---->[0]
-
-
-Blocking composition assignment 2 for state
- [
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, 
 p_synth_6, ]
 
 
@@ -8044,57 +7722,6 @@ i_lt_n_0,
 n_gt_0_0, 
 i_lt_n_1, 
 n_gt_0_1, 
-n0_eq_n1, ]
---->[2]
-
-[i_eq_n_0, 
-n_gt_0_0, 
-i_eq_n_1, 
-n_gt_0_1, 
-n0_eq_n1, 
-p_synth_4, ]
---->[0]
-
-
-Blocking composition assignment 2 for state
- [
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i0_eq_0, 
-i1_eq_0, 
-sum0_eq_sum1, 
-n0_eq_n1, 
-p_synth_2, ]
---->[2]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-sum0_eq_sum1, 
-n0_eq_n1, ]
---->[1]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
 i1_eq_0, 
 n0_eq_n1, 
 p_synth_4, 
@@ -8151,12 +7778,12 @@ n0_eq_n1, ]
 [
 i_lt_n_0, 
 n_gt_0_0, 
-i_eq_n_1, 
+i_lt_n_1, 
 n_gt_0_1, 
 n0_eq_n1, 
 p_synth_4, 
 p_synth_6, ]
---->[2]
+--->[1]
 
 [
 i_lt_n_0, 
@@ -8174,8 +7801,7 @@ n_gt_0_0,
 i_eq_n_1, 
 n_gt_0_1, 
 n0_eq_n1, 
-p_synth_4, 
-p_synth_6, ]
+p_synth_4, ]
 --->[0]
 
 
@@ -8221,6 +7847,72 @@ i_lt_n_0,
 n_gt_0_0, 
 i_lt_n_1, 
 n_gt_0_1, 
+n0_eq_n1, 
+p_synth_4, 
+p_synth_6, ]
+--->[1]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i1_eq_0, 
+n0_eq_n1, 
+p_synth_4, ]
+--->[2]
+
+[i_eq_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+n0_eq_n1, 
+p_synth_4, 
+p_synth_6, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i1_eq_0, 
+n0_eq_n1, 
+p_synth_4, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i0_eq_0, 
+i1_eq_0, 
+sum0_eq_sum1, 
+n0_eq_n1, 
+p_synth_2, ]
+--->[2]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+sum0_eq_sum1, 
+n0_eq_n1, ]
+--->[1]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
 i1_eq_0, 
 n0_eq_n1, 
 p_synth_4, 
@@ -8239,7 +7931,7 @@ p_synth_6, ]
 
 [i_eq_n_0, 
 n_gt_0_0, 
-i_eq_n_1, 
+i_lt_n_1, 
 n_gt_0_1, 
 n0_eq_n1, 
 p_synth_4, 
@@ -8306,7 +7998,7 @@ p_synth_6, ]
 
 [i_eq_n_0, 
 n_gt_0_0, 
-i_eq_n_1, 
+i_lt_n_1, 
 n_gt_0_1, 
 n0_eq_n1, 
 p_synth_4, 
@@ -8360,6 +8052,200 @@ n0_eq_n1,
 p_synth_6, ]
 --->[0]
 
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i0_eq_0, 
+n0_eq_n1, 
+p_synth_6, ]
+--->[2]
+
+[i_eq_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+n0_eq_n1, 
+p_synth_4, 
+p_synth_6, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i0_eq_0, 
+n0_eq_n1, 
+p_synth_6, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i0_eq_0, 
+i1_eq_0, 
+sum0_eq_sum1, 
+n0_eq_n1, 
+p_synth_2, ]
+--->[2]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+sum0_eq_sum1, 
+n0_eq_n1, ]
+--->[1]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+n0_eq_n1, 
+p_synth_6, ]
+--->[0]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i0_eq_0, 
+n0_eq_n1, 
+p_synth_6, ]
+--->[0]
+
+[i_eq_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+n0_eq_n1, 
+p_synth_4, 
+p_synth_6, ]
+--->[0]
+
+
+Blocking composition assignment 0 for state
+ [
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i0_eq_0, 
+n0_eq_n1, 
+p_synth_6, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i0_eq_0, 
+i1_eq_0, 
+sum0_eq_sum1, 
+n0_eq_n1, 
+p_synth_2, ]
+--->[2]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+sum0_eq_sum1, 
+n0_eq_n1, ]
+--->[1]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+n0_eq_n1, 
+p_synth_4, ]
+--->[1]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i1_eq_0, 
+sum0_eq_sum1, 
+n0_eq_n1, ]
+--->[2]
+
+[i_eq_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+n0_eq_n1, 
+p_synth_4, 
+p_synth_6, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i1_eq_0, 
+sum0_eq_sum1, 
+n0_eq_n1, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i0_eq_0, 
+i1_eq_0, 
+sum0_eq_sum1, 
+n0_eq_n1, 
+p_synth_2, ]
+--->[2]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+sum0_eq_sum1, 
+n0_eq_n1, ]
+--->[1]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+n0_eq_n1, ]
+--->[0]
+
 [i_eq_n_0, 
 n_gt_0_0, 
 i_lt_n_1, 
@@ -8370,7 +8256,7 @@ n0_eq_n1, ]
 
 [i_eq_n_0, 
 n_gt_0_0, 
-i_eq_n_1, 
+i_lt_n_1, 
 n_gt_0_1, 
 n0_eq_n1, 
 p_synth_4, 
@@ -8417,8 +8303,10 @@ i_lt_n_0,
 n_gt_0_0, 
 i_lt_n_1, 
 n_gt_0_1, 
-n0_eq_n1, ]
---->[0]
+i1_eq_0, 
+n0_eq_n1, 
+p_synth_6, ]
+--->[2]
 
 [i_eq_n_0, 
 n_gt_0_0, 
@@ -8438,112 +8326,6 @@ p_synth_6, ]
 --->[0]
 
 
-Blocking composition assignment 0 for state
- [
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i0_eq_0, 
-i1_eq_0, 
-sum0_eq_sum1, 
-n0_eq_n1, 
-p_synth_2, ]
---->[2]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-sum0_eq_sum1, 
-n0_eq_n1, ]
---->[1]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, 
-p_synth_6, ]
---->[0]
-
-[i_eq_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-sum0_eq_sum1, 
-n0_eq_n1, ]
---->[0]
-
-
-Blocking composition assignment 0 for state
- [
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, 
-p_synth_6, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i0_eq_0, 
-i1_eq_0, 
-sum0_eq_sum1, 
-n0_eq_n1, 
-p_synth_2, ]
---->[2]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-sum0_eq_sum1, 
-n0_eq_n1, ]
---->[1]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i1_eq_0, 
-n0_eq_n1, 
-p_synth_6, ]
---->[2]
-
-[i_eq_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-sum0_eq_sum1, 
-n0_eq_n1, ]
---->[0]
-
-
 Blocking composition assignment 2 for state
  [
 i_lt_n_0, 
@@ -8551,6 +8333,110 @@ n_gt_0_0,
 i_lt_n_1, 
 n_gt_0_1, 
 i1_eq_0, 
+n0_eq_n1, 
+p_synth_6, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i0_eq_0, 
+i1_eq_0, 
+sum0_eq_sum1, 
+n0_eq_n1, 
+p_synth_2, ]
+--->[2]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+sum0_eq_sum1, 
+n0_eq_n1, ]
+--->[1]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+n0_eq_n1, ]
+--->[0]
+
+[i_eq_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+sum0_eq_sum1, 
+n0_eq_n1, ]
+--->[0]
+
+
+Blocking composition assignment 0 for state
+ [
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+n0_eq_n1, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i0_eq_0, 
+i1_eq_0, 
+sum0_eq_sum1, 
+n0_eq_n1, 
+p_synth_2, ]
+--->[2]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+sum0_eq_sum1, 
+n0_eq_n1, ]
+--->[1]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+n0_eq_n1, 
+p_synth_6, ]
+--->[0]
+
+[i_eq_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+sum0_eq_sum1, 
+n0_eq_n1, ]
+--->[0]
+
+
+Blocking composition assignment 0 for state
+ [
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
 n0_eq_n1, 
 p_synth_6, ]
 
@@ -8648,135 +8534,7 @@ i_lt_n_0,
 n_gt_0_0, 
 i_lt_n_1, 
 n_gt_0_1, 
-i1_eq_0, 
-n0_eq_n1, 
-p_synth_6, ]
---->[0]
-
-[i_eq_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i1_eq_0, 
-sum0_eq_sum1, 
 n0_eq_n1, ]
---->[2]
-
-[i_eq_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-sum0_eq_sum1, 
-n0_eq_n1, ]
---->[0]
-
-
-Blocking composition assignment 2 for state
- [i_eq_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i1_eq_0, 
-sum0_eq_sum1, 
-n0_eq_n1, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i0_eq_0, 
-i1_eq_0, 
-sum0_eq_sum1, 
-n0_eq_n1, 
-p_synth_2, ]
---->[2]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-sum0_eq_sum1, 
-n0_eq_n1, ]
---->[1]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i1_eq_0, 
-n0_eq_n1, 
-p_synth_6, ]
---->[0]
-
-[i_eq_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i1_eq_0, 
-sum0_eq_sum1, 
-n0_eq_n1, ]
---->[1]
-
-[i_eq_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-sum0_eq_sum1, 
-n0_eq_n1, ]
---->[0]
-
-
-Blocking composition assignment 0 for state
- [
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i1_eq_0, 
-n0_eq_n1, 
-p_synth_6, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i0_eq_0, 
-i1_eq_0, 
-sum0_eq_sum1, 
-n0_eq_n1, 
-p_synth_2, ]
---->[2]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-sum0_eq_sum1, 
-n0_eq_n1, ]
---->[1]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, 
-p_synth_6, ]
 --->[1]
 
 [
@@ -8795,8 +8553,7 @@ n_gt_0_0,
 i_eq_n_1, 
 n_gt_0_1, 
 n0_eq_n1, 
-p_synth_4, 
-p_synth_6, ]
+p_synth_4, ]
 --->[0]
 
 
@@ -8811,53 +8568,6 @@ i1_eq_0,
 sum0_eq_sum1, 
 n0_eq_n1, 
 p_synth_2, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i0_eq_0, 
-i1_eq_0, 
-sum0_eq_sum1, 
-n0_eq_n1, 
-p_synth_2, ]
---->[0]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i1_eq_0, 
-sum0_eq_sum1, 
-n0_eq_n1, ]
---->[2]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, 
-p_synth_6, ]
---->[0]
-
-
-Blocking composition assignment 2 for state
- [
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i1_eq_0, 
-sum0_eq_sum1, 
-n0_eq_n1, ]
 
 
 Exploring next composition.. 
@@ -8999,7 +8709,6 @@ i_lt_n_0,
 n_gt_0_0, 
 i_lt_n_1, 
 n_gt_0_1, 
-sum0_eq_sum1, 
 n0_eq_n1, ]
 --->[0]
 
@@ -9106,10 +8815,12 @@ p_synth_6, ]
 [
 i_lt_n_0, 
 n_gt_0_0, 
-i_lt_n_1, 
+i_eq_n_1, 
 n_gt_0_1, 
-sum0_eq_sum1, 
-n0_eq_n1, ]
+n0_eq_n1, 
+p_synth_3, 
+p_synth_4, 
+p_synth_6, ]
 --->[0]
 
 
@@ -9345,6 +9056,152 @@ n_gt_0_0,
 i_lt_n_1, 
 n_gt_0_1, 
 i0_eq_0, 
+n0_eq_n1, 
+p_synth_2, 
+p_synth_6, ]
+--->[1]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i0_eq_0, 
+n0_eq_n1, 
+p_synth_2, ]
+--->[2]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_eq_n_1, 
+n_gt_0_1, 
+n0_eq_n1, 
+p_synth_3, 
+p_synth_4, 
+p_synth_6, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i0_eq_0, 
+n0_eq_n1, 
+p_synth_2, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i0_eq_0, 
+i1_eq_0, 
+sum0_eq_sum1, 
+n0_eq_n1, 
+p_synth_2, ]
+--->[1]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i0_eq_0, 
+sum0_eq_sum1, 
+n0_eq_n1, 
+p_synth_2, ]
+--->[1]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i0_eq_0, 
+n0_eq_n1, 
+p_synth_2, 
+p_synth_6, ]
+--->[1]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i0_eq_0, 
+n0_eq_n1, 
+p_synth_1, 
+p_synth_2, 
+p_synth_5, 
+p_synth_6, ]
+--->[2]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+sum0_eq_sum1, 
+n0_eq_n1, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i0_eq_0, 
+n0_eq_n1, 
+p_synth_1, 
+p_synth_2, 
+p_synth_5, 
+p_synth_6, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i0_eq_0, 
+i1_eq_0, 
+sum0_eq_sum1, 
+n0_eq_n1, 
+p_synth_2, ]
+--->[1]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i0_eq_0, 
+sum0_eq_sum1, 
+n0_eq_n1, 
+p_synth_2, ]
+--->[1]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i0_eq_0, 
 i1_eq_0, 
 n0_eq_n1, 
 p_synth_2, 
@@ -9431,98 +9288,19 @@ i_lt_n_1,
 n_gt_0_1, 
 i0_eq_0, 
 n0_eq_n1, 
-p_synth_1, 
-p_synth_2, 
-p_synth_5, 
-p_synth_6, ]
---->[2]
+p_synth_2, ]
+--->[0]
 
 [
 i_lt_n_0, 
 n_gt_0_0, 
 i_lt_n_1, 
 n_gt_0_1, 
-n0_eq_n1, 
-p_synth_4, 
-p_synth_6, ]
+n0_eq_n1, ]
 --->[0]
 
 
-Blocking composition assignment 2 for state
- [
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i0_eq_0, 
-n0_eq_n1, 
-p_synth_1, 
-p_synth_2, 
-p_synth_5, 
-p_synth_6, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i0_eq_0, 
-i1_eq_0, 
-sum0_eq_sum1, 
-n0_eq_n1, 
-p_synth_2, ]
---->[1]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i0_eq_0, 
-sum0_eq_sum1, 
-n0_eq_n1, 
-p_synth_2, ]
---->[1]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i0_eq_0, 
-n0_eq_n1, 
-p_synth_2, 
-p_synth_6, ]
---->[1]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i0_eq_0, 
-n0_eq_n1, 
-p_synth_2, ]
---->[2]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_eq_n_1, 
-n_gt_0_1, 
-n0_eq_n1, 
-p_synth_3, 
-p_synth_4, 
-p_synth_6, ]
---->[0]
-
-
-Blocking composition assignment 2 for state
+Blocking composition assignment 0 for state
  [
 i_lt_n_0, 
 n_gt_0_0, 
@@ -9531,83 +9309,6 @@ n_gt_0_1,
 i0_eq_0, 
 n0_eq_n1, 
 p_synth_2, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i0_eq_0, 
-i1_eq_0, 
-sum0_eq_sum1, 
-n0_eq_n1, 
-p_synth_2, ]
---->[1]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i0_eq_0, 
-sum0_eq_sum1, 
-n0_eq_n1, 
-p_synth_2, ]
---->[1]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i0_eq_0, 
-n0_eq_n1, 
-p_synth_2, 
-p_synth_6, ]
---->[1]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_eq_n_1, 
-n_gt_0_1, 
-i0_eq_0, 
-n0_eq_n1, 
-p_synth_1, 
-p_synth_2, 
-p_synth_5, 
-p_synth_6, ]
---->[2]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_eq_n_1, 
-n_gt_0_1, 
-n0_eq_n1, 
-p_synth_3, 
-p_synth_4, 
-p_synth_6, ]
---->[0]
-
-
-Blocking composition assignment 2 for state
- [
-i_lt_n_0, 
-n_gt_0_0, 
-i_eq_n_1, 
-n_gt_0_1, 
-i0_eq_0, 
-n0_eq_n1, 
-p_synth_1, 
-p_synth_2, 
-p_synth_5, 
-p_synth_6, ]
 
 
 Exploring next composition.. 
@@ -9727,6 +9428,153 @@ p_synth_6, ]
 [
 i_lt_n_0, 
 n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i0_eq_0, 
+i1_eq_0, 
+n0_eq_n1, 
+p_synth_2, ]
+--->[2]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+n0_eq_n1, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i0_eq_0, 
+i1_eq_0, 
+n0_eq_n1, 
+p_synth_2, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i0_eq_0, 
+i1_eq_0, 
+sum0_eq_sum1, 
+n0_eq_n1, 
+p_synth_2, ]
+--->[1]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i0_eq_0, 
+sum0_eq_sum1, 
+n0_eq_n1, 
+p_synth_2, ]
+--->[1]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i0_eq_0, 
+n0_eq_n1, 
+p_synth_2, 
+p_synth_6, ]
+--->[1]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_eq_n_1, 
+n_gt_0_1, 
+i0_eq_0, 
+n0_eq_n1, 
+p_synth_1, 
+p_synth_2, 
+p_synth_5, 
+p_synth_6, ]
+--->[2]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_eq_n_1, 
+n_gt_0_1, 
+n0_eq_n1, 
+p_synth_3, 
+p_synth_4, 
+p_synth_6, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [
+i_lt_n_0, 
+n_gt_0_0, 
+i_eq_n_1, 
+n_gt_0_1, 
+i0_eq_0, 
+n0_eq_n1, 
+p_synth_1, 
+p_synth_2, 
+p_synth_5, 
+p_synth_6, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i0_eq_0, 
+i1_eq_0, 
+sum0_eq_sum1, 
+n0_eq_n1, 
+p_synth_2, ]
+--->[1]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i0_eq_0, 
+sum0_eq_sum1, 
+n0_eq_n1, 
+p_synth_2, ]
+--->[1]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i0_eq_0, 
+n0_eq_n1, 
+p_synth_2, 
+p_synth_6, ]
+--->[1]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
 i_eq_n_1, 
 n_gt_0_1, 
 i0_eq_0, 
@@ -9749,7 +9597,7 @@ p_synth_6, ]
 --->[0]
 
 
-36 SMT queries performed.
+39 SMT queries performed.
 after complete_trace [
 i_lt_n_0, 
 n_gt_0_0, 
@@ -9813,8 +9661,7 @@ n_gt_0_0,
 i_eq_n_1, 
 n_gt_0_1, 
 n0_eq_n1, 
-p_synth_4, 
-p_synth_6, ]
+p_synth_4, ]
 --->[-1]
 
 
@@ -9837,13 +9684,13 @@ Is the trace spurious?  True
 Discovering predicate from a_src, a_tgt, c_src, c_tgt to eliminate spurious trace
 ----------------------pred_disc-------------------
 Running quantifier elimination: 
-New predicate is  (not (and (= iU0 0) (<= iU1 (- 2))))
+New predicate is  (not (and (= iU0 0) (not (= iU1 (- 1))) (<= iU1 0) (not (= iU1 0))))
 
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.13068 
-Solver time:	13.90036
-Total time:	14.031039999999999
-Iteration count:	36
+Pre-processing time:	0.144769 
+Solver time:	16.531964
+Total time:	16.676733
+Iteration count:	39
 Predicate count:	16
 Successfully added new predicate to input file. !
 Start next refinement loop: True
@@ -9877,225 +9724,6 @@ sum0_eq_sum1,
 n0_eq_n1, ]
 --->[2]
 
-[i_eq_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i1_eq_0, 
-n0_eq_n1, 
-p_synth_4, 
-p_synth_6, ]
---->[2]
-
-[i_eq_n_0, 
-n_gt_0_0, 
-i_eq_n_1, 
-n_gt_0_1, 
-n0_eq_n1, 
-p_synth_4, 
-p_synth_6, ]
---->[2]
-
-
-Blocking composition assignment 2 for state
- [i_eq_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i1_eq_0, 
-n0_eq_n1, 
-p_synth_4, 
-p_synth_6, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i0_eq_0, 
-i1_eq_0, 
-sum0_eq_sum1, 
-n0_eq_n1, 
-p_synth_2, ]
---->[2]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-sum0_eq_sum1, 
-n0_eq_n1, ]
---->[2]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, ]
---->[2]
-
-[i_eq_n_0, 
-n_gt_0_0, 
-i_eq_n_1, 
-n_gt_0_1, 
-n0_eq_n1, 
-p_synth_4, ]
---->[0]
-
-
-Blocking composition assignment 2 for state
- [
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i0_eq_0, 
-i1_eq_0, 
-sum0_eq_sum1, 
-n0_eq_n1, 
-p_synth_2, ]
---->[2]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-sum0_eq_sum1, 
-n0_eq_n1, ]
---->[2]
-
-[i_eq_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i1_eq_0, 
-n0_eq_n1, 
-p_synth_4, 
-p_synth_6, ]
---->[1]
-
-[i_eq_n_0, 
-n_gt_0_0, 
-i_eq_n_1, 
-n_gt_0_1, 
-n0_eq_n1, 
-p_synth_4, 
-p_synth_6, ]
---->[0]
-
-
-Blocking composition assignment 2 for state
- [
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-sum0_eq_sum1, 
-n0_eq_n1, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i0_eq_0, 
-i1_eq_0, 
-sum0_eq_sum1, 
-n0_eq_n1, 
-p_synth_2, ]
---->[2]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-sum0_eq_sum1, 
-n0_eq_n1, ]
---->[0]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, 
-p_synth_4, 
-p_synth_6, ]
---->[2]
-
-[i_eq_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i1_eq_0, 
-n0_eq_n1, 
-p_synth_4, 
-p_synth_6, ]
---->[0]
-
-
-Blocking composition assignment 2 for state
- [
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, 
-p_synth_4, 
-p_synth_6, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i0_eq_0, 
-i1_eq_0, 
-sum0_eq_sum1, 
-n0_eq_n1, 
-p_synth_2, ]
---->[2]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-sum0_eq_sum1, 
-n0_eq_n1, ]
---->[0]
-
 [
 i_lt_n_0, 
 n_gt_0_0, 
@@ -10112,7 +9740,7 @@ n_gt_0_1,
 n0_eq_n1, 
 p_synth_4, 
 p_synth_6, ]
---->[0]
+--->[2]
 
 
 Blocking composition assignment 2 for state
@@ -10148,7 +9776,63 @@ i_lt_n_1,
 n_gt_0_1, 
 sum0_eq_sum1, 
 n0_eq_n1, ]
+--->[2]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+n0_eq_n1, 
+p_synth_4, 
+p_synth_6, ]
+--->[2]
+
+[i_eq_n_0, 
+n_gt_0_0, 
+i_eq_n_1, 
+n_gt_0_1, 
+n0_eq_n1, 
+p_synth_4, 
+p_synth_6, ]
 --->[0]
+
+
+Blocking composition assignment 2 for state
+ [
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+n0_eq_n1, 
+p_synth_4, 
+p_synth_6, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i0_eq_0, 
+i1_eq_0, 
+sum0_eq_sum1, 
+n0_eq_n1, 
+p_synth_2, ]
+--->[2]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+sum0_eq_sum1, 
+n0_eq_n1, ]
+--->[2]
 
 [i_eq_n_0, 
 n_gt_0_0, 
@@ -10202,7 +9886,7 @@ i_lt_n_1,
 n_gt_0_1, 
 sum0_eq_sum1, 
 n0_eq_n1, ]
---->[0]
+--->[2]
 
 [i_eq_n_0, 
 n_gt_0_0, 
@@ -10218,7 +9902,53 @@ n_gt_0_0,
 i_eq_n_1, 
 n_gt_0_1, 
 n0_eq_n1, 
-p_synth_4, ]
+p_synth_4, 
+p_synth_6, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+sum0_eq_sum1, 
+n0_eq_n1, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i0_eq_0, 
+i1_eq_0, 
+sum0_eq_sum1, 
+n0_eq_n1, 
+p_synth_2, ]
+--->[2]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+sum0_eq_sum1, 
+n0_eq_n1, ]
+--->[0]
+
+[i_eq_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+n0_eq_n1, 
+p_synth_4, 
+p_synth_6, ]
 --->[0]
 
 
@@ -10263,15 +9993,72 @@ n_gt_0_0,
 i_lt_n_1, 
 n_gt_0_1, 
 n0_eq_n1, 
+p_synth_4, 
+p_synth_6, ]
+--->[0]
+
+[i_eq_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+n0_eq_n1, 
+p_synth_4, 
+p_synth_6, ]
+--->[0]
+
+
+Blocking composition assignment 0 for state
+ [
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+n0_eq_n1, 
+p_synth_4, 
+p_synth_6, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i0_eq_0, 
+i1_eq_0, 
+sum0_eq_sum1, 
+n0_eq_n1, 
+p_synth_2, ]
+--->[2]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+sum0_eq_sum1, 
+n0_eq_n1, ]
+--->[1]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+n0_eq_n1, 
 p_synth_4, ]
 --->[2]
 
 [i_eq_n_0, 
 n_gt_0_0, 
-i_eq_n_1, 
+i_lt_n_1, 
 n_gt_0_1, 
 n0_eq_n1, 
-p_synth_4, ]
+p_synth_4, 
+p_synth_6, ]
 --->[0]
 
 
@@ -10316,8 +10103,7 @@ n_gt_0_0,
 i_lt_n_1, 
 n_gt_0_1, 
 n0_eq_n1, 
-p_synth_4, 
-p_synth_6, ]
+p_synth_4, ]
 --->[0]
 
 [i_eq_n_0, 
@@ -10337,8 +10123,7 @@ n_gt_0_0,
 i_lt_n_1, 
 n_gt_0_1, 
 n0_eq_n1, 
-p_synth_4, 
-p_synth_6, ]
+p_synth_4, ]
 
 
 Exploring next composition.. 
@@ -10371,28 +10156,25 @@ i_lt_n_0,
 n_gt_0_0, 
 i_lt_n_1, 
 n_gt_0_1, 
+n0_eq_n1, ]
+--->[2]
+
+[i_eq_n_0, 
+n_gt_0_0, 
+i_eq_n_1, 
+n_gt_0_1, 
 n0_eq_n1, 
 p_synth_4, ]
 --->[0]
 
-[i_eq_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, 
-p_synth_4, 
-p_synth_6, ]
---->[0]
 
-
-Blocking composition assignment 0 for state
+Blocking composition assignment 2 for state
  [
 i_lt_n_0, 
 n_gt_0_0, 
 i_lt_n_1, 
 n_gt_0_1, 
-n0_eq_n1, 
-p_synth_4, ]
+n0_eq_n1, ]
 
 
 Exploring next composition.. 
@@ -10497,12 +10279,20 @@ i1_eq_0,
 n0_eq_n1, 
 p_synth_4, 
 p_synth_6, ]
+--->[2]
+
+[i_eq_n_0, 
+n_gt_0_0, 
+i_eq_n_1, 
+n_gt_0_1, 
+n0_eq_n1, 
+p_synth_4, 
+p_synth_6, ]
 --->[0]
 
 
-Blocking composition assignment 0 for state
- [
-i_lt_n_0, 
+Blocking composition assignment 2 for state
+ [i_eq_n_0, 
 n_gt_0_0, 
 i_lt_n_1, 
 n_gt_0_1, 
@@ -10510,6 +10300,72 @@ i1_eq_0,
 n0_eq_n1, 
 p_synth_4, 
 p_synth_6, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i0_eq_0, 
+i1_eq_0, 
+sum0_eq_sum1, 
+n0_eq_n1, 
+p_synth_2, ]
+--->[2]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+sum0_eq_sum1, 
+n0_eq_n1, ]
+--->[1]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+n0_eq_n1, 
+p_synth_4, 
+p_synth_6, ]
+--->[1]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i1_eq_0, 
+n0_eq_n1, 
+p_synth_4, ]
+--->[2]
+
+[i_eq_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+n0_eq_n1, 
+p_synth_4, 
+p_synth_6, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i1_eq_0, 
+n0_eq_n1, 
+p_synth_4, ]
 
 
 Exploring next composition.. 
@@ -10609,8 +10465,568 @@ i_lt_n_0,
 n_gt_0_0, 
 i_lt_n_1, 
 n_gt_0_1, 
+n0_eq_n1, ]
+--->[0]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i0_eq_0, 
+n0_eq_n1, 
+p_synth_6, 
+p_synth_7, ]
+--->[0]
+
+[i_eq_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+n0_eq_n1, 
+p_synth_4, 
+p_synth_6, ]
+--->[0]
+
+
+Blocking composition assignment 0 for state
+ [
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i0_eq_0, 
+n0_eq_n1, 
+p_synth_6, 
+p_synth_7, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i0_eq_0, 
+i1_eq_0, 
+sum0_eq_sum1, 
+n0_eq_n1, 
+p_synth_2, ]
+--->[2]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+sum0_eq_sum1, 
+n0_eq_n1, ]
+--->[1]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i1_eq_0, 
+n0_eq_n1, 
+p_synth_4, 
+p_synth_6, ]
+--->[0]
+
+[i_eq_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i1_eq_0, 
+n0_eq_n1, 
+p_synth_4, 
+p_synth_6, ]
+--->[1]
+
+[i_eq_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+n0_eq_n1, 
+p_synth_4, 
+p_synth_6, ]
+--->[0]
+
+
+Blocking composition assignment 0 for state
+ [
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i1_eq_0, 
+n0_eq_n1, 
+p_synth_4, 
+p_synth_6, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i0_eq_0, 
+i1_eq_0, 
+sum0_eq_sum1, 
+n0_eq_n1, 
+p_synth_2, ]
+--->[2]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+sum0_eq_sum1, 
+n0_eq_n1, ]
+--->[1]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+n0_eq_n1, 
+p_synth_6, ]
+--->[0]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i0_eq_0, 
+sum0_eq_sum1, 
+n0_eq_n1, 
+p_synth_7, ]
+--->[2]
+
+[i_eq_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+n0_eq_n1, 
+p_synth_4, 
+p_synth_6, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i0_eq_0, 
+sum0_eq_sum1, 
+n0_eq_n1, 
+p_synth_7, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i0_eq_0, 
+i1_eq_0, 
+sum0_eq_sum1, 
+n0_eq_n1, 
+p_synth_2, ]
+--->[2]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+sum0_eq_sum1, 
+n0_eq_n1, ]
+--->[1]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+n0_eq_n1, ]
+--->[0]
+
+[i_eq_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+sum0_eq_sum1, 
+n0_eq_n1, ]
+--->[2]
+
+[i_eq_n_0, 
+n_gt_0_0, 
+i_eq_n_1, 
+n_gt_0_1, 
+n0_eq_n1, 
+p_synth_4, 
+p_synth_6, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [i_eq_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+sum0_eq_sum1, 
+n0_eq_n1, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i0_eq_0, 
+i1_eq_0, 
+sum0_eq_sum1, 
+n0_eq_n1, 
+p_synth_2, ]
+--->[2]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+sum0_eq_sum1, 
+n0_eq_n1, ]
+--->[1]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i1_eq_0, 
+n0_eq_n1, 
+p_synth_6, ]
+--->[2]
+
+[i_eq_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+sum0_eq_sum1, 
+n0_eq_n1, ]
+--->[1]
+
+[i_eq_n_0, 
+n_gt_0_0, 
+i_eq_n_1, 
+n_gt_0_1, 
+n0_eq_n1, 
+p_synth_4, 
+p_synth_6, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i1_eq_0, 
+n0_eq_n1, 
+p_synth_6, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i0_eq_0, 
+i1_eq_0, 
+sum0_eq_sum1, 
+n0_eq_n1, 
+p_synth_2, ]
+--->[2]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+sum0_eq_sum1, 
+n0_eq_n1, ]
+--->[1]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+n0_eq_n1, 
+p_synth_6, ]
+--->[0]
+
+[i_eq_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+sum0_eq_sum1, 
+n0_eq_n1, ]
+--->[0]
+
+
+Blocking composition assignment 0 for state
+ [
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+n0_eq_n1, 
+p_synth_6, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i0_eq_0, 
+i1_eq_0, 
+sum0_eq_sum1, 
+n0_eq_n1, 
+p_synth_2, ]
+--->[2]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+sum0_eq_sum1, 
+n0_eq_n1, ]
+--->[1]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+n0_eq_n1, ]
+--->[0]
+
+[i_eq_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+sum0_eq_sum1, 
+n0_eq_n1, ]
+--->[0]
+
+
+Blocking composition assignment 0 for state
+ [
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+n0_eq_n1, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i0_eq_0, 
+i1_eq_0, 
+sum0_eq_sum1, 
+n0_eq_n1, 
+p_synth_2, ]
+--->[2]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+sum0_eq_sum1, 
+n0_eq_n1, ]
+--->[1]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+n0_eq_n1, 
+p_synth_4, 
+p_synth_6, ]
+--->[1]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i1_eq_0, 
 n0_eq_n1, 
 p_synth_4, ]
+--->[0]
+
+[i_eq_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i1_eq_0, 
+n0_eq_n1, 
+p_synth_4, 
+p_synth_6, ]
+--->[0]
+
+
+Blocking composition assignment 0 for state
+ [
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i1_eq_0, 
+n0_eq_n1, 
+p_synth_4, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i0_eq_0, 
+i1_eq_0, 
+sum0_eq_sum1, 
+n0_eq_n1, 
+p_synth_2, ]
+--->[2]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+sum0_eq_sum1, 
+n0_eq_n1, ]
+--->[1]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i1_eq_0, 
+n0_eq_n1, 
+p_synth_6, ]
+--->[0]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i1_eq_0, 
+n0_eq_n1, ]
+--->[2]
+
+[i_eq_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+sum0_eq_sum1, 
+n0_eq_n1, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i1_eq_0, 
+n0_eq_n1, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i0_eq_0, 
+i1_eq_0, 
+sum0_eq_sum1, 
+n0_eq_n1, 
+p_synth_2, ]
+--->[2]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+sum0_eq_sum1, 
+n0_eq_n1, ]
+--->[1]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+n0_eq_n1, 
+p_synth_4, 
+p_synth_6, ]
 --->[1]
 
 [
@@ -10676,144 +11092,12 @@ i_lt_n_0,
 n_gt_0_0, 
 i_lt_n_1, 
 n_gt_0_1, 
+i1_eq_0, 
 n0_eq_n1, 
-p_synth_4, 
 p_synth_6, ]
---->[1]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i1_eq_0, 
-n0_eq_n1, 
-p_synth_4, ]
---->[2]
-
-[i_eq_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, 
-p_synth_4, 
-p_synth_6, ]
---->[0]
-
-
-Blocking composition assignment 2 for state
- [
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i1_eq_0, 
-n0_eq_n1, 
-p_synth_4, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i0_eq_0, 
-i1_eq_0, 
-sum0_eq_sum1, 
-n0_eq_n1, 
-p_synth_2, ]
---->[2]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-sum0_eq_sum1, 
-n0_eq_n1, ]
---->[1]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, ]
---->[0]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i0_eq_0, 
-n0_eq_n1, 
-p_synth_6, 
-p_synth_7, ]
 --->[0]
 
 [i_eq_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, 
-p_synth_4, 
-p_synth_6, ]
---->[0]
-
-
-Blocking composition assignment 0 for state
- [
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i0_eq_0, 
-n0_eq_n1, 
-p_synth_6, 
-p_synth_7, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i0_eq_0, 
-i1_eq_0, 
-sum0_eq_sum1, 
-n0_eq_n1, 
-p_synth_2, ]
---->[2]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-sum0_eq_sum1, 
-n0_eq_n1, ]
---->[1]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, 
-p_synth_4, ]
---->[1]
-
-[
-i_lt_n_0, 
 n_gt_0_0, 
 i_lt_n_1, 
 n_gt_0_1, 
@@ -10826,138 +11110,8 @@ n0_eq_n1, ]
 n_gt_0_0, 
 i_lt_n_1, 
 n_gt_0_1, 
-n0_eq_n1, 
-p_synth_4, 
-p_synth_6, ]
---->[0]
-
-
-Blocking composition assignment 2 for state
- [
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i1_eq_0, 
 sum0_eq_sum1, 
 n0_eq_n1, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i0_eq_0, 
-i1_eq_0, 
-sum0_eq_sum1, 
-n0_eq_n1, 
-p_synth_2, ]
---->[2]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-sum0_eq_sum1, 
-n0_eq_n1, ]
---->[1]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, 
-p_synth_6, ]
---->[0]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i0_eq_0, 
-sum0_eq_sum1, 
-n0_eq_n1, 
-p_synth_7, ]
---->[2]
-
-[i_eq_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, 
-p_synth_4, 
-p_synth_6, ]
---->[0]
-
-
-Blocking composition assignment 2 for state
- [
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i0_eq_0, 
-sum0_eq_sum1, 
-n0_eq_n1, 
-p_synth_7, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i0_eq_0, 
-i1_eq_0, 
-sum0_eq_sum1, 
-n0_eq_n1, 
-p_synth_2, ]
---->[2]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-sum0_eq_sum1, 
-n0_eq_n1, ]
---->[1]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, ]
---->[0]
-
-[i_eq_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-sum0_eq_sum1, 
-n0_eq_n1, ]
---->[2]
-
-[i_eq_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, 
-p_synth_4, 
-p_synth_6, ]
 --->[0]
 
 
@@ -10966,304 +11120,8 @@ Blocking composition assignment 2 for state
 n_gt_0_0, 
 i_lt_n_1, 
 n_gt_0_1, 
-sum0_eq_sum1, 
-n0_eq_n1, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i0_eq_0, 
 i1_eq_0, 
 sum0_eq_sum1, 
-n0_eq_n1, 
-p_synth_2, ]
---->[2]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-sum0_eq_sum1, 
-n0_eq_n1, ]
---->[1]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, 
-p_synth_6, ]
---->[0]
-
-[i_eq_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-sum0_eq_sum1, 
-n0_eq_n1, ]
---->[1]
-
-[i_eq_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, 
-p_synth_4, 
-p_synth_6, ]
---->[0]
-
-
-Blocking composition assignment 0 for state
- [
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, 
-p_synth_6, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i0_eq_0, 
-i1_eq_0, 
-sum0_eq_sum1, 
-n0_eq_n1, 
-p_synth_2, ]
---->[2]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-sum0_eq_sum1, 
-n0_eq_n1, ]
---->[1]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, ]
---->[0]
-
-[i_eq_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-sum0_eq_sum1, 
-n0_eq_n1, ]
---->[0]
-
-
-Blocking composition assignment 0 for state
- [
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i0_eq_0, 
-i1_eq_0, 
-sum0_eq_sum1, 
-n0_eq_n1, 
-p_synth_2, ]
---->[2]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-sum0_eq_sum1, 
-n0_eq_n1, ]
---->[1]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i1_eq_0, 
-n0_eq_n1, 
-p_synth_6, ]
---->[2]
-
-[i_eq_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-sum0_eq_sum1, 
-n0_eq_n1, ]
---->[0]
-
-
-Blocking composition assignment 2 for state
- [
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i1_eq_0, 
-n0_eq_n1, 
-p_synth_6, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i0_eq_0, 
-i1_eq_0, 
-sum0_eq_sum1, 
-n0_eq_n1, 
-p_synth_2, ]
---->[2]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-sum0_eq_sum1, 
-n0_eq_n1, ]
---->[1]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, 
-p_synth_4, 
-p_synth_6, ]
---->[1]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i1_eq_0, 
-n0_eq_n1, 
-p_synth_4, ]
---->[0]
-
-[i_eq_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i1_eq_0, 
-n0_eq_n1, 
-p_synth_4, 
-p_synth_6, ]
---->[0]
-
-
-Blocking composition assignment 0 for state
- [
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i1_eq_0, 
-n0_eq_n1, 
-p_synth_4, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i0_eq_0, 
-i1_eq_0, 
-sum0_eq_sum1, 
-n0_eq_n1, 
-p_synth_2, ]
---->[2]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-sum0_eq_sum1, 
-n0_eq_n1, ]
---->[1]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, 
-p_synth_6, ]
---->[1]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i1_eq_0, 
-n0_eq_n1, ]
---->[2]
-
-[i_eq_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-sum0_eq_sum1, 
-n0_eq_n1, ]
---->[0]
-
-
-Blocking composition assignment 2 for state
- [
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i1_eq_0, 
 n0_eq_n1, ]
 
 
@@ -11358,6 +11216,53 @@ n_gt_0_1,
 i1_eq_0, 
 sum0_eq_sum1, 
 n0_eq_n1, ]
+--->[2]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+n0_eq_n1, 
+p_synth_6, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i1_eq_0, 
+sum0_eq_sum1, 
+n0_eq_n1, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i0_eq_0, 
+i1_eq_0, 
+sum0_eq_sum1, 
+n0_eq_n1, 
+p_synth_2, ]
+--->[0]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i1_eq_0, 
+sum0_eq_sum1, 
+n0_eq_n1, ]
 --->[0]
 
 [i_eq_n_0, 
@@ -11484,8 +11389,8 @@ i_lt_n_0,
 n_gt_0_0, 
 i_lt_n_1, 
 n_gt_0_1, 
-sum0_eq_sum1, 
-n0_eq_n1, ]
+n0_eq_n1, 
+p_synth_6, ]
 --->[0]
 
 
@@ -11548,69 +11453,6 @@ i0_eq_0,
 sum0_eq_sum1, 
 n0_eq_n1, 
 p_synth_2, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i0_eq_0, 
-i1_eq_0, 
-sum0_eq_sum1, 
-n0_eq_n1, 
-p_synth_2, ]
---->[1]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i0_eq_0, 
-sum0_eq_sum1, 
-n0_eq_n1, 
-p_synth_2, ]
---->[1]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i0_eq_0, 
-i1_eq_0, 
-n0_eq_n1, 
-p_synth_2, 
-p_synth_6, ]
---->[2]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, 
-p_synth_4, 
-p_synth_6, ]
---->[0]
-
-
-Blocking composition assignment 2 for state
- [
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i0_eq_0, 
-i1_eq_0, 
-n0_eq_n1, 
-p_synth_2, 
-p_synth_6, ]
 
 
 Exploring next composition.. 
@@ -11713,6 +11555,69 @@ i1_eq_0,
 n0_eq_n1, 
 p_synth_2, 
 p_synth_6, ]
+--->[2]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+n0_eq_n1, 
+p_synth_4, 
+p_synth_6, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i0_eq_0, 
+i1_eq_0, 
+n0_eq_n1, 
+p_synth_2, 
+p_synth_6, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i0_eq_0, 
+i1_eq_0, 
+sum0_eq_sum1, 
+n0_eq_n1, 
+p_synth_2, ]
+--->[1]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i0_eq_0, 
+sum0_eq_sum1, 
+n0_eq_n1, 
+p_synth_2, ]
+--->[1]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i0_eq_0, 
+i1_eq_0, 
+n0_eq_n1, 
+p_synth_2, 
+p_synth_6, ]
 --->[0]
 
 [
@@ -12028,6 +11933,94 @@ p_synth_6, ]
 [
 i_lt_n_0, 
 n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i0_eq_0, 
+sum0_eq_sum1, 
+n0_eq_n1, 
+p_synth_1, 
+p_synth_2, 
+p_synth_5, ]
+--->[2]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+n0_eq_n1, 
+p_synth_4, 
+p_synth_6, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i0_eq_0, 
+sum0_eq_sum1, 
+n0_eq_n1, 
+p_synth_1, 
+p_synth_2, 
+p_synth_5, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i0_eq_0, 
+i1_eq_0, 
+sum0_eq_sum1, 
+n0_eq_n1, 
+p_synth_2, ]
+--->[1]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i0_eq_0, 
+sum0_eq_sum1, 
+n0_eq_n1, 
+p_synth_2, ]
+--->[1]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i0_eq_0, 
+i1_eq_0, 
+n0_eq_n1, 
+p_synth_2, 
+p_synth_6, ]
+--->[1]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i0_eq_0, 
+n0_eq_n1, 
+p_synth_2, 
+p_synth_6, ]
+--->[1]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
 i_eq_n_1, 
 n_gt_0_1, 
 i0_eq_0, 
@@ -12139,7 +12132,7 @@ p_synth_6, ]
 --->[0]
 
 
-37 SMT queries performed.
+39 SMT queries performed.
 after complete_trace [
 i_lt_n_0, 
 n_gt_0_0, 
@@ -12238,13 +12231,13 @@ Is the trace spurious?  True
 Discovering predicate from a_src, a_tgt, c_src, c_tgt to eliminate spurious trace
 ----------------------pred_disc-------------------
 Running quantifier elimination: 
-New predicate is  (not (and (= iU0 0) (not (<= iU1 (- 2))) (not (= iU1 0)) (not (>= iU1 1))))
+New predicate is  (not (and (= iU0 0) (= iU1 (- 1))))
 
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.141474 
-Solver time:	16.571868
-Total time:	16.713341999999997
-Iteration count:	37
+Pre-processing time:	0.175272 
+Solver time:	17.423453
+Total time:	17.598724999999998
+Iteration count:	39
 Predicate count:	17
 Successfully added new predicate to input file. !
 Start next refinement loop: True
@@ -12332,57 +12325,6 @@ sum0_eq_sum1,
 n0_eq_n1, ]
 --->[2]
 
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, ]
---->[2]
-
-[i_eq_n_0, 
-n_gt_0_0, 
-i_eq_n_1, 
-n_gt_0_1, 
-n0_eq_n1, 
-p_synth_4, ]
---->[0]
-
-
-Blocking composition assignment 2 for state
- [
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i0_eq_0, 
-i1_eq_0, 
-sum0_eq_sum1, 
-n0_eq_n1, 
-p_synth_2, ]
---->[2]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-sum0_eq_sum1, 
-n0_eq_n1, ]
---->[2]
-
 [i_eq_n_0, 
 n_gt_0_0, 
 i_lt_n_1, 
@@ -12494,7 +12436,7 @@ p_synth_6, ]
 
 [i_eq_n_0, 
 n_gt_0_0, 
-i_eq_n_1, 
+i_lt_n_1, 
 n_gt_0_1, 
 n0_eq_n1, 
 p_synth_4, 
@@ -12605,7 +12547,7 @@ p_synth_6, ]
 
 [i_eq_n_0, 
 n_gt_0_0, 
-i_eq_n_1, 
+i_lt_n_1, 
 n_gt_0_1, 
 n0_eq_n1, 
 p_synth_4, 
@@ -12760,6 +12702,58 @@ i_lt_n_0,
 n_gt_0_0, 
 i_lt_n_1, 
 n_gt_0_1, 
+n0_eq_n1, ]
+--->[2]
+
+[i_eq_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+n0_eq_n1, 
+p_synth_4, 
+p_synth_6, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+n0_eq_n1, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i0_eq_0, 
+i1_eq_0, 
+sum0_eq_sum1, 
+n0_eq_n1, 
+p_synth_2, ]
+--->[2]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+sum0_eq_sum1, 
+n0_eq_n1, ]
+--->[1]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
 i1_eq_0, 
 n0_eq_n1, 
 p_synth_4, 
@@ -12786,6 +12780,72 @@ i1_eq_0,
 n0_eq_n1, 
 p_synth_4, 
 p_synth_6, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i0_eq_0, 
+i1_eq_0, 
+sum0_eq_sum1, 
+n0_eq_n1, 
+p_synth_2, ]
+--->[2]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+sum0_eq_sum1, 
+n0_eq_n1, ]
+--->[1]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+n0_eq_n1, 
+p_synth_4, 
+p_synth_6, ]
+--->[1]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i1_eq_0, 
+n0_eq_n1, 
+p_synth_4, ]
+--->[2]
+
+[i_eq_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+n0_eq_n1, 
+p_synth_4, 
+p_synth_6, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i1_eq_0, 
+n0_eq_n1, 
+p_synth_4, ]
 
 
 Exploring next composition.. 
@@ -12885,7 +12945,140 @@ i_lt_n_0,
 n_gt_0_0, 
 i_lt_n_1, 
 n_gt_0_1, 
+n0_eq_n1, 
+p_synth_6, ]
+--->[0]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i0_eq_0, 
+n0_eq_n1, 
+p_synth_6, 
+p_synth_7, ]
+--->[0]
+
+[i_eq_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+n0_eq_n1, 
+p_synth_4, 
+p_synth_6, ]
+--->[0]
+
+
+Blocking composition assignment 0 for state
+ [
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i0_eq_0, 
+n0_eq_n1, 
+p_synth_6, 
+p_synth_7, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i0_eq_0, 
+i1_eq_0, 
+sum0_eq_sum1, 
+n0_eq_n1, 
+p_synth_2, ]
+--->[2]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+sum0_eq_sum1, 
 n0_eq_n1, ]
+--->[1]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+n0_eq_n1, 
+p_synth_4, ]
+--->[1]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i1_eq_0, 
+sum0_eq_sum1, 
+n0_eq_n1, ]
+--->[2]
+
+[i_eq_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+n0_eq_n1, 
+p_synth_4, 
+p_synth_6, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i1_eq_0, 
+sum0_eq_sum1, 
+n0_eq_n1, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i0_eq_0, 
+i1_eq_0, 
+sum0_eq_sum1, 
+n0_eq_n1, 
+p_synth_2, ]
+--->[2]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+sum0_eq_sum1, 
+n0_eq_n1, ]
+--->[1]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+n0_eq_n1, 
+p_synth_6, ]
 --->[0]
 
 [i_eq_n_0, 
@@ -12901,8 +13094,7 @@ n_gt_0_0,
 i_eq_n_1, 
 n_gt_0_1, 
 n0_eq_n1, 
-p_synth_4, 
-p_synth_6, ]
+p_synth_4, ]
 --->[0]
 
 
@@ -12945,89 +13137,41 @@ i_lt_n_0,
 n_gt_0_0, 
 i_lt_n_1, 
 n_gt_0_1, 
-n0_eq_n1, ]
---->[0]
-
-[i_eq_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-sum0_eq_sum1, 
-n0_eq_n1, ]
+n0_eq_n1, 
+p_synth_4, 
+p_synth_6, ]
 --->[1]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_eq_n_1, 
+n_gt_0_1, 
+n0_eq_n1, 
+p_synth_3, 
+p_synth_4, 
+p_synth_6, ]
+--->[2]
 
 [i_eq_n_0, 
 n_gt_0_0, 
 i_eq_n_1, 
 n_gt_0_1, 
 n0_eq_n1, 
+p_synth_6, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [
+i_lt_n_0, 
+n_gt_0_0, 
+i_eq_n_1, 
+n_gt_0_1, 
+n0_eq_n1, 
+p_synth_3, 
 p_synth_4, 
 p_synth_6, ]
---->[0]
-
-
-Blocking composition assignment 0 for state
- [
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i0_eq_0, 
-i1_eq_0, 
-sum0_eq_sum1, 
-n0_eq_n1, 
-p_synth_2, ]
---->[2]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-sum0_eq_sum1, 
-n0_eq_n1, ]
---->[1]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i1_eq_0, 
-n0_eq_n1, 
-p_synth_6, ]
---->[2]
-
-[i_eq_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-sum0_eq_sum1, 
-n0_eq_n1, ]
---->[0]
-
-
-Blocking composition assignment 2 for state
- [
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i1_eq_0, 
-n0_eq_n1, 
-p_synth_6, ]
 
 
 Exploring next composition.. 
@@ -13064,195 +13208,15 @@ n0_eq_n1,
 p_synth_6, ]
 --->[0]
 
-[i_eq_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-sum0_eq_sum1, 
-n0_eq_n1, ]
---->[0]
-
-
-Blocking composition assignment 0 for state
- [
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, 
-p_synth_6, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
 [
 i_lt_n_0, 
 n_gt_0_0, 
 i_lt_n_1, 
 n_gt_0_1, 
 i0_eq_0, 
-i1_eq_0, 
 sum0_eq_sum1, 
 n0_eq_n1, 
-p_synth_2, ]
---->[2]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-sum0_eq_sum1, 
-n0_eq_n1, ]
---->[1]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i1_eq_0, 
-n0_eq_n1, 
-p_synth_6, ]
---->[0]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i1_eq_0, 
-n0_eq_n1, ]
---->[2]
-
-[i_eq_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-sum0_eq_sum1, 
-n0_eq_n1, ]
---->[0]
-
-
-Blocking composition assignment 2 for state
- [
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i1_eq_0, 
-n0_eq_n1, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i0_eq_0, 
-i1_eq_0, 
-sum0_eq_sum1, 
-n0_eq_n1, 
-p_synth_2, ]
---->[2]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-sum0_eq_sum1, 
-n0_eq_n1, ]
---->[1]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i1_eq_0, 
-n0_eq_n1, 
-p_synth_6, ]
---->[0]
-
-[i_eq_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i1_eq_0, 
-sum0_eq_sum1, 
-n0_eq_n1, ]
---->[2]
-
-[i_eq_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-sum0_eq_sum1, 
-n0_eq_n1, ]
---->[0]
-
-
-Blocking composition assignment 2 for state
- [i_eq_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i1_eq_0, 
-sum0_eq_sum1, 
-n0_eq_n1, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i0_eq_0, 
-i1_eq_0, 
-sum0_eq_sum1, 
-n0_eq_n1, 
-p_synth_2, ]
---->[2]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-sum0_eq_sum1, 
-n0_eq_n1, ]
---->[1]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i1_eq_0, 
-n0_eq_n1, 
-p_synth_4, 
-p_synth_6, ]
---->[0]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i1_eq_0, 
-n0_eq_n1, 
-p_synth_4, ]
+p_synth_7, ]
 --->[2]
 
 [i_eq_n_0, 
@@ -13271,73 +13235,10 @@ i_lt_n_0,
 n_gt_0_0, 
 i_lt_n_1, 
 n_gt_0_1, 
-i1_eq_0, 
-n0_eq_n1, 
-p_synth_4, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
 i0_eq_0, 
-i1_eq_0, 
 sum0_eq_sum1, 
 n0_eq_n1, 
-p_synth_2, ]
---->[2]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-sum0_eq_sum1, 
-n0_eq_n1, ]
---->[1]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i1_eq_0, 
-n0_eq_n1, 
-p_synth_6, ]
---->[0]
-
-[i_eq_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i1_eq_0, 
-sum0_eq_sum1, 
-n0_eq_n1, ]
---->[1]
-
-[i_eq_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-sum0_eq_sum1, 
-n0_eq_n1, ]
---->[0]
-
-
-Blocking composition assignment 0 for state
- [
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i1_eq_0, 
-n0_eq_n1, 
-p_synth_6, ]
+p_synth_7, ]
 
 
 Exploring next composition.. 
@@ -13388,7 +13289,7 @@ p_synth_6, ]
 
 [i_eq_n_0, 
 n_gt_0_0, 
-i_lt_n_1, 
+i_eq_n_1, 
 n_gt_0_1, 
 n0_eq_n1, 
 p_synth_4, 
@@ -13505,26 +13406,21 @@ i_lt_n_0,
 n_gt_0_0, 
 i_lt_n_1, 
 n_gt_0_1, 
-n0_eq_n1, 
-p_synth_4, 
-p_synth_6, ]
---->[1]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i1_eq_0, 
-n0_eq_n1, 
-p_synth_4, ]
+n0_eq_n1, ]
 --->[0]
 
 [i_eq_n_0, 
 n_gt_0_0, 
 i_lt_n_1, 
 n_gt_0_1, 
-i1_eq_0, 
+sum0_eq_sum1, 
+n0_eq_n1, ]
+--->[1]
+
+[i_eq_n_0, 
+n_gt_0_0, 
+i_eq_n_1, 
+n_gt_0_1, 
 n0_eq_n1, 
 p_synth_4, 
 p_synth_6, ]
@@ -13537,9 +13433,7 @@ i_lt_n_0,
 n_gt_0_0, 
 i_lt_n_1, 
 n_gt_0_1, 
-i1_eq_0, 
-n0_eq_n1, 
-p_synth_4, ]
+n0_eq_n1, ]
 
 
 Exploring next composition.. 
@@ -13573,7 +13467,51 @@ n_gt_0_0,
 i_lt_n_1, 
 n_gt_0_1, 
 n0_eq_n1, 
-p_synth_4, ]
+p_synth_6, ]
+--->[0]
+
+[i_eq_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+sum0_eq_sum1, 
+n0_eq_n1, ]
+--->[0]
+
+
+Blocking composition assignment 0 for state
+ [
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+n0_eq_n1, 
+p_synth_6, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i0_eq_0, 
+i1_eq_0, 
+sum0_eq_sum1, 
+n0_eq_n1, 
+p_synth_2, ]
+--->[2]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+sum0_eq_sum1, 
+n0_eq_n1, ]
 --->[1]
 
 [
@@ -13582,17 +13520,16 @@ n_gt_0_0,
 i_lt_n_1, 
 n_gt_0_1, 
 i1_eq_0, 
-sum0_eq_sum1, 
-n0_eq_n1, ]
+n0_eq_n1, 
+p_synth_6, ]
 --->[2]
 
 [i_eq_n_0, 
 n_gt_0_0, 
 i_lt_n_1, 
 n_gt_0_1, 
-n0_eq_n1, 
-p_synth_4, 
-p_synth_6, ]
+sum0_eq_sum1, 
+n0_eq_n1, ]
 --->[0]
 
 
@@ -13603,8 +13540,330 @@ n_gt_0_0,
 i_lt_n_1, 
 n_gt_0_1, 
 i1_eq_0, 
+n0_eq_n1, 
+p_synth_6, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i0_eq_0, 
+i1_eq_0, 
+sum0_eq_sum1, 
+n0_eq_n1, 
+p_synth_2, ]
+--->[2]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
 sum0_eq_sum1, 
 n0_eq_n1, ]
+--->[1]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+n0_eq_n1, 
+p_synth_6, ]
+--->[1]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i1_eq_0, 
+n0_eq_n1, 
+p_synth_4, ]
+--->[0]
+
+[i_eq_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i1_eq_0, 
+n0_eq_n1, 
+p_synth_4, 
+p_synth_6, ]
+--->[0]
+
+
+Blocking composition assignment 0 for state
+ [
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i1_eq_0, 
+n0_eq_n1, 
+p_synth_4, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i0_eq_0, 
+i1_eq_0, 
+sum0_eq_sum1, 
+n0_eq_n1, 
+p_synth_2, ]
+--->[2]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+sum0_eq_sum1, 
+n0_eq_n1, ]
+--->[1]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+n0_eq_n1, 
+p_synth_6, ]
+--->[1]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i1_eq_0, 
+n0_eq_n1, ]
+--->[2]
+
+[i_eq_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+sum0_eq_sum1, 
+n0_eq_n1, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i1_eq_0, 
+n0_eq_n1, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i0_eq_0, 
+i1_eq_0, 
+sum0_eq_sum1, 
+n0_eq_n1, 
+p_synth_2, ]
+--->[2]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+sum0_eq_sum1, 
+n0_eq_n1, ]
+--->[1]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i1_eq_0, 
+n0_eq_n1, 
+p_synth_6, ]
+--->[0]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i1_eq_0, 
+sum0_eq_sum1, 
+n0_eq_n1, ]
+--->[0]
+
+[i_eq_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i1_eq_0, 
+n0_eq_n1, 
+p_synth_4, 
+p_synth_6, ]
+--->[0]
+
+
+Blocking composition assignment 0 for state
+ [
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i1_eq_0, 
+sum0_eq_sum1, 
+n0_eq_n1, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i0_eq_0, 
+i1_eq_0, 
+sum0_eq_sum1, 
+n0_eq_n1, 
+p_synth_2, ]
+--->[2]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+sum0_eq_sum1, 
+n0_eq_n1, ]
+--->[1]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i1_eq_0, 
+n0_eq_n1, 
+p_synth_6, ]
+--->[0]
+
+[i_eq_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i1_eq_0, 
+sum0_eq_sum1, 
+n0_eq_n1, ]
+--->[2]
+
+[i_eq_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+sum0_eq_sum1, 
+n0_eq_n1, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [i_eq_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i1_eq_0, 
+sum0_eq_sum1, 
+n0_eq_n1, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i0_eq_0, 
+i1_eq_0, 
+sum0_eq_sum1, 
+n0_eq_n1, 
+p_synth_2, ]
+--->[2]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+sum0_eq_sum1, 
+n0_eq_n1, ]
+--->[1]
+
+[
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i1_eq_0, 
+n0_eq_n1, 
+p_synth_6, ]
+--->[0]
+
+[i_eq_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i1_eq_0, 
+sum0_eq_sum1, 
+n0_eq_n1, ]
+--->[1]
+
+[i_eq_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+sum0_eq_sum1, 
+n0_eq_n1, ]
+--->[0]
+
+
+Blocking composition assignment 0 for state
+ [
+i_lt_n_0, 
+n_gt_0_0, 
+i_lt_n_1, 
+n_gt_0_1, 
+i1_eq_0, 
+n0_eq_n1, 
+p_synth_6, ]
 
 
 Exploring next composition.. 
@@ -13701,72 +13960,8 @@ i_lt_n_0,
 n_gt_0_0, 
 i_lt_n_1, 
 n_gt_0_1, 
-n0_eq_n1, ]
---->[1]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i1_eq_0, 
-sum0_eq_sum1, 
-n0_eq_n1, ]
---->[0]
-
-[i_eq_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i1_eq_0, 
 n0_eq_n1, 
-p_synth_4, 
-p_synth_6, ]
---->[0]
-
-
-Blocking composition assignment 0 for state
- [
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i1_eq_0, 
-sum0_eq_sum1, 
-n0_eq_n1, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i0_eq_0, 
-i1_eq_0, 
-sum0_eq_sum1, 
-n0_eq_n1, 
-p_synth_2, ]
---->[2]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-sum0_eq_sum1, 
-n0_eq_n1, ]
---->[1]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, ]
+p_synth_4, ]
 --->[1]
 
 [
@@ -13778,72 +13973,6 @@ n0_eq_n1,
 p_synth_3, 
 p_synth_4, 
 p_synth_6, ]
---->[2]
-
-[i_eq_n_0, 
-n_gt_0_0, 
-i_eq_n_1, 
-n_gt_0_1, 
-n0_eq_n1, 
-p_synth_4, ]
---->[0]
-
-
-Blocking composition assignment 2 for state
- [
-i_lt_n_0, 
-n_gt_0_0, 
-i_eq_n_1, 
-n_gt_0_1, 
-n0_eq_n1, 
-p_synth_3, 
-p_synth_4, 
-p_synth_6, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-i0_eq_0, 
-i1_eq_0, 
-sum0_eq_sum1, 
-n0_eq_n1, 
-p_synth_2, ]
---->[2]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-sum0_eq_sum1, 
-n0_eq_n1, ]
---->[1]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_lt_n_1, 
-n_gt_0_1, 
-n0_eq_n1, 
-p_synth_6, ]
---->[1]
-
-[
-i_lt_n_0, 
-n_gt_0_0, 
-i_eq_n_1, 
-n_gt_0_1, 
-n0_eq_n1, 
-p_synth_3, 
-p_synth_4, 
-p_synth_6, ]
 --->[0]
 
 [i_eq_n_0, 
@@ -13917,30 +14046,31 @@ n0_eq_n1,
 p_synth_2, ]
 
 
-29 SMT queries performed.
+31 SMT queries performed.
 Proved by invariant:
-And(Not(p_synth_7),
-    Or(Not(i_lt_n_0), p_synth_3, i0_eq_0),
-    Not(p_synth_4),
-    Or(sum0_eq_sum1, Not(i0_eq_0)),
-    Or(i_lt_n_0, Not(n0_eq_n1), Not(i_lt_n_1)),
-    Or(Not(i_lt_n_0),
-       i0_eq_0,
-       Not(sum0_eq_sum1),
-       Not(n0_eq_n1)),
-    n_gt_0_1,
-    n0_eq_n1,
+And(n0_eq_n1,
+    Or(i_eq_n_1, i_lt_n_0),
     Not(p_synth_8),
     Not(p_synth_1),
-    Or(sum0_eq_sum1, i_lt_n_0, Not(n0_eq_n1)))
-Pre-processing time:	0.160222 
-Solver time:	6.653154
-Total time:	6.813376
-Iteration count:	29
+    Or(i1_eq_0, p_synth_2, Not(i0_eq_0)),
+    Or(sum0_eq_sum1, Not(i0_eq_0)),
+    Or(i1_eq_0, sum0_eq_sum1, p_synth_3),
+    n_gt_0_1,
+    Or(i0_eq_0, Not(sum0_eq_sum1), Not(i_lt_n_0)),
+    Or(sum0_eq_sum1, i_lt_n_0),
+    Or(Not(i_lt_n_1), p_synth_4, i0_eq_0, p_synth_3),
+    Or(p_synth_6, Not(p_synth_4)),
+    Or(Not(p_synth_4), Not(p_synth_3)),
+    Not(p_synth_7),
+    Or(Not(i1_eq_0), i0_eq_0))
+Pre-processing time:	0.163725 
+Solver time:	6.737196
+Total time:	6.900921
+Iteration count:	31
 Predicate count:	18
 Start next refinement loop: False
 
 
 
-Total time taken : 81.963628
+Total time taken : 78.907229
 Number of predicates guessed: 8.0

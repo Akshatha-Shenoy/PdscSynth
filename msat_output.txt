@@ -1,38 +1,38 @@
-doubleSquare_1.smt2,0:03:15.982848,safe,11.0
+puzzle_1.smt2,0:00:08.072859,unsafe,2.0
 
-subsume_ref_ref.smt2,0:00:17.278328,safe,8.0
+sum_to_n_error.smt2,0:00:01.224112,unsafe,0.0
 
-subsume_2.smt2,0:00:01.522164,unsafe,0.0
+puzzle_2.smt2,0:03:52.799575,unsafe,8.0
 
-fig4_ref_ref.smt2,0:00:00.892938,safe,0.0
+subsume_ref_ref.smt2,0:00:17.538400,safe,8.0
 
-sum_to_n_error.smt2,0:00:01.360749,unsafe,0.0
+squareSum.smt2,0:00:01.445704,safe,0.0
 
-fig4_1.smt2,0:00:01.533588,unsafe,0.0
+fig4_ref_ref.smt2,0:00:00.782649,safe,0.0
 
-fig4_2.smt2,0:00:01.585380,unsafe,0.0
+subsume_1.smt2,0:00:01.408810,unsafe,0.0
 
-inc_dec.smt2,0:00:10.715536,safe,3.0
+subsume_2.smt2,0:00:01.428438,unsafe,0.0
 
-sum-pc.smt2,0:01:11.312583,safe,4.0
+doubleSquare_1.smt2,0:03:40.918474,safe,11.0
 
-sum_to_n.smt2,0:00:14.792446,safe,3.0
+fig4_1.smt2,0:00:01.410768,unsafe,0.0
 
-squareSum.smt2,0:00:01.458887,safe,0.0
+doubleSquare_3.smt2,0:01:47.892826,safe,7.0
 
-doubleSquare_3.smt2,0:01:38.949754,safe,7.0
+doubleSquare_4.smt2,0:00:15.202540,safe,1.0
 
-doubleSquare_2.smt2,0:02:54.255850,safe,10.0
+doubleSquare_2.smt2,0:03:07.139516,safe,10.0
 
-puzzle_ref_ref.smt2,0:00:05.243891,safe,1.0
+halfSquare.smt2,0:06:07.329293,safe,3.0
 
-doubleSquare_4.smt2,0:00:14.455761,safe,1.0
+fig4_2.smt2,0:00:01.962246,unsafe,0.0
 
-puzzle_1.smt2,0:00:07.128728,unsafe,2.0
+puzzle_ref_ref.smt2,0:00:04.785210,safe,1.0
 
-subsume_1.smt2,0:00:01.547490,unsafe,0.0
+sum_to_n.smt2,0:00:14.882759,safe,3.0
 
-puzzle_2.smt2,0:03:46.321591,unsafe,8.0
+inc_dec.smt2,0:00:12.063014,safe,3.0
 
-halfSquare.smt2,0:05:41.427585,safe,3.0
+sum-pc.smt2,0:01:18.901645,safe,4.0
 

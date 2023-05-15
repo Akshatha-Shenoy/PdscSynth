@@ -48,4 +48,7 @@
 
 
 
+
+(declare-rel p_synth_1 (Int Int Int))
+ (rule (=>   (and  (= (rel x 0) (rel x 1) )  (or  (= 0  (mod (rel x 0) 7 ) )  (= (rel x 1) 1009 )  (= (rel x 1) 383 ) ) ) (p_synth_1 x h count)))
 (query End)

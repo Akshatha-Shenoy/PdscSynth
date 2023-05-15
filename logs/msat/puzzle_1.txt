@@ -471,9 +471,9 @@ final_formula  ( not ( and ( = endppp_0 1 ) ( and ( = endppp_1 1 ) ( and ( and .
 new_pred_smt_format ['(declare-rel pred_0_synth_msat_1 (Int Int Int Int))\n (rule (=>  ( = (rel n 0) (rel ct 1)  ) (pred_0_synth_msat_1 end n h ct)))', '(declare-rel pred_1_synth_msat_1 (Int Int Int Int))\n (rule (=>  ( = n ct  ) (pred_1_synth_msat_1 end n h ct)))']
 ['(declare-rel pred_0_synth_msat_1 (Int Int Int Int))\n (rule (=>  ( = (rel n 0) (rel ct 1)  ) (pred_0_synth_msat_1 end n h ct)))', '(declare-rel pred_1_synth_msat_1 (Int Int Int Int))\n (rule (=>  ( = n ct  ) (pred_1_synth_msat_1 end n h ct)))']
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.067902 
-Solver time:	2.083821
-Total time:	2.151723
+Pre-processing time:	0.074582 
+Solver time:	2.500254
+Total time:	2.574836
 Iteration count:	10
 Predicate count:	10
 Successfully added new predicate to input file. !
@@ -898,14 +898,14 @@ Next concrete state {'end_0': 0, 'n_0': 0, 'ct_0': 1, 'ct_1': 0, 'h_1': 0, 'n_1'
 Next concrete state {'end_0': 1, 'n_0': 0, 'ct_0': 1, 'ct_1': 0, 'h_1': 0, 'n_1': 1, 'end_1': 1, 'h_0': 1}
 Trace is not spurious
 Real cex. Program Unsafe.
-Pre-processing time:	0.07763 
-Solver time:	4.43558
-Total time:	4.51321
+Pre-processing time:	0.105536 
+Solver time:	5.058515
+Total time:	5.164051
 Iteration count:	15
 Predicate count:	13
 Start next refinement loop: False
 
 
 
-Total time taken : 6.665184
+Total time taken : 7.739212
 Number of predicates guessed: 2.0

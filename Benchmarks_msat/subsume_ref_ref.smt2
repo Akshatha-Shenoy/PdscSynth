@@ -50,4 +50,21 @@
 
 
 
+
+(declare-rel pred_0_synth_msat_1 (Int Int Int))
+ (rule (=>  ( = (rel count 1) 1  ) (pred_0_synth_msat_1 x h count)))
+(declare-rel pred_0_synth_msat_2 (Int Int Int))
+ (rule (=>  ( = (rel x 1) 1  ) (pred_0_synth_msat_2 x h count)))
+(declare-rel pred_0_synth_msat_3 (Int Int Int))
+ (rule (=>  ( = (rel count 0) 1  ) (pred_0_synth_msat_3 x h count)))
+(declare-rel pred_0_synth_msat_4 (Int Int Int))
+ (rule (=>  ( = (rel x 0) 1009  ) (pred_0_synth_msat_4 x h count)))
+(declare-rel pred_0_synth_msat_5 (Int Int Int))
+ (rule (=>  ( = (rel x 1) 8  ) (pred_0_synth_msat_5 x h count)))
+(declare-rel pred_0_synth_msat_6 (Int Int Int))
+ (rule (=>  ( = (rel x 1) 1009  ) (pred_0_synth_msat_6 x h count)))
+(declare-rel pred_0_synth_msat_7 (Int Int Int))
+ (rule (=>  ( = (rel x 0) 383  ) (pred_0_synth_msat_7 x h count)))
+(declare-rel p_synth_8 (Int Int Int))
+ (rule (=>   (and  (= (rel x 0) (rel x 1) ) (not  (= (rel x 1) 8 ) ) (not  (= (rel x 0) 1 ) ) (not  (= 0  (mod (rel x 1) 7 ) ) ) (not  (= (rel x 1) 383 ) ) (not  (= (rel x 1) 1009 ) ) ) (p_synth_8 x h count)))
 (query End)

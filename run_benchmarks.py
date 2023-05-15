@@ -43,8 +43,8 @@ def main():
                 fd_qe_op = open("./logs/qe/" + filename[:-5] + ".txt")
                 lines = fd_qe_op.readlines()
                 fd_qe_op.close()
-                #print('lines[-1]',lines[-1])
-                #print('lines[-2]',lines[-2])
+                print('lines[-1]',lines[-1])
+                print('lines[-2]',lines[-2])
 
                 lines = '\n'.join(lines)
                 print('total',total)
@@ -138,8 +138,8 @@ def main():
                 fd_sygus_op = open("./logs/sygus/" + filename[:-5] + ".txt")
                 lines = fd_sygus_op.readlines()
                 fd_sygus_op.close()
-                #print('lines[-1]',lines[-1])
-                #print('lines[-2]',lines[-2])
+                print('lines[-1]',lines[-1])
+                print('lines[-2]',lines[-2])
 
                 lines = '\n'.join(lines)
                 print('total',total)

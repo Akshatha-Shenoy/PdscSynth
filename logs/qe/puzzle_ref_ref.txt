@@ -479,9 +479,9 @@ New predicate is  (let ((a!1 (and (= nU0 nU1)
   (not a!1))
 
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.078717 
-Solver time:	4.228314
-Total time:	4.307031
+Pre-processing time:	0.087562 
+Solver time:	3.55669
+Total time:	3.6442520000000003
 Iteration count:	9
 Predicate count:	12
 Successfully added new predicate to input file. !
@@ -966,9 +966,9 @@ Running quantifier elimination:
 New predicate is  (not (and (= nU0 nU1) (= nU1 0)))
 
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.105037 
-Solver time:	5.210161
-Total time:	5.3151980000000005
+Pre-processing time:	0.104722 
+Solver time:	4.602915
+Total time:	4.707637
 Iteration count:	10
 Predicate count:	13
 Successfully added new predicate to input file. !
@@ -988,14 +988,14 @@ And(abs_h_0,
     Or(Not(abs_end_1), abs_end_0),
     Or(Not(abs_end_0), Not(n0_eq_n1), p_synth_2),
     Or(Not(ct_1_0), ct_1_1))
-Pre-processing time:	0.135555 
-Solver time:	0.233612
-Total time:	0.369167
+Pre-processing time:	0.117159 
+Solver time:	0.305136
+Total time:	0.42229500000000003
 Iteration count:	1
 Predicate count:	14
 Start next refinement loop: False
 
 
 
-Total time taken : 9.991846
+Total time taken : 8.774677
 Number of predicates guessed: 2.0

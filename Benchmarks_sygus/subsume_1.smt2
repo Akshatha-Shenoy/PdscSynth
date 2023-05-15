@@ -50,4 +50,11 @@
 
 
 
+
+
+
+(declare-rel p_synth_1 (Int Int Int))
+ (rule (=>  (= (rel x 1) (rel count 0)) (p_synth_1 x h count)))
+(declare-rel p_synth_2 (Int Int Int))
+ (rule (=>  (= (rel x 1) (rel h 0)) (p_synth_2 x h count)))
 (query End)

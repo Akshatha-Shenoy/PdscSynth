@@ -6225,9 +6225,9 @@ final_formula  ( not ( and ( not ( and ( not ( = pcpppp_0 1 ) ) ( and .def_917 (
 new_pred_smt_format ['(declare-rel pred_0_synth_msat_1 (Int Int Int Int Int))\n (rule (=>  ( =  ( + (rel x 0)  ( +  ( *  ( - 1  ) (rel i 0)  )  ( +  ( *  ( - 1  ) (rel max 1)  ) (rel i 1)  )  )  )  ( - 1  )  ) (pred_0_synth_msat_1 max x i y pc)))']
 ['(declare-rel pred_0_synth_msat_1 (Int Int Int Int Int))\n (rule (=>  ( =  ( + (rel x 0)  ( +  ( *  ( - 1  ) (rel i 0)  )  ( +  ( *  ( - 1  ) (rel max 1)  ) (rel i 1)  )  )  )  ( - 1  )  ) (pred_0_synth_msat_1 max x i y pc)))']
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.099003 
-Solver time:	46.236737
-Total time:	46.33574
+Pre-processing time:	0.103781 
+Solver time:	49.322638
+Total time:	49.426418999999996
 Iteration count:	82
 Predicate count:	17
 Successfully added new predicate to input file. !
@@ -16689,9 +16689,9 @@ final_formula  ( or ( and ( not .def_363 ) ( <= ippppp_0 xppppp_0 ) ) ( and .def
 new_pred_smt_format ['(declare-rel pred_0_synth_msat_2 (Int Int Int Int Int))\n (rule (=>  ( <= (rel i 0) (rel x 0)  ) (pred_0_synth_msat_2 max x i y pc)))', '(declare-rel pred_1_synth_msat_2 (Int Int Int Int Int))\n (rule (=>  ( < i x  ) (pred_1_synth_msat_2 max x i y pc)))']
 ['(declare-rel pred_0_synth_msat_2 (Int Int Int Int Int))\n (rule (=>  ( <= (rel i 0) (rel x 0)  ) (pred_0_synth_msat_2 max x i y pc)))', '(declare-rel pred_1_synth_msat_2 (Int Int Int Int Int))\n (rule (=>  ( < i x  ) (pred_1_synth_msat_2 max x i y pc)))']
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.118683 
-Solver time:	93.958118
-Total time:	94.076801
+Pre-processing time:	0.137421 
+Solver time:	103.009584
+Total time:	103.14700500000001
 Iteration count:	135
 Predicate count:	18
 Successfully added new predicate to input file. !
@@ -32503,14 +32503,14 @@ And(max_gt_x_1,
     Or(pc_eq_1_0, pred_0_synth_msat_2),
     Or(i0_eq_i1, Not(x_gt_0_0)),
     Or(Not(i_lt_max_1), i_lt_max_0))
-Pre-processing time:	0.135605 
-Solver time:	200.396933
-Total time:	200.532538
+Pre-processing time:	0.133032 
+Solver time:	214.271056
+Total time:	214.40408799999997
 Iteration count:	189
 Predicate count:	21
 Start next refinement loop: False
 
 
 
-Total time taken : 340.94553
+Total time taken : 366.978019
 Number of predicates guessed: 3.0

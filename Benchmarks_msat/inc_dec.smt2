@@ -44,6 +44,8 @@
 
 
 
+
+
 (declare-rel pred_0_synth_msat_1 (Int Int Int))
  (rule (=>  ( =  ( + (rel h 1)  ( +  ( *  ( - 1  ) (rel l 1)  ) (rel l 0)  )  ) 0  ) (pred_0_synth_msat_1 l h count)))
 (declare-rel pred_0_synth_msat_2 (Int Int Int))

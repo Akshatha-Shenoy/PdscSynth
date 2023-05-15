@@ -76,4 +76,22 @@
 
 
 
+(declare-rel p_synth_1 (Int Int Int Int Int))
+ (rule (=>   (and  (= (rel z 0) 1 )  (= (rel z 1)  (* 2 (rel z 0) ) ) )  (p_synth_1 z y x h end)))
+(declare-rel p_synth_2 (Int Int Int Int Int))
+ (rule (=>   (and  (= (rel z 0) 1 )  (>= (rel y 0) 1 ) )  (p_synth_2 z y x h end)))
+(declare-rel p_synth_3 (Int Int Int Int Int))
+ (rule (=>   (and  (>= (rel z 0) 0 ) (not  (<= (rel z 1) 0 ) ) (not  (= (rel z 0)  (+  (- 1 ) (rel z 1) ) ) ) (not  (= (rel z 1)  (+  (- 1 )  (* 2 (rel z 0) ) ) ) ) (not  (= (rel z 1)  (* 2 (rel z 0) ) ) ) (not  (= (rel z 1)  (+ 1  (* 2 (rel z 0) ) ) ) ) (not  (= (rel z 0) (rel z 1) ) ) (not  (= (rel z 0) 1 ) ) ) (p_synth_3 z y x h end)))
+(declare-rel p_synth_4 (Int Int Int Int Int))
+ (rule (=>   (and  (>= (rel z 0) 0 )  (= (rel z 1)  (+ 1  (* 2 (rel z 0) ) ) )  (<= (rel z 0) 0 ) ) (p_synth_4 z y x h end)))
+(declare-rel p_synth_5 (Int Int Int Int Int))
+ (rule (=>   (and  (<= (rel z 1) 0 )  (not  (= (rel z 0) 2 ) )  (>= (rel z 1) 0 )  (not  (<= (rel z 0) 1 ) ) )  (p_synth_5 z y x h end)))
+(declare-rel p_synth_6 (Int Int Int Int Int))
+ (rule (=>   (and  (>= (rel z 0) 0 )  (= 0 (rel end 0) )  (<= (rel z 0) 0 ) )  (p_synth_6 z y x h end)))
+(declare-rel p_synth_7 (Int Int Int Int Int))
+ (rule (=>   (and  (= (rel z 0) 2 )  (or  (= (rel z 1)  (+ 1  (* 2 (rel z 0) ) ) )  (<= (rel z 1) 0 ) )  (>= (rel z 1) 0 ) ) (p_synth_7 z y x h end)))
+(declare-rel p_synth_8 (Int Int Int Int Int))
+ (rule (=>   (and  (>= (rel y 0) 0 )  (>= (rel y 1) 0 )  (not  (= (rel y 0) (rel y 1) ) )  (not  (=  (* 2 (rel y 0) ) (rel y 1) ) ) ) (p_synth_8 z y x h end)))
+(declare-rel p_synth_9 (Int Int Int Int Int))
+ (rule (=>   (and  (not  (<= (rel z 0) 1 ) )  (>= (rel y 0) 1 ) )  (p_synth_9 z y x h end)))
 (query End)

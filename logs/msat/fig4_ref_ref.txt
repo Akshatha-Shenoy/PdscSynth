@@ -8,10 +8,10 @@ And(abs_h_0,
     x0_eq_x1,
     Or(count_0_1, count_1_0),
     Or(Not(count_0_1), count_0_0))
-Pre-processing time:	0.05314 
-Solver time:	0.375242
-Total time:	0.42838200000000004
+Pre-processing time:	0.055236 
+Solver time:	0.407474
+Total time:	0.46271
 Iteration count:	1
 Predicate count:	7
-Total time taken : 0.42845
+Total time taken : 0.462797
 Number of predicates guessed: 0.0

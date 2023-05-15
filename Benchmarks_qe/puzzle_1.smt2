@@ -48,4 +48,13 @@
 (declare-rel ct0_eq_ct1 (Int Int Int Int))
   (rule (=> (= (rel ct 0) (rel ct 1)) (ct0_eq_ct1 end n h ct)))
 
+
+(declare-rel p_synth_1 (Int Int Int Int))
+ (rule (=>   (and  (= (rel n 0) (rel n 1) )  (not  (=  (div (rel n 1) 10 ) 1 ) )  (not  (= 0  (div (rel n 1) 10 ) ) ) ) (p_synth_1 end n h ct)))
+(declare-rel p_synth_2 (Int Int Int Int))
+ (rule (=>   (and  (= (rel n 0) 0 )  (not  (= (rel n 0) (rel n 1) ) ) )  (p_synth_2 end n h ct)))
+(declare-rel p_synth_3 (Int Int Int Int))
+ (rule (=>   (and  (=  (div (rel n 1) 10 ) 0 )  (= (rel n 0) (rel n 1) ) )  (p_synth_3 end n h ct)))
+(declare-rel p_synth_4 (Int Int Int Int))
+ (rule (=>   (and  (= (rel n 0) (rel n 1) )  (=  (div (rel n 1) 10 ) 0 )  (= (rel n 0) 0 ) )  (p_synth_4 end n h ct)))
 (query End)

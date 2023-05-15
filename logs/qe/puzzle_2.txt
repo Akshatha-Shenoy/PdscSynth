@@ -388,9 +388,9 @@ Running quantifier elimination:
 New predicate is  (not (and (= nU1 (div nU0 10)) (= nU0 nU1) (not (= nU0 0))))
 
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.068338 
-Solver time:	3.628159
-Total time:	3.696497
+Pre-processing time:	0.076015 
+Solver time:	2.624615
+Total time:	2.70063
 Iteration count:	9
 Predicate count:	10
 Successfully added new predicate to input file. !
@@ -799,9 +799,9 @@ Running quantifier elimination:
 New predicate is  (not (and (= nU0 0) (= nU1 0)))
 
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.096191 
-Solver time:	4.3943
-Total time:	4.4904910000000005
+Pre-processing time:	0.084786 
+Solver time:	3.252517
+Total time:	3.337303
 Iteration count:	10
 Predicate count:	11
 Successfully added new predicate to input file. !
@@ -1896,9 +1896,9 @@ Running quantifier elimination:
 New predicate is  (not (and (= nU1 0) (not (= nU0 nU1))))
 
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.097355 
-Solver time:	11.858793
-Total time:	11.956148
+Pre-processing time:	0.087312 
+Solver time:	10.598495
+Total time:	10.685807
 Iteration count:	27
 Predicate count:	12
 Successfully added new predicate to input file. !
@@ -3075,12 +3075,12 @@ Is the trace spurious?  True
 Discovering predicate from a_src, a_tgt, c_src, c_tgt to eliminate spurious trace
 ----------------------pred_disc-------------------
 Running quantifier elimination: 
-New predicate is  (not (and (= 0 (div nU1 10)) (not (= nU1 0)) (not (= nU0 nU1)) (not (= nU0 0))))
+New predicate is  (not (and (= 0 (div nU1 10)) (not (= nU1 0)) (not (= nU0 0)) (not (= nU0 nU1))))
 
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.107432 
-Solver time:	12.665169
-Total time:	12.772601
+Pre-processing time:	0.097025 
+Solver time:	11.651095
+Total time:	11.74812
 Iteration count:	29
 Predicate count:	13
 Successfully added new predicate to input file. !
@@ -3148,50 +3148,6 @@ n0_eq_n1, ]
 
 [abs_h_0, 
 ct_1_0, 
-n0_eq_n1, ]
---->[2]
-
-[abs_h_0, 
-ct_0_1, 
-n0_eq_n1, 
-p_synth_2, ]
---->[2]
-
-[abs_h_0, 
-abs_end_0, 
-abs_end_1, 
-ct_0_1, 
-n0_eq_n1, 
-p_synth_2, ]
---->[0]
-
-
-Blocking composition assignment 2 for state
- [abs_h_0, 
-ct_0_1, 
-n0_eq_n1, 
-p_synth_2, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, ]
---->[2]
-
-[abs_h_0, 
-ct_0_0, 
-ct_1_1, 
-n0_eq_n1, ]
---->[2]
-
-[abs_h_0, 
-ct_1_0, 
 n0_eq_n1, 
 p_synth_2, ]
 --->[0]
@@ -3235,54 +3191,6 @@ ct0_eq_ct1, ]
 ct_0_0, 
 ct_1_1, 
 n0_eq_n1, ]
---->[2]
-
-[abs_h_0, 
-ct_0_0, 
-n0_eq_n1, ]
---->[2]
-
-[abs_h_0, 
-ct_1_0, 
-ct_0_1, 
-n0_eq_n1, 
-p_synth_2, ]
---->[2]
-
-[abs_h_0, 
-abs_end_0, 
-ct_1_0, 
-abs_end_1, 
-ct_0_1, 
-n0_eq_n1, 
-p_synth_2, ]
---->[0]
-
-
-Blocking composition assignment 2 for state
- [abs_h_0, 
-ct_1_0, 
-ct_0_1, 
-n0_eq_n1, 
-p_synth_2, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, ]
---->[2]
-
-[abs_h_0, 
-ct_1_0, 
-ct_1_1, 
-n0_eq_n1, 
-ct0_eq_ct1, ]
 --->[2]
 
 [abs_h_0, 
@@ -3555,6 +3463,86 @@ ct_1_1, ]
 --->[2]
 
 [abs_h_0, 
+ct_0_0, 
+p_synth_4, ]
+--->[2]
+
+[abs_h_0, 
+ct_1_0, 
+n0_eq_n1, 
+p_synth_2, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [abs_h_0, 
+ct_0_0, 
+p_synth_4, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, ]
+--->[2]
+
+[abs_h_0, 
+ct_0_0, 
+ct_1_1, 
+n0_eq_n1, ]
+--->[0]
+
+[abs_h_0, 
+ct_0_0, 
+ct_1_1, ]
+--->[2]
+
+[abs_h_0, 
+ct_0_0, 
+n0_eq_n1, ]
+--->[2]
+
+[abs_h_0, 
+ct_1_0, 
+n0_eq_n1, 
+p_synth_2, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [abs_h_0, 
+ct_0_0, 
+n0_eq_n1, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, ]
+--->[2]
+
+[abs_h_0, 
+ct_0_0, 
+ct_1_1, 
+n0_eq_n1, ]
+--->[0]
+
+[abs_h_0, 
+ct_0_0, 
+ct_1_1, ]
+--->[2]
+
+[abs_h_0, 
 abs_end_0, 
 ct_0_0, 
 n0_eq_n1, 
@@ -3596,9 +3584,162 @@ n0_eq_n1, ]
 --->[0]
 
 [abs_h_0, 
+ct_1_0, 
+ct_1_1, 
+ct0_eq_ct1, ]
+--->[0]
+
+[abs_h_0, 
+abs_end_0, 
+ct_1_0, 
+ct_1_1, 
+ct0_eq_ct1, ]
+--->[1]
+
+[abs_h_0, 
+abs_end_0, 
+ct_1_0, 
+n0_eq_n1, 
+p_synth_2, ]
+--->[0]
+
+
+Blocking composition assignment 0 for state
+ [abs_h_0, 
+ct_1_0, 
+ct_1_1, 
+ct0_eq_ct1, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[abs_h_0, 
 ct_0_0, 
-ct_1_1, ]
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, ]
 --->[2]
+
+[abs_h_0, 
+ct_0_0, 
+ct_1_1, 
+n0_eq_n1, ]
+--->[0]
+
+[abs_h_0, 
+ct_1_0, 
+ct_1_1, 
+ct0_eq_ct1, ]
+--->[1]
+
+[abs_h_0, 
+ct_1_0, 
+n0_eq_n1, 
+p_synth_2, ]
+--->[0]
+
+
+Blocking composition assignment 0 for state
+ [abs_h_0, 
+ct_0_0, 
+ct_1_1, 
+n0_eq_n1, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, ]
+--->[2]
+
+[abs_h_0, 
+ct_0_0, 
+ct_1_1, 
+n0_eq_n1, ]
+--->[1]
+
+[abs_h_0, 
+ct_0_0, 
+p_synth_3, ]
+--->[2]
+
+[abs_h_0, 
+ct_1_0, 
+abs_end_1, 
+n0_eq_n1, 
+p_synth_2, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [abs_h_0, 
+ct_0_0, 
+p_synth_3, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, ]
+--->[2]
+
+[abs_h_0, 
+ct_0_0, 
+ct_1_1, 
+n0_eq_n1, ]
+--->[1]
+
+[abs_h_0, 
+ct_0_0, 
+p_synth_3, ]
+--->[0]
+
+[abs_h_0, 
+ct_1_0, 
+n0_eq_n1, 
+p_synth_2, ]
+--->[0]
+
+
+Blocking composition assignment 0 for state
+ [abs_h_0, 
+ct_0_0, 
+p_synth_3, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, ]
+--->[2]
+
+[abs_h_0, 
+ct_0_0, 
+ct_1_1, 
+n0_eq_n1, ]
+--->[1]
+
+[abs_h_0, 
+ct_0_0, 
+p_synth_4, ]
+--->[0]
 
 [abs_h_0, 
 ct_1_0, ]
@@ -3632,355 +3773,6 @@ ct0_eq_ct1, ]
 ct_0_0, 
 ct_1_1, 
 n0_eq_n1, ]
---->[0]
-
-[abs_h_0, 
-ct_1_0, 
-ct_1_1, 
-ct0_eq_ct1, ]
---->[0]
-
-[abs_h_0, 
-abs_end_0, 
-ct_1_0, 
-ct_1_1, 
-ct0_eq_ct1, ]
---->[1]
-
-[abs_h_0, 
-abs_end_0, 
-ct_1_0, 
-n0_eq_n1, 
-p_synth_2, ]
---->[0]
-
-
-Blocking composition assignment 0 for state
- [abs_h_0, 
-ct_1_0, 
-ct_1_1, 
-ct0_eq_ct1, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, ]
---->[2]
-
-[abs_h_0, 
-ct_0_0, 
-ct_1_1, 
-n0_eq_n1, ]
---->[0]
-
-[abs_h_0, 
-ct_1_0, 
-ct_1_1, 
-ct0_eq_ct1, ]
---->[1]
-
-[abs_h_0, 
-ct_1_0, 
-n0_eq_n1, 
-p_synth_2, ]
---->[0]
-
-
-Blocking composition assignment 0 for state
- [abs_h_0, 
-ct_0_0, 
-ct_1_1, 
-n0_eq_n1, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, ]
---->[2]
-
-[abs_h_0, 
-ct_0_0, 
-ct_1_1, 
-n0_eq_n1, ]
---->[1]
-
-[abs_h_0, 
-ct_0_0, 
-p_synth_4, ]
---->[2]
-
-[abs_h_0, 
-ct_1_0, 
-n0_eq_n1, 
-p_synth_2, ]
---->[0]
-
-
-Blocking composition assignment 2 for state
- [abs_h_0, 
-ct_0_0, 
-p_synth_4, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, ]
---->[2]
-
-[abs_h_0, 
-ct_0_0, 
-ct_1_1, 
-n0_eq_n1, ]
---->[1]
-
-[abs_h_0, 
-ct_0_0, 
-p_synth_3, ]
---->[2]
-
-[abs_h_0, 
-ct_1_0, 
-abs_end_1, 
-n0_eq_n1, 
-p_synth_2, ]
---->[0]
-
-
-Blocking composition assignment 2 for state
- [abs_h_0, 
-ct_0_0, 
-p_synth_3, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, ]
---->[2]
-
-[abs_h_0, 
-ct_0_0, 
-ct_1_1, 
-n0_eq_n1, ]
---->[1]
-
-[abs_h_0, 
-ct_0_0, 
-p_synth_3, ]
---->[0]
-
-[abs_h_0, 
-ct_1_0, 
-n0_eq_n1, 
-p_synth_2, ]
---->[0]
-
-
-Blocking composition assignment 0 for state
- [abs_h_0, 
-ct_0_0, 
-p_synth_3, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, ]
---->[2]
-
-[abs_h_0, 
-ct_0_0, 
-ct_1_1, 
-n0_eq_n1, ]
---->[1]
-
-[abs_h_0, 
-ct_0_0, 
-p_synth_4, ]
---->[0]
-
-[abs_h_0, 
-ct_0_0, 
-n0_eq_n1, ]
---->[2]
-
-[abs_h_0, 
-ct_1_0, 
-n0_eq_n1, 
-p_synth_2, ]
---->[0]
-
-
-Blocking composition assignment 2 for state
- [abs_h_0, 
-ct_0_0, 
-n0_eq_n1, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, ]
---->[2]
-
-[abs_h_0, 
-ct_0_0, 
-ct_1_1, 
-n0_eq_n1, ]
---->[1]
-
-[abs_h_0, 
-ct_0_0, ]
---->[2]
-
-[abs_h_0, 
-abs_end_0, 
-ct_0_0, 
-n0_eq_n1, 
-p_synth_2, ]
---->[1]
-
-[abs_h_0, 
-abs_end_0, 
-ct_0_0, 
-abs_end_1, 
-n0_eq_n1, 
-p_synth_2, ]
---->[0]
-
-
-Blocking composition assignment 2 for state
- [abs_h_0, 
-ct_0_0, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, ]
---->[2]
-
-[abs_h_0, 
-ct_0_0, 
-ct_1_1, 
-n0_eq_n1, ]
---->[1]
-
-[abs_h_0, 
-ct_0_0, ]
---->[0]
-
-[abs_h_0, 
-abs_end_0, 
-ct_0_0, ]
---->[2]
-
-[abs_h_0, 
-abs_end_0, 
-ct_0_0, 
-n0_eq_n1, 
-p_synth_2, ]
---->[0]
-
-
-Blocking composition assignment 2 for state
- [abs_h_0, 
-abs_end_0, 
-ct_0_0, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, ]
---->[2]
-
-[abs_h_0, 
-ct_0_0, 
-ct_1_1, 
-n0_eq_n1, ]
---->[1]
-
-[abs_h_0, 
-ct_0_0, ]
---->[0]
-
-[abs_h_0, 
-abs_end_0, 
-ct_0_0, ]
---->[1]
-
-[abs_h_0, 
-abs_end_0, 
-ct_0_0, 
-n0_eq_n1, 
-p_synth_2, ]
---->[0]
-
-
-Blocking composition assignment 0 for state
- [abs_h_0, 
-ct_0_0, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, ]
---->[2]
-
-[abs_h_0, 
-ct_0_0, 
-ct_1_1, 
-n0_eq_n1, ]
 --->[1]
 
 [abs_h_0, 
@@ -4028,13 +3820,14 @@ n0_eq_n1, ]
 
 [abs_h_0, 
 ct_0_0, ]
---->[1]
+--->[2]
 
 [abs_h_0, 
+abs_end_0, 
 ct_0_0, 
 n0_eq_n1, 
 p_synth_2, ]
---->[2]
+--->[1]
 
 [abs_h_0, 
 abs_end_0, 
@@ -4047,9 +3840,7 @@ p_synth_2, ]
 
 Blocking composition assignment 2 for state
  [abs_h_0, 
-ct_0_0, 
-n0_eq_n1, 
-p_synth_2, ]
+ct_0_0, ]
 
 
 Exploring next composition.. 
@@ -4114,9 +3905,9 @@ ct0_eq_ct1, ]
 --->[2]
 
 [abs_h_0, 
-ct_0_0, 
+ct_1_0, 
 ct_1_1, 
-n0_eq_n1, ]
+ct0_eq_ct1, ]
 --->[0]
 
 
@@ -4144,6 +3935,7 @@ ct_0_1, ]
 --->[2]
 
 [abs_h_0, 
+abs_end_0, 
 ct_1_0, 
 ct_1_1, 
 ct0_eq_ct1, ]
@@ -4153,6 +3945,38 @@ ct0_eq_ct1, ]
 Blocking composition assignment 2 for state
  [abs_h_0, 
 ct_1_0, 
+ct_0_1, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, ]
+--->[0]
+
+[abs_h_0, 
+ct_1_0, 
+ct_0_1, ]
+--->[0]
+
+[abs_h_0, 
+ct_0_1, ]
+--->[2]
+
+[abs_h_0, 
+ct_0_0, 
+ct_1_1, 
+n0_eq_n1, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [abs_h_0, 
 ct_0_1, ]
 
 
@@ -4217,9 +4041,9 @@ ct0_eq_ct1, ]
 --->[2]
 
 [abs_h_0, 
-ct_1_0, 
+ct_0_0, 
 ct_1_1, 
-ct0_eq_ct1, ]
+n0_eq_n1, ]
 --->[0]
 
 
@@ -4229,6 +4053,40 @@ abs_end_0,
 ct_0_0, 
 ct_0_1, 
 ct0_eq_ct1, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, ]
+--->[0]
+
+[abs_h_0, 
+ct_1_0, 
+ct_0_1, ]
+--->[0]
+
+[abs_h_0, 
+ct_0_1, 
+n0_eq_n1, ]
+--->[2]
+
+[abs_h_0, 
+ct_0_0, 
+ct_1_1, 
+n0_eq_n1, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [abs_h_0, 
+ct_0_1, 
+n0_eq_n1, ]
 
 
 Exploring next composition.. 
@@ -4323,6 +4181,37 @@ p_synth_2, ]
 
 
 Blocking composition assignment 2 for state
+ [abs_h_0, 
+ct_0_0, 
+ct_1_1, 
+p_synth_4, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, ]
+--->[1]
+
+[abs_h_0, 
+ct_0_0, 
+ct_1_1, 
+p_synth_4, ]
+--->[0]
+
+[abs_h_0, 
+ct_1_0, 
+ct_1_1, 
+ct0_eq_ct1, ]
+--->[0]
+
+
+Blocking composition assignment 0 for state
  [abs_h_0, 
 ct_0_0, 
 ct_1_1, 
@@ -4347,7 +4236,9 @@ ct_1_1, ]
 
 [abs_h_0, 
 abs_end_0, 
-ct_0_0, ]
+ct_0_0, 
+n0_eq_n1, 
+p_synth_2, ]
 --->[0]
 
 
@@ -4355,66 +4246,6 @@ Blocking composition assignment 2 for state
  [abs_h_0, 
 ct_0_0, 
 ct_1_1, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, ]
---->[1]
-
-[abs_h_0, 
-ct_0_0, 
-ct_1_1, ]
---->[0]
-
-[abs_h_0, 
-ct_0_0, 
-ct_1_1, 
-n0_eq_n1, ]
---->[0]
-
-
-Blocking composition assignment 0 for state
- [abs_h_0, 
-ct_0_0, 
-ct_1_1, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, ]
---->[1]
-
-[abs_h_0, 
-ct_0_0, 
-ct_1_1, 
-p_synth_4, ]
---->[0]
-
-[abs_h_0, 
-ct_1_0, 
-ct_1_1, 
-ct0_eq_ct1, ]
---->[0]
-
-
-Blocking composition assignment 0 for state
- [abs_h_0, 
-ct_0_0, 
-ct_1_1, 
-p_synth_4, ]
 
 
 Exploring next composition.. 
@@ -4440,7 +4271,7 @@ p_synth_3, ]
 --->[0]
 
 
-35 SMT queries performed.
+31 SMT queries performed.
 after complete_trace [abs_h_0, 
 ct_0_0, 
 ct_0_1, 
@@ -4505,10 +4336,10 @@ New predicate is  (let ((a!1 (and (= (div (div nU1 10) 10) 0)
   (not a!1))
 
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.122522 
-Solver time:	16.258716
-Total time:	16.381238
-Iteration count:	35
+Pre-processing time:	0.11909 
+Solver time:	15.378201
+Total time:	15.497291
+Iteration count:	31
 Predicate count:	14
 Successfully added new predicate to input file. !
 Start next refinement loop: True
@@ -4569,11 +4400,9 @@ ct0_eq_ct1, ]
 --->[2]
 
 [abs_h_0, 
-ct_1_0, 
+ct_0_0, 
 ct_1_1, 
-n0_eq_n1, 
-ct0_eq_ct1, 
-p_synth_5, ]
+n0_eq_n1, ]
 --->[2]
 
 [abs_h_0, 
@@ -4705,56 +4534,10 @@ ct0_eq_ct1, ]
 --->[2]
 
 [abs_h_0, 
-ct_0_0, 
+ct_1_0, 
 ct_1_1, 
-n0_eq_n1, ]
---->[2]
-
-[abs_h_0, 
-ct_1_0, 
-n0_eq_n1, 
-p_synth_2, ]
---->[1]
-
-[abs_h_0, 
-ct_1_0, 
-abs_end_1, 
-n0_eq_n1, 
-p_synth_2, ]
---->[2]
-
-[abs_h_0, 
-abs_end_0, 
-ct_1_0, 
-abs_end_1, 
-n0_eq_n1, 
-p_synth_2, ]
---->[0]
-
-
-Blocking composition assignment 2 for state
- [abs_h_0, 
-ct_1_0, 
-abs_end_1, 
-n0_eq_n1, 
-p_synth_2, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
 n0_eq_n1, 
 ct0_eq_ct1, ]
---->[2]
-
-[abs_h_0, 
-ct_0_0, 
-ct_1_1, 
-n0_eq_n1, ]
 --->[2]
 
 [abs_h_0, 
@@ -4812,6 +4595,53 @@ ct_1_0,
 abs_end_1, 
 n0_eq_n1, 
 p_synth_2, ]
+--->[2]
+
+[abs_h_0, 
+abs_end_0, 
+ct_1_0, 
+abs_end_1, 
+n0_eq_n1, 
+p_synth_2, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [abs_h_0, 
+ct_1_0, 
+abs_end_1, 
+n0_eq_n1, 
+p_synth_2, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, ]
+--->[2]
+
+[abs_h_0, 
+ct_0_0, 
+ct_1_1, 
+n0_eq_n1, ]
+--->[2]
+
+[abs_h_0, 
+ct_1_0, 
+n0_eq_n1, 
+p_synth_2, ]
+--->[1]
+
+[abs_h_0, 
+ct_1_0, 
+abs_end_1, 
+n0_eq_n1, 
+p_synth_2, ]
 --->[0]
 
 [abs_h_0, 
@@ -4828,6 +4658,44 @@ Blocking composition assignment 2 for state
 ct_0_0, 
 ct_1_1, 
 n0_eq_n1, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, ]
+--->[2]
+
+[abs_h_0, 
+ct_0_0, 
+ct_1_1, 
+n0_eq_n1, ]
+--->[0]
+
+[abs_h_0, 
+ct_1_0, 
+ct_1_1, 
+ct0_eq_ct1, ]
+--->[2]
+
+[abs_h_0, 
+abs_end_0, 
+ct_1_0, 
+n0_eq_n1, 
+p_synth_2, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [abs_h_0, 
+ct_1_0, 
+ct_1_1, 
+ct0_eq_ct1, ]
 
 
 Exploring next composition.. 
@@ -4884,13 +4752,16 @@ n0_eq_n1, ]
 --->[0]
 
 [abs_h_0, 
-ct_1_0, 
-ct_1_1, 
-ct0_eq_ct1, ]
+ct_0_0, 
+ct_1_1, ]
 --->[2]
 
 [abs_h_0, 
-abs_end_0, 
+ct_0_0, 
+p_synth_4, ]
+--->[2]
+
+[abs_h_0, 
 ct_1_0, 
 n0_eq_n1, 
 p_synth_2, ]
@@ -4899,9 +4770,8 @@ p_synth_2, ]
 
 Blocking composition assignment 2 for state
  [abs_h_0, 
-ct_1_0, 
-ct_1_1, 
-ct0_eq_ct1, ]
+ct_0_0, 
+p_synth_4, ]
 
 
 Exploring next composition.. 
@@ -4992,46 +4862,6 @@ Blocking composition assignment 2 for state
  [abs_h_0, 
 ct_0_0, 
 ct_1_1, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, ]
---->[2]
-
-[abs_h_0, 
-ct_0_0, 
-ct_1_1, 
-n0_eq_n1, 
-p_synth_5, ]
---->[2]
-
-[abs_h_0, 
-ct_0_0, 
-n0_eq_n1, ]
---->[0]
-
-[abs_h_0, 
-ct_0_0, ]
---->[2]
-
-[abs_h_0, 
-abs_end_0, 
-ct_0_0, 
-n0_eq_n1, 
-p_synth_2, ]
---->[0]
-
-
-Blocking composition assignment 2 for state
- [abs_h_0, 
-ct_0_0, ]
 
 
 Exploring next composition.. 
@@ -5088,452 +4918,30 @@ ct0_eq_ct1, ]
 [abs_h_0, 
 ct_0_0, 
 ct_1_1, 
-n0_eq_n1, ]
---->[0]
-
-[abs_h_0, 
-ct_1_0, 
-ct_1_1, 
-ct0_eq_ct1, ]
---->[0]
-
-[abs_h_0, 
-abs_end_0, 
-ct_1_0, 
-ct_1_1, 
-ct0_eq_ct1, ]
---->[2]
-
-[abs_h_0, 
-abs_end_0, 
-ct_1_0, 
 n0_eq_n1, 
-p_synth_2, ]
---->[0]
-
-
-Blocking composition assignment 2 for state
- [abs_h_0, 
-abs_end_0, 
-ct_1_0, 
-ct_1_1, 
-ct0_eq_ct1, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, ]
---->[2]
-
-[abs_h_0, 
-ct_0_0, 
-ct_1_1, 
-n0_eq_n1, ]
---->[0]
-
-[abs_h_0, 
-ct_1_0, 
-ct_1_1, 
-ct0_eq_ct1, ]
---->[0]
-
-[abs_h_0, 
-abs_end_0, 
-ct_1_0, 
-ct_1_1, 
-ct0_eq_ct1, ]
---->[1]
-
-[abs_h_0, 
-abs_end_0, 
-ct_1_0, 
-n0_eq_n1, 
-p_synth_2, ]
---->[0]
-
-
-Blocking composition assignment 0 for state
- [abs_h_0, 
-ct_1_0, 
-ct_1_1, 
-ct0_eq_ct1, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, ]
---->[2]
-
-[abs_h_0, 
-ct_0_0, 
-ct_1_1, 
-n0_eq_n1, ]
---->[0]
-
-[abs_h_0, 
-ct_1_0, 
-ct_1_1, 
-ct0_eq_ct1, ]
---->[1]
-
-[abs_h_0, 
-ct_1_0, 
-n0_eq_n1, 
-p_synth_2, ]
---->[0]
-
-
-Blocking composition assignment 0 for state
- [abs_h_0, 
-ct_0_0, 
-ct_1_1, 
-n0_eq_n1, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, ]
---->[2]
-
-[abs_h_0, 
-ct_0_0, 
-ct_1_1, 
-n0_eq_n1, ]
---->[1]
-
-[abs_h_0, 
-ct_0_0, 
-p_synth_3, ]
---->[2]
-
-[abs_h_0, 
-ct_1_0, 
-abs_end_1, 
-n0_eq_n1, 
-p_synth_2, ]
---->[0]
-
-
-Blocking composition assignment 2 for state
- [abs_h_0, 
-ct_0_0, 
-p_synth_3, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, ]
---->[2]
-
-[abs_h_0, 
-ct_0_0, 
-ct_1_1, 
-n0_eq_n1, ]
---->[1]
-
-[abs_h_0, 
-ct_0_0, 
-p_synth_3, ]
---->[0]
-
-[abs_h_0, 
-ct_1_0, 
-n0_eq_n1, 
-p_synth_2, ]
---->[0]
-
-
-Blocking composition assignment 0 for state
- [abs_h_0, 
-ct_0_0, 
-p_synth_3, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, ]
---->[2]
-
-[abs_h_0, 
-ct_0_0, 
-ct_1_1, 
-n0_eq_n1, ]
---->[1]
-
-[abs_h_0, 
-ct_0_0, ]
---->[0]
-
-[abs_h_0, 
-abs_end_0, 
-ct_0_0, ]
---->[2]
-
-[abs_h_0, 
-abs_end_0, 
-ct_0_0, 
-n0_eq_n1, 
-p_synth_2, ]
---->[0]
-
-
-Blocking composition assignment 2 for state
- [abs_h_0, 
-abs_end_0, 
-ct_0_0, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, ]
---->[2]
-
-[abs_h_0, 
-ct_0_0, 
-ct_1_1, 
-n0_eq_n1, ]
---->[1]
-
-[abs_h_0, 
-ct_0_0, ]
---->[0]
-
-[abs_h_0, 
-abs_end_0, 
-ct_0_0, ]
---->[1]
-
-[abs_h_0, 
-abs_end_0, 
-ct_0_0, 
-n0_eq_n1, 
-p_synth_2, ]
---->[0]
-
-
-Blocking composition assignment 0 for state
- [abs_h_0, 
-ct_0_0, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, ]
---->[2]
-
-[abs_h_0, 
-ct_0_0, 
-ct_1_1, 
-n0_eq_n1, ]
---->[1]
-
-[abs_h_0, 
-ct_0_0, ]
---->[1]
-
-[abs_h_0, 
-ct_0_0, 
-p_synth_4, ]
---->[2]
-
-[abs_h_0, 
-ct_1_0, 
-n0_eq_n1, 
-p_synth_2, ]
---->[0]
-
-
-Blocking composition assignment 2 for state
- [abs_h_0, 
-ct_0_0, 
-p_synth_4, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, ]
---->[2]
-
-[abs_h_0, 
-ct_0_0, 
-ct_1_1, 
-n0_eq_n1, ]
---->[1]
-
-[abs_h_0, 
-ct_0_0, 
-p_synth_3, ]
---->[1]
-
-[abs_h_0, 
-ct_0_0, 
-abs_end_1, 
-p_synth_3, ]
---->[2]
-
-[abs_h_0, 
-ct_1_0, 
-abs_end_1, 
-n0_eq_n1, 
-p_synth_2, ]
---->[0]
-
-
-Blocking composition assignment 2 for state
- [abs_h_0, 
-ct_0_0, 
-abs_end_1, 
-p_synth_3, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, ]
---->[2]
-
-[abs_h_0, 
-ct_0_0, 
-ct_1_1, 
-n0_eq_n1, ]
---->[1]
-
-[abs_h_0, 
-ct_0_0, 
-p_synth_3, ]
---->[1]
-
-[abs_h_0, 
-ct_0_0, 
-abs_end_1, 
-p_synth_3, ]
---->[0]
-
-[abs_h_0, 
-ct_1_0, 
-abs_end_1, 
-n0_eq_n1, 
-p_synth_2, ]
---->[0]
-
-
-Blocking composition assignment 2 for state
- [abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, 
 p_synth_5, ]
 --->[2]
 
 [abs_h_0, 
 ct_0_0, 
-ct_1_1, 
 n0_eq_n1, ]
 --->[0]
 
-
-Blocking composition assignment 2 for state
- [abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, 
-p_synth_5, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
 [abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, ]
---->[0]
-
-[abs_h_0, 
-ct_1_0, 
-ct_0_1, ]
+ct_0_0, ]
 --->[2]
 
 [abs_h_0, 
 abs_end_0, 
-ct_1_0, 
-ct_1_1, 
-ct0_eq_ct1, ]
+ct_0_0, 
+n0_eq_n1, 
+p_synth_2, ]
 --->[0]
 
 
 Blocking composition assignment 2 for state
  [abs_h_0, 
-ct_1_0, 
-ct_0_1, ]
+ct_0_0, ]
 
 
 Exploring next composition.. 
@@ -5545,85 +4953,6 @@ ct_0_0,
 ct_0_1, 
 n0_eq_n1, 
 ct0_eq_ct1, ]
---->[0]
-
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-ct0_eq_ct1, ]
---->[2]
-
-[abs_h_0, 
-ct_1_0, 
-ct_1_1, 
-ct0_eq_ct1, ]
---->[0]
-
-
-Blocking composition assignment 2 for state
- [abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-ct0_eq_ct1, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, ]
---->[0]
-
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-ct0_eq_ct1, ]
---->[0]
-
-[abs_h_0, 
-abs_end_0, 
-ct_0_0, 
-ct_0_1, 
-ct0_eq_ct1, ]
---->[2]
-
-[abs_h_0, 
-ct_1_0, 
-ct_1_1, 
-ct0_eq_ct1, ]
---->[0]
-
-
-Blocking composition assignment 2 for state
- [abs_h_0, 
-abs_end_0, 
-ct_0_0, 
-ct_0_1, 
-ct0_eq_ct1, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, ]
---->[0]
-
-[abs_h_0, 
-ct_1_0, 
-ct_0_1, ]
---->[0]
-
-[abs_h_0, 
-ct_0_1, ]
 --->[2]
 
 [abs_h_0, 
@@ -5631,153 +4960,6 @@ ct_0_0,
 ct_1_1, 
 n0_eq_n1, ]
 --->[0]
-
-
-Blocking composition assignment 2 for state
- [abs_h_0, 
-ct_0_1, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, ]
---->[0]
-
-[abs_h_0, 
-ct_1_0, 
-ct_0_1, ]
---->[0]
-
-[abs_h_0, 
-abs_end_0, 
-ct_1_0, 
-ct_0_1, ]
---->[2]
-
-[abs_h_0, 
-ct_1_0, 
-ct_1_1, 
-ct0_eq_ct1, ]
---->[0]
-
-
-Blocking composition assignment 2 for state
- [abs_h_0, 
-abs_end_0, 
-ct_1_0, 
-ct_0_1, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, ]
---->[0]
-
-[abs_h_0, 
-ct_1_0, 
-ct_0_1, ]
---->[0]
-
-[abs_h_0, 
-abs_end_0, 
-ct_1_0, 
-ct_0_1, ]
---->[1]
-
-[abs_h_0, 
-abs_end_0, 
-ct_1_0, 
-ct_1_1, 
-ct0_eq_ct1, ]
---->[0]
-
-
-Blocking composition assignment 0 for state
- [abs_h_0, 
-ct_1_0, 
-ct_0_1, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, ]
---->[0]
-
-[abs_h_0, 
-ct_1_0, 
-ct_0_1, ]
---->[1]
-
-[abs_h_0, 
-ct_1_0, 
-ct_1_1, 
-ct0_eq_ct1, ]
---->[0]
-
-
-Blocking composition assignment 0 for state
- [abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, 
-p_synth_5, ]
---->[0]
-
-[abs_h_0, 
-ct_1_0, 
-ct_0_1, ]
---->[0]
-
-
-Blocking composition assignment 0 for state
- [abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, 
-p_synth_5, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, ]
---->[1]
 
 [abs_h_0, 
 ct_0_0, 
@@ -5785,9 +4967,59 @@ ct_1_1, ]
 --->[0]
 
 [abs_h_0, 
+abs_end_0, 
+ct_0_0, 
+ct_1_1, ]
+--->[2]
+
+[abs_h_0, 
+abs_end_0, 
+ct_0_0, 
+n0_eq_n1, 
+p_synth_2, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [abs_h_0, 
+abs_end_0, 
+ct_0_0, 
+ct_1_1, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, ]
+--->[2]
+
+[abs_h_0, 
 ct_0_0, 
 ct_1_1, 
 n0_eq_n1, ]
+--->[0]
+
+[abs_h_0, 
+ct_0_0, 
+ct_1_1, ]
+--->[0]
+
+[abs_h_0, 
+abs_end_0, 
+ct_0_0, 
+ct_1_1, ]
+--->[1]
+
+[abs_h_0, 
+abs_end_0, 
+ct_0_0, 
+n0_eq_n1, 
+p_synth_2, ]
 --->[0]
 
 
@@ -5805,6 +5037,517 @@ Abstract Counter-example trace for current composition:
 ct_0_0, 
 ct_0_1, 
 n0_eq_n1, 
+ct0_eq_ct1, ]
+--->[2]
+
+[abs_h_0, 
+ct_0_0, 
+ct_1_1, 
+n0_eq_n1, ]
+--->[0]
+
+[abs_h_0, 
+ct_1_0, 
+ct_1_1, 
+ct0_eq_ct1, ]
+--->[0]
+
+[abs_h_0, 
+abs_end_0, 
+ct_1_0, 
+ct_1_1, 
+ct0_eq_ct1, ]
+--->[2]
+
+[abs_h_0, 
+abs_end_0, 
+ct_1_0, 
+n0_eq_n1, 
+p_synth_2, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [abs_h_0, 
+abs_end_0, 
+ct_1_0, 
+ct_1_1, 
+ct0_eq_ct1, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, ]
+--->[2]
+
+[abs_h_0, 
+ct_0_0, 
+ct_1_1, 
+n0_eq_n1, ]
+--->[0]
+
+[abs_h_0, 
+ct_1_0, 
+ct_1_1, 
+ct0_eq_ct1, ]
+--->[0]
+
+[abs_h_0, 
+abs_end_0, 
+ct_1_0, 
+ct_1_1, 
+ct0_eq_ct1, ]
+--->[1]
+
+[abs_h_0, 
+abs_end_0, 
+ct_1_0, 
+n0_eq_n1, 
+p_synth_2, ]
+--->[0]
+
+
+Blocking composition assignment 0 for state
+ [abs_h_0, 
+ct_1_0, 
+ct_1_1, 
+ct0_eq_ct1, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, ]
+--->[2]
+
+[abs_h_0, 
+ct_0_0, 
+ct_1_1, 
+n0_eq_n1, ]
+--->[0]
+
+[abs_h_0, 
+ct_1_0, 
+ct_1_1, 
+ct0_eq_ct1, ]
+--->[1]
+
+[abs_h_0, 
+ct_1_0, 
+n0_eq_n1, 
+p_synth_2, ]
+--->[0]
+
+
+Blocking composition assignment 0 for state
+ [abs_h_0, 
+ct_0_0, 
+ct_1_1, 
+n0_eq_n1, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, ]
+--->[2]
+
+[abs_h_0, 
+ct_0_0, 
+ct_1_1, 
+n0_eq_n1, ]
+--->[1]
+
+[abs_h_0, 
+ct_0_0, 
+p_synth_3, ]
+--->[2]
+
+[abs_h_0, 
+ct_1_0, 
+abs_end_1, 
+n0_eq_n1, 
+p_synth_2, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [abs_h_0, 
+ct_0_0, 
+p_synth_3, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, ]
+--->[2]
+
+[abs_h_0, 
+ct_0_0, 
+ct_1_1, 
+n0_eq_n1, ]
+--->[1]
+
+[abs_h_0, 
+ct_0_0, 
+p_synth_3, ]
+--->[0]
+
+[abs_h_0, 
+ct_1_0, 
+n0_eq_n1, 
+p_synth_2, ]
+--->[0]
+
+
+Blocking composition assignment 0 for state
+ [abs_h_0, 
+ct_0_0, 
+p_synth_3, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, ]
+--->[2]
+
+[abs_h_0, 
+ct_0_0, 
+ct_1_1, 
+n0_eq_n1, ]
+--->[1]
+
+[abs_h_0, 
+ct_0_0, 
+p_synth_3, ]
+--->[1]
+
+[abs_h_0, 
+ct_0_0, 
+abs_end_1, 
+p_synth_3, ]
+--->[2]
+
+[abs_h_0, 
+ct_1_0, 
+abs_end_1, 
+n0_eq_n1, 
+p_synth_2, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [abs_h_0, 
+ct_0_0, 
+abs_end_1, 
+p_synth_3, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, ]
+--->[2]
+
+[abs_h_0, 
+ct_0_0, 
+ct_1_1, 
+n0_eq_n1, ]
+--->[1]
+
+[abs_h_0, 
+ct_0_0, 
+p_synth_3, ]
+--->[1]
+
+[abs_h_0, 
+ct_0_0, 
+abs_end_1, 
+p_synth_3, ]
+--->[0]
+
+[abs_h_0, 
+ct_1_0, 
+abs_end_1, 
+n0_eq_n1, 
+p_synth_2, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, 
+p_synth_5, ]
+--->[2]
+
+[abs_h_0, 
+ct_0_0, 
+ct_1_1, 
+n0_eq_n1, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, 
+p_synth_5, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, ]
+--->[0]
+
+[abs_h_0, 
+ct_1_0, 
+ct_0_1, ]
+--->[2]
+
+[abs_h_0, 
+ct_1_0, 
+ct_1_1, 
+ct0_eq_ct1, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [abs_h_0, 
+ct_1_0, 
+ct_0_1, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, ]
+--->[0]
+
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+ct0_eq_ct1, ]
+--->[2]
+
+[abs_h_0, 
+abs_end_0, 
+ct_0_0, 
+ct_1_1, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+ct0_eq_ct1, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, ]
+--->[0]
+
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+ct0_eq_ct1, ]
+--->[0]
+
+[abs_h_0, 
+abs_end_0, 
+ct_0_0, 
+ct_0_1, 
+ct0_eq_ct1, ]
+--->[2]
+
+[abs_h_0, 
+abs_end_0, 
+ct_0_0, 
+ct_1_1, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [abs_h_0, 
+abs_end_0, 
+ct_0_0, 
+ct_0_1, 
+ct0_eq_ct1, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, ]
+--->[0]
+
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+ct0_eq_ct1, ]
+--->[0]
+
+[abs_h_0, 
+abs_end_0, 
+ct_0_0, 
+ct_0_1, 
+ct0_eq_ct1, ]
+--->[1]
+
+[abs_h_0, 
+abs_end_0, 
+ct_0_0, 
+ct_1_1, ]
+--->[0]
+
+
+Blocking composition assignment 0 for state
+ [abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+ct0_eq_ct1, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, ]
+--->[0]
+
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+ct0_eq_ct1, ]
+--->[1]
+
+[abs_h_0, 
+ct_0_0, 
+ct_1_1, 
+n0_eq_n1, ]
+--->[0]
+
+
+Blocking composition assignment 0 for state
+ [abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, 
+p_synth_5, ]
+--->[0]
+
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+ct0_eq_ct1, ]
+--->[0]
+
+
+Blocking composition assignment 0 for state
+ [abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, 
+p_synth_5, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
 ct0_eq_ct1, 
 p_synth_5, ]
 --->[1]
@@ -5847,9 +5590,9 @@ p_synth_4, ]
 --->[0]
 
 [abs_h_0, 
-ct_0_0, 
+ct_1_0, 
 ct_1_1, 
-n0_eq_n1, ]
+ct0_eq_ct1, ]
 --->[0]
 
 
@@ -5884,7 +5627,7 @@ p_synth_3, ]
 --->[0]
 
 
-36 SMT queries performed.
+33 SMT queries performed.
 after complete_trace [abs_h_0, 
 ct_0_0, 
 ct_0_1, 
@@ -5953,15 +5696,13 @@ Is the trace spurious?  True
 Discovering predicate from a_src, a_tgt, c_src, c_tgt to eliminate spurious trace
 ----------------------pred_disc-------------------
 Running quantifier elimination: 
-New predicate is  (let ((a!1 (and (= 0 (div nU0 10)) (= nU1 0) (<= (+ (* (- 1) nU0) nU1) (- 1)))))
-
-  (not a!1))
+New predicate is  (not (and (= nU1 (div nU0 10)) (= nU1 0) (>= nU0 1)))
 
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.137218 
-Solver time:	19.274512
-Total time:	19.411730000000002
-Iteration count:	36
+Pre-processing time:	0.141628 
+Solver time:	17.947318
+Total time:	18.088946
+Iteration count:	33
 Predicate count:	15
 Successfully added new predicate to input file. !
 Start next refinement loop: True
@@ -6022,10 +5763,9 @@ ct0_eq_ct1, ]
 --->[2]
 
 [abs_h_0, 
-ct_1_0, 
+ct_0_0, 
 ct_1_1, 
-n0_eq_n1, 
-ct0_eq_ct1, ]
+n0_eq_n1, ]
 --->[2]
 
 [abs_h_0, 
@@ -6164,6 +5904,97 @@ n0_eq_n1, ]
 
 [abs_h_0, 
 ct_1_0, 
+n0_eq_n1, ]
+--->[2]
+
+[abs_h_0, 
+ct_0_1, 
+n0_eq_n1, 
+p_synth_2, ]
+--->[2]
+
+[abs_h_0, 
+abs_end_0, 
+abs_end_1, 
+ct_0_1, 
+n0_eq_n1, 
+p_synth_2, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [abs_h_0, 
+ct_0_1, 
+n0_eq_n1, 
+p_synth_2, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, ]
+--->[2]
+
+[abs_h_0, 
+ct_0_0, 
+ct_1_1, 
+n0_eq_n1, ]
+--->[2]
+
+[abs_h_0, 
+ct_0_0, 
+n0_eq_n1, ]
+--->[2]
+
+[abs_h_0, 
+ct_1_0, 
+ct_0_1, 
+n0_eq_n1, 
+p_synth_2, ]
+--->[2]
+
+[abs_h_0, 
+abs_end_0, 
+ct_1_0, 
+abs_end_1, 
+ct_0_1, 
+n0_eq_n1, 
+p_synth_2, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [abs_h_0, 
+ct_1_0, 
+ct_0_1, 
+n0_eq_n1, 
+p_synth_2, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, ]
+--->[2]
+
+[abs_h_0, 
+ct_0_0, 
+ct_1_1, 
+n0_eq_n1, ]
+--->[2]
+
+[abs_h_0, 
+ct_1_0, 
 n0_eq_n1, 
 p_synth_2, ]
 --->[1]
@@ -6188,52 +6019,6 @@ Blocking composition assignment 2 for state
  [abs_h_0, 
 ct_1_0, 
 abs_end_1, 
-n0_eq_n1, 
-p_synth_2, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, ]
---->[2]
-
-[abs_h_0, 
-ct_1_0, 
-ct_1_1, 
-n0_eq_n1, 
-ct0_eq_ct1, 
-p_synth_5, ]
---->[2]
-
-[abs_h_0, 
-ct_1_0, 
-n0_eq_n1, ]
---->[2]
-
-[abs_h_0, 
-ct_0_1, 
-n0_eq_n1, 
-p_synth_2, ]
---->[2]
-
-[abs_h_0, 
-abs_end_0, 
-abs_end_1, 
-ct_0_1, 
-n0_eq_n1, 
-p_synth_2, ]
---->[0]
-
-
-Blocking composition assignment 2 for state
- [abs_h_0, 
-ct_0_1, 
 n0_eq_n1, 
 p_synth_2, ]
 
@@ -6486,6 +6271,92 @@ Blocking composition assignment 2 for state
  [abs_h_0, 
 ct_0_0, 
 ct_1_1, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, ]
+--->[2]
+
+[abs_h_0, 
+ct_0_0, 
+ct_1_1, 
+n0_eq_n1, ]
+--->[0]
+
+[abs_h_0, 
+ct_1_0, 
+ct_1_1, 
+ct0_eq_ct1, ]
+--->[0]
+
+[abs_h_0, 
+abs_end_0, 
+ct_1_0, 
+ct_1_1, 
+ct0_eq_ct1, ]
+--->[2]
+
+[abs_h_0, 
+abs_end_0, 
+ct_1_0, 
+n0_eq_n1, 
+p_synth_2, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [abs_h_0, 
+abs_end_0, 
+ct_1_0, 
+ct_1_1, 
+ct0_eq_ct1, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, ]
+--->[2]
+
+[abs_h_0, 
+ct_0_0, 
+ct_1_1, 
+n0_eq_n1, 
+p_synth_5, ]
+--->[2]
+
+[abs_h_0, 
+ct_0_0, 
+n0_eq_n1, ]
+--->[0]
+
+[abs_h_0, 
+ct_0_0, ]
+--->[2]
+
+[abs_h_0, 
+abs_end_0, 
+ct_0_0, 
+n0_eq_n1, 
+p_synth_2, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [abs_h_0, 
+ct_0_0, ]
 
 
 Exploring next composition.. 
@@ -6556,52 +6427,6 @@ abs_end_0,
 ct_1_0, 
 ct_1_1, 
 ct0_eq_ct1, ]
---->[2]
-
-[abs_h_0, 
-abs_end_0, 
-ct_1_0, 
-n0_eq_n1, 
-p_synth_2, ]
---->[0]
-
-
-Blocking composition assignment 2 for state
- [abs_h_0, 
-abs_end_0, 
-ct_1_0, 
-ct_1_1, 
-ct0_eq_ct1, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, ]
---->[2]
-
-[abs_h_0, 
-ct_0_0, 
-ct_1_1, 
-n0_eq_n1, ]
---->[0]
-
-[abs_h_0, 
-ct_1_0, 
-ct_1_1, 
-ct0_eq_ct1, ]
---->[0]
-
-[abs_h_0, 
-abs_end_0, 
-ct_1_0, 
-ct_1_1, 
-ct0_eq_ct1, ]
 --->[1]
 
 [abs_h_0, 
@@ -6654,40 +6479,6 @@ Blocking composition assignment 0 for state
 ct_0_0, 
 ct_1_1, 
 n0_eq_n1, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, ]
---->[2]
-
-[abs_h_0, 
-ct_0_0, 
-ct_1_1, 
-n0_eq_n1, ]
---->[1]
-
-[abs_h_0, 
-ct_0_0, ]
---->[2]
-
-[abs_h_0, 
-abs_end_0, 
-ct_0_0, 
-n0_eq_n1, 
-p_synth_2, ]
---->[0]
-
-
-Blocking composition assignment 2 for state
- [abs_h_0, 
-ct_0_0, ]
 
 
 Exploring next composition.. 
@@ -6862,47 +6653,6 @@ n0_eq_n1, ]
 --->[1]
 
 [abs_h_0, 
-ct_0_0, ]
---->[1]
-
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-ct0_eq_ct1, ]
---->[2]
-
-[abs_h_0, 
-ct_1_0, 
-ct_1_1, 
-ct0_eq_ct1, ]
---->[0]
-
-
-Blocking composition assignment 2 for state
- [abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-ct0_eq_ct1, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, ]
---->[2]
-
-[abs_h_0, 
-ct_0_0, 
-ct_1_1, 
-n0_eq_n1, ]
---->[1]
-
-[abs_h_0, 
 ct_0_0, 
 p_synth_3, 
 p_synth_6, ]
@@ -6929,6 +6679,47 @@ ct_0_0,
 abs_end_1, 
 p_synth_3, 
 p_synth_6, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, ]
+--->[2]
+
+[abs_h_0, 
+ct_0_0, 
+ct_1_1, 
+n0_eq_n1, ]
+--->[1]
+
+[abs_h_0, 
+ct_0_0, ]
+--->[1]
+
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+ct0_eq_ct1, ]
+--->[2]
+
+[abs_h_0, 
+ct_1_0, 
+ct_1_1, 
+ct0_eq_ct1, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+ct0_eq_ct1, ]
 
 
 Exploring next composition.. 
@@ -7127,8 +6918,7 @@ Abstract Counter-example trace for current composition:
 ct_0_0, 
 ct_0_1, 
 n0_eq_n1, 
-ct0_eq_ct1, 
-p_synth_5, ]
+ct0_eq_ct1, ]
 --->[0]
 
 [abs_h_0, 
@@ -7154,45 +6944,6 @@ Blocking composition assignment 2 for state
 abs_end_0, 
 ct_1_0, 
 ct_0_1, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, ]
---->[0]
-
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-ct0_eq_ct1, ]
---->[0]
-
-[abs_h_0, 
-abs_end_0, 
-ct_0_0, 
-ct_0_1, 
-ct0_eq_ct1, ]
---->[2]
-
-[abs_h_0, 
-ct_1_0, 
-ct_1_1, 
-ct0_eq_ct1, ]
---->[0]
-
-
-Blocking composition assignment 2 for state
- [abs_h_0, 
-abs_end_0, 
-ct_0_0, 
-ct_0_1, 
-ct0_eq_ct1, ]
 
 
 Exploring next composition.. 
@@ -7239,118 +6990,168 @@ ct0_eq_ct1, ]
 --->[0]
 
 [abs_h_0, 
-ct_1_0, 
-ct_0_1, ]
+ct_0_0, 
+ct_0_1, 
+ct0_eq_ct1, ]
 --->[0]
 
 [abs_h_0, 
 abs_end_0, 
-ct_1_0, 
-ct_0_1, ]
---->[1]
-
-[abs_h_0, 
-abs_end_0, 
-ct_1_0, 
-ct_1_1, 
+ct_0_0, 
+ct_0_1, 
 ct0_eq_ct1, ]
---->[0]
-
-
-Blocking composition assignment 0 for state
- [abs_h_0, 
-ct_1_0, 
-ct_0_1, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, ]
---->[0]
-
-[abs_h_0, 
-ct_1_0, 
-ct_0_1, ]
---->[1]
-
-[abs_h_0, 
-ct_1_0, 
-ct_1_1, 
-ct0_eq_ct1, ]
---->[0]
-
-
-Blocking composition assignment 0 for state
- [abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, 
-p_synth_5, ]
---->[0]
-
-[abs_h_0, 
-ct_1_0, 
-ct_0_1, ]
---->[0]
-
-
-Blocking composition assignment 0 for state
- [abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, 
-p_synth_5, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, 
-p_synth_5, ]
---->[1]
-
-[abs_h_0, 
-ct_0_0, 
-ct_1_1, 
-p_synth_4, ]
 --->[2]
 
 [abs_h_0, 
-ct_0_0, 
-p_synth_3, 
-p_synth_6, ]
+ct_1_0, 
+ct_1_1, 
+ct0_eq_ct1, ]
 --->[0]
 
 
 Blocking composition assignment 2 for state
  [abs_h_0, 
+abs_end_0, 
+ct_0_0, 
+ct_0_1, 
+ct0_eq_ct1, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, ]
+--->[0]
+
+[abs_h_0, 
+ct_1_0, 
+ct_0_1, ]
+--->[0]
+
+[abs_h_0, 
+ct_0_1, 
+n0_eq_n1, 
+p_synth_5, ]
+--->[2]
+
+[abs_h_0, 
 ct_0_0, 
 ct_1_1, 
-p_synth_4, ]
+n0_eq_n1, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [abs_h_0, 
+ct_0_1, 
+n0_eq_n1, 
+p_synth_5, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, ]
+--->[0]
+
+[abs_h_0, 
+ct_1_0, 
+ct_0_1, ]
+--->[0]
+
+[abs_h_0, 
+ct_0_1, 
+n0_eq_n1, ]
+--->[2]
+
+[abs_h_0, 
+ct_0_0, 
+ct_1_1, 
+n0_eq_n1, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [abs_h_0, 
+ct_0_1, 
+n0_eq_n1, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, ]
+--->[0]
+
+[abs_h_0, 
+ct_1_0, 
+ct_0_1, ]
+--->[0]
+
+[abs_h_0, 
+abs_end_0, 
+ct_1_0, 
+ct_0_1, ]
+--->[1]
+
+[abs_h_0, 
+abs_end_0, 
+ct_1_0, 
+ct_1_1, 
+ct0_eq_ct1, ]
+--->[0]
+
+
+Blocking composition assignment 0 for state
+ [abs_h_0, 
+ct_1_0, 
+ct_0_1, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, ]
+--->[0]
+
+[abs_h_0, 
+ct_1_0, 
+ct_0_1, ]
+--->[1]
+
+[abs_h_0, 
+ct_1_0, 
+ct_1_1, 
+ct0_eq_ct1, ]
+--->[0]
+
+
+Blocking composition assignment 0 for state
+ [abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, ]
 
 
 Exploring next composition.. 
@@ -7363,26 +7164,21 @@ ct_0_1,
 n0_eq_n1, 
 ct0_eq_ct1, 
 p_synth_5, ]
---->[1]
-
-[abs_h_0, 
-ct_0_0, 
-ct_1_1, 
-p_synth_4, ]
 --->[0]
 
 [abs_h_0, 
 ct_1_0, 
-ct_1_1, 
-ct0_eq_ct1, ]
+ct_0_1, ]
 --->[0]
 
 
 Blocking composition assignment 0 for state
  [abs_h_0, 
 ct_0_0, 
-ct_1_1, 
-p_synth_4, ]
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, 
+p_synth_5, ]
 
 
 Exploring next composition.. 
@@ -7402,9 +7198,9 @@ ct_1_1, ]
 --->[0]
 
 [abs_h_0, 
-ct_1_0, 
+ct_0_0, 
 ct_1_1, 
-ct0_eq_ct1, ]
+n0_eq_n1, ]
 --->[0]
 
 
@@ -7430,6 +7226,70 @@ p_synth_5, ]
 ct_0_0, 
 ct_1_1, 
 p_synth_4, ]
+--->[2]
+
+[abs_h_0, 
+ct_1_0, 
+n0_eq_n1, 
+p_synth_2, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [abs_h_0, 
+ct_0_0, 
+ct_1_1, 
+p_synth_4, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, 
+p_synth_5, ]
+--->[1]
+
+[abs_h_0, 
+ct_0_0, 
+ct_1_1, 
+p_synth_4, ]
+--->[0]
+
+[abs_h_0, 
+ct_1_0, 
+ct_1_1, 
+ct0_eq_ct1, ]
+--->[0]
+
+
+Blocking composition assignment 0 for state
+ [abs_h_0, 
+ct_0_0, 
+ct_1_1, 
+p_synth_4, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, 
+p_synth_5, ]
+--->[1]
+
+[abs_h_0, 
+ct_0_0, 
+ct_1_1, 
+p_synth_4, ]
 --->[1]
 
 [abs_h_0, 
@@ -7439,7 +7299,7 @@ p_synth_6, ]
 --->[0]
 
 
-38 SMT queries performed.
+41 SMT queries performed.
 after complete_trace [abs_h_0, 
 ct_0_0, 
 ct_0_1, 
@@ -7504,19 +7364,19 @@ Discovering predicate from a_src, a_tgt, c_src, c_tgt to eliminate spurious trac
 Running quantifier elimination: 
 New predicate is  (not (and (>= nU0 1)
 
+          (= (div nU0 10) (div nU1 10))
+
           (= (div nU1 10) 0)
 
           (not (= nU1 0))
 
-          (not (= nU0 nU1))
-
-          (= (div nU0 10) 0)))
+          (not (= nU0 nU1))))
 
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.157516 
-Solver time:	22.255295
-Total time:	22.412811
-Iteration count:	38
+Pre-processing time:	0.15646 
+Solver time:	24.927972
+Total time:	25.084432
+Iteration count:	41
 Predicate count:	16
 Successfully added new predicate to input file. !
 Start next refinement loop: True
@@ -7577,10 +7437,10 @@ ct0_eq_ct1, ]
 --->[2]
 
 [abs_h_0, 
-ct_0_0, 
+ct_1_0, 
 ct_1_1, 
 n0_eq_n1, 
-p_synth_5, ]
+ct0_eq_ct1, ]
 --->[2]
 
 [abs_h_0, 
@@ -7650,51 +7510,6 @@ Blocking composition assignment 2 for state
  [abs_h_0, 
 abs_end_0, 
 ct_1_0, 
-n0_eq_n1, 
-p_synth_2, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, ]
---->[2]
-
-[abs_h_0, 
-ct_0_0, 
-ct_1_1, 
-n0_eq_n1, 
-p_synth_5, ]
---->[2]
-
-[abs_h_0, 
-ct_1_0, 
-n0_eq_n1, ]
---->[2]
-
-[abs_h_0, 
-ct_0_1, 
-n0_eq_n1, 
-p_synth_2, ]
---->[2]
-
-[abs_h_0, 
-abs_end_0, 
-abs_end_1, 
-ct_0_1, 
-n0_eq_n1, 
-p_synth_2, ]
---->[0]
-
-
-Blocking composition assignment 2 for state
- [abs_h_0, 
-ct_0_1, 
 n0_eq_n1, 
 p_synth_2, ]
 
@@ -7788,6 +7603,51 @@ Blocking composition assignment 2 for state
  [abs_h_0, 
 ct_1_0, 
 abs_end_1, 
+n0_eq_n1, 
+p_synth_2, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, ]
+--->[2]
+
+[abs_h_0, 
+ct_1_0, 
+ct_1_1, 
+n0_eq_n1, 
+ct0_eq_ct1, ]
+--->[2]
+
+[abs_h_0, 
+ct_1_0, 
+n0_eq_n1, ]
+--->[2]
+
+[abs_h_0, 
+ct_0_1, 
+n0_eq_n1, 
+p_synth_2, ]
+--->[2]
+
+[abs_h_0, 
+abs_end_0, 
+abs_end_1, 
+ct_0_1, 
+n0_eq_n1, 
+p_synth_2, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [abs_h_0, 
+ct_0_1, 
 n0_eq_n1, 
 p_synth_2, ]
 
@@ -8092,8 +7952,7 @@ Abstract Counter-example trace for current composition:
 ct_0_0, 
 ct_0_1, 
 n0_eq_n1, 
-ct0_eq_ct1, 
-p_synth_5, ]
+ct0_eq_ct1, ]
 --->[2]
 
 [abs_h_0, 
@@ -8219,9 +8078,8 @@ ct_0_0, ]
 --->[2]
 
 [abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-ct0_eq_ct1, ]
+ct_1_0, 
+ct_0_1, ]
 --->[2]
 
 [abs_h_0, 
@@ -8233,9 +8091,8 @@ ct0_eq_ct1, ]
 
 Blocking composition assignment 2 for state
  [abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-ct0_eq_ct1, ]
+ct_1_0, 
+ct_0_1, ]
 
 
 Exploring next composition.. 
@@ -8368,46 +8225,6 @@ p_synth_2, ]
 
 Blocking composition assignment 2 for state
  [abs_h_0, 
-ct_0_0, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, ]
---->[2]
-
-[abs_h_0, 
-ct_0_0, 
-ct_1_1, 
-n0_eq_n1, ]
---->[1]
-
-[abs_h_0, 
-ct_0_0, ]
---->[0]
-
-[abs_h_0, 
-abs_end_0, 
-ct_0_0, ]
---->[2]
-
-[abs_h_0, 
-abs_end_0, 
-ct_0_0, 
-n0_eq_n1, 
-p_synth_2, ]
---->[0]
-
-
-Blocking composition assignment 2 for state
- [abs_h_0, 
-abs_end_0, 
 ct_0_0, ]
 
 
@@ -8497,8 +8314,9 @@ ct0_eq_ct1, ]
 --->[0]
 
 [abs_h_0, 
-ct_1_0, 
-ct_0_1, ]
+ct_0_0, 
+ct_0_1, 
+ct0_eq_ct1, ]
 --->[2]
 
 [abs_h_0, 
@@ -8510,8 +8328,114 @@ ct0_eq_ct1, ]
 
 Blocking composition assignment 2 for state
  [abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+ct0_eq_ct1, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, ]
+--->[0]
+
+[abs_h_0, 
 ct_1_0, 
 ct_0_1, ]
+--->[0]
+
+[abs_h_0, 
+ct_0_1, ]
+--->[2]
+
+[abs_h_0, 
+ct_0_0, 
+ct_1_1, 
+n0_eq_n1, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [abs_h_0, 
+ct_0_1, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, ]
+--->[0]
+
+[abs_h_0, 
+ct_1_0, 
+ct_0_1, ]
+--->[0]
+
+[abs_h_0, 
+ct_0_1, 
+n0_eq_n1, ]
+--->[2]
+
+[abs_h_0, 
+ct_0_0, 
+ct_1_1, 
+n0_eq_n1, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [abs_h_0, 
+ct_0_1, 
+n0_eq_n1, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, ]
+--->[0]
+
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+ct0_eq_ct1, ]
+--->[0]
+
+[abs_h_0, 
+abs_end_0, 
+ct_0_0, 
+ct_0_1, 
+ct0_eq_ct1, ]
+--->[2]
+
+[abs_h_0, 
+ct_0_0, 
+ct_1_1, 
+n0_eq_n1, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [abs_h_0, 
+abs_end_0, 
+ct_0_0, 
+ct_0_1, 
+ct0_eq_ct1, ]
 
 
 Exploring next composition.. 
@@ -8537,7 +8461,6 @@ ct_0_1, ]
 --->[2]
 
 [abs_h_0, 
-abs_end_0, 
 ct_1_0, 
 ct_1_1, 
 ct0_eq_ct1, ]
@@ -8643,97 +8566,6 @@ ct_0_1,
 n0_eq_n1, 
 ct0_eq_ct1, 
 p_synth_5, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, 
-p_synth_5, ]
---->[1]
-
-[abs_h_0, 
-ct_0_0, 
-ct_1_1, 
-p_synth_4, ]
---->[2]
-
-[abs_h_0, 
-ct_0_0, 
-p_synth_3, 
-p_synth_6, ]
---->[0]
-
-
-Blocking composition assignment 2 for state
- [abs_h_0, 
-ct_0_0, 
-ct_1_1, 
-p_synth_4, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, ]
---->[1]
-
-[abs_h_0, 
-ct_0_0, 
-ct_1_1, ]
---->[2]
-
-[abs_h_0, 
-abs_end_0, 
-ct_0_0, 
-n0_eq_n1, 
-p_synth_2, ]
---->[0]
-
-
-Blocking composition assignment 2 for state
- [abs_h_0, 
-ct_0_0, 
-ct_1_1, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, ]
---->[1]
-
-[abs_h_0, 
-ct_0_0, 
-ct_1_1, ]
---->[0]
-
-[abs_h_0, 
-ct_1_0, 
-ct_1_1, 
-ct0_eq_ct1, ]
---->[0]
-
-
-Blocking composition assignment 0 for state
- [abs_h_0, 
-ct_0_0, 
-ct_1_1, ]
 
 
 Exploring next composition.. 
@@ -8752,16 +8584,16 @@ p_synth_5, ]
 ct_0_0, 
 ct_1_1, 
 p_synth_4, ]
---->[0]
+--->[2]
 
 [abs_h_0, 
 ct_0_0, 
-ct_1_1, 
-n0_eq_n1, ]
+p_synth_3, 
+p_synth_6, ]
 --->[0]
 
 
-Blocking composition assignment 0 for state
+Blocking composition assignment 2 for state
  [abs_h_0, 
 ct_0_0, 
 ct_1_1, 
@@ -8782,6 +8614,97 @@ ct0_eq_ct1, ]
 [abs_h_0, 
 ct_0_0, 
 ct_1_1, ]
+--->[2]
+
+[abs_h_0, 
+abs_end_0, 
+ct_0_0, 
+n0_eq_n1, 
+p_synth_2, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [abs_h_0, 
+ct_0_0, 
+ct_1_1, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, ]
+--->[1]
+
+[abs_h_0, 
+ct_0_0, 
+ct_1_1, ]
+--->[0]
+
+[abs_h_0, 
+ct_0_0, 
+ct_1_1, 
+n0_eq_n1, ]
+--->[0]
+
+
+Blocking composition assignment 0 for state
+ [abs_h_0, 
+ct_0_0, 
+ct_1_1, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, 
+p_synth_5, ]
+--->[1]
+
+[abs_h_0, 
+ct_0_0, 
+ct_1_1, 
+p_synth_4, ]
+--->[0]
+
+[abs_h_0, 
+ct_0_0, 
+ct_1_1, 
+n0_eq_n1, ]
+--->[0]
+
+
+Blocking composition assignment 0 for state
+ [abs_h_0, 
+ct_0_0, 
+ct_1_1, 
+p_synth_4, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, ]
+--->[1]
+
+[abs_h_0, 
+ct_0_0, 
+ct_1_1, ]
 --->[1]
 
 [abs_h_0, 
@@ -8800,6 +8723,81 @@ Blocking composition assignment 2 for state
  [abs_h_0, 
 ct_0_0, 
 p_synth_4, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, ]
+--->[1]
+
+[abs_h_0, 
+ct_0_0, 
+ct_1_1, ]
+--->[1]
+
+[abs_h_0, 
+ct_0_0, 
+n0_eq_n1, 
+p_synth_2, ]
+--->[2]
+
+[abs_h_0, 
+abs_end_0, 
+ct_0_0, 
+abs_end_1, 
+n0_eq_n1, 
+p_synth_2, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [abs_h_0, 
+ct_0_0, 
+n0_eq_n1, 
+p_synth_2, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, ]
+--->[1]
+
+[abs_h_0, 
+ct_0_0, 
+ct_1_1, ]
+--->[1]
+
+[abs_h_0, 
+ct_0_0, 
+n0_eq_n1, 
+p_synth_2, ]
+--->[0]
+
+[abs_h_0, 
+abs_end_0, 
+ct_0_0, 
+n0_eq_n1, 
+p_synth_2, ]
+--->[0]
+
+
+Blocking composition assignment 0 for state
+ [abs_h_0, 
+ct_0_0, 
+n0_eq_n1, 
+p_synth_2, ]
 
 
 Exploring next composition.. 
@@ -8892,173 +8890,13 @@ ct_1_1, ]
 --->[1]
 
 [abs_h_0, 
-ct_0_0, 
-n0_eq_n1, 
-p_synth_2, ]
+ct_0_0, ]
+--->[0]
+
+[abs_h_0, 
+abs_end_0, 
+ct_0_0, ]
 --->[2]
-
-[abs_h_0, 
-abs_end_0, 
-ct_0_0, 
-abs_end_1, 
-n0_eq_n1, 
-p_synth_2, ]
---->[0]
-
-
-Blocking composition assignment 2 for state
- [abs_h_0, 
-ct_0_0, 
-n0_eq_n1, 
-p_synth_2, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, ]
---->[1]
-
-[abs_h_0, 
-ct_0_0, 
-ct_1_1, ]
---->[1]
-
-[abs_h_0, 
-ct_0_0, 
-n0_eq_n1, 
-p_synth_2, ]
---->[0]
-
-[abs_h_0, 
-abs_end_0, 
-ct_0_0, 
-n0_eq_n1, 
-p_synth_2, ]
---->[0]
-
-
-Blocking composition assignment 0 for state
- [abs_h_0, 
-ct_0_0, 
-n0_eq_n1, 
-p_synth_2, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, ]
---->[1]
-
-[abs_h_0, 
-ct_0_0, 
-ct_1_1, ]
---->[1]
-
-[abs_h_0, 
-ct_0_0, 
-n0_eq_n1, 
-p_synth_2, ]
---->[1]
-
-[abs_h_0, 
-ct_0_0, 
-abs_end_1, 
-n0_eq_n1, 
-p_synth_2, ]
---->[2]
-
-[abs_h_0, 
-abs_end_0, 
-ct_0_0, 
-abs_end_1, 
-n0_eq_n1, 
-p_synth_2, ]
---->[0]
-
-
-Blocking composition assignment 2 for state
- [abs_h_0, 
-ct_0_0, 
-abs_end_1, 
-n0_eq_n1, 
-p_synth_2, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, ]
---->[1]
-
-[abs_h_0, 
-ct_0_0, 
-ct_1_1, ]
---->[1]
-
-[abs_h_0, 
-ct_0_0, ]
---->[0]
-
-[abs_h_0, 
-abs_end_0, 
-ct_0_0, ]
---->[1]
-
-[abs_h_0, 
-abs_end_0, 
-ct_0_0, 
-n0_eq_n1, 
-p_synth_2, ]
---->[0]
-
-
-Blocking composition assignment 0 for state
- [abs_h_0, 
-ct_0_0, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, ]
---->[1]
-
-[abs_h_0, 
-ct_0_0, 
-ct_1_1, ]
---->[1]
-
-[abs_h_0, 
-ct_0_0, ]
---->[1]
-
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-ct0_eq_ct1, ]
---->[0]
 
 [abs_h_0, 
 ct_1_0, 
@@ -9066,11 +8904,56 @@ ct_0_1, ]
 --->[0]
 
 
-Blocking composition assignment 0 for state
+Blocking composition assignment 2 for state
  [abs_h_0, 
+abs_end_0, 
+ct_0_0, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[abs_h_0, 
 ct_0_0, 
 ct_0_1, 
+n0_eq_n1, 
 ct0_eq_ct1, ]
+--->[1]
+
+[abs_h_0, 
+ct_0_0, 
+ct_1_1, ]
+--->[1]
+
+[abs_h_0, 
+ct_0_0, 
+n0_eq_n1, 
+p_synth_2, ]
+--->[1]
+
+[abs_h_0, 
+ct_0_0, 
+abs_end_1, 
+n0_eq_n1, 
+p_synth_2, ]
+--->[2]
+
+[abs_h_0, 
+abs_end_0, 
+ct_0_0, 
+abs_end_1, 
+n0_eq_n1, 
+p_synth_2, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [abs_h_0, 
+ct_0_0, 
+abs_end_1, 
+n0_eq_n1, 
+p_synth_2, ]
 
 
 Exploring next composition.. 
@@ -9111,7 +8994,7 @@ p_synth_2, ]
 --->[0]
 
 
-41 SMT queries performed.
+42 SMT queries performed.
 after complete_trace [abs_h_0, 
 ct_0_0, 
 ct_0_1, 
@@ -9163,15 +9046,15 @@ Discovering predicate from a_src, a_tgt, c_src, c_tgt to eliminate spurious trac
 Running quantifier elimination: 
 New predicate is  (let ((a!1 (not (= (div (div nU1 10) 10) 0))))
 
-(let ((a!2 (and (= nU0 nU1) (not (= nU1 (div nU0 10))) a!1)))
+(let ((a!2 (and (= nU0 nU1) a!1 (not (= nU1 (div nU0 10))))))
 
   (not a!2)))
 
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.176133 
-Solver time:	27.750897
-Total time:	27.92703
-Iteration count:	41
+Pre-processing time:	0.172571 
+Solver time:	25.598438
+Total time:	25.771009000000003
+Iteration count:	42
 Predicate count:	17
 Successfully added new predicate to input file. !
 Start next refinement loop: True
@@ -9229,28 +9112,31 @@ ct_0_0,
 ct_0_1, 
 n0_eq_n1, 
 ct0_eq_ct1, 
-p_synth_8, ]
+p_synth_5, ]
 --->[2]
 
 [abs_h_0, 
 ct_0_0, 
 ct_1_1, 
-n0_eq_n1, 
-p_synth_5, ]
---->[2]
-
-[abs_h_0, 
-ct_1_0, 
 n0_eq_n1, ]
 --->[2]
 
 [abs_h_0, 
+ct_1_0, 
+n0_eq_n1, 
+p_synth_2, ]
+--->[0]
+
+[abs_h_0, 
+abs_end_0, 
+ct_1_0, 
 n0_eq_n1, 
 p_synth_2, ]
 --->[2]
 
 [abs_h_0, 
 abs_end_0, 
+ct_1_0, 
 abs_end_1, 
 n0_eq_n1, 
 p_synth_2, ]
@@ -9259,6 +9145,8 @@ p_synth_2, ]
 
 Blocking composition assignment 2 for state
  [abs_h_0, 
+abs_end_0, 
+ct_1_0, 
 n0_eq_n1, 
 p_synth_2, ]
 
@@ -9272,31 +9160,29 @@ ct_0_0,
 ct_0_1, 
 n0_eq_n1, 
 ct0_eq_ct1, 
+p_synth_8, ]
+--->[2]
+
+[abs_h_0, 
+ct_1_0, 
+ct_1_1, 
+n0_eq_n1, 
+ct0_eq_ct1, 
 p_synth_5, ]
 --->[2]
 
 [abs_h_0, 
-ct_0_0, 
-ct_1_1, 
+ct_1_0, 
 n0_eq_n1, ]
 --->[2]
 
 [abs_h_0, 
-ct_1_0, 
-n0_eq_n1, 
-p_synth_2, ]
---->[0]
-
-[abs_h_0, 
-abs_end_0, 
-ct_1_0, 
 n0_eq_n1, 
 p_synth_2, ]
 --->[2]
 
 [abs_h_0, 
 abs_end_0, 
-ct_1_0, 
 abs_end_1, 
 n0_eq_n1, 
 p_synth_2, ]
@@ -9305,8 +9191,6 @@ p_synth_2, ]
 
 Blocking composition assignment 2 for state
  [abs_h_0, 
-abs_end_0, 
-ct_1_0, 
 n0_eq_n1, 
 p_synth_2, ]
 
@@ -9367,6 +9251,53 @@ ct_0_0,
 ct_0_1, 
 n0_eq_n1, 
 ct0_eq_ct1, 
+p_synth_8, ]
+--->[2]
+
+[abs_h_0, 
+ct_1_0, 
+ct_1_1, 
+n0_eq_n1, 
+ct0_eq_ct1, 
+p_synth_5, ]
+--->[2]
+
+[abs_h_0, 
+ct_1_0, 
+n0_eq_n1, ]
+--->[2]
+
+[abs_h_0, 
+ct_0_1, 
+n0_eq_n1, 
+p_synth_2, ]
+--->[2]
+
+[abs_h_0, 
+abs_end_0, 
+abs_end_1, 
+ct_0_1, 
+n0_eq_n1, 
+p_synth_2, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [abs_h_0, 
+ct_0_1, 
+n0_eq_n1, 
+p_synth_2, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, 
 p_synth_5, ]
 --->[2]
 
@@ -9527,53 +9458,6 @@ Blocking composition assignment 2 for state
 ct_1_0, 
 ct_1_1, 
 ct0_eq_ct1, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, 
-p_synth_8, ]
---->[2]
-
-[abs_h_0, 
-ct_1_0, 
-ct_1_1, 
-n0_eq_n1, 
-ct0_eq_ct1, 
-p_synth_5, ]
---->[2]
-
-[abs_h_0, 
-ct_1_0, 
-n0_eq_n1, ]
---->[2]
-
-[abs_h_0, 
-ct_0_1, 
-n0_eq_n1, 
-p_synth_2, ]
---->[2]
-
-[abs_h_0, 
-abs_end_0, 
-abs_end_1, 
-ct_0_1, 
-n0_eq_n1, 
-p_synth_2, ]
---->[0]
-
-
-Blocking composition assignment 2 for state
- [abs_h_0, 
-ct_0_1, 
-n0_eq_n1, 
-p_synth_2, ]
 
 
 Exploring next composition.. 
@@ -9933,9 +9817,112 @@ p_synth_5, ]
 --->[0]
 
 [abs_h_0, 
+ct_1_0, 
+ct_0_1, ]
+--->[2]
+
+[abs_h_0, 
+abs_end_0, 
+ct_1_0, 
+ct_1_1, 
+ct0_eq_ct1, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [abs_h_0, 
+ct_1_0, 
+ct_0_1, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, 
+p_synth_5, ]
+--->[0]
+
+[abs_h_0, 
 ct_0_0, 
 ct_0_1, 
 ct0_eq_ct1, ]
+--->[2]
+
+[abs_h_0, 
+ct_1_0, 
+ct_1_1, 
+ct0_eq_ct1, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+ct0_eq_ct1, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, 
+p_synth_5, ]
+--->[0]
+
+[abs_h_0, 
+ct_1_0, 
+ct_0_1, ]
+--->[0]
+
+[abs_h_0, 
+abs_end_0, 
+ct_1_0, 
+ct_0_1, ]
+--->[2]
+
+[abs_h_0, 
+ct_1_0, 
+ct_1_1, 
+ct0_eq_ct1, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [abs_h_0, 
+abs_end_0, 
+ct_1_0, 
+ct_0_1, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, 
+p_synth_5, ]
+--->[0]
+
+[abs_h_0, 
+ct_1_0, 
+ct_0_1, ]
+--->[0]
+
+[abs_h_0, 
+ct_0_1, ]
 --->[2]
 
 [abs_h_0, 
@@ -9947,108 +9934,6 @@ n0_eq_n1, ]
 
 Blocking composition assignment 2 for state
  [abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-ct0_eq_ct1, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, 
-p_synth_5, ]
---->[0]
-
-[abs_h_0, 
-ct_1_0, 
-ct_0_1, ]
---->[2]
-
-[abs_h_0, 
-ct_1_0, 
-ct_1_1, 
-ct0_eq_ct1, ]
---->[0]
-
-
-Blocking composition assignment 2 for state
- [abs_h_0, 
-ct_1_0, 
-ct_0_1, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, 
-p_synth_5, ]
---->[0]
-
-[abs_h_0, 
-ct_1_0, 
-ct_0_1, ]
---->[0]
-
-[abs_h_0, 
-ct_0_1, ]
---->[2]
-
-[abs_h_0, 
-ct_0_0, 
-ct_1_1, 
-n0_eq_n1, ]
---->[0]
-
-
-Blocking composition assignment 2 for state
- [abs_h_0, 
-ct_0_1, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, 
-p_synth_5, ]
---->[0]
-
-[abs_h_0, 
-ct_1_0, 
-ct_0_1, ]
---->[0]
-
-[abs_h_0, 
-abs_end_0, 
-ct_1_0, 
-ct_0_1, ]
---->[2]
-
-[abs_h_0, 
-ct_1_0, 
-ct_1_1, 
-ct0_eq_ct1, ]
---->[0]
-
-
-Blocking composition assignment 2 for state
- [abs_h_0, 
-abs_end_0, 
-ct_1_0, 
 ct_0_1, ]
 
 
@@ -10090,43 +9975,6 @@ abs_end_0,
 ct_0_0, 
 ct_0_1, 
 ct0_eq_ct1, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, 
-p_synth_5, ]
---->[0]
-
-[abs_h_0, 
-ct_1_0, 
-ct_0_1, ]
---->[0]
-
-[abs_h_0, 
-ct_0_1, 
-n0_eq_n1, 
-p_synth_5, ]
---->[2]
-
-[abs_h_0, 
-ct_0_0, 
-ct_1_1, 
-n0_eq_n1, ]
---->[0]
-
-
-Blocking composition assignment 2 for state
- [abs_h_0, 
-ct_0_1, 
-n0_eq_n1, 
-p_synth_5, ]
 
 
 Exploring next composition.. 
@@ -10417,7 +10265,7 @@ p_synth_6, ]
 --->[0]
 
 
-31 SMT queries performed.
+30 SMT queries performed.
 after complete_trace [abs_h_0, 
 ct_0_0, 
 ct_0_1, 
@@ -10503,5 +10351,5 @@ Start next refinement loop: False
 
 
 
-Total time taken : 134.768699
+Total time taken : 126.435843
 Number of predicates guessed: 8.0

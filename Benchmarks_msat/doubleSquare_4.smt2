@@ -77,4 +77,7 @@
 
 
 
+
+(declare-rel pred_0_synth_msat_1 (Int Int Int Int Int))
+ (rule (=>  ( =  ( +  ( * 2 (rel x 0)  )  ( +  ( * 2 (rel y 0)  )  ( +  ( *  ( - 2  ) (rel x 1)  )  ( *  ( - 1  ) (rel y 1)  )  )  )  ) 0  ) (pred_0_synth_msat_1 z y x h end)))
 (query End)

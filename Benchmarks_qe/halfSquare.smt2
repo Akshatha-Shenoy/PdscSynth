@@ -80,4 +80,14 @@
 
 
 
+(declare-rel p_synth_1 (Int Int Int Int Int))
+ (rule (=>   (and  (= (rel y 0) 0 )  (not  (= (rel i 0) 0 ) )  (not  (= (rel i 0)  (- 1 ) ) ) )  (p_synth_1 max x i y pc)))
+(declare-rel p_synth_2 (Int Int Int Int Int))
+ (rule (=>   (and  (= (rel y 0) 0 )  (not  (= (rel i 1) 0 ) )  (not  (= (rel i 1)  (- 1 ) ) ) )  (p_synth_2 max x i y pc)))
+(declare-rel p_synth_3 (Int Int Int Int Int))
+ (rule (=>   (and  (not  (= (rel i 0)  (- 1 ) ) )  (or  (<=  (+  (*  (- 1 ) (rel y 1) ) (rel i 0) )  (- 1 ) )  (<=  (+ (rel y 1)  (*  (- 1 ) (rel i 0) ) )  (- 1 ) ) )  (not  (= (rel y 1) 0 ) )  (not  (= (rel i 0) 0 ) ) ) (p_synth_3 max x i y pc)))
+(declare-rel p_synth_4 (Int Int Int Int Int))
+ (rule (=>   (and  (= (rel y 0) 0 )  (<= (rel y 1)  (- 2 ) )  (>= (rel y 1)  (- 2 ) ) )  (p_synth_4 max x i y pc)))
+(declare-rel p_synth_5 (Int Int Int Int Int))
+ (rule (=>   (and  (= (rel y 0) 0 )  (or  (not  (>= (rel y 1)  (- 2 ) ) )  (not  (<= (rel y 1)  (- 2 ) ) ) )  (or  (>= (rel y 1) 2 )  (not  (>= (rel y 1) 1 ) ) )  (not  (= (rel y 1) 0 ) ) ) (p_synth_5 max x i y pc)))
 (query End)

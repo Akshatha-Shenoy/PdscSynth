@@ -1,38 +1,38 @@
-doubleSquare_1.smt2,TIMEOUT
-
-subsume_ref_ref.smt2,TIMEOUT
-
-subsume_2.smt2,TIMEOUT
-
-fig4_ref_ref.smt2,0:00:00.565736,safe,0.0
-
-sum_to_n_error.smt2    0:00:00.735193,unsafe,0.0
-
-fig4_1.smt2    0:00:03.411190,unsafe,1.0
-
-fig4_2.smt2    0:00:03.734945,unsafe,1.0
-
-inc_dec.smt2,0:00:07.730908,safe,2.0
-
-sum-pc.smt2,0:01:14.897401,safe,5.0
-
-sum_to_n.smt2,TIMEOUT
-
-squareSum.smt2,0:00:01.005913,safe,0.0
-
-doubleSquare_3.smt2,TIMEOUT
-
-doubleSquare_2.smt2,TIMEOUT
-
-puzzle_ref_ref.smt2,TIMEOUT
-
-doubleSquare_4.smt2,0:01:00.595310,safe,4.0
-
 puzzle_1.smt2,TIMEOUT
 
-subsume_1.smt2,TIMEOUT
+sum_to_n_error.smt2    0:00:00.555502,unsafe,0.0
 
 puzzle_2.smt2,TIMEOUT
 
+subsume_ref_ref.smt2,TIMEOUT
+
+squareSum.smt2,0:00:00.823963,safe,0.0
+
+fig4_ref_ref.smt2,0:00:00.385492,safe,0.0
+
+subsume_1.smt2,TIMEOUT
+
+subsume_2.smt2,TIMEOUT
+
+doubleSquare_1.smt2,TIMEOUT
+
+fig4_1.smt2    0:00:02.990610,unsafe,1.0
+
+doubleSquare_3.smt2,TIMEOUT
+
+doubleSquare_4.smt2,0:01:03.712410,safe,4.0
+
+doubleSquare_2.smt2,TIMEOUT
+
 halfSquare.smt2,TIMEOUT
+
+fig4_2.smt2    0:00:03.528585,unsafe,1.0
+
+puzzle_ref_ref.smt2,TIMEOUT
+
+sum_to_n.smt2,TIMEOUT
+
+inc_dec.smt2,0:00:07.604565,safe,2.0
+
+sum-pc.smt2,TIMEOUT
 

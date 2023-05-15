@@ -94,4 +94,13 @@
 
 
 
+
+(declare-rel pred_0_synth_msat_1 (Int Int Int Int Int Int))
+ (rule (=>  ( = 1  ( + (rel h 1)  ( *  ( - 1  ) (rel i 1)  )  )  ) (pred_0_synth_msat_1 max h i y v pc)))
+(declare-rel pred_0_synth_msat_2 (Int Int Int Int Int Int))
+ (rule (=>  ( <= (rel h 1) (rel i 1)  ) (pred_0_synth_msat_2 max h i y v pc)))
+(declare-rel pred_1_synth_msat_2 (Int Int Int Int Int Int))
+ (rule (=>  ( < h i  ) (pred_1_synth_msat_2 max h i y v pc)))
+(declare-rel pred_0_synth_msat_3 (Int Int Int Int Int Int))
+ (rule (=>  ( = 0  ( +  ( * 2 (rel y 0)  )  ( *  ( - 1  ) (rel y 1)  )  )  ) (pred_0_synth_msat_3 max h i y v pc)))
 (query End)

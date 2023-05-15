@@ -44,4 +44,11 @@
 
 
 
+
+(declare-rel pred_0_synth_msat_1 (Int Int Int))
+ (rule (=>  ( =  ( - 1  )  ( + (rel n 1)  ( +  ( *  ( - 1  ) (rel i 1)  )  ( + (rel i 0)  ( *  ( - 1  ) (rel n 0)  )  )  )  )  ) (pred_0_synth_msat_1 i n sum)))
+(declare-rel pred_0_synth_msat_2 (Int Int Int))
+ (rule (=>  ( = (rel n 1) 0  ) (pred_0_synth_msat_2 i n sum)))
+(declare-rel pred_0_synth_msat_3 (Int Int Int))
+ (rule (=>  ( =  ( + (rel sum 0)  ( +  ( * 2 (rel i 0)  )  ( +  ( *  ( - 1  ) (rel sum 1)  )  ( *  ( - 2  ) (rel i 1)  )  )  )  ) 0  ) (pred_0_synth_msat_3 i n sum)))
 (query End)

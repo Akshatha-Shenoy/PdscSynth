@@ -47,4 +47,11 @@
 
 
 
+
+(declare-rel p_synth_1 (Int Int Int))
+ (rule (=>   (and  (= (rel x 0)  (mod (rel x 1) 7 ) )  (= (rel x 0) (rel x 1) )  (not  (= 0  (mod (rel x 1) 7 ) ) ) ) (p_synth_1 x h count)))
+(declare-rel p_synth_2 (Int Int Int))
+ (rule (=>   (and  (or  (not  (= 1 (rel x 1) ) )  (not  (= (rel x 0) 1009 ) ) )  (not  (= (rel x 0) (rel x 1) ) )  (or  (not  (= 0  (mod (rel x 0) 7 ) ) )  (not  (= 8 (rel x 1) ) ) ) ) (p_synth_2 x h count)))
+(declare-rel p_synth_3 (Int Int Int))
+ (rule (=>   (and  (= (rel x 0) (rel x 1) ) (not  (= (rel x 0)  (mod (rel x 1) 7 ) ) ) (not  (= 0  (mod (rel x 1) 7 ) ) ) (or  (= 0  (mod (rel x 1) 7 ) )  (not  (= (rel x 1) 1009 ) ) ) ) (p_synth_3 x h count)))
 (query End)

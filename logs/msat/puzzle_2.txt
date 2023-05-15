@@ -346,9 +346,9 @@ final_formula  ( and .def_107 ( not ( and ( = endp_1 1 ) ( not ( and ( not ( = e
 new_pred_smt_format ['(declare-rel pred_0_synth_msat_1 (Int Int Int Int))\n (rule (=>  ( = (rel n 0) 0  ) (pred_0_synth_msat_1 end n h ct)))']
 ['(declare-rel pred_0_synth_msat_1 (Int Int Int Int))\n (rule (=>  ( = (rel n 0) 0  ) (pred_0_synth_msat_1 end n h ct)))']
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.06623 
-Solver time:	2.288087
-Total time:	2.354317
+Pre-processing time:	0.073531 
+Solver time:	2.461464
+Total time:	2.534995
 Iteration count:	9
 Predicate count:	10
 Successfully added new predicate to input file. !
@@ -1679,9 +1679,9 @@ final_formula  ( or ( and .def_306 ( and .def_307 ( not .def_698 ) ) ) ( and .de
 new_pred_smt_format ['(declare-rel pred_0_synth_msat_2 (Int Int Int Int))\n (rule (=>  ( <= (rel ct 1) 0  ) (pred_0_synth_msat_2 end n h ct)))']
 ['(declare-rel pred_0_synth_msat_2 (Int Int Int Int))\n (rule (=>  ( <= (rel ct 1) 0  ) (pred_0_synth_msat_2 end n h ct)))']
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.068524 
-Solver time:	8.010456
-Total time:	8.07898
+Pre-processing time:	0.088699 
+Solver time:	8.771464
+Total time:	8.860163
 Iteration count:	27
 Predicate count:	11
 Successfully added new predicate to input file. !
@@ -3002,9 +3002,9 @@ final_formula  ( or ( and .def_306 ( and .def_307 ( not .def_706 ) ) ) ( and .de
 new_pred_smt_format ['(declare-rel pred_0_synth_msat_3 (Int Int Int Int))\n (rule (=>  ( <= (rel n 0)  ( - 1  )  ) (pred_0_synth_msat_3 end n h ct)))']
 ['(declare-rel pred_0_synth_msat_3 (Int Int Int Int))\n (rule (=>  ( <= (rel n 0)  ( - 1  )  ) (pred_0_synth_msat_3 end n h ct)))']
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.071876 
-Solver time:	7.934289
-Total time:	8.006165
+Pre-processing time:	0.082606 
+Solver time:	8.383108
+Total time:	8.465714
 Iteration count:	25
 Predicate count:	12
 Successfully added new predicate to input file. !
@@ -4491,9 +4491,9 @@ final_formula  ( or ( and .def_306 ( and .def_307 ( not .def_709 ) ) ) ( and .de
 new_pred_smt_format ['(declare-rel pred_0_synth_msat_4 (Int Int Int Int))\n (rule (=>  ( <= (rel ct 1) 1  ) (pred_0_synth_msat_4 end n h ct)))']
 ['(declare-rel pred_0_synth_msat_4 (Int Int Int Int))\n (rule (=>  ( <= (rel ct 1) 1  ) (pred_0_synth_msat_4 end n h ct)))']
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.074884 
-Solver time:	10.44711
-Total time:	10.521994000000001
+Pre-processing time:	0.089663 
+Solver time:	11.077584
+Total time:	11.167247
 Iteration count:	30
 Predicate count:	13
 Successfully added new predicate to input file. !
@@ -6945,19 +6945,19 @@ New predicate is  (let ((a!1 (and (not (<= nU0 (- 1)))
 
                 (not (= nU0 0))
 
-                (not (= nU0 (div nU1 10)))
+                (not (= nU1 0))
 
                 (not (= nU0 nU1))
 
-                (not (= nU1 0)))))
+                (not (= nU0 (div nU1 10))))))
 
   (not a!1))
 
-Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied. 24 14 True ['(declare-rel p_synth_5 (Int Int Int Int))\n (rule (=>   (and  (not  (<= (rel n 0)  (- 1 ) ) ) (not  (= (rel n 0) 0 ) ) (not  (= (rel n 0)  (div (rel n 1) 10 ) ) ) (not  (= (rel n 0) (rel n 1) ) ) (not  (= (rel n 1) 0 ) ) ) (p_synth_5 end n h ct)))']
+Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied. 24 14 True ['(declare-rel p_synth_5 (Int Int Int Int))\n (rule (=>   (and  (not  (<= (rel n 0)  (- 1 ) ) ) (not  (= (rel n 0) 0 ) ) (not  (= (rel n 1) 0 ) ) (not  (= (rel n 0) (rel n 1) ) ) (not  (= (rel n 0)  (div (rel n 1) 10 ) ) ) ) (p_synth_5 end n h ct)))']
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.077661 
-Solver time:	18.158639
-Total time:	18.2363
+Pre-processing time:	0.085346 
+Solver time:	18.381546
+Total time:	18.466892
 Iteration count:	24
 Predicate count:	14
 Successfully added new predicate to input file. !
@@ -7011,9 +7011,10 @@ pred_0_synth_msat_4, ]
 --->[2]
 
 [abs_h_0, 
-ct_0_0, 
+ct_1_0, 
 ct_1_1, 
 n0_eq_n1, 
+ct0_eq_ct1, 
 pred_0_synth_msat_4, ]
 --->[2]
 
@@ -7281,117 +7282,6 @@ pred_0_synth_msat_4, ]
 ct_1_0, 
 ct_1_1, 
 ct0_eq_ct1, 
-pred_0_synth_msat_4, ]
---->[2]
-
-[abs_h_0, 
-abs_end_1, 
-ct_1_1, 
-n0_eq_n1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_4, ]
---->[2]
-
-[abs_h_0, 
-abs_end_0, 
-abs_end_1, 
-ct_1_1, 
-n0_eq_n1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_4, ]
---->[0]
-
-
-Counter-example trace:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[2]
-
-[abs_h_0, 
-ct_0_0, 
-ct_1_1, 
-n0_eq_n1, 
-pred_0_synth_msat_4, ]
---->[0]
-
-[abs_h_0, 
-ct_0_0, 
-ct_1_1, 
-pred_0_synth_msat_4, ]
---->[2]
-
-[abs_h_0, 
-ct_0_0, ]
---->[2]
-
-[abs_h_0, 
-ct_1_0, 
-abs_end_1, 
-n0_eq_n1, 
-pred_0_synth_msat_1, ]
---->[0]
-
-
-Counter-example trace:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[2]
-
-[abs_h_0, 
-ct_0_0, 
-ct_1_1, 
-n0_eq_n1, 
-pred_0_synth_msat_4, ]
---->[0]
-
-[abs_h_0, 
-ct_0_0, 
-ct_1_1, 
-pred_0_synth_msat_4, ]
---->[2]
-
-[abs_h_0, 
-ct_0_0, ]
---->[0]
-
-[abs_h_0, 
-ct_1_0, 
-n0_eq_n1, 
-pred_0_synth_msat_1, ]
---->[0]
-
-
-Counter-example trace:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[2]
-
-[abs_h_0, 
-ct_0_0, 
-ct_1_1, 
-n0_eq_n1, 
-pred_0_synth_msat_4, ]
---->[0]
-
-[abs_h_0, 
-ct_1_0, 
-ct_1_1, 
-ct0_eq_ct1, 
 pred_0_synth_msat_1, 
 pred_0_synth_msat_4, ]
 --->[0]
@@ -7508,6 +7398,63 @@ pred_0_synth_msat_4, ]
 ct_0_0, 
 p_synth_5, ]
 --->[2]
+
+[abs_h_0, 
+ct_1_0, 
+n0_eq_n1, 
+pred_0_synth_msat_1, ]
+--->[0]
+
+
+Counter-example trace:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[2]
+
+[abs_h_0, 
+ct_0_0, 
+ct_1_1, 
+n0_eq_n1, 
+pred_0_synth_msat_4, ]
+--->[1]
+
+[abs_h_0, 
+ct_0_0, ]
+--->[2]
+
+[abs_h_0, 
+ct_1_0, 
+abs_end_1, 
+n0_eq_n1, 
+pred_0_synth_msat_1, ]
+--->[0]
+
+
+Counter-example trace:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[2]
+
+[abs_h_0, 
+ct_0_0, 
+ct_1_1, 
+n0_eq_n1, 
+pred_0_synth_msat_4, ]
+--->[1]
+
+[abs_h_0, 
+ct_0_0, ]
+--->[0]
 
 [abs_h_0, 
 ct_1_0, 
@@ -7853,9 +7800,7 @@ p_synth_5, ]
 --->[2]
 
 [abs_h_0, 
-ct_1_0, 
-n0_eq_n1, 
-pred_0_synth_msat_1, ]
+ct_0_0, ]
 --->[0]
 
 
@@ -7877,10 +7822,9 @@ p_synth_5, ]
 --->[0]
 
 [abs_h_0, 
-ct_1_0, 
+ct_0_0, 
 ct_1_1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_1, 
+n0_eq_n1, 
 pred_0_synth_msat_4, ]
 --->[0]
 
@@ -7907,7 +7851,7 @@ ct_0_0, ]
 --->[0]
 
 
-28 SMT queries performed.
+27 SMT queries performed.
 before complete_trace: [abs_h_0, 
 ct_0_0, 
 ct_0_1, 
@@ -8520,9 +8464,10 @@ pred_0_synth_msat_4, ]
 --->[2]
 
 [abs_h_0, 
-ct_0_0, 
+ct_1_0, 
 ct_1_1, 
 n0_eq_n1, 
+ct0_eq_ct1, 
 pred_0_synth_msat_4, ]
 --->[2]
 
@@ -8863,145 +8808,6 @@ pred_0_synth_msat_4, ]
 ct_1_0, 
 ct_1_1, 
 ct0_eq_ct1, 
-pred_0_synth_msat_4, ]
---->[2]
-
-[abs_h_0, 
-abs_end_1, 
-ct_1_1, 
-n0_eq_n1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_4, ]
---->[2]
-
-[abs_h_0, 
-abs_end_0, 
-abs_end_1, 
-ct_1_1, 
-n0_eq_n1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_4, ]
---->[0]
-
-
-Blocking composition assignment 2 for state
- [abs_h_0, 
-abs_end_1, 
-ct_1_1, 
-n0_eq_n1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_4, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[2]
-
-[abs_h_0, 
-ct_0_0, 
-ct_1_1, 
-n0_eq_n1, 
-pred_0_synth_msat_4, ]
---->[0]
-
-[abs_h_0, 
-ct_0_0, 
-ct_1_1, 
-pred_0_synth_msat_4, ]
---->[2]
-
-[abs_h_0, 
-ct_0_0, ]
---->[2]
-
-[abs_h_0, 
-ct_1_0, 
-abs_end_1, 
-n0_eq_n1, 
-pred_0_synth_msat_1, ]
---->[0]
-
-
-Blocking composition assignment 2 for state
- [abs_h_0, 
-ct_0_0, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[2]
-
-[abs_h_0, 
-ct_0_0, 
-ct_1_1, 
-n0_eq_n1, 
-pred_0_synth_msat_4, ]
---->[0]
-
-[abs_h_0, 
-ct_0_0, 
-ct_1_1, 
-pred_0_synth_msat_4, ]
---->[2]
-
-[abs_h_0, 
-ct_0_0, ]
---->[0]
-
-[abs_h_0, 
-ct_1_0, 
-n0_eq_n1, 
-pred_0_synth_msat_1, ]
---->[0]
-
-
-Blocking composition assignment 0 for state
- [abs_h_0, 
-ct_0_0, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[2]
-
-[abs_h_0, 
-ct_0_0, 
-ct_1_1, 
-n0_eq_n1, 
-pred_0_synth_msat_4, ]
---->[0]
-
-[abs_h_0, 
-ct_1_0, 
-ct_1_1, 
-ct0_eq_ct1, 
 pred_0_synth_msat_1, 
 pred_0_synth_msat_4, ]
 --->[0]
@@ -9166,6 +8972,79 @@ Blocking composition assignment 2 for state
  [abs_h_0, 
 ct_0_0, 
 p_synth_5, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[2]
+
+[abs_h_0, 
+ct_0_0, 
+ct_1_1, 
+n0_eq_n1, 
+pred_0_synth_msat_4, ]
+--->[1]
+
+[abs_h_0, 
+ct_0_0, ]
+--->[2]
+
+[abs_h_0, 
+ct_1_0, 
+abs_end_1, 
+n0_eq_n1, 
+pred_0_synth_msat_1, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [abs_h_0, 
+ct_0_0, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[2]
+
+[abs_h_0, 
+ct_0_0, 
+ct_1_1, 
+n0_eq_n1, 
+pred_0_synth_msat_4, ]
+--->[1]
+
+[abs_h_0, 
+ct_0_0, ]
+--->[0]
+
+[abs_h_0, 
+ct_1_0, 
+n0_eq_n1, 
+pred_0_synth_msat_1, ]
+--->[0]
+
+
+Blocking composition assignment 0 for state
+ [abs_h_0, 
+ct_0_0, ]
 
 
 Exploring next composition.. 
@@ -9623,9 +9502,7 @@ p_synth_5, ]
 --->[2]
 
 [abs_h_0, 
-ct_1_0, 
-n0_eq_n1, 
-pred_0_synth_msat_1, ]
+ct_0_0, ]
 --->[0]
 
 
@@ -9658,10 +9535,9 @@ p_synth_5, ]
 --->[0]
 
 [abs_h_0, 
-ct_1_0, 
+ct_0_0, 
 ct_1_1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_1, 
+n0_eq_n1, 
 pred_0_synth_msat_4, ]
 --->[0]
 
@@ -9699,7 +9575,7 @@ ct_0_0, ]
 --->[0]
 
 
-28 SMT queries performed.
+27 SMT queries performed.
 after complete_trace [abs_h_0, 
 ct_0_0, 
 ct_0_1, 
@@ -9760,12 +9636,12 @@ New predicate is  (let ((a!1 (and (= nU0 nU1) (not (<= nU0 (- 1))) (not (= (div 
 
   (not a!1))
 
-Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied. 28 15 True ['(declare-rel p_synth_6 (Int Int Int Int))\n (rule (=>   (and  (= (rel n 0) (rel n 1) )  (not  (<= (rel n 0)  (- 1 ) ) )  (not  (=  (div (rel n 1) 10 ) 0 ) ) ) (p_synth_6 end n h ct)))']
+Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied. 27 15 True ['(declare-rel p_synth_6 (Int Int Int Int))\n (rule (=>   (and  (= (rel n 0) (rel n 1) )  (not  (<= (rel n 0)  (- 1 ) ) )  (not  (=  (div (rel n 1) 10 ) 0 ) ) ) (p_synth_6 end n h ct)))']
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.115847 
-Solver time:	25.932399
-Total time:	26.048246
-Iteration count:	28
+Pre-processing time:	0.110776 
+Solver time:	23.773272
+Total time:	23.884048
+Iteration count:	27
 Predicate count:	15
 Successfully added new predicate to input file. !
 Start next refinement loop: True
@@ -9820,9 +9696,10 @@ p_synth_6, ]
 --->[2]
 
 [abs_h_0, 
-ct_0_0, 
+ct_1_0, 
 ct_1_1, 
 n0_eq_n1, 
+ct0_eq_ct1, 
 pred_0_synth_msat_4, 
 p_synth_6, ]
 --->[2]
@@ -10000,37 +9877,6 @@ pred_0_synth_msat_1, ]
 abs_end_0, 
 ct_1_0, 
 abs_end_1, 
-n0_eq_n1, 
-pred_0_synth_msat_1, ]
---->[0]
-
-
-Counter-example trace:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_6, ]
---->[2]
-
-[abs_h_0, 
-ct_0_0, 
-ct_1_1, 
-n0_eq_n1, 
-pred_0_synth_msat_4, 
-p_synth_6, ]
---->[2]
-
-[abs_h_0, 
-ct_0_0, 
-n0_eq_n1, ]
---->[2]
-
-[abs_h_0, 
-ct_1_0, 
 n0_eq_n1, 
 pred_0_synth_msat_1, ]
 --->[0]
@@ -10064,6 +9910,37 @@ pred_0_synth_msat_4, ]
 
 [abs_h_0, 
 abs_end_0, 
+ct_1_0, 
+n0_eq_n1, 
+pred_0_synth_msat_1, ]
+--->[0]
+
+
+Counter-example trace:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_6, ]
+--->[2]
+
+[abs_h_0, 
+ct_0_0, 
+ct_1_1, 
+n0_eq_n1, 
+pred_0_synth_msat_4, 
+p_synth_6, ]
+--->[2]
+
+[abs_h_0, 
+ct_0_0, 
+n0_eq_n1, ]
+--->[2]
+
+[abs_h_0, 
 ct_1_0, 
 n0_eq_n1, 
 pred_0_synth_msat_1, ]
@@ -10402,6 +10279,346 @@ pred_0_synth_msat_4, ]
 --->[2]
 
 [abs_h_0, 
+abs_end_1, 
+ct_0_1, 
+n0_eq_n1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[2]
+
+[abs_h_0, 
+abs_end_0, 
+abs_end_1, 
+ct_0_1, 
+n0_eq_n1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+
+Counter-example trace:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_6, ]
+--->[0]
+
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_5, ]
+--->[2]
+
+[abs_h_0, 
+ct_1_0, 
+ct_1_1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+
+Counter-example trace:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_6, ]
+--->[0]
+
+[abs_h_0, 
+ct_1_0, 
+ct_0_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[2]
+
+[abs_h_0, 
+abs_end_1, 
+ct_0_1, 
+n0_eq_n1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+[abs_h_0, 
+abs_end_0, 
+abs_end_1, 
+ct_0_1, 
+n0_eq_n1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+
+Counter-example trace:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_6, ]
+--->[0]
+
+[abs_h_0, 
+ct_1_0, 
+ct_0_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+[abs_h_0, 
+ct_0_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[2]
+
+[abs_h_0, 
+abs_end_1, 
+ct_0_1, 
+n0_eq_n1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+
+Counter-example trace:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_6, ]
+--->[0]
+
+[abs_h_0, 
+ct_1_0, 
+ct_0_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+[abs_h_0, 
+ct_0_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_5, ]
+--->[2]
+
+[abs_h_0, 
+ct_0_0, 
+ct_1_1, 
+n0_eq_n1, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+
+Counter-example trace:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_6, ]
+--->[0]
+
+[abs_h_0, 
+ct_1_0, 
+ct_0_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+[abs_h_0, 
+ct_0_1, 
+n0_eq_n1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[2]
+
+[abs_h_0, 
+abs_end_0, 
+abs_end_1, 
+ct_0_1, 
+n0_eq_n1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+
+Counter-example trace:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_6, ]
+--->[0]
+
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+[abs_h_0, 
+ct_1_0, 
+ct_0_1, 
+n0_eq_n1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[2]
+
+[abs_h_0, 
+abs_end_0, 
+ct_1_0, 
+abs_end_1, 
+ct_0_1, 
+n0_eq_n1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+
+Counter-example trace:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_6, ]
+--->[0]
+
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+[abs_h_0, 
+ct_1_0, 
+ct_0_1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[2]
+
+[abs_h_0, 
+abs_end_0, 
+ct_1_0, 
+ct_1_1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+
+Counter-example trace:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_6, ]
+--->[0]
+
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+[abs_h_0, 
+ct_1_0, 
+ct_0_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_5, ]
+--->[2]
+
+[abs_h_0, 
+ct_1_1, 
+pred_0_synth_msat_4, 
+p_synth_5, ]
+--->[2]
+
+[abs_h_0, 
+ct_0_0, ]
+--->[0]
+
+
+Counter-example trace:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_6, ]
+--->[0]
+
+[abs_h_0, 
+ct_1_0, 
+ct_0_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+[abs_h_0, 
+ct_1_0, 
+ct_0_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_5, ]
+--->[2]
+
+[abs_h_0, 
 ct_1_1, 
 pred_0_synth_msat_4, ]
 --->[2]
@@ -10423,50 +10640,22 @@ p_synth_6, ]
 --->[0]
 
 [abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[0]
-
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_5, ]
---->[2]
-
-[abs_h_0, 
-ct_0_0, 
-ct_1_1, 
-n0_eq_n1, 
-pred_0_synth_msat_4, ]
---->[0]
-
-
-Counter-example trace:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_6, ]
---->[0]
-
-[abs_h_0, 
 ct_1_0, 
 ct_0_1, 
 pred_0_synth_msat_2, 
 pred_0_synth_msat_4, ]
---->[2]
+--->[0]
 
 [abs_h_0, 
-abs_end_1, 
+ct_0_1, 
+n0_eq_n1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+[abs_h_0, 
+abs_end_0, 
 ct_0_1, 
 n0_eq_n1, 
 pred_0_synth_msat_1, 
@@ -10500,224 +10689,6 @@ p_synth_6, ]
 ct_0_0, 
 ct_0_1, 
 ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[0]
-
-[abs_h_0, 
-ct_1_0, 
-ct_0_1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[2]
-
-[abs_h_0, 
-abs_end_0, 
-ct_1_0, 
-ct_1_1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_4, ]
---->[0]
-
-
-Counter-example trace:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_6, ]
---->[0]
-
-[abs_h_0, 
-ct_1_0, 
-ct_0_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[2]
-
-[abs_h_0, 
-abs_end_1, 
-ct_0_1, 
-n0_eq_n1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[0]
-
-[abs_h_0, 
-abs_end_0, 
-abs_end_1, 
-ct_0_1, 
-n0_eq_n1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[0]
-
-
-Counter-example trace:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_6, ]
---->[0]
-
-[abs_h_0, 
-ct_1_0, 
-ct_0_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[0]
-
-[abs_h_0, 
-ct_0_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_5, ]
---->[2]
-
-[abs_h_0, 
-ct_0_0, 
-ct_1_1, 
-n0_eq_n1, 
-pred_0_synth_msat_4, ]
---->[0]
-
-
-Counter-example trace:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_6, ]
---->[0]
-
-[abs_h_0, 
-ct_1_0, 
-ct_0_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[0]
-
-[abs_h_0, 
-ct_0_1, 
-n0_eq_n1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[2]
-
-[abs_h_0, 
-abs_end_0, 
-abs_end_1, 
-ct_0_1, 
-n0_eq_n1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[0]
-
-
-Counter-example trace:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_6, ]
---->[0]
-
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[0]
-
-[abs_h_0, 
-ct_1_0, 
-ct_0_1, 
-n0_eq_n1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[2]
-
-[abs_h_0, 
-abs_end_0, 
-ct_1_0, 
-abs_end_1, 
-ct_0_1, 
-n0_eq_n1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[0]
-
-
-Counter-example trace:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_6, ]
---->[0]
-
-[abs_h_0, 
-ct_1_0, 
-ct_0_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[0]
-
-[abs_h_0, 
-ct_0_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[2]
-
-[abs_h_0, 
-abs_end_1, 
-ct_0_1, 
-n0_eq_n1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[0]
-
-
-Counter-example trace:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_6, ]
---->[0]
-
-[abs_h_0, 
-ct_1_0, 
-ct_0_1, 
 pred_0_synth_msat_2, 
 pred_0_synth_msat_4, ]
 --->[0]
@@ -10743,138 +10714,6 @@ abs_end_1,
 ct_1_1, 
 n0_eq_n1, 
 pred_0_synth_msat_1, 
-pred_0_synth_msat_4, ]
---->[0]
-
-
-Counter-example trace:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_6, ]
---->[0]
-
-[abs_h_0, 
-ct_1_0, 
-ct_0_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[0]
-
-[abs_h_0, 
-ct_0_1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[2]
-
-[abs_h_0, 
-abs_end_0, 
-ct_1_1, 
-n0_eq_n1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_4, ]
---->[2]
-
-[abs_h_0, 
-abs_end_0, 
-abs_end_1, 
-ct_1_1, 
-n0_eq_n1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_4, ]
---->[0]
-
-
-Counter-example trace:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_6, ]
---->[0]
-
-[abs_h_0, 
-ct_1_0, 
-ct_0_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[0]
-
-[abs_h_0, 
-ct_0_1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[2]
-
-[abs_h_0, 
-abs_end_0, 
-ct_1_1, 
-n0_eq_n1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_4, ]
---->[1]
-
-[abs_h_0, 
-abs_end_0, 
-abs_end_1, 
-ct_1_1, 
-n0_eq_n1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_4, ]
---->[0]
-
-
-Counter-example trace:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_6, ]
---->[0]
-
-[abs_h_0, 
-ct_1_0, 
-ct_0_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[0]
-
-[abs_h_0, 
-ct_0_1, 
-n0_eq_n1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[0]
-
-[abs_h_0, 
-abs_end_0, 
-ct_0_1, 
-n0_eq_n1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[2]
-
-[abs_h_0, 
-abs_end_0, 
-abs_end_1, 
-ct_0_1, 
-n0_eq_n1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_2, 
 pred_0_synth_msat_4, ]
 --->[0]
 
@@ -11052,7 +10891,9 @@ p_synth_5, ]
 --->[2]
 
 [abs_h_0, 
-ct_0_0, ]
+ct_1_0, 
+n0_eq_n1, 
+pred_0_synth_msat_1, ]
 --->[0]
 
 
@@ -11106,7 +10947,7 @@ ct_0_0, ]
 --->[0]
 
 
-37 SMT queries performed.
+36 SMT queries performed.
 before complete_trace: [abs_h_0, 
 ct_0_0, 
 ct_0_1, 
@@ -11419,9 +11260,10 @@ p_synth_6, ]
 --->[2]
 
 [abs_h_0, 
-ct_0_0, 
+ct_1_0, 
 ct_1_1, 
 n0_eq_n1, 
+ct0_eq_ct1, 
 pred_0_synth_msat_4, 
 p_synth_6, ]
 --->[2]
@@ -11671,46 +11513,6 @@ p_synth_6, ]
 ct_0_0, 
 ct_1_1, 
 n0_eq_n1, 
-pred_0_synth_msat_4, 
-p_synth_6, ]
---->[2]
-
-[abs_h_0, 
-ct_0_0, 
-n0_eq_n1, ]
---->[2]
-
-[abs_h_0, 
-ct_1_0, 
-n0_eq_n1, 
-pred_0_synth_msat_1, ]
---->[0]
-
-
-Blocking composition assignment 2 for state
- [abs_h_0, 
-ct_0_0, 
-n0_eq_n1, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_6, ]
---->[2]
-
-[abs_h_0, 
-ct_0_0, 
-ct_1_1, 
-n0_eq_n1, 
 pred_0_synth_msat_4, ]
 --->[0]
 
@@ -11737,6 +11539,46 @@ ct_1_1,
 ct0_eq_ct1, 
 pred_0_synth_msat_1, 
 pred_0_synth_msat_4, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_6, ]
+--->[2]
+
+[abs_h_0, 
+ct_0_0, 
+ct_1_1, 
+n0_eq_n1, 
+pred_0_synth_msat_4, 
+p_synth_6, ]
+--->[2]
+
+[abs_h_0, 
+ct_0_0, 
+n0_eq_n1, ]
+--->[2]
+
+[abs_h_0, 
+ct_1_0, 
+n0_eq_n1, 
+pred_0_synth_msat_1, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [abs_h_0, 
+ct_0_0, 
+n0_eq_n1, ]
 
 
 Exploring next composition.. 
@@ -12170,6 +12012,451 @@ pred_0_synth_msat_4, ]
 --->[2]
 
 [abs_h_0, 
+abs_end_1, 
+ct_0_1, 
+n0_eq_n1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[2]
+
+[abs_h_0, 
+abs_end_0, 
+abs_end_1, 
+ct_0_1, 
+n0_eq_n1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [abs_h_0, 
+abs_end_1, 
+ct_0_1, 
+n0_eq_n1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_6, ]
+--->[0]
+
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_5, ]
+--->[2]
+
+[abs_h_0, 
+ct_1_0, 
+ct_1_1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_5, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_6, ]
+--->[0]
+
+[abs_h_0, 
+ct_1_0, 
+ct_0_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[2]
+
+[abs_h_0, 
+abs_end_1, 
+ct_0_1, 
+n0_eq_n1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+[abs_h_0, 
+abs_end_0, 
+abs_end_1, 
+ct_0_1, 
+n0_eq_n1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [abs_h_0, 
+ct_1_0, 
+ct_0_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_6, ]
+--->[0]
+
+[abs_h_0, 
+ct_1_0, 
+ct_0_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+[abs_h_0, 
+ct_0_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[2]
+
+[abs_h_0, 
+abs_end_1, 
+ct_0_1, 
+n0_eq_n1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [abs_h_0, 
+ct_0_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_6, ]
+--->[0]
+
+[abs_h_0, 
+ct_1_0, 
+ct_0_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+[abs_h_0, 
+ct_0_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_5, ]
+--->[2]
+
+[abs_h_0, 
+ct_0_0, 
+ct_1_1, 
+n0_eq_n1, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [abs_h_0, 
+ct_0_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_5, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_6, ]
+--->[0]
+
+[abs_h_0, 
+ct_1_0, 
+ct_0_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+[abs_h_0, 
+ct_0_1, 
+n0_eq_n1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[2]
+
+[abs_h_0, 
+abs_end_0, 
+abs_end_1, 
+ct_0_1, 
+n0_eq_n1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [abs_h_0, 
+ct_0_1, 
+n0_eq_n1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_6, ]
+--->[0]
+
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+[abs_h_0, 
+ct_1_0, 
+ct_0_1, 
+n0_eq_n1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[2]
+
+[abs_h_0, 
+abs_end_0, 
+ct_1_0, 
+abs_end_1, 
+ct_0_1, 
+n0_eq_n1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [abs_h_0, 
+ct_1_0, 
+ct_0_1, 
+n0_eq_n1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_6, ]
+--->[0]
+
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+[abs_h_0, 
+ct_1_0, 
+ct_0_1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[2]
+
+[abs_h_0, 
+abs_end_0, 
+ct_1_0, 
+ct_1_1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [abs_h_0, 
+ct_1_0, 
+ct_0_1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_6, ]
+--->[0]
+
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+[abs_h_0, 
+ct_1_0, 
+ct_0_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_5, ]
+--->[2]
+
+[abs_h_0, 
+ct_1_1, 
+pred_0_synth_msat_4, 
+p_synth_5, ]
+--->[2]
+
+[abs_h_0, 
+ct_0_0, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [abs_h_0, 
+ct_1_1, 
+pred_0_synth_msat_4, 
+p_synth_5, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_6, ]
+--->[0]
+
+[abs_h_0, 
+ct_1_0, 
+ct_0_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+[abs_h_0, 
+ct_1_0, 
+ct_0_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_5, ]
+--->[2]
+
+[abs_h_0, 
 ct_1_1, 
 pred_0_synth_msat_4, ]
 --->[2]
@@ -12200,63 +12487,22 @@ p_synth_6, ]
 --->[0]
 
 [abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[0]
-
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_5, ]
---->[2]
-
-[abs_h_0, 
-ct_0_0, 
-ct_1_1, 
-n0_eq_n1, 
-pred_0_synth_msat_4, ]
---->[0]
-
-
-Blocking composition assignment 2 for state
- [abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_5, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_6, ]
---->[0]
-
-[abs_h_0, 
 ct_1_0, 
 ct_0_1, 
 pred_0_synth_msat_2, 
 pred_0_synth_msat_4, ]
---->[2]
+--->[0]
 
 [abs_h_0, 
-abs_end_1, 
+ct_0_1, 
+n0_eq_n1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+[abs_h_0, 
+abs_end_0, 
 ct_0_1, 
 n0_eq_n1, 
 pred_0_synth_msat_1, 
@@ -12277,198 +12523,7 @@ pred_0_synth_msat_4, ]
 
 Blocking composition assignment 2 for state
  [abs_h_0, 
-abs_end_1, 
-ct_0_1, 
-n0_eq_n1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_6, ]
---->[0]
-
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[0]
-
-[abs_h_0, 
-ct_1_0, 
-ct_0_1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[2]
-
-[abs_h_0, 
 abs_end_0, 
-ct_1_0, 
-ct_1_1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_4, ]
---->[0]
-
-
-Blocking composition assignment 2 for state
- [abs_h_0, 
-ct_1_0, 
-ct_0_1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_6, ]
---->[0]
-
-[abs_h_0, 
-ct_1_0, 
-ct_0_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[2]
-
-[abs_h_0, 
-abs_end_1, 
-ct_0_1, 
-n0_eq_n1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[0]
-
-[abs_h_0, 
-abs_end_0, 
-abs_end_1, 
-ct_0_1, 
-n0_eq_n1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[0]
-
-
-Blocking composition assignment 2 for state
- [abs_h_0, 
-ct_1_0, 
-ct_0_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_6, ]
---->[0]
-
-[abs_h_0, 
-ct_1_0, 
-ct_0_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[0]
-
-[abs_h_0, 
-ct_0_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_5, ]
---->[2]
-
-[abs_h_0, 
-ct_0_0, 
-ct_1_1, 
-n0_eq_n1, 
-pred_0_synth_msat_4, ]
---->[0]
-
-
-Blocking composition assignment 2 for state
- [abs_h_0, 
-ct_0_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_5, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_6, ]
---->[0]
-
-[abs_h_0, 
-ct_1_0, 
-ct_0_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[0]
-
-[abs_h_0, 
-ct_0_1, 
-n0_eq_n1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[2]
-
-[abs_h_0, 
-abs_end_0, 
-abs_end_1, 
-ct_0_1, 
-n0_eq_n1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[0]
-
-
-Blocking composition assignment 2 for state
- [abs_h_0, 
 ct_0_1, 
 n0_eq_n1, 
 pred_0_synth_msat_1, 
@@ -12494,102 +12549,6 @@ p_synth_6, ]
 ct_0_0, 
 ct_0_1, 
 ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[0]
-
-[abs_h_0, 
-ct_1_0, 
-ct_0_1, 
-n0_eq_n1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[2]
-
-[abs_h_0, 
-abs_end_0, 
-ct_1_0, 
-abs_end_1, 
-ct_0_1, 
-n0_eq_n1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[0]
-
-
-Blocking composition assignment 2 for state
- [abs_h_0, 
-ct_1_0, 
-ct_0_1, 
-n0_eq_n1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_6, ]
---->[0]
-
-[abs_h_0, 
-ct_1_0, 
-ct_0_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[0]
-
-[abs_h_0, 
-ct_0_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[2]
-
-[abs_h_0, 
-abs_end_1, 
-ct_0_1, 
-n0_eq_n1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[0]
-
-
-Blocking composition assignment 2 for state
- [abs_h_0, 
-ct_0_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_6, ]
---->[0]
-
-[abs_h_0, 
-ct_1_0, 
-ct_0_1, 
 pred_0_synth_msat_2, 
 pred_0_synth_msat_4, ]
 --->[0]
@@ -12624,174 +12583,6 @@ Blocking composition assignment 2 for state
 ct_1_1, 
 n0_eq_n1, 
 pred_0_synth_msat_1, 
-pred_0_synth_msat_4, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_6, ]
---->[0]
-
-[abs_h_0, 
-ct_1_0, 
-ct_0_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[0]
-
-[abs_h_0, 
-ct_0_1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[2]
-
-[abs_h_0, 
-abs_end_0, 
-ct_1_1, 
-n0_eq_n1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_4, ]
---->[2]
-
-[abs_h_0, 
-abs_end_0, 
-abs_end_1, 
-ct_1_1, 
-n0_eq_n1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_4, ]
---->[0]
-
-
-Blocking composition assignment 2 for state
- [abs_h_0, 
-abs_end_0, 
-ct_1_1, 
-n0_eq_n1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_4, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_6, ]
---->[0]
-
-[abs_h_0, 
-ct_1_0, 
-ct_0_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[0]
-
-[abs_h_0, 
-ct_0_1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[2]
-
-[abs_h_0, 
-abs_end_0, 
-ct_1_1, 
-n0_eq_n1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_4, ]
---->[1]
-
-[abs_h_0, 
-abs_end_0, 
-abs_end_1, 
-ct_1_1, 
-n0_eq_n1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_4, ]
---->[0]
-
-
-Blocking composition assignment 2 for state
- [abs_h_0, 
-ct_0_1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_6, ]
---->[0]
-
-[abs_h_0, 
-ct_1_0, 
-ct_0_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[0]
-
-[abs_h_0, 
-ct_0_1, 
-n0_eq_n1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[0]
-
-[abs_h_0, 
-abs_end_0, 
-ct_0_1, 
-n0_eq_n1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[2]
-
-[abs_h_0, 
-abs_end_0, 
-abs_end_1, 
-ct_0_1, 
-n0_eq_n1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[0]
-
-
-Blocking composition assignment 2 for state
- [abs_h_0, 
-abs_end_0, 
-ct_0_1, 
-n0_eq_n1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_2, 
 pred_0_synth_msat_4, ]
 
 
@@ -13020,7 +12811,9 @@ p_synth_5, ]
 --->[2]
 
 [abs_h_0, 
-ct_0_0, ]
+ct_1_0, 
+n0_eq_n1, 
+pred_0_synth_msat_1, ]
 --->[0]
 
 
@@ -13096,7 +12889,7 @@ ct_0_0, ]
 --->[0]
 
 
-37 SMT queries performed.
+36 SMT queries performed.
 after complete_trace [abs_h_0, 
 ct_0_0, 
 ct_0_1, 
@@ -13170,12 +12963,12 @@ New predicate is  (let ((a!1 (and (= 0 (div nU0 10)) (= nU1 0) (<= (+ nU1 (* (- 
 
   (not a!1))
 
-Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied. 37 16 True ['(declare-rel p_synth_7 (Int Int Int Int))\n (rule (=>   (and  (= 0  (div (rel n 0) 10 ) )  (= (rel n 1) 0 )  (<=  (+ (rel n 1)  (*  (- 1 ) (rel n 0) ) )  (- 1 ) ) ) (p_synth_7 end n h ct)))']
+Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied. 36 16 True ['(declare-rel p_synth_7 (Int Int Int Int))\n (rule (=>   (and  (= 0  (div (rel n 0) 10 ) )  (= (rel n 1) 0 )  (<=  (+ (rel n 1)  (*  (- 1 ) (rel n 0) ) )  (- 1 ) ) ) (p_synth_7 end n h ct)))']
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.128569 
-Solver time:	40.047309
-Total time:	40.175878
-Iteration count:	37
+Pre-processing time:	0.128456 
+Solver time:	38.960895
+Total time:	39.089351
+Iteration count:	36
 Predicate count:	16
 Successfully added new predicate to input file. !
 Start next refinement loop: True
@@ -13430,6 +13223,37 @@ p_synth_6, ]
 ct_0_0, 
 ct_1_1, 
 n0_eq_n1, 
+pred_0_synth_msat_4, 
+p_synth_6, ]
+--->[2]
+
+[abs_h_0, 
+ct_0_0, 
+n0_eq_n1, ]
+--->[2]
+
+[abs_h_0, 
+ct_1_0, 
+n0_eq_n1, 
+pred_0_synth_msat_1, ]
+--->[0]
+
+
+Counter-example trace:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_6, ]
+--->[2]
+
+[abs_h_0, 
+ct_0_0, 
+ct_1_1, 
+n0_eq_n1, 
 pred_0_synth_msat_4, ]
 --->[0]
 
@@ -13471,37 +13295,6 @@ p_synth_6, ]
 [abs_h_0, 
 ct_0_0, 
 n0_eq_n1, ]
---->[2]
-
-[abs_h_0, 
-ct_1_0, 
-n0_eq_n1, 
-pred_0_synth_msat_1, ]
---->[0]
-
-
-Counter-example trace:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_6, ]
---->[2]
-
-[abs_h_0, 
-ct_0_0, 
-ct_1_1, 
-n0_eq_n1, 
-pred_0_synth_msat_4, 
-p_synth_6, ]
---->[2]
-
-[abs_h_0, 
-ct_0_0, 
-n0_eq_n1, ]
 --->[0]
 
 [abs_h_0, 
@@ -13791,43 +13584,6 @@ pred_0_synth_msat_4, ]
 --->[2]
 
 [abs_h_0, 
-ct_1_0, 
-ct_1_1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_4, ]
---->[0]
-
-
-Counter-example trace:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_6, ]
---->[0]
-
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[0]
-
-[abs_h_0, 
-ct_1_0, 
-ct_0_1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[2]
-
-[abs_h_0, 
-abs_end_0, 
 ct_1_0, 
 ct_1_1, 
 ct0_eq_ct1, 
@@ -13865,48 +13621,6 @@ p_synth_5, ]
 --->[2]
 
 [abs_h_0, 
-ct_0_0, 
-ct_1_1, 
-n0_eq_n1, 
-pred_0_synth_msat_4, ]
---->[0]
-
-
-Counter-example trace:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_6, ]
---->[0]
-
-[abs_h_0, 
-ct_1_0, 
-ct_0_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[2]
-
-[abs_h_0, 
-abs_end_1, 
-ct_0_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[2]
-
-[abs_h_0, 
-ct_0_0, 
-abs_end_1, 
-ct_0_1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[2]
-
-[abs_h_0, 
 ct_1_0, 
 ct_1_1, 
 ct0_eq_ct1, 
@@ -13937,20 +13651,18 @@ pred_0_synth_msat_4, ]
 [abs_h_0, 
 ct_1_0, 
 ct_0_1, 
+pred_0_synth_msat_1, 
 pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_5, ]
+pred_0_synth_msat_4, ]
 --->[2]
 
 [abs_h_0, 
+abs_end_0, 
+ct_1_0, 
 ct_1_1, 
-pred_0_synth_msat_4, 
-p_synth_5, ]
---->[2]
-
-[abs_h_0, 
-ct_0_0, 
-p_synth_7, ]
+ct0_eq_ct1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_4, ]
 --->[0]
 
 
@@ -14006,51 +13718,19 @@ pred_0_synth_msat_4, ]
 --->[2]
 
 [abs_h_0, 
-ct_1_1, 
+abs_end_1, 
+ct_0_1, 
+pred_0_synth_msat_2, 
 pred_0_synth_msat_4, ]
 --->[2]
 
-[abs_h_0, ]
---->[0]
-
 [abs_h_0, 
-ct_0_0, 
-p_synth_7, ]
---->[0]
-
-
-Counter-example trace:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_6, ]
---->[0]
-
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[0]
-
-[abs_h_0, 
-ct_1_0, 
+abs_end_1, 
 ct_0_1, 
 pred_0_synth_msat_2, 
 pred_0_synth_msat_4, 
 p_synth_5, ]
 --->[2]
-
-[abs_h_0, 
-ct_1_1, 
-pred_0_synth_msat_4, 
-p_synth_5, ]
---->[0]
 
 [abs_h_0, 
 ct_0_0, 
@@ -14095,6 +13775,50 @@ abs_end_0,
 abs_end_1, 
 n0_eq_n1, 
 pred_0_synth_msat_1, ]
+--->[0]
+
+
+Counter-example trace:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_6, ]
+--->[0]
+
+[abs_h_0, 
+ct_1_0, 
+ct_0_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[2]
+
+[abs_h_0, 
+abs_end_1, 
+ct_0_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[2]
+
+[abs_h_0, 
+ct_0_0, 
+abs_end_1, 
+ct_0_1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_5, ]
+--->[2]
+
+[abs_h_0, 
+ct_1_0, 
+ct_1_1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_4, ]
 --->[0]
 
 
@@ -14155,6 +13879,38 @@ pred_0_synth_msat_4, ]
 --->[2]
 
 [abs_h_0, 
+ct_1_1, 
+pred_0_synth_msat_4, ]
+--->[2]
+
+[abs_h_0, ]
+--->[0]
+
+[abs_h_0, 
+ct_0_0, 
+p_synth_7, ]
+--->[0]
+
+
+Counter-example trace:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_6, ]
+--->[0]
+
+[abs_h_0, 
+ct_1_0, 
+ct_0_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[2]
+
+[abs_h_0, 
 abs_end_1, 
 ct_0_1, 
 pred_0_synth_msat_2, 
@@ -14198,14 +13954,45 @@ pred_0_synth_msat_4, ]
 --->[2]
 
 [abs_h_0, 
-abs_end_1, 
-ct_0_1, 
-pred_0_synth_msat_2, 
+ct_1_0, 
+ct_1_1, 
+ct0_eq_ct1, 
 pred_0_synth_msat_4, ]
 --->[2]
 
 [abs_h_0, 
-abs_end_1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_1, ]
+--->[2]
+
+[abs_h_0, 
+abs_end_0, 
+n0_eq_n1, 
+pred_0_synth_msat_1, ]
+--->[0]
+
+
+Counter-example trace:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_6, ]
+--->[0]
+
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+[abs_h_0, 
+ct_1_0, 
 ct_0_1, 
 pred_0_synth_msat_2, 
 pred_0_synth_msat_4, 
@@ -14213,128 +14000,14 @@ p_synth_5, ]
 --->[2]
 
 [abs_h_0, 
-ct_0_0, 
 ct_1_1, 
-n0_eq_n1, 
-pred_0_synth_msat_4, ]
---->[0]
+pred_0_synth_msat_4, 
+p_synth_5, ]
+--->[2]
 
-
-Counter-example trace:
 [abs_h_0, 
 ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_6, ]
---->[0]
-
-[abs_h_0, 
-ct_1_0, 
-ct_0_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[2]
-
-[abs_h_0, 
-ct_1_1, 
-pred_0_synth_msat_4, ]
---->[2]
-
-[abs_h_0, 
-pred_0_synth_msat_1, ]
---->[2]
-
-[abs_h_0, 
-abs_end_0, 
-n0_eq_n1, 
-pred_0_synth_msat_1, ]
---->[0]
-
-
-Counter-example trace:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_6, ]
---->[0]
-
-[abs_h_0, 
-ct_1_0, 
-ct_0_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[2]
-
-[abs_h_0, 
-ct_1_1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_4, ]
---->[0]
-
-[abs_h_0, 
-abs_end_0, 
-ct_1_1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_4, ]
---->[2]
-
-[abs_h_0, 
-abs_end_0, 
-n0_eq_n1, 
-pred_0_synth_msat_1, ]
---->[0]
-
-
-Counter-example trace:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_6, ]
---->[0]
-
-[abs_h_0, 
-ct_1_0, 
-ct_0_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[2]
-
-[abs_h_0, 
-abs_end_1, 
-ct_0_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
 p_synth_7, ]
---->[2]
-
-[abs_h_0, 
-abs_end_1, 
-ct_0_1, 
-n0_eq_n1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[2]
-
-[abs_h_0, 
-abs_end_0, 
-abs_end_1, 
-ct_0_1, 
-n0_eq_n1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
 --->[0]
 
 
@@ -14357,21 +14030,27 @@ pred_0_synth_msat_4, ]
 --->[2]
 
 [abs_h_0, 
-ct_1_0, 
-ct_1_1, 
-ct0_eq_ct1, 
+abs_end_1, 
+ct_0_1, 
+pred_0_synth_msat_2, 
 pred_0_synth_msat_4, ]
 --->[2]
 
 [abs_h_0, 
+ct_0_0, 
+abs_end_1, 
+ct_0_1, 
 ct0_eq_ct1, 
-pred_0_synth_msat_1, ]
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
 --->[2]
 
 [abs_h_0, 
-abs_end_0, 
-n0_eq_n1, 
-pred_0_synth_msat_1, ]
+ct_1_0, 
+ct_1_1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_4, ]
 --->[0]
 
 
@@ -14428,22 +14107,30 @@ pred_0_synth_msat_4, ]
 --->[2]
 
 [abs_h_0, 
-ct_1_1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_4, ]
---->[0]
+abs_end_1, 
+ct_0_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_7, ]
+--->[2]
 
 [abs_h_0, 
-abs_end_0, 
-ct_1_1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_4, ]
---->[1]
-
-[abs_h_0, 
-abs_end_0, 
+abs_end_1, 
+ct_0_1, 
 n0_eq_n1, 
-pred_0_synth_msat_1, ]
+pred_0_synth_msat_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[2]
+
+[abs_h_0, 
+abs_end_0, 
+abs_end_1, 
+ct_0_1, 
+n0_eq_n1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
 --->[0]
 
 
@@ -14459,71 +14146,32 @@ p_synth_6, ]
 --->[0]
 
 [abs_h_0, 
-ct_1_0, 
-ct_0_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[2]
-
-[abs_h_0, 
-abs_end_1, 
-ct_0_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[2]
-
-[abs_h_0, 
 ct_0_0, 
-abs_end_1, 
 ct_0_1, 
 ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+[abs_h_0, 
+ct_1_0, 
+ct_0_1, 
 pred_0_synth_msat_2, 
 pred_0_synth_msat_4, 
 p_synth_5, ]
 --->[2]
 
 [abs_h_0, 
-ct_1_0, 
 ct_1_1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_4, ]
+pred_0_synth_msat_4, 
+p_synth_5, ]
 --->[0]
 
-
-Counter-example trace:
 [abs_h_0, 
 ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_6, ]
---->[0]
-
-[abs_h_0, 
-ct_1_0, 
-ct_0_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[2]
-
-[abs_h_0, 
 ct_1_1, 
-pred_0_synth_msat_1, 
+n0_eq_n1, 
 pred_0_synth_msat_4, ]
---->[1]
-
-[abs_h_0, 
-n0_eq_n1, 
-pred_0_synth_msat_1, ]
---->[0]
-
-[abs_h_0, 
-abs_end_0, 
-n0_eq_n1, 
-pred_0_synth_msat_1, ]
 --->[0]
 
 
@@ -14564,43 +14212,6 @@ pred_0_synth_msat_4, ]
 
 [abs_h_0, 
 abs_end_0, 
-abs_end_1, 
-ct_0_1, 
-n0_eq_n1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[0]
-
-
-Counter-example trace:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_6, ]
---->[0]
-
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[0]
-
-[abs_h_0, 
-ct_1_0, 
-ct_0_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_7, ]
---->[2]
-
-[abs_h_0, 
 abs_end_1, 
 ct_0_1, 
 n0_eq_n1, 
@@ -14732,39 +14343,6 @@ pred_0_synth_msat_4, ]
 
 [abs_h_0, 
 ct_0_1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[2]
-
-[abs_h_0, 
-abs_end_0, 
-ct_1_1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_4, ]
---->[0]
-
-
-Counter-example trace:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_6, ]
---->[0]
-
-[abs_h_0, 
-ct_1_0, 
-ct_0_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[0]
-
-[abs_h_0, 
-ct_0_1, 
 pred_0_synth_msat_2, 
 pred_0_synth_msat_4, 
 p_synth_7, ]
@@ -14799,145 +14377,14 @@ pred_0_synth_msat_4, ]
 --->[0]
 
 [abs_h_0, 
-ct_0_1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[0]
-
-[abs_h_0, 
-abs_end_0, 
-ct_0_1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[2]
-
-[abs_h_0, 
-abs_end_0, 
-ct_1_1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_4, ]
---->[0]
-
-
-Counter-example trace:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_6, ]
---->[0]
-
-[abs_h_0, 
 ct_1_0, 
-ct_0_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[0]
-
-[abs_h_0, 
-ct_0_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_5, ]
---->[0]
-
-[abs_h_0, 
-ct_0_1, 
-n0_eq_n1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_6, ]
---->[2]
-
-[abs_h_0, 
-ct_0_0, 
-ct_1_1, 
-n0_eq_n1, 
-pred_0_synth_msat_4, ]
---->[0]
-
-
-Counter-example trace:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_6, ]
---->[0]
-
-[abs_h_0, 
-ct_1_0, 
-ct_0_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[0]
-
-[abs_h_0, 
-ct_0_1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[0]
-
-[abs_h_0, 
-abs_end_0, 
-ct_0_1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[1]
-
-[abs_h_0, 
-abs_end_0, 
-ct_1_1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_4, ]
---->[0]
-
-
-Counter-example trace:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_6, ]
---->[0]
-
-[abs_h_0, 
-ct_1_0, 
-ct_0_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[0]
-
-[abs_h_0, 
 ct_0_1, 
 pred_0_synth_msat_2, 
 pred_0_synth_msat_4, 
 p_synth_7, ]
---->[0]
-
-[abs_h_0, 
-ct_0_1, 
-n0_eq_n1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
 --->[2]
 
 [abs_h_0, 
-abs_end_0, 
 abs_end_1, 
 ct_0_1, 
 n0_eq_n1, 
@@ -14959,9 +14406,8 @@ p_synth_6, ]
 --->[0]
 
 [abs_h_0, 
-ct_0_0, 
+ct_1_0, 
 ct_0_1, 
-ct0_eq_ct1, 
 pred_0_synth_msat_2, 
 pred_0_synth_msat_4, ]
 --->[0]
@@ -15003,6 +14449,405 @@ p_synth_6, ]
 --->[0]
 
 [abs_h_0, 
+ct_1_0, 
+ct_0_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+[abs_h_0, 
+ct_0_1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[2]
+
+[abs_h_0, 
+abs_end_0, 
+ct_1_1, 
+n0_eq_n1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_4, ]
+--->[2]
+
+[abs_h_0, 
+abs_end_0, 
+abs_end_1, 
+ct_1_1, 
+n0_eq_n1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+
+Counter-example trace:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_6, ]
+--->[0]
+
+[abs_h_0, 
+ct_1_0, 
+ct_0_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+[abs_h_0, 
+ct_0_1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[2]
+
+[abs_h_0, 
+abs_end_0, 
+ct_1_1, 
+n0_eq_n1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_4, ]
+--->[1]
+
+[abs_h_0, 
+abs_end_0, 
+abs_end_1, 
+ct_1_1, 
+n0_eq_n1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+
+Counter-example trace:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_6, ]
+--->[0]
+
+[abs_h_0, 
+ct_1_0, 
+ct_0_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+[abs_h_0, 
+ct_0_1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+[abs_h_0, 
+abs_end_0, 
+ct_0_1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[2]
+
+[abs_h_0, 
+abs_end_0, 
+ct_1_1, 
+n0_eq_n1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+
+Counter-example trace:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_6, ]
+--->[0]
+
+[abs_h_0, 
+ct_1_0, 
+ct_0_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+[abs_h_0, 
+ct_0_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_5, ]
+--->[0]
+
+[abs_h_0, 
+ct_0_1, 
+n0_eq_n1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_6, ]
+--->[2]
+
+[abs_h_0, 
+ct_0_0, 
+ct_1_1, 
+n0_eq_n1, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+
+Counter-example trace:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_6, ]
+--->[0]
+
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+[abs_h_0, 
+ct_1_0, 
+ct_0_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_5, ]
+--->[2]
+
+[abs_h_0, 
+ct_1_1, 
+n0_eq_n1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+[abs_h_0, 
+abs_end_0, 
+ct_1_1, 
+n0_eq_n1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+
+Counter-example trace:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_6, ]
+--->[0]
+
+[abs_h_0, 
+ct_1_0, 
+ct_0_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+[abs_h_0, 
+ct_0_1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+[abs_h_0, 
+abs_end_0, 
+ct_0_1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[1]
+
+[abs_h_0, 
+abs_end_0, 
+ct_1_1, 
+n0_eq_n1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+
+Counter-example trace:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_6, ]
+--->[0]
+
+[abs_h_0, 
+ct_1_0, 
+ct_0_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+[abs_h_0, 
+ct_1_0, 
+ct_0_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_7, ]
+--->[0]
+
+[abs_h_0, 
+ct_0_1, 
+n0_eq_n1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[2]
+
+[abs_h_0, 
+abs_end_0, 
+abs_end_1, 
+ct_0_1, 
+n0_eq_n1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+
+Counter-example trace:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_6, ]
+--->[0]
+
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_7, ]
+--->[2]
+
+[abs_h_0, 
+ct_1_0, 
+abs_end_1, 
+ct_0_1, 
+n0_eq_n1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[2]
+
+[abs_h_0, 
+abs_end_0, 
+ct_1_0, 
+abs_end_1, 
+ct_0_1, 
+n0_eq_n1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+
+Counter-example trace:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_6, ]
+--->[0]
+
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_7, ]
+--->[2]
+
+[abs_h_0, 
+ct_1_0, 
+abs_end_1, 
+ct_0_1, 
+n0_eq_n1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+[abs_h_0, 
+abs_end_0, 
+ct_1_0, 
+abs_end_1, 
+ct_0_1, 
+n0_eq_n1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+
+Counter-example trace:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_6, ]
+--->[0]
+
+[abs_h_0, 
 ct_0_0, 
 ct_0_1, 
 ct0_eq_ct1, 
@@ -15033,6 +14878,55 @@ ct_1_0,
 ct_1_1, 
 ct0_eq_ct1, 
 pred_0_synth_msat_1, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+
+Counter-example trace:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_6, ]
+--->[0]
+
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_7, ]
+--->[0]
+
+[abs_h_0, 
+ct_1_0, 
+ct_0_1, 
+n0_eq_n1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[2]
+
+[abs_h_0, 
+abs_end_0, 
+ct_1_0, 
+abs_end_1, 
+ct_0_1, 
+n0_eq_n1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_2, 
 pred_0_synth_msat_4, ]
 --->[0]
 
@@ -15165,9 +15059,8 @@ p_synth_5, ]
 --->[2]
 
 [abs_h_0, 
-ct_1_0, 
-n0_eq_n1, 
-pred_0_synth_msat_1, ]
+ct_0_0, 
+p_synth_7, ]
 --->[0]
 
 
@@ -15190,9 +15083,10 @@ p_synth_5, ]
 --->[0]
 
 [abs_h_0, 
-ct_0_0, 
+ct_1_0, 
 ct_1_1, 
-n0_eq_n1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_1, 
 pred_0_synth_msat_4, ]
 --->[0]
 
@@ -15221,7 +15115,7 @@ p_synth_7, ]
 --->[0]
 
 
-55 SMT queries performed.
+56 SMT queries performed.
 before complete_trace: [abs_h_0, 
 ct_0_0, 
 ct_0_1, 
@@ -15787,6 +15681,46 @@ p_synth_6, ]
 ct_0_0, 
 ct_1_1, 
 n0_eq_n1, 
+pred_0_synth_msat_4, 
+p_synth_6, ]
+--->[2]
+
+[abs_h_0, 
+ct_0_0, 
+n0_eq_n1, ]
+--->[2]
+
+[abs_h_0, 
+ct_1_0, 
+n0_eq_n1, 
+pred_0_synth_msat_1, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [abs_h_0, 
+ct_0_0, 
+n0_eq_n1, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_6, ]
+--->[2]
+
+[abs_h_0, 
+ct_0_0, 
+ct_1_1, 
+n0_eq_n1, 
 pred_0_synth_msat_4, ]
 --->[0]
 
@@ -15813,46 +15747,6 @@ ct_1_1,
 ct0_eq_ct1, 
 pred_0_synth_msat_1, 
 pred_0_synth_msat_4, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_6, ]
---->[2]
-
-[abs_h_0, 
-ct_0_0, 
-ct_1_1, 
-n0_eq_n1, 
-pred_0_synth_msat_4, 
-p_synth_6, ]
---->[2]
-
-[abs_h_0, 
-ct_0_0, 
-n0_eq_n1, ]
---->[2]
-
-[abs_h_0, 
-ct_1_0, 
-n0_eq_n1, 
-pred_0_synth_msat_1, ]
---->[0]
-
-
-Blocking composition assignment 2 for state
- [abs_h_0, 
-ct_0_0, 
-n0_eq_n1, ]
 
 
 Exploring next composition.. 
@@ -16296,6 +16190,56 @@ pred_0_synth_msat_4, ]
 --->[0]
 
 [abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_5, ]
+--->[2]
+
+[abs_h_0, 
+ct_1_0, 
+ct_1_1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_5, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_6, ]
+--->[0]
+
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+[abs_h_0, 
 ct_1_0, 
 ct_0_1, 
 pred_0_synth_msat_1, 
@@ -16320,160 +16264,6 @@ ct_0_1,
 pred_0_synth_msat_1, 
 pred_0_synth_msat_2, 
 pred_0_synth_msat_4, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_6, ]
---->[0]
-
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[0]
-
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_5, ]
---->[2]
-
-[abs_h_0, 
-ct_0_0, 
-ct_1_1, 
-n0_eq_n1, 
-pred_0_synth_msat_4, ]
---->[0]
-
-
-Blocking composition assignment 2 for state
- [abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_5, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_6, ]
---->[0]
-
-[abs_h_0, 
-ct_1_0, 
-ct_0_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[2]
-
-[abs_h_0, 
-abs_end_1, 
-ct_0_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[2]
-
-[abs_h_0, 
-ct_0_0, 
-abs_end_1, 
-ct_0_1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[2]
-
-[abs_h_0, 
-ct_1_0, 
-ct_1_1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_4, ]
---->[0]
-
-
-Blocking composition assignment 2 for state
- [abs_h_0, 
-ct_0_0, 
-abs_end_1, 
-ct_0_1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_6, ]
---->[0]
-
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[0]
-
-[abs_h_0, 
-ct_1_0, 
-ct_0_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_5, ]
---->[2]
-
-[abs_h_0, 
-ct_1_1, 
-pred_0_synth_msat_4, 
-p_synth_5, ]
---->[2]
-
-[abs_h_0, 
-ct_0_0, 
-p_synth_7, ]
---->[0]
-
-
-Blocking composition assignment 2 for state
- [abs_h_0, 
-ct_1_1, 
-pred_0_synth_msat_4, 
-p_synth_5, ]
 
 
 Exploring next composition.. 
@@ -16538,58 +16328,19 @@ pred_0_synth_msat_4, ]
 --->[2]
 
 [abs_h_0, 
-ct_1_1, 
+abs_end_1, 
+ct_0_1, 
+pred_0_synth_msat_2, 
 pred_0_synth_msat_4, ]
 --->[2]
 
-[abs_h_0, ]
---->[0]
-
 [abs_h_0, 
-ct_0_0, 
-p_synth_7, ]
---->[0]
-
-
-Blocking composition assignment 0 for state
- [abs_h_0, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_6, ]
---->[0]
-
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[0]
-
-[abs_h_0, 
-ct_1_0, 
+abs_end_1, 
 ct_0_1, 
 pred_0_synth_msat_2, 
 pred_0_synth_msat_4, 
 p_synth_5, ]
 --->[2]
-
-[abs_h_0, 
-ct_1_1, 
-pred_0_synth_msat_4, 
-p_synth_5, ]
---->[0]
 
 [abs_h_0, 
 ct_0_0, 
@@ -16599,9 +16350,11 @@ pred_0_synth_msat_4, ]
 --->[0]
 
 
-Blocking composition assignment 0 for state
+Blocking composition assignment 2 for state
  [abs_h_0, 
-ct_1_1, 
+abs_end_1, 
+ct_0_1, 
+pred_0_synth_msat_2, 
 pred_0_synth_msat_4, 
 p_synth_5, ]
 
@@ -16652,6 +16405,64 @@ Blocking composition assignment 2 for state
 abs_end_0, 
 n0_eq_n1, 
 pred_0_synth_msat_1, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_6, ]
+--->[0]
+
+[abs_h_0, 
+ct_1_0, 
+ct_0_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[2]
+
+[abs_h_0, 
+abs_end_1, 
+ct_0_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[2]
+
+[abs_h_0, 
+ct_0_0, 
+abs_end_1, 
+ct_0_1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_5, ]
+--->[2]
+
+[abs_h_0, 
+ct_1_0, 
+ct_1_1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [abs_h_0, 
+ct_0_0, 
+abs_end_1, 
+ct_0_1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_5, ]
 
 
 Exploring next composition.. 
@@ -16724,216 +16535,54 @@ pred_0_synth_msat_4, ]
 --->[2]
 
 [abs_h_0, 
-abs_end_1, 
-ct_0_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[2]
-
-[abs_h_0, 
-abs_end_1, 
-ct_0_1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[2]
-
-[abs_h_0, 
-abs_end_0, 
-abs_end_1, 
-ct_0_1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[0]
-
-
-Blocking composition assignment 2 for state
- [abs_h_0, 
-abs_end_1, 
-ct_0_1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_6, ]
---->[0]
-
-[abs_h_0, 
-ct_1_0, 
-ct_0_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[2]
-
-[abs_h_0, 
-abs_end_1, 
-ct_0_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[2]
-
-[abs_h_0, 
-abs_end_1, 
-ct_0_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_5, ]
---->[2]
-
-[abs_h_0, 
-ct_0_0, 
-ct_1_1, 
-n0_eq_n1, 
-pred_0_synth_msat_4, ]
---->[0]
-
-
-Blocking composition assignment 2 for state
- [abs_h_0, 
-abs_end_1, 
-ct_0_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_5, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_6, ]
---->[0]
-
-[abs_h_0, 
-ct_1_0, 
-ct_0_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[2]
-
-[abs_h_0, 
 ct_1_1, 
 pred_0_synth_msat_4, ]
 --->[2]
 
-[abs_h_0, 
-pred_0_synth_msat_1, ]
---->[2]
-
-[abs_h_0, 
-abs_end_0, 
-n0_eq_n1, 
-pred_0_synth_msat_1, ]
+[abs_h_0, ]
 --->[0]
 
-
-Blocking composition assignment 2 for state
- [abs_h_0, 
-pred_0_synth_msat_1, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
 [abs_h_0, 
 ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_6, ]
---->[0]
-
-[abs_h_0, 
-ct_1_0, 
-ct_0_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[2]
-
-[abs_h_0, 
-ct_1_1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_4, ]
---->[0]
-
-[abs_h_0, 
-abs_end_0, 
-ct_1_1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_4, ]
---->[2]
-
-[abs_h_0, 
-abs_end_0, 
-n0_eq_n1, 
-pred_0_synth_msat_1, ]
---->[0]
-
-
-Blocking composition assignment 2 for state
- [abs_h_0, 
-abs_end_0, 
-ct_1_1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_4, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_6, ]
---->[0]
-
-[abs_h_0, 
-ct_1_0, 
-ct_0_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[2]
-
-[abs_h_0, 
-abs_end_1, 
-ct_0_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
 p_synth_7, ]
+--->[0]
+
+
+Blocking composition assignment 0 for state
+ [abs_h_0, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_6, ]
+--->[0]
+
+[abs_h_0, 
+ct_1_0, 
+ct_0_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
 --->[2]
 
 [abs_h_0, 
 abs_end_1, 
 ct_0_1, 
-n0_eq_n1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[2]
+
+[abs_h_0, 
+abs_end_1, 
+ct_0_1, 
 pred_0_synth_msat_1, 
 pred_0_synth_msat_2, 
 pred_0_synth_msat_4, ]
@@ -16943,7 +16592,6 @@ pred_0_synth_msat_4, ]
 abs_end_0, 
 abs_end_1, 
 ct_0_1, 
-n0_eq_n1, 
 pred_0_synth_msat_1, 
 pred_0_synth_msat_2, 
 pred_0_synth_msat_4, ]
@@ -16954,7 +16602,6 @@ Blocking composition assignment 2 for state
  [abs_h_0, 
 abs_end_1, 
 ct_0_1, 
-n0_eq_n1, 
 pred_0_synth_msat_1, 
 pred_0_synth_msat_2, 
 pred_0_synth_msat_4, ]
@@ -17004,6 +16651,111 @@ Blocking composition assignment 2 for state
  [abs_h_0, 
 ct0_eq_ct1, 
 pred_0_synth_msat_1, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_6, ]
+--->[0]
+
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+[abs_h_0, 
+ct_1_0, 
+ct_0_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_5, ]
+--->[2]
+
+[abs_h_0, 
+ct_1_1, 
+pred_0_synth_msat_4, 
+p_synth_5, ]
+--->[2]
+
+[abs_h_0, 
+ct_0_0, 
+p_synth_7, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [abs_h_0, 
+ct_1_1, 
+pred_0_synth_msat_4, 
+p_synth_5, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_6, ]
+--->[0]
+
+[abs_h_0, 
+ct_1_0, 
+ct_0_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[2]
+
+[abs_h_0, 
+abs_end_1, 
+ct_0_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[2]
+
+[abs_h_0, 
+ct_0_0, 
+abs_end_1, 
+ct_0_1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[2]
+
+[abs_h_0, 
+ct_1_0, 
+ct_1_1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [abs_h_0, 
+ct_0_0, 
+abs_end_1, 
+ct_0_1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
 
 
 Exploring next composition.. 
@@ -17070,157 +16822,6 @@ pred_0_synth_msat_4, ]
 --->[2]
 
 [abs_h_0, 
-ct_1_1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_4, ]
---->[0]
-
-[abs_h_0, 
-abs_end_0, 
-ct_1_1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_4, ]
---->[1]
-
-[abs_h_0, 
-abs_end_0, 
-n0_eq_n1, 
-pred_0_synth_msat_1, ]
---->[0]
-
-
-Blocking composition assignment 0 for state
- [abs_h_0, 
-ct_1_1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_4, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_6, ]
---->[0]
-
-[abs_h_0, 
-ct_1_0, 
-ct_0_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[2]
-
-[abs_h_0, 
-abs_end_1, 
-ct_0_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[2]
-
-[abs_h_0, 
-ct_0_0, 
-abs_end_1, 
-ct_0_1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_5, ]
---->[2]
-
-[abs_h_0, 
-ct_1_0, 
-ct_1_1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_4, ]
---->[0]
-
-
-Blocking composition assignment 2 for state
- [abs_h_0, 
-ct_0_0, 
-abs_end_1, 
-ct_0_1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_5, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_6, ]
---->[0]
-
-[abs_h_0, 
-ct_1_0, 
-ct_0_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[2]
-
-[abs_h_0, 
-ct_1_1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_4, ]
---->[1]
-
-[abs_h_0, 
-n0_eq_n1, 
-pred_0_synth_msat_1, ]
---->[0]
-
-[abs_h_0, 
-abs_end_0, 
-n0_eq_n1, 
-pred_0_synth_msat_1, ]
---->[0]
-
-
-Blocking composition assignment 0 for state
- [abs_h_0, 
-n0_eq_n1, 
-pred_0_synth_msat_1, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_6, ]
---->[0]
-
-[abs_h_0, 
-ct_1_0, 
-ct_0_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[2]
-
-[abs_h_0, 
 abs_end_1, 
 ct_0_1, 
 pred_0_synth_msat_2, 
@@ -17235,493 +16836,6 @@ n0_eq_n1,
 pred_0_synth_msat_1, 
 pred_0_synth_msat_2, 
 pred_0_synth_msat_4, ]
---->[0]
-
-[abs_h_0, 
-abs_end_0, 
-abs_end_1, 
-ct_0_1, 
-n0_eq_n1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[0]
-
-
-Blocking composition assignment 2 for state
- [abs_h_0, 
-abs_end_1, 
-ct_0_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_7, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_6, ]
---->[0]
-
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[0]
-
-[abs_h_0, 
-ct_1_0, 
-ct_0_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_7, ]
---->[2]
-
-[abs_h_0, 
-abs_end_1, 
-ct_0_1, 
-n0_eq_n1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[0]
-
-
-Blocking composition assignment 2 for state
- [abs_h_0, 
-ct_1_0, 
-ct_0_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_7, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_6, ]
---->[0]
-
-[abs_h_0, 
-ct_1_0, 
-ct_0_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[2]
-
-[abs_h_0, 
-abs_end_1, 
-ct_0_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_7, ]
---->[0]
-
-[abs_h_0, 
-abs_end_1, 
-ct_0_1, 
-n0_eq_n1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[0]
-
-
-Blocking composition assignment 2 for state
- [abs_h_0, 
-ct_1_0, 
-ct_0_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_6, ]
---->[0]
-
-[abs_h_0, 
-ct_1_0, 
-ct_0_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[0]
-
-[abs_h_0, 
-ct_0_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_5, ]
---->[2]
-
-[abs_h_0, 
-ct_0_0, 
-ct_1_1, 
-n0_eq_n1, 
-pred_0_synth_msat_4, ]
---->[0]
-
-
-Blocking composition assignment 2 for state
- [abs_h_0, 
-ct_0_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_5, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_6, ]
---->[0]
-
-[abs_h_0, 
-ct_1_0, 
-ct_0_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[0]
-
-[abs_h_0, 
-ct_0_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[2]
-
-[abs_h_0, 
-abs_end_1, 
-ct_0_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_7, ]
---->[0]
-
-
-Blocking composition assignment 2 for state
- [abs_h_0, 
-ct_0_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_6, ]
---->[0]
-
-[abs_h_0, 
-ct_1_0, 
-ct_0_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[0]
-
-[abs_h_0, 
-ct_0_1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[2]
-
-[abs_h_0, 
-abs_end_0, 
-ct_1_1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_4, ]
---->[0]
-
-
-Blocking composition assignment 2 for state
- [abs_h_0, 
-ct_0_1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_6, ]
---->[0]
-
-[abs_h_0, 
-ct_1_0, 
-ct_0_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[0]
-
-[abs_h_0, 
-ct_0_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_7, ]
---->[2]
-
-[abs_h_0, 
-abs_end_1, 
-ct_0_1, 
-n0_eq_n1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[0]
-
-
-Blocking composition assignment 2 for state
- [abs_h_0, 
-ct_0_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_7, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_6, ]
---->[0]
-
-[abs_h_0, 
-ct_1_0, 
-ct_0_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[0]
-
-[abs_h_0, 
-ct_0_1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[0]
-
-[abs_h_0, 
-abs_end_0, 
-ct_0_1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[2]
-
-[abs_h_0, 
-abs_end_0, 
-ct_1_1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_4, ]
---->[0]
-
-
-Blocking composition assignment 2 for state
- [abs_h_0, 
-abs_end_0, 
-ct_0_1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_6, ]
---->[0]
-
-[abs_h_0, 
-ct_1_0, 
-ct_0_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[0]
-
-[abs_h_0, 
-ct_0_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_5, ]
---->[0]
-
-[abs_h_0, 
-ct_0_1, 
-n0_eq_n1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_6, ]
---->[2]
-
-[abs_h_0, 
-ct_0_0, 
-ct_1_1, 
-n0_eq_n1, 
-pred_0_synth_msat_4, ]
---->[0]
-
-
-Blocking composition assignment 2 for state
- [abs_h_0, 
-ct_0_1, 
-n0_eq_n1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_6, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_6, ]
---->[0]
-
-[abs_h_0, 
-ct_1_0, 
-ct_0_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[0]
-
-[abs_h_0, 
-ct_0_1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[0]
-
-[abs_h_0, 
-abs_end_0, 
-ct_0_1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[1]
-
-[abs_h_0, 
-abs_end_0, 
-ct_1_1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_4, ]
---->[0]
-
-
-Blocking composition assignment 0 for state
- [abs_h_0, 
-ct_0_1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_6, ]
---->[0]
-
-[abs_h_0, 
-ct_1_0, 
-ct_0_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[0]
-
-[abs_h_0, 
-ct_0_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_7, ]
---->[0]
-
-[abs_h_0, 
-ct_0_1, 
-n0_eq_n1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
 --->[2]
 
 [abs_h_0, 
@@ -17737,6 +16851,7 @@ pred_0_synth_msat_4, ]
 
 Blocking composition assignment 2 for state
  [abs_h_0, 
+abs_end_1, 
 ct_0_1, 
 n0_eq_n1, 
 pred_0_synth_msat_1, 
@@ -17775,288 +16890,6 @@ p_synth_5, ]
 --->[2]
 
 [abs_h_0, 
-ct_1_1, 
-n0_eq_n1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_4, ]
---->[2]
-
-[abs_h_0, 
-abs_end_0, 
-abs_end_1, 
-ct_1_1, 
-n0_eq_n1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_4, ]
---->[0]
-
-
-Blocking composition assignment 2 for state
- [abs_h_0, 
-ct_1_1, 
-n0_eq_n1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_4, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_6, ]
---->[0]
-
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[0]
-
-[abs_h_0, 
-ct_1_0, 
-ct_0_1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[0]
-
-[abs_h_0, 
-abs_end_0, 
-ct_1_0, 
-ct_0_1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[2]
-
-[abs_h_0, 
-abs_end_0, 
-ct_1_0, 
-ct_1_1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_4, ]
---->[0]
-
-
-Blocking composition assignment 2 for state
- [abs_h_0, 
-abs_end_0, 
-ct_1_0, 
-ct_0_1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_6, ]
---->[0]
-
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[0]
-
-[abs_h_0, 
-ct_1_0, 
-ct_0_1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[0]
-
-[abs_h_0, 
-abs_end_0, 
-ct_1_0, 
-ct_0_1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[1]
-
-[abs_h_0, 
-abs_end_0, 
-ct_1_0, 
-ct_1_1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_4, ]
---->[0]
-
-
-Blocking composition assignment 0 for state
- [abs_h_0, 
-ct_1_0, 
-ct_0_1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_6, ]
---->[0]
-
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[0]
-
-[abs_h_0, 
-ct_1_0, 
-ct_0_1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[1]
-
-[abs_h_0, 
-ct_1_0, 
-ct_1_1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_4, ]
---->[0]
-
-
-Blocking composition assignment 0 for state
- [abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_6, ]
---->[0]
-
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[1]
-
-[abs_h_0, 
-ct_0_0, 
-ct_1_1, 
-n0_eq_n1, 
-pred_0_synth_msat_4, ]
---->[0]
-
-
-Blocking composition assignment 0 for state
- [abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_6, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_6, ]
---->[1]
-
-[abs_h_0, 
-ct_0_0, 
-ct_1_1, 
-pred_0_synth_msat_4, 
-p_synth_5, ]
---->[2]
-
-[abs_h_0, 
-ct_1_0, 
-n0_eq_n1, 
-pred_0_synth_msat_1, ]
---->[0]
-
-
-Blocking composition assignment 2 for state
- [abs_h_0, 
-ct_0_0, 
-ct_1_1, 
-pred_0_synth_msat_4, 
-p_synth_5, ]
-
-
-Exploring next composition.. 
-
-
-Abstract Counter-example trace for current composition:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_6, ]
---->[1]
-
-[abs_h_0, 
-ct_0_0, 
 ct_1_1, 
 pred_0_synth_msat_4, 
 p_synth_5, ]
@@ -18072,6 +16905,1193 @@ pred_0_synth_msat_4, ]
 
 Blocking composition assignment 0 for state
  [abs_h_0, 
+ct_1_1, 
+pred_0_synth_msat_4, 
+p_synth_5, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_6, ]
+--->[0]
+
+[abs_h_0, 
+ct_1_0, 
+ct_0_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[2]
+
+[abs_h_0, 
+abs_end_1, 
+ct_0_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_7, ]
+--->[2]
+
+[abs_h_0, 
+abs_end_1, 
+ct_0_1, 
+n0_eq_n1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+[abs_h_0, 
+abs_end_0, 
+abs_end_1, 
+ct_0_1, 
+n0_eq_n1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [abs_h_0, 
+abs_end_1, 
+ct_0_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_7, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_6, ]
+--->[0]
+
+[abs_h_0, 
+ct_1_0, 
+ct_0_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[2]
+
+[abs_h_0, 
+abs_end_1, 
+ct_0_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_7, ]
+--->[0]
+
+[abs_h_0, 
+abs_end_1, 
+ct_0_1, 
+n0_eq_n1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [abs_h_0, 
+ct_1_0, 
+ct_0_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_6, ]
+--->[0]
+
+[abs_h_0, 
+ct_1_0, 
+ct_0_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+[abs_h_0, 
+ct_0_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_5, ]
+--->[2]
+
+[abs_h_0, 
+ct_0_0, 
+ct_1_1, 
+n0_eq_n1, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [abs_h_0, 
+ct_0_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_5, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_6, ]
+--->[0]
+
+[abs_h_0, 
+ct_1_0, 
+ct_0_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+[abs_h_0, 
+ct_0_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[2]
+
+[abs_h_0, 
+abs_end_1, 
+ct_0_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_7, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [abs_h_0, 
+ct_0_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_6, ]
+--->[0]
+
+[abs_h_0, 
+ct_1_0, 
+ct_0_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+[abs_h_0, 
+ct_0_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_7, ]
+--->[2]
+
+[abs_h_0, 
+abs_end_1, 
+ct_0_1, 
+n0_eq_n1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [abs_h_0, 
+ct_0_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_7, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_6, ]
+--->[0]
+
+[abs_h_0, 
+ct_1_0, 
+ct_0_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+[abs_h_0, 
+ct_1_0, 
+ct_0_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_7, ]
+--->[2]
+
+[abs_h_0, 
+abs_end_1, 
+ct_0_1, 
+n0_eq_n1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [abs_h_0, 
+ct_1_0, 
+ct_0_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_7, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_6, ]
+--->[0]
+
+[abs_h_0, 
+ct_1_0, 
+ct_0_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+[abs_h_0, 
+ct_1_0, 
+ct_0_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_5, ]
+--->[2]
+
+[abs_h_0, 
+ct_1_1, 
+n0_eq_n1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_4, ]
+--->[2]
+
+[abs_h_0, 
+abs_end_0, 
+abs_end_1, 
+ct_1_1, 
+n0_eq_n1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [abs_h_0, 
+ct_1_1, 
+n0_eq_n1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_4, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_6, ]
+--->[0]
+
+[abs_h_0, 
+ct_1_0, 
+ct_0_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+[abs_h_0, 
+ct_0_1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[2]
+
+[abs_h_0, 
+abs_end_0, 
+ct_1_1, 
+n0_eq_n1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_4, ]
+--->[2]
+
+[abs_h_0, 
+abs_end_0, 
+abs_end_1, 
+ct_1_1, 
+n0_eq_n1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [abs_h_0, 
+abs_end_0, 
+ct_1_1, 
+n0_eq_n1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_4, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_6, ]
+--->[0]
+
+[abs_h_0, 
+ct_1_0, 
+ct_0_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+[abs_h_0, 
+ct_0_1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[2]
+
+[abs_h_0, 
+abs_end_0, 
+ct_1_1, 
+n0_eq_n1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_4, ]
+--->[1]
+
+[abs_h_0, 
+abs_end_0, 
+abs_end_1, 
+ct_1_1, 
+n0_eq_n1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [abs_h_0, 
+ct_0_1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_6, ]
+--->[0]
+
+[abs_h_0, 
+ct_1_0, 
+ct_0_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+[abs_h_0, 
+ct_0_1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+[abs_h_0, 
+abs_end_0, 
+ct_0_1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[2]
+
+[abs_h_0, 
+abs_end_0, 
+ct_1_1, 
+n0_eq_n1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [abs_h_0, 
+abs_end_0, 
+ct_0_1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_6, ]
+--->[0]
+
+[abs_h_0, 
+ct_1_0, 
+ct_0_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+[abs_h_0, 
+ct_0_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_5, ]
+--->[0]
+
+[abs_h_0, 
+ct_0_1, 
+n0_eq_n1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_6, ]
+--->[2]
+
+[abs_h_0, 
+ct_0_0, 
+ct_1_1, 
+n0_eq_n1, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [abs_h_0, 
+ct_0_1, 
+n0_eq_n1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_6, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_6, ]
+--->[0]
+
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+[abs_h_0, 
+ct_1_0, 
+ct_0_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_5, ]
+--->[2]
+
+[abs_h_0, 
+ct_1_1, 
+n0_eq_n1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+[abs_h_0, 
+abs_end_0, 
+ct_1_1, 
+n0_eq_n1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+
+Blocking composition assignment 0 for state
+ [abs_h_0, 
+ct_1_1, 
+n0_eq_n1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_4, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_6, ]
+--->[0]
+
+[abs_h_0, 
+ct_1_0, 
+ct_0_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+[abs_h_0, 
+ct_0_1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+[abs_h_0, 
+abs_end_0, 
+ct_0_1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[1]
+
+[abs_h_0, 
+abs_end_0, 
+ct_1_1, 
+n0_eq_n1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+
+Blocking composition assignment 0 for state
+ [abs_h_0, 
+ct_0_1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_6, ]
+--->[0]
+
+[abs_h_0, 
+ct_1_0, 
+ct_0_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+[abs_h_0, 
+ct_1_0, 
+ct_0_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_7, ]
+--->[0]
+
+[abs_h_0, 
+ct_0_1, 
+n0_eq_n1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[2]
+
+[abs_h_0, 
+abs_end_0, 
+abs_end_1, 
+ct_0_1, 
+n0_eq_n1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [abs_h_0, 
+ct_0_1, 
+n0_eq_n1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_6, ]
+--->[0]
+
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_7, ]
+--->[2]
+
+[abs_h_0, 
+ct_1_0, 
+abs_end_1, 
+ct_0_1, 
+n0_eq_n1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[2]
+
+[abs_h_0, 
+abs_end_0, 
+ct_1_0, 
+abs_end_1, 
+ct_0_1, 
+n0_eq_n1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [abs_h_0, 
+ct_1_0, 
+abs_end_1, 
+ct_0_1, 
+n0_eq_n1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_6, ]
+--->[0]
+
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_7, ]
+--->[2]
+
+[abs_h_0, 
+ct_1_0, 
+abs_end_1, 
+ct_0_1, 
+n0_eq_n1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+[abs_h_0, 
+abs_end_0, 
+ct_1_0, 
+abs_end_1, 
+ct_0_1, 
+n0_eq_n1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_7, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_6, ]
+--->[0]
+
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+[abs_h_0, 
+ct_1_0, 
+ct_0_1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+[abs_h_0, 
+abs_end_0, 
+ct_1_0, 
+ct_0_1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[2]
+
+[abs_h_0, 
+abs_end_0, 
+ct_1_0, 
+ct_1_1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [abs_h_0, 
+abs_end_0, 
+ct_1_0, 
+ct_0_1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_6, ]
+--->[0]
+
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_7, ]
+--->[0]
+
+[abs_h_0, 
+ct_1_0, 
+ct_0_1, 
+n0_eq_n1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[2]
+
+[abs_h_0, 
+abs_end_0, 
+ct_1_0, 
+abs_end_1, 
+ct_0_1, 
+n0_eq_n1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [abs_h_0, 
+ct_1_0, 
+ct_0_1, 
+n0_eq_n1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_6, ]
+--->[0]
+
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+[abs_h_0, 
+ct_1_0, 
+ct_0_1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+[abs_h_0, 
+abs_end_0, 
+ct_1_0, 
+ct_0_1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[1]
+
+[abs_h_0, 
+abs_end_0, 
+ct_1_0, 
+ct_1_1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+
+Blocking composition assignment 0 for state
+ [abs_h_0, 
+ct_1_0, 
+ct_0_1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_6, ]
+--->[0]
+
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+[abs_h_0, 
+ct_1_0, 
+ct_0_1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[1]
+
+[abs_h_0, 
+ct_1_0, 
+ct_1_1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+
+Blocking composition assignment 0 for state
+ [abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_6, ]
+--->[0]
+
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[1]
+
+[abs_h_0, 
+ct_0_0, 
+ct_1_1, 
+n0_eq_n1, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+
+Blocking composition assignment 0 for state
+ [abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_6, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_6, ]
+--->[1]
+
+[abs_h_0, 
+ct_0_0, 
+ct_1_1, 
+pred_0_synth_msat_4, 
+p_synth_5, ]
+--->[2]
+
+[abs_h_0, 
+ct_0_0, 
+p_synth_7, ]
+--->[0]
+
+
+Blocking composition assignment 2 for state
+ [abs_h_0, 
+ct_0_0, 
+ct_1_1, 
+pred_0_synth_msat_4, 
+p_synth_5, ]
+
+
+Exploring next composition.. 
+
+
+Abstract Counter-example trace for current composition:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_6, ]
+--->[1]
+
+[abs_h_0, 
+ct_0_0, 
+ct_1_1, 
+pred_0_synth_msat_4, 
+p_synth_5, ]
+--->[0]
+
+[abs_h_0, 
+ct_1_0, 
+ct_1_1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+
+Blocking composition assignment 0 for state
+ [abs_h_0, 
 ct_0_0, 
 ct_1_1, 
 pred_0_synth_msat_4, 
@@ -18105,7 +18125,7 @@ p_synth_7, ]
 --->[0]
 
 
-55 SMT queries performed.
+56 SMT queries performed.
 after complete_trace [abs_h_0, 
 ct_0_0, 
 ct_0_1, 
@@ -18175,16 +18195,16 @@ New predicate is  (not (and (>= nU0 1)
 
           (not (= nU1 0))
 
-          (= (div nU0 10) 0)
+          (not (= nU0 nU1))
 
-          (not (= nU0 nU1))))
+          (= (div nU0 10) 0)))
 
-Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied. 55 17 True ['(declare-rel p_synth_8 (Int Int Int Int))\n (rule (=>   (and  (>= (rel n 0) 1 )\n\n           (=  (div (rel n 1) 10 ) 0 )\n\n           (not  (= (rel n 1) 0 ) )\n\n           (=  (div (rel n 0) 10 ) 0 )\n\n           (not  (= (rel n 0) (rel n 1) ) ) )  (p_synth_8 end n h ct)))']
+Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied. 56 17 True ['(declare-rel p_synth_8 (Int Int Int Int))\n (rule (=>   (and  (>= (rel n 0) 1 )\n\n           (=  (div (rel n 1) 10 ) 0 )\n\n           (not  (= (rel n 1) 0 ) )\n\n           (not  (= (rel n 0) (rel n 1) ) )\n\n           (=  (div (rel n 0) 10 ) 0 ) )  (p_synth_8 end n h ct)))']
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.140427 
-Solver time:	74.684506
-Total time:	74.824933
-Iteration count:	55
+Pre-processing time:	0.145789 
+Solver time:	83.003905
+Total time:	83.149694
+Iteration count:	56
 Predicate count:	17
 Successfully added new predicate to input file. !
 Start next refinement loop: True
@@ -18239,10 +18259,9 @@ p_synth_6, ]
 --->[2]
 
 [abs_h_0, 
-ct_1_0, 
+ct_0_0, 
 ct_1_1, 
 n0_eq_n1, 
-ct0_eq_ct1, 
 pred_0_synth_msat_4, 
 p_synth_6, ]
 --->[2]
@@ -18505,6 +18524,223 @@ p_synth_6, ]
 ct_0_0, 
 ct_1_1, 
 n0_eq_n1, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+[abs_h_0, 
+ct_1_0, 
+ct_1_1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+[abs_h_0, 
+abs_end_0, 
+ct_1_0, 
+ct_1_1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_4, ]
+--->[2]
+
+[abs_h_0, 
+abs_end_0, 
+ct_1_0, 
+n0_eq_n1, 
+pred_0_synth_msat_1, ]
+--->[0]
+
+
+Counter-example trace:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_6, ]
+--->[2]
+
+[abs_h_0, 
+ct_0_0, 
+ct_1_1, 
+n0_eq_n1, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+[abs_h_0, 
+ct_1_0, 
+ct_1_1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+[abs_h_0, 
+abs_end_0, 
+ct_1_0, 
+ct_1_1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_4, ]
+--->[1]
+
+[abs_h_0, 
+abs_end_0, 
+ct_1_0, 
+n0_eq_n1, 
+pred_0_synth_msat_1, ]
+--->[0]
+
+
+Counter-example trace:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_6, ]
+--->[2]
+
+[abs_h_0, 
+ct_0_0, 
+ct_1_1, 
+n0_eq_n1, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+[abs_h_0, 
+ct_1_0, 
+ct_1_1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_4, ]
+--->[1]
+
+[abs_h_0, 
+ct_1_0, 
+n0_eq_n1, 
+pred_0_synth_msat_1, ]
+--->[0]
+
+
+Counter-example trace:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_6, ]
+--->[2]
+
+[abs_h_0, 
+ct_0_0, 
+ct_1_1, 
+n0_eq_n1, 
+pred_0_synth_msat_4, ]
+--->[1]
+
+[abs_h_0, 
+ct_0_0, 
+p_synth_7, ]
+--->[2]
+
+[abs_h_0, 
+ct_1_0, 
+abs_end_1, 
+n0_eq_n1, 
+pred_0_synth_msat_1, ]
+--->[0]
+
+
+Counter-example trace:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_6, ]
+--->[2]
+
+[abs_h_0, 
+ct_0_0, 
+ct_1_1, 
+n0_eq_n1, 
+pred_0_synth_msat_4, ]
+--->[1]
+
+[abs_h_0, 
+ct_0_0, 
+p_synth_7, ]
+--->[0]
+
+[abs_h_0, 
+ct_1_0, 
+n0_eq_n1, 
+pred_0_synth_msat_1, ]
+--->[0]
+
+
+Counter-example trace:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_6, ]
+--->[2]
+
+[abs_h_0, 
+ct_0_0, 
+ct_1_1, 
+n0_eq_n1, 
+pred_0_synth_msat_4, ]
+--->[1]
+
+[abs_h_0, 
+ct_0_0, 
+p_synth_7, ]
+--->[1]
+
+[abs_h_0, 
+ct_0_0, 
+abs_end_1, 
+p_synth_7, ]
+--->[2]
+
+[abs_h_0, 
+ct_1_0, 
+abs_end_1, 
+n0_eq_n1, 
+pred_0_synth_msat_1, ]
+--->[0]
+
+
+Counter-example trace:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_6, ]
+--->[2]
+
+[abs_h_0, 
+ct_0_0, 
+ct_1_1, 
+n0_eq_n1, 
 pred_0_synth_msat_4, 
 p_synth_6, ]
 --->[2]
@@ -18543,223 +18779,6 @@ ct_0_0,
 ct_1_1, 
 n0_eq_n1, 
 pred_0_synth_msat_4, ]
---->[0]
-
-[abs_h_0, 
-ct_1_0, 
-ct_1_1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_4, ]
---->[0]
-
-[abs_h_0, 
-abs_end_0, 
-ct_1_0, 
-ct_1_1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_4, ]
---->[2]
-
-[abs_h_0, 
-abs_end_0, 
-ct_1_0, 
-n0_eq_n1, 
-pred_0_synth_msat_1, ]
---->[0]
-
-
-Counter-example trace:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_6, ]
---->[2]
-
-[abs_h_0, 
-ct_0_0, 
-ct_1_1, 
-n0_eq_n1, 
-pred_0_synth_msat_4, ]
---->[0]
-
-[abs_h_0, 
-ct_1_0, 
-ct_1_1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_4, ]
---->[0]
-
-[abs_h_0, 
-abs_end_0, 
-ct_1_0, 
-ct_1_1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_4, ]
---->[1]
-
-[abs_h_0, 
-abs_end_0, 
-ct_1_0, 
-n0_eq_n1, 
-pred_0_synth_msat_1, ]
---->[0]
-
-
-Counter-example trace:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_6, ]
---->[2]
-
-[abs_h_0, 
-ct_0_0, 
-ct_1_1, 
-n0_eq_n1, 
-pred_0_synth_msat_4, ]
---->[0]
-
-[abs_h_0, 
-ct_1_0, 
-ct_1_1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_4, ]
---->[1]
-
-[abs_h_0, 
-ct_1_0, 
-n0_eq_n1, 
-pred_0_synth_msat_1, ]
---->[0]
-
-
-Counter-example trace:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_6, ]
---->[2]
-
-[abs_h_0, 
-ct_0_0, 
-ct_1_1, 
-n0_eq_n1, 
-pred_0_synth_msat_4, ]
---->[1]
-
-[abs_h_0, 
-ct_0_0, 
-p_synth_7, ]
---->[2]
-
-[abs_h_0, 
-ct_1_0, 
-abs_end_1, 
-n0_eq_n1, 
-pred_0_synth_msat_1, ]
---->[0]
-
-
-Counter-example trace:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_6, ]
---->[2]
-
-[abs_h_0, 
-ct_0_0, 
-ct_1_1, 
-n0_eq_n1, 
-pred_0_synth_msat_4, ]
---->[1]
-
-[abs_h_0, 
-ct_0_0, 
-p_synth_7, ]
---->[0]
-
-[abs_h_0, 
-ct_1_0, 
-n0_eq_n1, 
-pred_0_synth_msat_1, ]
---->[0]
-
-
-Counter-example trace:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_6, ]
---->[2]
-
-[abs_h_0, 
-ct_0_0, 
-ct_1_1, 
-n0_eq_n1, 
-pred_0_synth_msat_4, ]
---->[1]
-
-[abs_h_0, 
-ct_0_0, 
-p_synth_7, ]
---->[1]
-
-[abs_h_0, 
-ct_0_0, 
-abs_end_1, 
-p_synth_7, ]
---->[2]
-
-[abs_h_0, 
-ct_1_0, 
-abs_end_1, 
-n0_eq_n1, 
-pred_0_synth_msat_1, ]
---->[0]
-
-
-Counter-example trace:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_6, ]
---->[2]
-
-[abs_h_0, 
-ct_0_0, 
-ct_1_1, 
-n0_eq_n1, 
-pred_0_synth_msat_4, ]
 --->[1]
 
 [abs_h_0, 
@@ -18901,6 +18920,91 @@ pred_0_synth_msat_4, ]
 --->[2]
 
 [abs_h_0, 
+abs_end_1, 
+ct_0_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[2]
+
+[abs_h_0, 
+abs_end_1, 
+ct_0_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_5, ]
+--->[2]
+
+[abs_h_0, 
+ct_0_0, 
+ct_1_1, 
+n0_eq_n1, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+
+Counter-example trace:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_6, ]
+--->[0]
+
+[abs_h_0, 
+ct_1_0, 
+ct_0_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[2]
+
+[abs_h_0, 
+abs_end_1, 
+ct_0_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[2]
+
+[abs_h_0, 
+ct_0_0, 
+abs_end_1, 
+ct_0_1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_5, ]
+--->[2]
+
+[abs_h_0, 
+ct_1_0, 
+ct_1_1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+
+Counter-example trace:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_6, ]
+--->[0]
+
+[abs_h_0, 
+ct_1_0, 
+ct_0_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[2]
+
+[abs_h_0, 
 ct_1_1, 
 pred_0_synth_msat_1, 
 pred_0_synth_msat_4, ]
@@ -18940,6 +19044,82 @@ pred_0_synth_msat_4, ]
 
 [abs_h_0, 
 ct_1_1, 
+pred_0_synth_msat_4, ]
+--->[2]
+
+[abs_h_0, ]
+--->[2]
+
+[abs_h_0, 
+ct_0_0, 
+abs_end_1, 
+p_synth_7, ]
+--->[0]
+
+
+Counter-example trace:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_6, ]
+--->[0]
+
+[abs_h_0, 
+ct_1_0, 
+ct_0_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[2]
+
+[abs_h_0, 
+abs_end_1, 
+ct_0_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[2]
+
+[abs_h_0, 
+ct_0_0, 
+abs_end_1, 
+ct_0_1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[2]
+
+[abs_h_0, 
+ct_1_0, 
+ct_1_1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+
+Counter-example trace:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_6, ]
+--->[0]
+
+[abs_h_0, 
+ct_1_0, 
+ct_0_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[2]
+
+[abs_h_0, 
+ct_1_1, 
 pred_0_synth_msat_1, 
 pred_0_synth_msat_4, ]
 --->[2]
@@ -18970,1072 +19150,16 @@ p_synth_6, ]
 --->[0]
 
 [abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[0]
-
-[abs_h_0, 
-ct_1_0, 
-ct_0_1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[0]
-
-[abs_h_0, 
-abs_end_0, 
-ct_1_0, 
-ct_0_1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[2]
-
-[abs_h_0, 
-abs_end_0, 
-ct_1_0, 
-ct_1_1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_4, ]
---->[0]
-
-
-Counter-example trace:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_6, ]
---->[0]
-
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[0]
-
-[abs_h_0, 
 ct_1_0, 
 ct_0_1, 
 pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_5, ]
+pred_0_synth_msat_4, ]
 --->[2]
 
 [abs_h_0, 
 ct_1_1, 
-pred_0_synth_msat_4, 
-p_synth_5, ]
---->[2]
-
-[abs_h_0, 
-ct_0_0, 
-p_synth_7, ]
---->[0]
-
-
-Counter-example trace:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_6, ]
---->[0]
-
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[0]
-
-[abs_h_0, 
-ct_1_0, 
-ct_0_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_5, ]
---->[2]
-
-[abs_h_0, 
-ct_1_1, 
-pred_0_synth_msat_4, 
-p_synth_5, ]
---->[0]
-
-[abs_h_0, 
-ct_0_0, 
-ct_1_1, 
-n0_eq_n1, 
-pred_0_synth_msat_4, ]
---->[0]
-
-
-Counter-example trace:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_6, ]
---->[0]
-
-[abs_h_0, 
-ct_1_0, 
-ct_0_1, 
-pred_0_synth_msat_2, 
 pred_0_synth_msat_4, ]
 --->[2]
-
-[abs_h_0, 
-abs_end_1, 
-ct_0_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[2]
-
-[abs_h_0, 
-abs_end_1, 
-ct_0_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_5, ]
---->[2]
-
-[abs_h_0, 
-ct_0_0, 
-ct_1_1, 
-n0_eq_n1, 
-pred_0_synth_msat_4, ]
---->[0]
-
-
-Counter-example trace:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_6, ]
---->[0]
-
-[abs_h_0, 
-ct_1_0, 
-ct_0_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[2]
-
-[abs_h_0, 
-abs_end_1, 
-ct_0_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[2]
-
-[abs_h_0, 
-ct_0_0, 
-abs_end_1, 
-ct_0_1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_5, ]
---->[2]
-
-[abs_h_0, 
-ct_1_0, 
-ct_1_1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_4, ]
---->[0]
-
-
-Counter-example trace:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_6, ]
---->[0]
-
-[abs_h_0, 
-ct_1_0, 
-ct_0_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[2]
-
-[abs_h_0, 
-abs_end_1, 
-ct_0_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_7, ]
---->[2]
-
-[abs_h_0, 
-abs_end_1, 
-ct_0_1, 
-n0_eq_n1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[2]
-
-[abs_h_0, 
-abs_end_0, 
-abs_end_1, 
-ct_0_1, 
-n0_eq_n1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[0]
-
-
-Counter-example trace:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_6, ]
---->[0]
-
-[abs_h_0, 
-ct_1_0, 
-ct_0_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[2]
-
-[abs_h_0, 
-abs_end_1, 
-ct_0_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_7, ]
---->[2]
-
-[abs_h_0, 
-abs_end_1, 
-ct_0_1, 
-n0_eq_n1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[0]
-
-[abs_h_0, 
-abs_end_0, 
-abs_end_1, 
-ct_0_1, 
-n0_eq_n1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[0]
-
-
-Counter-example trace:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_6, ]
---->[0]
-
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[0]
-
-[abs_h_0, 
-ct_1_0, 
-ct_0_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_7, ]
---->[2]
-
-[abs_h_0, 
-abs_end_1, 
-ct_0_1, 
-n0_eq_n1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[0]
-
-
-Counter-example trace:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_6, ]
---->[0]
-
-[abs_h_0, 
-ct_1_0, 
-ct_0_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[2]
-
-[abs_h_0, 
-abs_end_1, 
-ct_0_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_7, ]
---->[0]
-
-[abs_h_0, 
-abs_end_1, 
-ct_0_1, 
-n0_eq_n1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[0]
-
-
-Counter-example trace:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_6, ]
---->[0]
-
-[abs_h_0, 
-ct_1_0, 
-ct_0_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[0]
-
-[abs_h_0, 
-ct_0_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_5, ]
---->[2]
-
-[abs_h_0, 
-ct_0_0, 
-ct_1_1, 
-n0_eq_n1, 
-pred_0_synth_msat_4, ]
---->[0]
-
-
-Counter-example trace:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_6, ]
---->[0]
-
-[abs_h_0, 
-ct_1_0, 
-ct_0_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[0]
-
-[abs_h_0, 
-ct_0_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[2]
-
-[abs_h_0, 
-abs_end_1, 
-ct_0_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_7, ]
---->[0]
-
-
-Counter-example trace:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_6, ]
---->[0]
-
-[abs_h_0, 
-ct_1_0, 
-ct_0_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[0]
-
-[abs_h_0, 
-ct_0_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_7, ]
---->[2]
-
-[abs_h_0, 
-abs_end_1, 
-ct_0_1, 
-n0_eq_n1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[0]
-
-
-Counter-example trace:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_6, ]
---->[0]
-
-[abs_h_0, 
-ct_1_0, 
-ct_0_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[0]
-
-[abs_h_0, 
-ct_0_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_5, ]
---->[0]
-
-[abs_h_0, 
-ct_0_1, 
-n0_eq_n1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_6, ]
---->[2]
-
-[abs_h_0, 
-ct_0_0, 
-ct_1_1, 
-n0_eq_n1, 
-pred_0_synth_msat_4, ]
---->[0]
-
-
-Counter-example trace:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_6, ]
---->[0]
-
-[abs_h_0, 
-ct_1_0, 
-ct_0_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[0]
-
-[abs_h_0, 
-ct_0_1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[2]
-
-[abs_h_0, 
-abs_end_0, 
-ct_1_1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_4, ]
---->[2]
-
-[abs_h_0, 
-abs_end_0, 
-n0_eq_n1, 
-pred_0_synth_msat_1, ]
---->[0]
-
-
-Counter-example trace:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_6, ]
---->[0]
-
-[abs_h_0, 
-ct_1_0, 
-ct_0_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[0]
-
-[abs_h_0, 
-ct_0_1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[2]
-
-[abs_h_0, 
-abs_end_0, 
-ct_1_1, 
-n0_eq_n1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_4, ]
---->[2]
-
-[abs_h_0, 
-abs_end_0, 
-abs_end_1, 
-ct_1_1, 
-n0_eq_n1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_4, ]
---->[0]
-
-
-Counter-example trace:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_6, ]
---->[0]
-
-[abs_h_0, 
-ct_1_0, 
-ct_0_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[0]
-
-[abs_h_0, 
-ct_0_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_7, ]
---->[0]
-
-[abs_h_0, 
-ct_0_1, 
-n0_eq_n1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[2]
-
-[abs_h_0, 
-abs_end_0, 
-abs_end_1, 
-ct_0_1, 
-n0_eq_n1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[0]
-
-
-Counter-example trace:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_6, ]
---->[0]
-
-[abs_h_0, 
-ct_1_0, 
-ct_0_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[0]
-
-[abs_h_0, 
-ct_0_1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[2]
-
-[abs_h_0, 
-abs_end_0, 
-ct_1_1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_4, ]
---->[1]
-
-[abs_h_0, 
-abs_end_0, 
-n0_eq_n1, 
-pred_0_synth_msat_1, ]
---->[0]
-
-
-Counter-example trace:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_6, ]
---->[0]
-
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[0]
-
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_7, ]
---->[2]
-
-[abs_h_0, 
-ct_1_0, 
-abs_end_1, 
-ct_0_1, 
-n0_eq_n1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[2]
-
-[abs_h_0, 
-abs_end_0, 
-ct_1_0, 
-abs_end_1, 
-ct_0_1, 
-n0_eq_n1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[0]
-
-
-Counter-example trace:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_6, ]
---->[0]
-
-[abs_h_0, 
-ct_1_0, 
-ct_0_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[0]
-
-[abs_h_0, 
-ct_0_1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[0]
-
-[abs_h_0, 
-abs_end_0, 
-ct_0_1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[2]
-
-[abs_h_0, 
-abs_end_0, 
-ct_1_1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_4, ]
---->[0]
-
-
-Counter-example trace:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_6, ]
---->[0]
-
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[0]
-
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_7, ]
---->[2]
-
-[abs_h_0, 
-ct_1_0, 
-abs_end_1, 
-ct_0_1, 
-n0_eq_n1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[0]
-
-[abs_h_0, 
-abs_end_0, 
-ct_1_0, 
-abs_end_1, 
-ct_0_1, 
-n0_eq_n1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[0]
-
-
-Counter-example trace:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_6, ]
---->[0]
-
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[0]
-
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_7, ]
---->[0]
-
-[abs_h_0, 
-ct_1_0, 
-ct_0_1, 
-n0_eq_n1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[2]
-
-[abs_h_0, 
-abs_end_0, 
-ct_1_0, 
-abs_end_1, 
-ct_0_1, 
-n0_eq_n1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[0]
-
-
-Counter-example trace:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_6, ]
---->[0]
-
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[0]
-
-[abs_h_0, 
-ct_1_0, 
-ct_0_1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[0]
-
-[abs_h_0, 
-abs_end_0, 
-ct_1_0, 
-ct_0_1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[1]
-
-[abs_h_0, 
-abs_end_0, 
-ct_1_0, 
-ct_1_1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_4, ]
---->[0]
-
-
-Counter-example trace:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_6, ]
---->[0]
-
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[0]
-
-[abs_h_0, 
-ct_1_0, 
-ct_0_1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[1]
-
-[abs_h_0, 
-ct_1_0, 
-ct_1_1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_1, 
-pred_0_synth_msat_4, ]
---->[0]
-
-
-Counter-example trace:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_6, ]
---->[0]
-
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, ]
---->[1]
-
-[abs_h_0, 
-ct_0_0, 
-ct_1_1, 
-n0_eq_n1, 
-pred_0_synth_msat_4, ]
---->[0]
-
-
-Counter-example trace:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_6, ]
---->[1]
-
-[abs_h_0, 
-ct_0_0, 
-ct_1_1, 
-pred_0_synth_msat_4, 
-p_synth_5, ]
---->[2]
-
-[abs_h_0, 
-ct_0_0, 
-p_synth_7, ]
---->[0]
-
-
-Counter-example trace:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_6, ]
---->[1]
-
-[abs_h_0, 
-ct_0_0, 
-ct_1_1, 
-pred_0_synth_msat_4, 
-p_synth_5, ]
---->[0]
-
-[abs_h_0, 
-ct_0_0, 
-ct_1_1, 
-n0_eq_n1, 
-pred_0_synth_msat_4, ]
---->[0]
-
-
-Counter-example trace:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_6, ]
---->[1]
-
-[abs_h_0, 
-ct_0_0, 
-ct_1_1, 
-pred_0_synth_msat_4, 
-p_synth_5, ]
---->[1]
-
-[abs_h_0, 
-ct_0_0, 
-p_synth_5, ]
---->[2]
-
-[abs_h_0, 
-ct_0_0, 
-p_synth_7, ]
---->[0]
-
-
-Counter-example trace:
-[abs_h_0, 
-ct_0_0, 
-ct_0_1, 
-n0_eq_n1, 
-ct0_eq_ct1, 
-pred_0_synth_msat_2, 
-pred_0_synth_msat_4, 
-p_synth_6, ]
---->[1]
-
-[abs_h_0, 
-ct_0_0, 
-ct_1_1, 
-pred_0_synth_msat_4, 
-p_synth_5, ]
---->[1]
 
 [abs_h_0, 
 ct_0_0, ]
@@ -20057,6 +19181,627 @@ ct0_eq_ct1,
 pred_0_synth_msat_2, 
 pred_0_synth_msat_4, 
 p_synth_6, ]
+--->[0]
+
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+[abs_h_0, 
+ct_1_0, 
+ct_0_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_5, ]
+--->[2]
+
+[abs_h_0, 
+ct_1_1, 
+pred_0_synth_msat_4, 
+p_synth_5, ]
+--->[2]
+
+[abs_h_0, 
+ct_0_0, 
+p_synth_7, ]
+--->[0]
+
+
+Counter-example trace:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_6, ]
+--->[0]
+
+[abs_h_0, 
+ct_1_0, 
+ct_0_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[2]
+
+[abs_h_0, 
+ct_1_1, 
+pred_0_synth_msat_4, ]
+--->[2]
+
+[abs_h_0, ]
+--->[0]
+
+[abs_h_0, 
+ct_0_0, 
+p_synth_7, ]
+--->[0]
+
+
+Counter-example trace:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_6, ]
+--->[0]
+
+[abs_h_0, 
+ct_1_0, 
+ct_0_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[2]
+
+[abs_h_0, 
+ct_1_1, 
+pred_0_synth_msat_4, ]
+--->[2]
+
+[abs_h_0, 
+ct_0_0, ]
+--->[0]
+
+[abs_h_0, 
+ct_0_0, 
+p_synth_7, ]
+--->[0]
+
+
+Counter-example trace:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_6, ]
+--->[0]
+
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+[abs_h_0, 
+ct_1_0, 
+ct_0_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_5, ]
+--->[2]
+
+[abs_h_0, 
+ct_1_1, 
+pred_0_synth_msat_4, 
+p_synth_5, ]
+--->[0]
+
+[abs_h_0, 
+ct_0_0, 
+ct_1_1, 
+n0_eq_n1, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+
+Counter-example trace:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_6, ]
+--->[0]
+
+[abs_h_0, 
+ct_1_0, 
+ct_0_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[2]
+
+[abs_h_0, 
+abs_end_1, 
+ct_0_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[2]
+
+[abs_h_0, 
+abs_end_1, 
+ct_0_1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[2]
+
+[abs_h_0, 
+abs_end_0, 
+abs_end_1, 
+ct_0_1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+
+Counter-example trace:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_6, ]
+--->[0]
+
+[abs_h_0, 
+ct_1_0, 
+ct_0_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[2]
+
+[abs_h_0, 
+ct_1_1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+[abs_h_0, 
+abs_end_0, 
+ct_1_1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_4, ]
+--->[2]
+
+[abs_h_0, 
+abs_end_0, 
+n0_eq_n1, 
+pred_0_synth_msat_1, ]
+--->[0]
+
+
+Counter-example trace:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_6, ]
+--->[0]
+
+[abs_h_0, 
+ct_1_0, 
+ct_0_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[2]
+
+[abs_h_0, 
+ct_1_1, 
+pred_0_synth_msat_4, ]
+--->[2]
+
+[abs_h_0, 
+pred_0_synth_msat_1, ]
+--->[2]
+
+[abs_h_0, 
+abs_end_0, 
+n0_eq_n1, 
+pred_0_synth_msat_1, ]
+--->[0]
+
+
+Counter-example trace:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_6, ]
+--->[0]
+
+[abs_h_0, 
+ct_1_0, 
+ct_0_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[2]
+
+[abs_h_0, 
+ct_1_1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+[abs_h_0, 
+abs_end_0, 
+ct_1_1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_4, ]
+--->[1]
+
+[abs_h_0, 
+abs_end_0, 
+n0_eq_n1, 
+pred_0_synth_msat_1, ]
+--->[0]
+
+
+Counter-example trace:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_6, ]
+--->[0]
+
+[abs_h_0, 
+ct_1_0, 
+ct_0_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[2]
+
+[abs_h_0, 
+ct_1_1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_4, ]
+--->[1]
+
+[abs_h_0, 
+ct0_eq_ct1, 
+pred_0_synth_msat_1, ]
+--->[2]
+
+[abs_h_0, 
+abs_end_0, 
+n0_eq_n1, 
+pred_0_synth_msat_1, ]
+--->[0]
+
+
+Counter-example trace:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_6, ]
+--->[0]
+
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+[abs_h_0, 
+ct_1_0, 
+ct_0_1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+[abs_h_0, 
+abs_end_0, 
+ct_1_0, 
+ct_0_1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[2]
+
+[abs_h_0, 
+abs_end_0, 
+ct_1_0, 
+ct_1_1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+
+Counter-example trace:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_6, ]
+--->[0]
+
+[abs_h_0, 
+ct_1_0, 
+ct_0_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[2]
+
+[abs_h_0, 
+ct_1_1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_4, ]
+--->[1]
+
+[abs_h_0, 
+n0_eq_n1, 
+pred_0_synth_msat_1, ]
+--->[0]
+
+[abs_h_0, 
+abs_end_0, 
+n0_eq_n1, 
+pred_0_synth_msat_1, ]
+--->[0]
+
+
+Counter-example trace:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_6, ]
+--->[0]
+
+[abs_h_0, 
+ct_1_0, 
+ct_0_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[2]
+
+[abs_h_0, 
+abs_end_1, 
+ct_0_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_7, ]
+--->[2]
+
+[abs_h_0, 
+abs_end_1, 
+ct_0_1, 
+n0_eq_n1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[2]
+
+[abs_h_0, 
+abs_end_0, 
+abs_end_1, 
+ct_0_1, 
+n0_eq_n1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+
+Counter-example trace:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_6, ]
+--->[0]
+
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+[abs_h_0, 
+ct_1_0, 
+ct_0_1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+[abs_h_0, 
+abs_end_0, 
+ct_1_0, 
+ct_0_1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[1]
+
+[abs_h_0, 
+abs_end_0, 
+ct_1_0, 
+ct_1_1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+
+Counter-example trace:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_6, ]
+--->[0]
+
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+[abs_h_0, 
+ct_1_0, 
+ct_0_1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[1]
+
+[abs_h_0, 
+ct_1_0, 
+ct_1_1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_1, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+
+Counter-example trace:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_6, ]
+--->[0]
+
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, ]
+--->[1]
+
+[abs_h_0, 
+ct_0_0, 
+ct_1_1, 
+n0_eq_n1, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+
+Counter-example trace:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_6, ]
+--->[1]
+
+[abs_h_0, 
+ct_0_0, 
+ct_1_1, 
+pred_0_synth_msat_4, 
+p_synth_5, ]
+--->[2]
+
+[abs_h_0, 
+ct_0_0, 
+p_synth_7, ]
+--->[0]
+
+
+Counter-example trace:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_6, ]
+--->[1]
+
+[abs_h_0, 
+ct_0_0, 
+ct_1_1, 
+pred_0_synth_msat_4, 
+p_synth_5, ]
+--->[0]
+
+[abs_h_0, 
+ct_0_0, 
+ct_1_1, 
+n0_eq_n1, 
+pred_0_synth_msat_4, ]
+--->[0]
+
+
+Counter-example trace:
+[abs_h_0, 
+ct_0_0, 
+ct_0_1, 
+n0_eq_n1, 
+ct0_eq_ct1, 
+pred_0_synth_msat_2, 
+pred_0_synth_msat_4, 
+p_synth_6, ]
 --->[1]
 
 [abs_h_0, 
@@ -20067,8 +19812,9 @@ p_synth_5, ]
 --->[1]
 
 [abs_h_0, 
-ct_0_0, ]
---->[0]
+ct_0_0, 
+p_synth_5, ]
+--->[2]
 
 [abs_h_0, 
 ct_0_0, 
@@ -20175,7 +19921,7 @@ p_synth_7, ]
 --->[0]
 
 
-53 SMT queries performed.
+47 SMT queries performed.
 before complete_trace: [abs_h_0, 
 ct_0_0, 
 ct_0_1, 
@@ -20270,14 +20016,14 @@ Next concrete state {'end_0': 0, 'n_0': 0, 'ct_0': 1, 'ct_1': 2, 'h_1': 0, 'n_1'
 Next concrete state {'end_0': 1, 'n_0': 0, 'ct_0': 1, 'ct_1': 2, 'h_1': 0, 'n_1': 0, 'end_1': 1, 'h_0': 1}
 Trace is not spurious
 Real cex. Program Unsafe.
-Pre-processing time:	0.16146 
-Solver time:	37.427806
-Total time:	37.589265999999995
-Iteration count:	53
+Pre-processing time:	0.179371 
+Solver time:	36.661379
+Total time:	36.84075
+Iteration count:	47
 Predicate count:	18
 Start next refinement loop: False
 
 
 
-Total time taken : 225.838144
+Total time taken : 232.460951
 Number of predicates guessed: 8.0

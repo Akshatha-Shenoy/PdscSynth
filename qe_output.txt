@@ -1,38 +1,38 @@
+puzzle_1.smt2    0:00:19.994727,unsafe,4.0
+
+sum_to_n_error.smt2    0:00:00.577586,unsafe,0.0
+
+puzzle_2.smt2    0:02:06.758452,unsafe,8.0
+
+subsume_ref_ref.smt2,0:00:01.810710,safe,1.0
+
+squareSum.smt2,0:00:00.814298,safe,0.0
+
+fig4_ref_ref.smt2,0:00:00.394586,safe,0.0
+
+subsume_1.smt2    0:00:08.247199,unsafe,3.0
+
+subsume_2.smt2    0:00:05.130621,unsafe,2.0
+
 doubleSquare_1.smt2,TIMEOUT
 
-subsume_ref_ref.smt2,0:00:03.117796,safe,1.0
-
-subsume_2.smt2    0:00:11.918512,unsafe,3.0
-
-fig4_ref_ref.smt2,0:00:00.561667,safe,0.0
-
-sum_to_n_error.smt2    0:00:00.732260,unsafe,0.0
-
-fig4_1.smt2    0:00:06.535742,unsafe,2.0
-
-fig4_2.smt2    0:00:06.594725,unsafe,2.0
-
-inc_dec.smt2,0:00:18.740804,safe,4.0
-
-sum-pc.smt2,0:00:11.174069,safe,1.0
-
-sum_to_n.smt2,0:01:22.438994,safe,8.0
-
-squareSum.smt2,0:00:00.989473,safe,0.0
+fig4_1.smt2    0:00:04.051926,unsafe,2.0
 
 doubleSquare_3.smt2,TIMEOUT
 
+doubleSquare_4.smt2,0:03:10.780259,safe,9.0
+
 doubleSquare_2.smt2,TIMEOUT
 
-puzzle_ref_ref.smt2,0:00:10.459086,safe,2.0
-
-doubleSquare_4.smt2,0:03:19.081514,safe,8.0
-
-puzzle_1.smt2    0:00:15.396413,unsafe,3.0
-
-subsume_1.smt2    0:00:10.495494,unsafe,3.0
-
-puzzle_2.smt2    0:02:15.247628,unsafe,8.0
-
 halfSquare.smt2,TIMEOUT
+
+fig4_2.smt2    0:00:05.058575,unsafe,2.0
+
+puzzle_ref_ref.smt2,0:00:09.128214,safe,2.0
+
+sum_to_n.smt2,0:01:19.233312,safe,8.0
+
+inc_dec.smt2,0:00:15.526322,safe,4.0
+
+sum-pc.smt2,0:00:09.756394,safe,1.0
 

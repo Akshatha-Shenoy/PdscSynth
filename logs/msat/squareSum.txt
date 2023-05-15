@@ -92,10 +92,10 @@ And(a_gt_0_0,
     Or(Not(a_lt_b_1), a_lt_b_0),
     Or(Not(a_lt_b_1), a0_lt_a1, a0_eq_a1),
     Or(Not(c0_eq_c1), a0_lt_a1))
-Pre-processing time:	0.059189 
-Solver time:	0.929584
-Total time:	0.988773
+Pre-processing time:	0.071032 
+Solver time:	1.053205
+Total time:	1.124237
 Iteration count:	4
 Predicate count:	9
-Total time taken : 0.988839
+Total time taken : 1.124341
 Number of predicates guessed: 0.0

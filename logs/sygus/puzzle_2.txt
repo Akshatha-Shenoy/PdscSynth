@@ -371,9 +371,9 @@ Discover predicate using a_src, a_tgt, c_src, c_tgt to eliminate the spurious ce
 new predicate is (define-fun p ((ct_1 Int) (n_0 Int) (h_1 Int) (h_0 Int) (ct_0 Int) (end_1 Int) (n_1 Int) (end_0 Int)) Bool (= ct_1 n_0))
 
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.069631 
-Solver time:	2.821426
-Total time:	2.891057
+Pre-processing time:	0.070415 
+Solver time:	2.579172
+Total time:	2.649587
 Iteration count:	9
 Predicate count:	10
 Successfully added new predicate to input file. !
@@ -1707,9 +1707,9 @@ Discover predicate using a_src, a_tgt, c_src, c_tgt to eliminate the spurious ce
 new predicate is (define-fun p ((ct_1 Int) (n_0 Int) (h_1 Int) (h_0 Int) (ct_0 Int) (end_1 Int) (n_1 Int) (end_0 Int)) Bool (< ct_1 n_0))
 
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.077232 
-Solver time:	12.511438
-Total time:	12.58867
+Pre-processing time:	0.073161 
+Solver time:	11.719576
+Total time:	11.792737
 Iteration count:	34
 Predicate count:	11
 Successfully added new predicate to input file. !
@@ -3976,5 +3976,5 @@ Start next refinement loop: False
 
 
 
-Total time taken : 37.707435
+Total time taken : 36.220157
 Number of predicates guessed: 2.0

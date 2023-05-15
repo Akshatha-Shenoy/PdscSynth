@@ -713,9 +713,9 @@ Discover predicate using a_src, a_tgt, c_src, c_tgt to eliminate the spurious ce
 new predicate is (define-fun p ((x_1 Int) (h_1 Int) (h_0 Int) (x_0 Int) (end_0 Int) (z_0 Int) (y_0 Int) (y_1 Int) (z_1 Int) (end_1 Int)) Bool (= h_1 z_0))
 
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.098406 
-Solver time:	5.084572
-Total time:	5.182977999999999
+Pre-processing time:	0.095877 
+Solver time:	4.769264
+Total time:	4.8651409999999995
 Iteration count:	12
 Predicate count:	14
 Successfully added new predicate to input file. !
@@ -1325,9 +1325,9 @@ Discover predicate using a_src, a_tgt, c_src, c_tgt to eliminate the spurious ce
 new predicate is (define-fun p ((x_1 Int) (h_1 Int) (h_0 Int) (x_0 Int) (end_0 Int) (z_0 Int) (y_0 Int) (y_1 Int) (z_1 Int) (end_1 Int)) Bool (= h_1 (- z_0 h_1)))
 
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.099191 
-Solver time:	4.439525
-Total time:	4.538716
+Pre-processing time:	0.099327 
+Solver time:	4.263024
+Total time:	4.362350999999999
 Iteration count:	11
 Predicate count:	15
 Successfully added new predicate to input file. !
@@ -2080,9 +2080,9 @@ Discover predicate using a_src, a_tgt, c_src, c_tgt to eliminate the spurious ce
 new predicate is (define-fun p ((x_1 Int) (h_1 Int) (h_0 Int) (x_0 Int) (end_0 Int) (z_0 Int) (y_0 Int) (y_1 Int) (z_1 Int) (end_1 Int)) Bool (= z_0 3))
 
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.108898 
-Solver time:	5.769581
-Total time:	5.878479
+Pre-processing time:	0.111236 
+Solver time:	6.125055
+Total time:	6.236291
 Iteration count:	13
 Predicate count:	16
 Successfully added new predicate to input file. !
@@ -2871,9 +2871,9 @@ Discover predicate using a_src, a_tgt, c_src, c_tgt to eliminate the spurious ce
 new predicate is (define-fun p ((x_1 Int) (h_1 Int) (h_0 Int) (x_0 Int) (end_0 Int) (z_0 Int) (y_0 Int) (y_1 Int) (z_1 Int) (end_1 Int)) Bool (= x_1 x_1))
 
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.115053 
-Solver time:	6.075179
-Total time:	6.190232
+Pre-processing time:	0.110832 
+Solver time:	5.251419
+Total time:	5.3622510000000005
 Iteration count:	14
 Predicate count:	17
 Successfully added new predicate to input file. !
@@ -4188,9 +4188,9 @@ Discover predicate using a_src, a_tgt, c_src, c_tgt to eliminate the spurious ce
 new predicate is (define-fun p ((x_1 Int) (h_1 Int) (h_0 Int) (x_0 Int) (end_0 Int) (z_0 Int) (y_0 Int) (y_1 Int) (z_1 Int) (end_1 Int)) Bool (= z_0 4))
 
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.115887 
-Solver time:	8.620493
-Total time:	8.73638
+Pre-processing time:	0.122906 
+Solver time:	9.443786
+Total time:	9.566692
 Iteration count:	20
 Predicate count:	18
 Successfully added new predicate to input file. !
@@ -5395,9 +5395,9 @@ Discover predicate using a_src, a_tgt, c_src, c_tgt to eliminate the spurious ce
 new predicate is (define-fun p ((x_1 Int) (h_1 Int) (h_0 Int) (x_0 Int) (end_0 Int) (z_0 Int) (y_0 Int) (y_1 Int) (z_1 Int) (end_1 Int)) Bool (= x_1 x_1))
 
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.121733 
-Solver time:	7.674356
-Total time:	7.796089
+Pre-processing time:	0.120028 
+Solver time:	7.771366
+Total time:	7.891394
 Iteration count:	19
 Predicate count:	19
 Successfully added new predicate to input file. !
@@ -7070,9 +7070,9 @@ Discover predicate using a_src, a_tgt, c_src, c_tgt to eliminate the spurious ce
 new predicate is (define-fun p ((x_1 Int) (h_1 Int) (h_0 Int) (x_0 Int) (end_0 Int) (z_0 Int) (y_0 Int) (y_1 Int) (z_1 Int) (end_1 Int)) Bool (= z_0 5))
 
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.13102 
-Solver time:	11.656433
-Total time:	11.787453
+Pre-processing time:	0.123201 
+Solver time:	10.841351
+Total time:	10.964552
 Iteration count:	24
 Predicate count:	20
 Successfully added new predicate to input file. !
@@ -8064,9 +8064,9 @@ Discover predicate using a_src, a_tgt, c_src, c_tgt to eliminate the spurious ce
 new predicate is (define-fun p ((x_1 Int) (h_1 Int) (h_0 Int) (x_0 Int) (end_0 Int) (z_0 Int) (y_0 Int) (y_1 Int) (z_1 Int) (end_1 Int)) Bool (= z_0 6))
 
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.132206 
-Solver time:	7.648492
-Total time:	7.780698
+Pre-processing time:	0.132695 
+Solver time:	7.408413
+Total time:	7.541108
 Iteration count:	15
 Predicate count:	21
 Successfully added new predicate to input file. !
@@ -9355,9 +9355,9 @@ Discover predicate using a_src, a_tgt, c_src, c_tgt to eliminate the spurious ce
 new predicate is (define-fun p ((x_1 Int) (h_1 Int) (h_0 Int) (x_0 Int) (end_0 Int) (z_0 Int) (y_0 Int) (y_1 Int) (z_1 Int) (end_1 Int)) Bool (= x_1 x_1))
 
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.135451 
-Solver time:	9.175921
-Total time:	9.311372
+Pre-processing time:	0.137111 
+Solver time:	9.098517
+Total time:	9.235628
 Iteration count:	19
 Predicate count:	22
 Successfully added new predicate to input file. !
@@ -10436,9 +10436,9 @@ Discover predicate using a_src, a_tgt, c_src, c_tgt to eliminate the spurious ce
 new predicate is (define-fun p ((x_1 Int) (h_1 Int) (h_0 Int) (x_0 Int) (end_0 Int) (z_0 Int) (y_0 Int) (y_1 Int) (z_1 Int) (end_1 Int)) Bool (= z_0 7))
 
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.137999 
-Solver time:	8.27568
-Total time:	8.413679
+Pre-processing time:	0.139972 
+Solver time:	9.145041
+Total time:	9.285013000000001
 Iteration count:	15
 Predicate count:	23
 Successfully added new predicate to input file. !
@@ -11811,9 +11811,9 @@ Discover predicate using a_src, a_tgt, c_src, c_tgt to eliminate the spurious ce
 new predicate is (define-fun p ((x_1 Int) (h_1 Int) (h_0 Int) (x_0 Int) (end_0 Int) (z_0 Int) (y_0 Int) (y_1 Int) (z_1 Int) (end_1 Int)) Bool (= z_0 8))
 
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.144423 
-Solver time:	10.565315
-Total time:	10.709738
+Pre-processing time:	0.143534 
+Solver time:	10.398404
+Total time:	10.541938
 Iteration count:	19
 Predicate count:	24
 Successfully added new predicate to input file. !
@@ -12786,9 +12786,9 @@ Discover predicate using a_src, a_tgt, c_src, c_tgt to eliminate the spurious ce
 new predicate is (define-fun p ((x_1 Int) (h_1 Int) (h_0 Int) (x_0 Int) (end_0 Int) (z_0 Int) (y_0 Int) (y_1 Int) (z_1 Int) (end_1 Int)) Bool (= x_1 x_1))
 
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.147596 
-Solver time:	8.388816
-Total time:	8.536412
+Pre-processing time:	0.15043 
+Solver time:	9.605942
+Total time:	9.756372
 Iteration count:	14
 Predicate count:	25
 Successfully added new predicate to input file. !
@@ -14662,9 +14662,9 @@ Discover predicate using a_src, a_tgt, c_src, c_tgt to eliminate the spurious ce
 new predicate is (define-fun p ((x_1 Int) (h_1 Int) (h_0 Int) (x_0 Int) (end_0 Int) (z_0 Int) (y_0 Int) (y_1 Int) (z_1 Int) (end_1 Int)) Bool (= x_1 x_1))
 
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.154168 
-Solver time:	13.005471
-Total time:	13.159639
+Pre-processing time:	0.243641 
+Solver time:	16.659138
+Total time:	16.902779
 Iteration count:	24
 Predicate count:	26
 Successfully added new predicate to input file. !
@@ -15693,9 +15693,9 @@ Discover predicate using a_src, a_tgt, c_src, c_tgt to eliminate the spurious ce
 new predicate is (define-fun p ((x_1 Int) (h_1 Int) (h_0 Int) (x_0 Int) (end_0 Int) (z_0 Int) (y_0 Int) (y_1 Int) (z_1 Int) (end_1 Int)) Bool (= h_1 (- z_0 8)))
 
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.159866 
-Solver time:	17.984912
-Total time:	18.144778000000002
+Pre-processing time:	0.191235 
+Solver time:	19.168642
+Total time:	19.359876999999997
 Iteration count:	13
 Predicate count:	27
 Successfully added new predicate to input file. !
@@ -17257,9 +17257,9 @@ Discover predicate using a_src, a_tgt, c_src, c_tgt to eliminate the spurious ce
 new predicate is (define-fun p ((x_1 Int) (h_1 Int) (h_0 Int) (x_0 Int) (end_0 Int) (z_0 Int) (y_0 Int) (y_1 Int) (z_1 Int) (end_1 Int)) Bool (= x_1 x_1))
 
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.165802 
-Solver time:	11.562276
-Total time:	11.728078
+Pre-processing time:	0.164486 
+Solver time:	11.41848
+Total time:	11.582966
 Iteration count:	19
 Predicate count:	28
 Successfully added new predicate to input file. !
@@ -18555,9 +18555,9 @@ Discover predicate using a_src, a_tgt, c_src, c_tgt to eliminate the spurious ce
 new predicate is (define-fun p ((x_1 Int) (h_1 Int) (h_0 Int) (x_0 Int) (end_0 Int) (z_0 Int) (y_0 Int) (y_1 Int) (z_1 Int) (end_1 Int)) Bool (= x_1 x_1))
 
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.169109 
-Solver time:	10.099941
-Total time:	10.26905
+Pre-processing time:	0.170092 
+Solver time:	10.784183
+Total time:	10.954275
 Iteration count:	15
 Predicate count:	29
 Successfully added new predicate to input file. !
@@ -19877,9 +19877,9 @@ Discover predicate using a_src, a_tgt, c_src, c_tgt to eliminate the spurious ce
 new predicate is (define-fun p ((x_1 Int) (h_1 Int) (h_0 Int) (x_0 Int) (end_0 Int) (z_0 Int) (y_0 Int) (y_1 Int) (z_1 Int) (end_1 Int)) Bool (= z_0 (* 2 5)))
 
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.175126 
-Solver time:	48.747264
-Total time:	48.92239
+Pre-processing time:	0.179273 
+Solver time:	49.319836
+Total time:	49.499109000000004
 Iteration count:	15
 Predicate count:	30
 Successfully added new predicate to input file. !
@@ -21201,9 +21201,9 @@ Discover predicate using a_src, a_tgt, c_src, c_tgt to eliminate the spurious ce
 new predicate is (define-fun p ((x_1 Int) (h_1 Int) (h_0 Int) (x_0 Int) (end_0 Int) (z_0 Int) (y_0 Int) (y_1 Int) (z_1 Int) (end_1 Int)) Bool (= x_1 x_1))
 
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.176217 
-Solver time:	10.919429
-Total time:	11.095645999999999
+Pre-processing time:	0.171917 
+Solver time:	10.960948
+Total time:	11.132865
 Iteration count:	15
 Predicate count:	31
 Successfully added new predicate to input file. !
@@ -22349,9 +22349,9 @@ Discover predicate using a_src, a_tgt, c_src, c_tgt to eliminate the spurious ce
 new predicate is (define-fun p ((x_1 Int) (h_1 Int) (h_0 Int) (x_0 Int) (end_0 Int) (z_0 Int) (y_0 Int) (y_1 Int) (z_1 Int) (end_1 Int)) Bool (< z_0 (* 2 6)))
 
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.183217 
-Solver time:	47.947787
-Total time:	48.131004
+Pre-processing time:	0.176317 
+Solver time:	46.925757
+Total time:	47.102073999999995
 Iteration count:	12
 Predicate count:	32
 Successfully added new predicate to input file. !
@@ -26039,9 +26039,9 @@ Discover predicate using a_src, a_tgt, c_src, c_tgt to eliminate the spurious ce
 new predicate is (define-fun p ((x_1 Int) (h_1 Int) (h_0 Int) (x_0 Int) (end_0 Int) (z_0 Int) (y_0 Int) (y_1 Int) (z_1 Int) (end_1 Int)) Bool (< x_1 z_1))
 
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.184171 
-Solver time:	22.900464
-Total time:	23.084635
+Pre-processing time:	0.178353 
+Solver time:	21.462732
+Total time:	21.641085
 Iteration count:	37
 Predicate count:	33
 Successfully added new predicate to input file. !
@@ -32133,9 +32133,9 @@ Discover predicate using a_src, a_tgt, c_src, c_tgt to eliminate the spurious ce
 new predicate is (define-fun p ((x_1 Int) (h_1 Int) (h_0 Int) (x_0 Int) (end_0 Int) (z_0 Int) (y_0 Int) (y_1 Int) (z_1 Int) (end_1 Int)) Bool (= x_1 z_0))
 
 Failed to find semantic self-composition. Either the property is violated or not enough predicates were supplied.
-Pre-processing time:	0.195745 
-Solver time:	38.313046
-Total time:	38.508791
+Pre-processing time:	0.208102 
+Solver time:	40.228118
+Total time:	40.43622
 Iteration count:	61
 Predicate count:	34
 Successfully added new predicate to input file. !
@@ -44631,654 +44631,6 @@ z0_eq_z1,
 x0_eq_x1, 
 x0_gt_0, 
 y1_eq_2y0, 
-p_synth_2, 
-p_synth_4, 
-p_synth_6, 
-p_synth_9, 
-p_synth_12, 
-p_synth_13, 
-p_synth_15, 
-p_synth_16, 
-p_synth_18, 
-p_synth_19, 
-p_synth_21, ]
-
-
-Exploring new composition...
-
-
-Current composition gives an abstract counter-example trace:
-[y_gteq_0_0, 
-z_gteq_0_0, 
-y_gteq_0_1, 
-z_gteq_0_1, 
-abs_h_1, 
-y0_eq_y1, 
-x0_eq_x1, 
-x0_gt_0, 
-z1_eq_2z0, 
-y1_eq_2y0, 
-p_synth_2, 
-p_synth_4, 
-p_synth_6, 
-p_synth_9, 
-p_synth_12, 
-p_synth_13, 
-p_synth_15, 
-p_synth_16, 
-p_synth_18, 
-p_synth_19, 
-p_synth_20, 
-p_synth_21, ]
---->[1]
-
-[y_gteq_0_0, 
-z_gteq_0_0, 
-y_gteq_0_1, 
-z_gteq_0_1, 
-abs_h_1, 
-x0_eq_x1, 
-x0_gt_0, 
-p_synth_2, 
-p_synth_4, 
-p_synth_6, 
-p_synth_9, 
-p_synth_12, 
-p_synth_13, 
-p_synth_15, 
-p_synth_16, 
-p_synth_18, 
-p_synth_19, 
-p_synth_20, 
-p_synth_21, ]
---->[1]
-
-[y_gteq_0_0, 
-z_gteq_0_0, 
-y_gteq_0_1, 
-z_gteq_0_1, 
-abs_h_1, 
-z0_eq_z1, 
-x0_eq_x1, 
-x0_gt_0, 
-y1_eq_2y0, 
-p_synth_2, 
-p_synth_4, 
-p_synth_6, 
-p_synth_9, 
-p_synth_12, 
-p_synth_13, 
-p_synth_15, 
-p_synth_16, 
-p_synth_18, 
-p_synth_19, 
-p_synth_21, ]
---->[0]
-
-[y_gteq_0_0, 
-z_gteq_0_0, 
-y_gteq_0_1, 
-z_gteq_0_1, 
-abs_h_1, 
-y0_eq_y1, 
-x0_eq_x1, 
-x0_gt_0, 
-z1_eq_2z0, 
-p_synth_1, 
-p_synth_4, 
-p_synth_6, 
-p_synth_9, 
-p_synth_12, 
-p_synth_13, 
-p_synth_15, 
-p_synth_16, 
-p_synth_18, 
-p_synth_19, ]
---->[0]
-
-[y_gteq_0_0, 
-z_gteq_0_0, 
-y_gteq_0_1, 
-z_gteq_0_1, 
-abs_h_1, 
-x0_eq_x1, 
-x0_gt_0, 
-p_synth_4, 
-p_synth_6, 
-p_synth_9, 
-p_synth_12, 
-p_synth_13, 
-p_synth_15, 
-p_synth_16, 
-p_synth_18, 
-p_synth_19, ]
---->[0]
-
-
-Blocking composition assignment 0 for state
- [y_gteq_0_0, 
-z_gteq_0_0, 
-y_gteq_0_1, 
-z_gteq_0_1, 
-abs_h_1, 
-y0_eq_y1, 
-x0_eq_x1, 
-x0_gt_0, 
-z1_eq_2z0, 
-p_synth_1, 
-p_synth_4, 
-p_synth_6, 
-p_synth_9, 
-p_synth_12, 
-p_synth_13, 
-p_synth_15, 
-p_synth_16, 
-p_synth_18, 
-p_synth_19, ]
-
-
-Exploring new composition...
-
-
-Current composition gives an abstract counter-example trace:
-[y_gteq_0_0, 
-z_gteq_0_0, 
-y_gteq_0_1, 
-z_gteq_0_1, 
-abs_h_1, 
-y0_eq_y1, 
-x0_eq_x1, 
-x0_gt_0, 
-z1_eq_2z0, 
-y1_eq_2y0, 
-p_synth_3, 
-p_synth_4, 
-p_synth_6, 
-p_synth_9, 
-p_synth_12, 
-p_synth_13, 
-p_synth_15, 
-p_synth_16, 
-p_synth_18, 
-p_synth_19, 
-p_synth_20, 
-p_synth_21, ]
---->[2]
-
-[y_gteq_0_0, 
-z_gteq_0_0, 
-y_gteq_0_1, 
-z_gteq_0_1, 
-abs_h_1, 
-y0_eq_y1, 
-x0_eq_x1, 
-x0_gt_0, 
-p_synth_2, 
-p_synth_4, 
-p_synth_6, 
-p_synth_9, 
-p_synth_12, 
-p_synth_13, 
-p_synth_15, 
-p_synth_16, 
-p_synth_18, 
-p_synth_19, 
-p_synth_20, ]
---->[1]
-
-[y_gteq_0_0, 
-z_gteq_0_0, 
-y_gteq_0_1, 
-z_gteq_0_1, 
-abs_h_1, 
-z0_eq_z1, 
-x0_eq_x1, 
-x0_gt_0, 
-p_synth_2, 
-p_synth_4, 
-p_synth_6, 
-p_synth_9, 
-p_synth_12, 
-p_synth_13, 
-p_synth_15, 
-p_synth_16, 
-p_synth_18, 
-p_synth_19, 
-p_synth_20, ]
---->[2]
-
-[y_gteq_0_0, 
-z_gteq_0_0, 
-y_gteq_0_1, 
-z_gteq_0_1, 
-abs_h_1, 
-z0_eq_z1, 
-x0_eq_x1, 
-x0_gt_0, 
-y1_eq_2y0, 
-p_synth_1, 
-p_synth_4, 
-p_synth_6, 
-p_synth_9, 
-p_synth_12, 
-p_synth_13, 
-p_synth_15, 
-p_synth_16, 
-p_synth_18, 
-p_synth_19, 
-p_synth_21, ]
---->[0]
-
-[y_gteq_0_0, 
-z_gteq_0_0, 
-y_gteq_0_1, 
-z_gteq_0_1, 
-abs_h_1, 
-x0_eq_x1, 
-x0_gt_0, 
-p_synth_4, 
-p_synth_6, 
-p_synth_9, 
-p_synth_12, 
-p_synth_13, 
-p_synth_15, 
-p_synth_16, 
-p_synth_18, 
-p_synth_19, ]
---->[0]
-
-
-Blocking composition assignment 0 for state
- [y_gteq_0_0, 
-z_gteq_0_0, 
-y_gteq_0_1, 
-z_gteq_0_1, 
-abs_h_1, 
-z0_eq_z1, 
-x0_eq_x1, 
-x0_gt_0, 
-y1_eq_2y0, 
-p_synth_1, 
-p_synth_4, 
-p_synth_6, 
-p_synth_9, 
-p_synth_12, 
-p_synth_13, 
-p_synth_15, 
-p_synth_16, 
-p_synth_18, 
-p_synth_19, 
-p_synth_21, ]
-
-
-Exploring new composition...
-
-
-Current composition gives an abstract counter-example trace:
-[y_gteq_0_0, 
-z_gteq_0_0, 
-y_gteq_0_1, 
-z_gteq_0_1, 
-abs_h_1, 
-y0_eq_y1, 
-x0_eq_x1, 
-x0_gt_0, 
-z1_eq_2z0, 
-y1_eq_2y0, 
-p_synth_2, 
-p_synth_4, 
-p_synth_6, 
-p_synth_9, 
-p_synth_12, 
-p_synth_13, 
-p_synth_15, 
-p_synth_16, 
-p_synth_18, 
-p_synth_19, 
-p_synth_20, 
-p_synth_21, ]
---->[1]
-
-[y_gteq_0_0, 
-z_gteq_0_0, 
-y_gteq_0_1, 
-z_gteq_0_1, 
-abs_h_1, 
-x0_eq_x1, 
-x0_gt_0, 
-p_synth_2, 
-p_synth_4, 
-p_synth_6, 
-p_synth_9, 
-p_synth_12, 
-p_synth_13, 
-p_synth_15, 
-p_synth_16, 
-p_synth_18, 
-p_synth_19, 
-p_synth_20, 
-p_synth_21, ]
---->[1]
-
-[y_gteq_0_0, 
-z_gteq_0_0, 
-y_gteq_0_1, 
-z_gteq_0_1, 
-abs_h_1, 
-z0_eq_z1, 
-x0_eq_x1, 
-x0_gt_0, 
-p_synth_2, 
-p_synth_4, 
-p_synth_6, 
-p_synth_9, 
-p_synth_12, 
-p_synth_13, 
-p_synth_15, 
-p_synth_16, 
-p_synth_18, 
-p_synth_19, 
-p_synth_21, ]
---->[0]
-
-[y_gteq_0_0, 
-z_gteq_0_0, 
-y_gteq_0_1, 
-z_gteq_0_1, 
-abs_h_1, 
-x0_eq_x1, 
-x0_gt_0, 
-z1_eq_2z0, 
-p_synth_1, 
-p_synth_4, 
-p_synth_6, 
-p_synth_9, 
-p_synth_12, 
-p_synth_13, 
-p_synth_15, 
-p_synth_16, 
-p_synth_18, 
-p_synth_19, ]
---->[1]
-
-[y_gteq_0_0, 
-z_gteq_0_0, 
-y_gteq_0_1, 
-z_gteq_0_1, 
-abs_h_1, 
-z0_eq_z1, 
-x0_eq_x1, 
-x0_gt_0, 
-p_synth_1, 
-p_synth_4, 
-p_synth_6, 
-p_synth_9, 
-p_synth_12, 
-p_synth_13, 
-p_synth_15, 
-p_synth_16, 
-p_synth_18, 
-p_synth_19, ]
---->[0]
-
-
-Blocking composition assignment 0 for state
- [y_gteq_0_0, 
-z_gteq_0_0, 
-y_gteq_0_1, 
-z_gteq_0_1, 
-abs_h_1, 
-z0_eq_z1, 
-x0_eq_x1, 
-x0_gt_0, 
-p_synth_2, 
-p_synth_4, 
-p_synth_6, 
-p_synth_9, 
-p_synth_12, 
-p_synth_13, 
-p_synth_15, 
-p_synth_16, 
-p_synth_18, 
-p_synth_19, 
-p_synth_21, ]
-
-
-Exploring new composition...
-
-
-Current composition gives an abstract counter-example trace:
-[y_gteq_0_0, 
-z_gteq_0_0, 
-y_gteq_0_1, 
-z_gteq_0_1, 
-abs_h_1, 
-y0_eq_y1, 
-x0_eq_x1, 
-x0_gt_0, 
-z1_eq_2z0, 
-y1_eq_2y0, 
-p_synth_2, 
-p_synth_4, 
-p_synth_6, 
-p_synth_9, 
-p_synth_12, 
-p_synth_13, 
-p_synth_15, 
-p_synth_16, 
-p_synth_18, 
-p_synth_19, 
-p_synth_20, 
-p_synth_21, ]
---->[1]
-
-[y_gteq_0_0, 
-z_gteq_0_0, 
-y_gteq_0_1, 
-z_gteq_0_1, 
-abs_h_1, 
-x0_eq_x1, 
-x0_gt_0, 
-p_synth_2, 
-p_synth_4, 
-p_synth_6, 
-p_synth_9, 
-p_synth_12, 
-p_synth_13, 
-p_synth_15, 
-p_synth_16, 
-p_synth_18, 
-p_synth_19, 
-p_synth_20, 
-p_synth_21, ]
---->[1]
-
-[y_gteq_0_0, 
-z_gteq_0_0, 
-y_gteq_0_1, 
-z_gteq_0_1, 
-abs_h_1, 
-z0_eq_z1, 
-x0_eq_x1, 
-x0_gt_0, 
-y1_eq_2y0, 
-p_synth_2, 
-p_synth_4, 
-p_synth_6, 
-p_synth_9, 
-p_synth_12, 
-p_synth_13, 
-p_synth_15, 
-p_synth_16, 
-p_synth_18, 
-p_synth_19, 
-p_synth_21, ]
---->[0]
-
-[y_gteq_0_0, 
-z_gteq_0_0, 
-y_gteq_0_1, 
-z_gteq_0_1, 
-abs_h_1, 
-x0_eq_x1, 
-x0_gt_0, 
-z1_eq_2z0, 
-p_synth_1, 
-p_synth_4, 
-p_synth_6, 
-p_synth_9, 
-p_synth_12, 
-p_synth_13, 
-p_synth_15, 
-p_synth_16, 
-p_synth_18, 
-p_synth_19, ]
---->[0]
-
-
-Blocking composition assignment 0 for state
- [y_gteq_0_0, 
-z_gteq_0_0, 
-y_gteq_0_1, 
-z_gteq_0_1, 
-abs_h_1, 
-z0_eq_z1, 
-x0_eq_x1, 
-x0_gt_0, 
-y1_eq_2y0, 
-p_synth_2, 
-p_synth_4, 
-p_synth_6, 
-p_synth_9, 
-p_synth_12, 
-p_synth_13, 
-p_synth_15, 
-p_synth_16, 
-p_synth_18, 
-p_synth_19, 
-p_synth_21, ]
-
-
-Exploring new composition...
-
-
-Current composition gives an abstract counter-example trace:
-[y_gteq_0_0, 
-z_gteq_0_0, 
-y_gteq_0_1, 
-z_gteq_0_1, 
-abs_h_1, 
-y0_eq_y1, 
-x0_eq_x1, 
-x0_gt_0, 
-z1_eq_2z0, 
-y1_eq_2y0, 
-p_synth_2, 
-p_synth_4, 
-p_synth_6, 
-p_synth_9, 
-p_synth_12, 
-p_synth_13, 
-p_synth_15, 
-p_synth_16, 
-p_synth_18, 
-p_synth_19, 
-p_synth_20, 
-p_synth_21, ]
---->[1]
-
-[y_gteq_0_0, 
-z_gteq_0_0, 
-y_gteq_0_1, 
-z_gteq_0_1, 
-abs_h_1, 
-x0_eq_x1, 
-x0_gt_0, 
-p_synth_2, 
-p_synth_4, 
-p_synth_6, 
-p_synth_9, 
-p_synth_12, 
-p_synth_13, 
-p_synth_15, 
-p_synth_16, 
-p_synth_18, 
-p_synth_19, 
-p_synth_20, 
-p_synth_21, ]
---->[1]
-
-[y_gteq_0_0, 
-z_gteq_0_0, 
-y_gteq_0_1, 
-z_gteq_0_1, 
-abs_h_1, 
-z0_eq_z1, 
-x0_eq_x1, 
-x0_gt_0, 
-y1_eq_2y0, 
-p_synth_2, 
-p_synth_4, 
-p_synth_6, 
-p_synth_9, 
-p_synth_12, 
-p_synth_13, 
-p_synth_15, 
-p_synth_16, 
-p_synth_18, 
-p_synth_19, 
-p_synth_21, ]
---->[1]
-
-[y_gteq_0_0, 
-z_gteq_0_0, 
-y_gteq_0_1, 
-z_gteq_0_1, 
-abs_h_1, 
-x0_eq_x1, 
-x0_gt_0, 
-p_synth_2, 
-p_synth_4, 
-p_synth_6, 
-p_synth_9, 
-p_synth_12, 
-p_synth_13, 
-p_synth_15, 
-p_synth_16, 
-p_synth_18, 
-p_synth_19, 
-p_synth_21, ]
---->[2]
-
-[y_gteq_0_0, 
-z_gteq_0_0, 
-y_gteq_0_1, 
-z_gteq_0_1, 
-abs_end_1, 
-abs_h_1, 
-x0_eq_x1, 
-x0_gt_0, 
-p_synth_1, 
-p_synth_4, 
-p_synth_6, 
-p_synth_9, 
-p_synth_12, 
-p_synth_13, 
-p_synth_15, 
-p_synth_16, 
-p_synth_18, 
-p_synth_19, ]
---->[0]
-
-
-Blocking composition assignment 2 for state
- [y_gteq_0_0, 
-z_gteq_0_0, 
-y_gteq_0_1, 
-z_gteq_0_1, 
-abs_h_1, 
-x0_eq_x1, 
-x0_gt_0, 
 p_synth_2, 
 p_synth_4, 
 p_synth_6, 

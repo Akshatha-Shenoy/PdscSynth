@@ -78,4 +78,13 @@
 
 
 
+
+(declare-rel p_synth_1 (Int Int Int Int Int))
+ (rule (=>  (< (rel y 0) (rel h 1)) (p_synth_1 z y x h end)))
+(declare-rel p_synth_2 (Int Int Int Int Int))
+ (rule (=>  (= (rel h 1) (rel z 0)) (p_synth_2 z y x h end)))
+(declare-rel p_synth_3 (Int Int Int Int Int))
+ (rule (=>  (= (rel end 0) (rel z 1)) (p_synth_3 z y x h end)))
+(declare-rel p_synth_4 (Int Int Int Int Int))
+ (rule (=>  (= (rel y 0)  (- (rel y 1) (rel y 0))) (p_synth_4 z y x h end)))
 (query End)

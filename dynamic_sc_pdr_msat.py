@@ -480,7 +480,7 @@ class DynamicSelfCompositionPDR_msat:
     def check_possible_cutoff(self, state, assignment_to_disable):
         # return False-> no cutoff, return True -> extend bad
         if self.dynamic_program.k == 2:
-            if assignment_to_disable is 2:
+            if assignment_to_disable == 2:
                 if state in self.blocked_compositions and len(self.blocked_compositions[state]) > 0:
                     copy_to_check = 1 - self.blocked_compositions[state][0]
                 else:

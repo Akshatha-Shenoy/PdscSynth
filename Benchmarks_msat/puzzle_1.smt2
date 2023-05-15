@@ -50,4 +50,10 @@
 
 
 
+
+
+(declare-rel pred_0_synth_msat_1 (Int Int Int Int))
+ (rule (=>  ( = (rel n 0) (rel ct 1)  ) (pred_0_synth_msat_1 end n h ct)))
+(declare-rel pred_1_synth_msat_1 (Int Int Int Int))
+ (rule (=>  ( = n ct  ) (pred_1_synth_msat_1 end n h ct)))
 (query End)
